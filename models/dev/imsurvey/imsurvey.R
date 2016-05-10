@@ -8,11 +8,34 @@ define("variable_names", function(variable_names) {
       , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
       # Construct big five index
       # Publish comments
-      , "Drop comments" = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
-    ) #,
-#    analyze = list(
-      # first heard about EA
-      # which_year_EA
+      , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
+    )
+
+    , analyze = list(
+      "first heard about EA"            = function(df) df$heard_ea
+      , "involved_local_EA"             = function(df) df$involved_local_ea
+      , "would attend"                  = function(df) df$would_attend_local_group
+      , "involved_local_EA x GWWC invo" = function(df) table(df$involved_local_ea, df$involved_gwwc)
+      , "involved_local_EA x GWWC mem"  = function(df) table(df$involved_local_ea, df$member_gwwc)
+      , "involved_GWWC x GWWC mem"      = function(df) table(df$involved_gwwc, df$member_gwwc)
+      , "involved_local_EA x local mem" = function(df) table(df$involved_local_ea, df$member_local_group)
+      , "member_local x year"           = function(df) table(df$member_local_group, df$which_year_EA)
+      , "member_local x GWWC"           = function(df) table(df$member_local_group, df$member_gwwc)
+      , "member_local x donate"         = function(df) tapply(df$donated_2014_c, df$member_local_group, mean)
+      , "GWWC x donate"                 = function(df) tapply(df$donated_2014_c, df$member_gwwc, mean)
+      , "member_local x donate %"       = function(df) tapply(df$donated_2014_c / df$income_2014_c, df$member_local_group, mean)
+      , "GWWC x donate %"               = function(df) tapply(df$donated_2014_c / df$income_2014_c, df$member_gwwc, mean)
+      , "member_local x student"        = function(df) table(df$member_local_group, df$student)
+      , "member_local x welcoming"      = function(df) table(df$member_local_group, df$welcoming)
+      , "member_GWWC x welcoming"       = function(df) table(df$member_GWWC, df$welcoming)
+      , "member_local x fundraiser"     = function(df) table(df$member_local_group, df$action_fundraiser)
+      , "member_GWWC x fundraiser"      = function(df) table(df$member_GWWC, df$action_fundraiser)
+      , "member_local x legacy"         = function(df) table(df$member_local_group, df$action_legacy)
+      , "member_GWWC x legacy"          = function(df) table(df$member_GWWC, df$action_legacy)
+      , "member_local x telling_friends"   = function(df) table(df$member_local_group, df$action_telling_friends)
+      , "member_GWWC x telling_friends"    = function(df) table(df$member_GWWC, df$action_telling_friends)
+      , "member_local x ea_newsletter"     = function(df) table(df$member_local_group, df$action_ea_newsletter)
+      , "member_GWWC x ea_newsletter"      = function(df) table(df$member_GWWC, df$action_ea_newsletter)
       # cause areas
       # social movements
       # cause area X social movements
@@ -21,16 +44,10 @@ define("variable_names", function(variable_names) {
       # membership
       # cause area X membership
       # student
-      # would join local group
-      # local group X student
       # career
       # amount donated
       # income
       # percent donated
-      # amount donated X GWWC membership
-      # percent donated X GWWC membership
-      # amount donated X local group
-      # percent donated X local group
       # cause area X amount donated
       # where donated
       # cause area X where donated
@@ -63,7 +80,7 @@ define("variable_names", function(variable_names) {
       # welcoming x involvement
       # insecurity
       # welcoming x insecurity
-#    ),
+    )
 #    export = list(R = "model")  # export data
   )
 })

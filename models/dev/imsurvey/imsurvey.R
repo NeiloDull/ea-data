@@ -2,12 +2,11 @@ define("variable_names", function(variable_names) {
   list(
     import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
     data   = list(
-      "Rename variables" = list(renamer, variable_names) #,
-      # Rename variables
-      # Make codebook
+      "Rename variables" = list(renamer, variable_names)
+      , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
+      , "Drop insincere" = list(select_rows, function(x) grepl("Yes", x, fixed = TRUE))
       # Drop insincere anwsers
       # Drop non-EAs
-      # Currency conversion
       # Construct big five index
       # Publish comments
       # Drop comments

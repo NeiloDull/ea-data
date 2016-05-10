@@ -36,3 +36,13 @@ packages:
     version: 0.6.1.9007
     repo: syberia/syberia
     ref: 0.6-dev
+  -
+    name: magrittr
+    version: 1.5
+  -
+    name: dplyr
+    version: 0.4.3
+  -
+    name: surveytools2
+    version: 0.1
+    repo: peterhurford/surveytools2

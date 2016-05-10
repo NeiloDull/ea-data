@@ -1,6 +1,6 @@
 define("variable_names", function(variable_names) {
   list(
-    import = list(file = "data/imsurvey2015.csv"),
+    import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
     data   = list(
       "Rename variables" = list(renamer, variable_names) #,
       # Rename variables

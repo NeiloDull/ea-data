@@ -4,12 +4,11 @@ define("variable_names", function(variable_names) {
     data   = list(
       "Rename variables" = list(renamer, variable_names)
       , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
-      , "Drop insincere" = list(select_rows, function(x) grepl("Yes", x, fixed = TRUE))
-      # Drop insincere anwsers
-      # Drop non-EAs
+      , "Drop insincere" = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
+      , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
       # Construct big five index
       # Publish comments
-      # Drop comments
+      , "Drop comments" = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
     ) #,
 #    analyze = list(
       # first heard about EA

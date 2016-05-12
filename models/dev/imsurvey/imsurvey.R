@@ -6,10 +6,9 @@ define("variable_names", function(variable_names) {
       , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
       , "Drop insincere" = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
       , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
-      # Construct big five index
-      # Publish comments
+      # TODO: Publish comments
       , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
-      , "% inc doante"   = list(new_variable, function(donate_2014_c, income_2014_c) {
+      , "% inc donate"   = list(new_variable, function(donate_2014_c, income_2014_c) {
         p <- donate_2014_c / income_2014_c
         p[is.infinite(p)] <- NA
         p
@@ -23,7 +22,6 @@ define("variable_names", function(variable_names) {
       , "involved_local_EA x GWWC invo" = function(df) comparison_table(df, "involved_local_EA", "involved_GWWC", type = "categorical")
       , "involved_local_EA x GWWC mem"  = function(df) comparison_table(df, "involved_local_EA", "member_gwwc", type = "categorical")
       , "involved_GWWC x GWWC mem"      = function(df) comparison_table(df, "involved_GWWC", "member_gwwc", type = "categorical")
-      #, "EA inv x GWWC inv x GWWC mem"  = function(df) comparison_table(df, "involved_local_EA", "involved_GWWC", "member_gwwc")
       , "involved_local_EA x local mem" = function(df) comparison_table(df, "involved_local_EA", "member_local_group", type = "categorical")
       , "member_local x year"           = function(df) comparison_table(df, "member_local_group", "which_year_EA", type = "categorical")
       , "member_local x GWWC"           = function(df) comparison_table(df, "member_local_group", "member_gwwc", type = "categorical")
@@ -32,7 +30,6 @@ define("variable_names", function(variable_names) {
       , "member_local x donate %"       = function(df) comparison_table(df, "p_donate_2014_c", "member_local_group", type = "continuous")
       , "GWWC x donate %"               = function(df) comparison_table(df, "p_donate_2014_c", "member_gwwc", type = "continuous")
       , "member_local x student"        = function(df) comparison_table(df, "member_local_group", "student", type = "categorical")
-#TODO: Relook with percentage comparison_tables
       , "member_local x welcoming"      = function(df) comparison_table(df, "member_local_group", "ea_welcoming", type = "categorical")
       , "member_gwwc x welcoming"       = function(df) comparison_table(df, "member_gwwc", "ea_welcoming", type = "categorical")
       , "member_local x fundraiser"     = function(df) comparison_table(df, "member_local_group", "action_fundraiser", type = "categorical")
@@ -88,6 +85,5 @@ define("variable_names", function(variable_names) {
       # insecurity
       # ea_welcoming x insecurity
     )
-#    export = list(R = "model")  # export data
   )
 })

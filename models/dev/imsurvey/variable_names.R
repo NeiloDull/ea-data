@@ -67,6 +67,7 @@ list(
   "JOIN.1" = "currency_lifetime_1",
   "JOIN..Other..1" = "currency_lifetime_2",
   "How.much.do.you.currently.plan.to.donate." = "plan_donate_how_much",
+  "Did.you.give.your.donation.plans.when.you.took.last.year.s.survey...Yes..they.re.unchanged...I.won.t.give.them.again.." = "already_stated_plan",
   "Which.causes.do.you.plan.to.donate.to...Animal.welfare." = "plan_donate_animal_welfare",
   "Which.causes.do.you.plan.to.donate.to...Cause.prioritization." = "plan_donate_cause_prioritization",
   "Which.causes.do.you.plan.to.donate.to...Environmentalism." = "plan_donate_environmentalism",

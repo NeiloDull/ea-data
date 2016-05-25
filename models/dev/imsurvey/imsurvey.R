@@ -8,6 +8,12 @@ define("variable_names", function(variable_names) {
       , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
       # TODO: Publish comments
       , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
+      , "Have a plan"    = list(new_variable, function(plan_donate_how_much, already_stated_plan, donate_2014) {
+        plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
+      }, "have_donation_plan")
+      , "Sold EA"        = list(new_variable, function(have_donation_plan, ea_career) {
+        have_donation_plan | ea_career == "Yes"
+      }, "sold_ea")
       , "% inc donate"   = list(new_variable, function(donate_2014_c, income_2014_c) {
         p <- donate_2014_c / income_2014_c
         p[is.infinite(p)] <- NA

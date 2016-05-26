@@ -1,5 +1,6 @@
 define("variable_names", function(variable_names) {
   list(
+    #TODO: Longitudinal study
     import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
     data   = list(
       "Rename variables" = list(renamer, variable_names)

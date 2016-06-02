@@ -83,50 +83,6 @@ define("variable_names", function(variable_names) {
       , "member_gwwc x telling_friends"    = function(df) ctab(df, member_gwwc, action_telling_friends)
       , "member_local x ea_newsletter"     = function(df) ctab(df, member_local_group, action_ea_newsletter)
       , "member_gwwc x ea_newsletter"      = function(df) ctab(df, member_gwwc, action_ea_newsletter)
-      # cause areas
-      # social movements
-      # cause area X social movements
-      # involvement
-      # cause area X involvement
-      # membership
-      # cause area X membership
-      # student
-      # career
-      # amount donated
-      # income
-      # percent donated
-      # cause area X amount donated
-      # where donated
-      # cause area X where donated
-      # where donated X GWWC membership
-      # occupation
-      # subject
-      # ea career
-      # career path (of ea careers)
-      # ea career x saying 80K was influential
-      # amount donated x ETG
-      # percent donated x ETG
-      # diet
-      # diet reasons
-      # diet x animal welfare support
-      # diet reasons x animal welfare support
-      # age
-      # gender
-      # country
-      # city
-      # religion
-      # politics
-      # confidence in personal EA
-      # confidence in EA movement
-      # confidence x confidence
-      # ea_welcoming
-      # confidence x ea_welcoming
-      # ea_welcoming x gender
-      # ea_welcoming x age
-      # ea_welcoming x cause area
-      # ea_welcoming x involvement
-      # insecurity
-      # ea_welcoming x insecurity
     )
   )
 })

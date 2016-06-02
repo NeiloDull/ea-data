@@ -40,6 +40,17 @@ packages:
     name: magrittr
     version: 1.5
   -
+    name: devtools
+    version: 1.10.0.9000
+    repo: hadley/devtools
+  -
+    name: currencyr
+    version: 0.0.0.9004
+    repo: peterhurford/currencyr
+  -
+    name: plyr
+    version: 1.8.3
+  -
     name: dplyr
     version: 0.4.3
   -

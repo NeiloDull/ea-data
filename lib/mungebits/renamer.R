@@ -5,3 +5,4 @@ train <- predict <- function(dataframe, replacements) {
   }, names(replacements), colnames(dataframe))
   dataframe
 }
+

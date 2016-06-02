@@ -8,7 +8,7 @@ R
 ```
 
 ```R
-run("imsurvey")
+run("imsurvey2015")
 ```
 
 -
@@ -16,7 +16,7 @@ run("imsurvey")
 Run the full data pipeline, assuming you possess the confidential un-anonymous CSVs in your `data` directory:
 
 ```R
-source("models/dev/imsurvey/ea_id.R")
-source("models/dev/imsurvey/convert_money.R")
+source("models/dev/imsurvey2015/ea_id.R")
+source("models/dev/imsurvey2015/convert_money.R")
 run("imsurvey")
 ```

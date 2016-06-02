@@ -1,6 +1,6 @@
 options("stringsAsFactors" = FALSE)
 data <- read.csv("data/imsurvey2015-anonymized.csv")
-renames <- source("models/dev/imsurvey/variable_names.R")$value
+renames <- source("models/dev/imsurvey2015/variable_names.R")$value
 data <- plyr::rename(data, renames)
 
 currencies <- sort(unique(c(data$currency_lifetime_1,

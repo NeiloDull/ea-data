@@ -9,7 +9,6 @@ define("transform_lookups", "transform_functions", function(transform_lookup, tr
     ),
     data = list(
       "Rename variables sensibly"       = list(renamer, transform_lookup$renames)
-      ,"Select only relevant variables" = list(select_variables, transform_lookup$desired_variables)
       ,"Make age numeric"               = list(column_transformation(as.numeric), 'age')
       ,"Unlist ids"                     = list(replace_variable, function(id) unlist(id))
       ,"Drop NA ids"                    = list(select_rows, function(dataframe) { !is.na(dataframe$id) }, whole = TRUE) 

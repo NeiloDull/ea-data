@@ -203,7 +203,7 @@ list(
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...Personal.contact.with.an.EA.or.EAs.' = 'invovled_personal_contact',
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...80.000.Hours.' = 'involved_80K',
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...The.Life.You.Can.Save.' = 'involved_TLYCS',
-    'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...LessWrong.' = 'involved_LW',
+    'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...LessWrong.' = 'involved_lesswrong',
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...Giving.What.We.Can.' = 'involved_GWWC',
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...GiveWell.' = 'involved_givewell',
     'Which.factors.were.important.in..getting.you.into..Effective.Altruism..or.altering.your.actions.in.its.direction...Friends.' = 'involved_friends',

@@ -183,6 +183,7 @@ define("variable_names", function(variable_names) {
       , "referrer self-report x gender" = function(df) ctab(df, gender, referrer_self_report)
       , "referrer self-report x age"    = function(df) ctab(df, age, referrer_self_report)
       , "referrer self-report x ethics" = function(df) ctab(df, moral_philosophy, referrer_self_report)
-    )
+    ),
+    export = list(R = list("imdata", .type = "data"))
   )
 })

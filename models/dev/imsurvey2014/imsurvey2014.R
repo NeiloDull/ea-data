@@ -1,13 +1,7 @@
 define("transform_lookups", "transform_functions", function(transform_lookup, transform_functions) {
   list(
-    import = list(
-      multi = list(
-        pieces = c("imdata_base", "imdata_more", "imdata_ace"),
-        with = resource_name,
-        bind = TRUE
-      )
-    ),
-    data = list(
+    import = list(file = "data/imsurvey2014-anonymized.csv")
+    , data = list(
       "Rename variables sensibly"       = list(renamer, transform_lookup$renames)
       ,"Make age numeric"               = list(column_transformation(as.numeric), 'age')
       ,"Unlist ids"                     = list(replace_variable, function(id) unlist(id))
@@ -18,7 +12,6 @@ define("transform_lookups", "transform_functions", function(transform_lookup, tr
       ,"Clean up atheist response"      = list(value_replacer, 'religion', list(list('Atheist, agnostic or non-religious', 'atheist')))
       ,"Clean up group responses"       = list(value_replacer, 'group', transform_lookup$clean_group)
       ,"Impute TLYCS factors"           = list(impute, surveytools2::swap_multiple_ids, 'involved_TLYCS', c(13, 31, 79, 110, 146, 367, 374, 383, 534, 577), 'Yes')
-      ,"Impute GiveWell factors"        = list(evaldf, quote(dataframe[[dataframe$id == 271, 'involved_givewell']] <- 'Yes'))
       ,"Impute online factors"          = list(impute, surveytools2::swap_multiple_ids, 'factors_online', c(361, 374, 606), 'Yes')
       ,"Consolidate sublovation"        = list(value_replacer, transform_lookup$clean_city)
       ,'Clean up career responses'      = list(value_replacer, list(list('Direct charity/non-profit work', 'Direct'), list('Earning to Give', 'ETG'), list('None of these', 'None'), list('Research', 'Research'), list('Other', 'None')))

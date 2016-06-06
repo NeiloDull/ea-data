@@ -1,9 +1,9 @@
 list(
   import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
   data   = list(
-    , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
-    , "Drop insincere" = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
+    "Drop insincere"   = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
     , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
+    , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
     , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
     , "Have a plan"    = list(new_variable, function(plan_donate_how_much, already_stated_plan, donate_2014) {
           plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
@@ -158,6 +158,7 @@ list(
     , "subject_vocational"            = function(df) tab(df, subject_vocational)
     , "opportunity or obligation"     = function(df) tab(df, ea_opportunity_or_obligation)
     , "act now or later"              = function(df) tab(df, act_now_or_later)
+    , "act now or later x age"        = function(df) tab(df, age, act_now_or_later)
     , "moral philosophy"              = function(df) tab(df, moral_philosophy)
     , "confidence in personal EA"     = function(df) tab(df, confident_future_ea_personal)
     , "confidence in EA movement"     = function(df) tab(df, confident_future_ea_movement)

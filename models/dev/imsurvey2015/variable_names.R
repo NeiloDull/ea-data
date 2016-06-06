@@ -112,7 +112,7 @@ list(
   "Which.topic..if.any..primarily.made.you.discover.EA." = "topic_ea",
   "What.moral.philosophy..if.any..do.you.lean.towards." = "moral_philosophy",
   "What.meta.ethical.position..if.any..do.you.lean.towards." = "metaethics",
-  "Do.you.believe.that..for.you.at.the.moment..it.is.better.to.act.now.or.invest.to.act.better.later" = "act_now_or_later",
+  "Do.you.believe.that..for.you.at.the.moment..it.is.better.to.act.now.or.invest.to.act.better.later." = "act_now_or_later",
   "How.confident.are.you.that.you.will.be.an.EA.20.years.in.the.future." = "confident_future_ea_personal",
   "Do.you.think.there.will.be.an.Effective.Altruist.movement.in.50.years." = "confident_future_ea_movement",
   "Among.people.you.know..friends..family..colleagues.etc...who.aren.t.already.Effective.Altruists..roughly.how.many.do.you.think.could.be.open.to.becoming.an.EA." = "potential_ea_friends",

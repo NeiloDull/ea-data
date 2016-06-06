@@ -10,16 +10,45 @@ define("variable_names", function(variable_names) {
       # TODO: Publish comments
       , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
       , "Have a plan"    = list(new_variable, function(plan_donate_how_much, already_stated_plan, donate_2014) {
-        plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
-      }, "have_donation_plan")
+            plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
+          }, "have_donation_plan")
       , "Sold EA"        = list(new_variable, function(have_donation_plan, ea_career) {
-        have_donation_plan | ea_career == "Yes"
-      }, "sold_ea")
+            have_donation_plan | ea_career == "Yes"
+          }, "sold_ea")
       , "% inc donate"   = list(new_variable, function(donate_2014_c, income_2014_c) {
-        p <- donate_2014_c / income_2014_c
-        p[is.infinite(p)] <- NA
-        p
-      }, "p_donate_2014_c")
+            p <- donate_2014_c / income_2014_c
+            p[is.infinite(p)] <- NA
+            p
+          }, "p_donate_2014_c")
+      , "is_programmer"  = list(new_variable, function(occupation) {
+            ifelse(occupation == "", "", grepl("engineer|programmer", occupation, ignore.case = TRUE))
+          }, "is_programmer")
+      , "referrer_url"   = list(replace_variable, function(referrer_url) {
+            ifelse(grepl("utilitarianism-facebook-group", referrer_url), "Utilitarianism FB Group",
+            ifelse(grepl("TLY", referrer_url), "TLY",
+            ifelse(grepl("survey-site-homepage", referrer_url), "Survey Home",
+            ifelse(grepl("SSC", referrer_url), "SSC",
+            ifelse(grepl("SHARELW", referrer_url), "LW-SHARE",
+            ifelse(grepl("SHARE", referrer_url), "SHARE",
+            ifelse(grepl("LW", referrer_url), "LW",
+            ifelse(grepl("LocalGroup", referrer_url), "Local Group",
+            ifelse(grepl("local-groups-facebook", referrer_url), "Local Group FB",
+            ifelse(grepl("LLonE", referrer_url), "LLonE",
+            ifelse(grepl("gwwc-members", referrer_url), "GWWC FB Link",
+            ifelse(grepl("gwwc-fb", referrer_url), "GWWC FB Group Message",
+            ifelse(grepl("fbsample", referrer_url), "FB Random Sample",
+            ifelse(grepl("fb-post-2-custom-share", referrer_url), "FB-SHARE",
+            ifelse(grepl("fb-post-2", referrer_url), "EAFB",
+            ifelse(grepl("ea-fb-group", referrer_url), "EAFB",
+            ifelse(grepl("email-to-people", referrer_url), "EA Profile Emails",
+            ifelse(grepl("eahub", referrer_url), "EA Hub",
+            ifelse(grepl("EAF", referrer_url), "EA Forum",
+            ifelse(grepl("eaa-facebook", referrer_url), "EAA FB",
+            ifelse(grepl("ea-newsletter", referrer_url), "EA Newsletter",
+            ifelse(grepl("ea-hangout-facebook", referrer_url), "EA Hangout FB",
+            ifelse(grepl("ACE", referrer_url), "ACE",
+            ifelse(referrer_url == "", "No Referrer", "Other"))))))))))))))))))))))))
+          })
     )
 
     , analyze = list(
@@ -115,6 +144,45 @@ define("variable_names", function(variable_names) {
       , "donating over 10% x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.1, member_gwwc)
       , "diet"                          = function(df) tab(df, veg)
       , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
+      , "why_veg_animals"               = function(df) tab(df, why_veg_animals)
+      , "why_veg_health"                = function(df) tab(df, why_veg_health)
+      , "why_veg_environment"           = function(df) tab(df, why_veg_environment)
+      , "ea career"                     = function(df) tab(df, ea_career)
+      , "is_programmer"                 = function(df) tab(df, is_programmer)
+      , "subject_economics"             = function(df) tab(df, subject_economics)
+      , "subject_engineering"           = function(df) tab(df, subject_engineering)
+      , "subject_maths"                 = function(df) tab(df, subject_maths)
+      , "subject_medicine"              = function(df) tab(df, subject_medicine)
+      , "subject_psychology"            = function(df) tab(df, subject_psychology)
+      , "subject_philosophy"            = function(df) tab(df, subject_philosophy)
+      , "subject_physics"               = function(df) tab(df, subject_physics)
+      , "subject_humanities"            = function(df) tab(df, subject_humanities)
+      , "subject_social_science"        = function(df) tab(df, subject_social_science)
+      , "subject_sciences"              = function(df) tab(df, subject_sciences)
+      , "subject_vocational"            = function(df) tab(df, subject_vocational)
+      , "opportunity or obligation"     = function(df) tab(df, ea_opportunity_or_obligation)
+      , "act now or later"              = function(df) tab(df, act_now_or_later)
+      , "moral philosophy"              = function(df) tab(df, moral_philosophy)
+      , "confidence in personal EA"     = function(df) tab(df, confident_future_ea_personal)
+      , "confidence in EA movement"     = function(df) tab(df, confident_future_ea_movement)
+      , "confidence x confidence"       = function(df) ctab(df, confident_future_ea_personal, confident_future_ea_movement, na.rm = TRUE)
+      , "EA topic"                      = function(df) tab(df, topic_ea)
+      , "EA Welcoming"                  = function(df) tab(df, ea_welcoming)
+      , "EA Welcoming x gender"         = function(df) ctab(df, gender, ea_welcoming, na.rm = TRUE)
+      , "EA Welcoming x age"            = function(df) ctab(df, age, ea_welcoming, na.rm = TRUE)
+      , "EA Welcoming x religion"       = function(df) ctab(df, religion == "Atheist, agnostic or non-religious", ea_welcoming, na.rm = TRUE)
+      , "EA Welcoming x ethics"         = function(df) ctab(df, moral_philosophy == "Consequentialism (utilitarian)", ea_welcoming, na.rm = TRUE)
+      , "Insecurity about EA"           = function(df) tab(df, insecurity)
+      , "opportunity-oblication x inse" = function(df) ctab(df, insecurity, ea_opportunity_or_obligation, na.rm = TRUE)
+      , "referrer URL"                  = function(df) tab(df, referrer_url)
+      , "referrer self-report"          = function(df) tab(df, referrer_self_report)
+      , "referrer x referrer"           = function(df) ctab(df, referrer_url, referrer_self_report)
+      , "referrer URL x gender"         = function(df) ctab(df, gender, referrer_url)
+      , "referrer URL x age"            = function(df) ctab(df, age, referrer_url)
+      , "referrer URL x ethics"         = function(df) ctab(df, moral_philosophy, referrer_url)
+      , "referrer self-report x gender" = function(df) ctab(df, gender, referrer_self_report)
+      , "referrer self-report x age"    = function(df) ctab(df, age, referrer_self_report)
+      , "referrer self-report x ethics" = function(df) ctab(df, moral_philosophy, referrer_self_report)
     )
   )
 })

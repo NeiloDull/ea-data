@@ -163,6 +163,7 @@ list(
     , "confidence in personal EA"     = function(df) tab(df, confident_future_ea_personal)
     , "confidence in EA movement"     = function(df) tab(df, confident_future_ea_movement)
     , "confidence x confidence"       = function(df) ctab(df, confident_future_ea_personal, confident_future_ea_movement, na.rm = TRUE)
+    , "confidence x confidence (raw)" = function(df) tab(df, confident_future_ea_personal, confident_future_ea_movement)
     , "EA topic"                      = function(df) tab(df, topic_ea)
     , "EA Welcoming"                  = function(df) tab(df, ea_welcoming)
     , "EA Welcoming x gender"         = function(df) ctab(df, gender, ea_welcoming, na.rm = TRUE)

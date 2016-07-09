@@ -44,10 +44,6 @@ packages:
     name: magrittr
     version: 1.5
   -
-    name: devtools
-    version: 1.12.0
-    repo: hadley/devtools
-  -
     name: currencyr
     version: 0.0.0.9004
     repo: peterhurford/currencyr

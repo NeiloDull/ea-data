@@ -97,7 +97,7 @@ list(
     , "GWWC x donate"                 = function(df) ctab(df, donate_2014_c, member_gwwc)
     , "member_local x donate %"       = function(df) ctab(df, p_donate_2014_c, member_local_group)
     , "GWWC x donate %"               = function(df) ctab(df, p_donate_2014_c, member_gwwc)
-    , "GWWC x donate % (inc > $10K)"  = function(df) ctab(filter(df, income_2014 > 10000), p_donate_2014_c > 0.1, member_gwwc, na.rm = TRUE)
+    , "GWWC x donate % (inc > $10K)"  = function(df) ctab(filter(df, income_2014_c > 10000), p_donate_2014_c > 0.1, member_gwwc, na.rm = TRUE)
     , "member_local x student"        = function(df) ctab(df, member_local_group, student)
     , "member_local x welcoming"      = function(df) ctab(df, member_local_group, ea_welcoming)
     , "member_gwwc x welcoming"       = function(df) ctab(df, member_gwwc, ea_welcoming)

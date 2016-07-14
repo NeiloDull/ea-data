@@ -2,7 +2,7 @@ list(
   import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
   data   = list(
     "Drop insincere"   = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
-    , "Drop non-EA"    = list(select_rows, function(df) df$is_ea == "Yes", whole = TRUE)
+    , "Drop non-EA"    = list(select_rows, function(df) grepl("Yes", df$is_ea, fixed = TRUE), whole = TRUE)
     , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
     , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
     , "Have a plan"    = list(new_variable, function(plan_donate_how_much, already_stated_plan, donate_2014) {

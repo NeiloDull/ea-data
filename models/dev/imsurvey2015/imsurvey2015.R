@@ -45,6 +45,11 @@ list(
           ifelse(grepl("ACE", referrer_url), "ACE",
           ifelse(referrer_url == "", "No Referrer", "Other"))))))))))))))))))))))))
         })
+    , "simple referrer" = list(new_variable, function(referrer_url) {
+          ifelse(referrer_url == "SSC", "SlateStarCodex",
+          ifelse(referrer_url == "FB Random Sample", "FB Random Sample",
+          ifelse(grepl("GWWC FB", referrer_url), "GWWC Group Message", "Other")))
+        }, "referrer2")
   )
 
   , analyze = list(
@@ -182,6 +187,14 @@ list(
     , "referrer self-report x gender" = function(df) ctab(df, gender, referrer_self_report)
     , "referrer self-report x age"    = function(df) ctab(df, age, referrer_self_report)
     , "referrer self-report x ethics" = function(df) ctab(df, moral_philosophy, referrer_self_report)
-  ),
-  export = list(R = list("imdata", .type = "data"))
+    , "referrer2"                     = function(df) tab(df, referrer2)
+    , "referrer2 x age"               = function(df) ctab(df, age, referrer2, na.rm = TRUE)
+    , "referrer2 x donation"          = function(df) ctab(filter(df, student == "No"), donate_2014_c, referrer2, na.rm = TRUE)
+    , "referrer2 x income"            = function(df) ctab(filter(df, student == "No"), income_2014_c, referrer2, na.rm = TRUE)
+    , "referrer2 x % income donate"   = function(df) ctab(filter(df, student == "No"), p_donate_2014_c, referrer2, na.rm = TRUE)
+    , "referrer2 x poverty"           = function(df) ctab(df, cause_import_poverty == "This cause is the top priority", referrer2, na.rm = TRUE)
+    , "referrer2 x student"           = function(df) ctab(df, student, referrer2, na.rm = TRUE)
+    , "referrer2 x veg"               = function(df) ctab(df, veg == "Vegetarian" | veg == "Vegan", referrer2, na.rm = TRUE)
+    , "referrer2 x year got involved" = function(df) ctab(df, which_year_EA, referrer2, na.rm = TRUE)
+  )
 )

@@ -19,6 +19,9 @@ list(
     , "Solid EA"       = list(new_variable, function(p_donate_2014_c, ea_career) {
           p_donate_2014_c > 0.1 | ea_career == "Yes"
         }, "solid_ea")
+    , "Radical Giver"  = list(new_variable, function(p_donate_2014_c) {
+          p_donate_2014_c >= 0.333
+        }, "radical_giver")
     , "is_programmer"  = list(new_variable, function(occupation) {
           ifelse(occupation == "", "", grepl("engineer|programmer", occupation, ignore.case = TRUE))
         }, "is_programmer")
@@ -92,6 +95,7 @@ list(
     , "cause_import_meta"             = function(df) tab(df, cause_import_meta)
     , "first heard through local grp" = function(df) tab(df, first_heard_EA == "Local EA group")
     , "first heard local x GWWC mem"  = function(df) ctab(df, member_gwwc, first_heard_EA == "Local EA group")
+    , "total donated"                 = function(df) sum(df$donate_2014_c, na.rm = TRUE)
     , "first heard local x donate"    = function(df) ctab(df, donate_2014_c, first_heard_EA == "Local EA group")
     , "would attend"                  = function(df) tab(df, would_attend_local_group)
     , "involved_local_EA x GWWC invo" = function(df) ctab(df, involved_local_EA, involved_GWWC)
@@ -200,5 +204,8 @@ list(
     , "referrer2 x veg"               = function(df) ctab(df, veg == "Vegetarian" | veg == "Vegan", referrer2, na.rm = TRUE)
     , "referrer2 x year got involved" = function(df) ctab(df, which_year_EA, referrer2, na.rm = TRUE)
     , "solid EA x city"               = function(df) ctab(df, city, solid_ea)
+    , "Radical Givers"                = function(df) tab(df, radical_giver)
+    , "Radical Givers give how much?" = function(df) ctab(df, donate_2014_c, radical_giver)
+    , "Radical Givers give II"        = function(df) sum(filter(df, radical_giver)$donate_2014_c)
   )
 )

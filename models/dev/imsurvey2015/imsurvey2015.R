@@ -17,7 +17,7 @@ list(
           p
         }, "p_donate_2014_c")
     , "Solid EA"       = list(new_variable, function(p_donate_2014_c, ea_career) {
-          p_donate_2014_c > 0.1 | ea_career == "Yes"
+          (p_donate_2014_c > 0.1 | ea_career == "Yes") & !is.na(p_donate_2014_c) & !is.na(ea_career)
         }, "solid_ea")
     , "Radical Giver"  = list(new_variable, function(p_donate_2014_c) {
           p_donate_2014_c >= 0.333
@@ -203,7 +203,7 @@ list(
     , "referrer2 x student"           = function(df) ctab(df, student, referrer2, na.rm = TRUE)
     , "referrer2 x veg"               = function(df) ctab(df, veg == "Vegetarian" | veg == "Vegan", referrer2, na.rm = TRUE)
     , "referrer2 x year got involved" = function(df) ctab(df, which_year_EA, referrer2, na.rm = TRUE)
-    , "solid EA x city"               = function(df) ctab(df, city, solid_ea)
+    , "solid EA x city"               = function(df) ctab(df, solid_ea, city)
     , "Radical Givers"                = function(df) tab(df, radical_giver)
     , "Radical Givers give how much?" = function(df) ctab(df, donate_2014_c, radical_giver)
     , "Radical Givers give II"        = function(df) sum(filter(df, radical_giver)$donate_2014_c)

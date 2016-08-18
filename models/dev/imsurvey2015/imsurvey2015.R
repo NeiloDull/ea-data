@@ -9,7 +9,7 @@ list(
           plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
         }, "have_donation_plan")
     , "Sold EA"        = list(new_variable, function(have_donation_plan, ea_career) {
-          have_donation_plan | ea_career == "Yes"
+          (have_donation_plan & !is.na(have_donation_plan) | (ea_career == "Yes" & !is.na(ea_career)))	
         }, "sold_ea")
     , "% inc donate"   = list(new_variable, function(donate_2014_c, income_2014_c) {
           p <- donate_2014_c / income_2014_c
@@ -23,7 +23,7 @@ list(
           p_donate_2014_c >= 0.333
         }, "radical_giver")
     , "is_programmer"  = list(new_variable, function(occupation) {
-          ifelse(occupation == "", "", grepl("engineer|programmer", occupation, ignore.case = TRUE))
+          ifelse(occupation == "", "", grepl("engineer|programmer|software", occupation, ignore.case = TRUE))
         }, "is_programmer")
     , "referrer_url"   = list(replace_variable, function(referrer_url) {
           ifelse(grepl("utilitarianism-facebook-group", referrer_url), "Utilitarianism FB Group",
@@ -49,9 +49,9 @@ list(
           ifelse(grepl("ea-newsletter", referrer_url), "EA Newsletter",
           ifelse(grepl("ea-hangout-facebook", referrer_url), "EA Hangout FB",
           ifelse(grepl("ACE", referrer_url), "ACE",
-          ifelse(referrer_url == "", "No Referrer", "Other"))))))))))))))))))))))))
-        })
-    , "simple referrer" = list(new_variable, function(referrer_url) {
+          ifelse(is.na(referrer_url), "No Referrer", "Others"))))))))))))))))))))))))
+        })	  
+	    , "simple referrer" = list(new_variable, function(referrer_url) {
           ifelse(referrer_url == "SSC", "SlateStarCodex",
           ifelse(referrer_url == "FB Random Sample", "FB Random Sample",
           ifelse(grepl("GWWC FB", referrer_url), "GWWC Group Message", "Other")))
@@ -109,7 +109,8 @@ list(
     , "GWWC x donate"                 = function(df) ctab(df, donate_2014_c, member_gwwc)
     , "member_local x donate %"       = function(df) ctab(df, p_donate_2014_c, member_local_group)
     , "GWWC x donate %"               = function(df) ctab(df, p_donate_2014_c, member_gwwc)
-    , "GWWC x donate % (inc > $10K)"  = function(df) ctab(filter(df, income_2014_c > 10000), p_donate_2014_c > 0.1, member_gwwc, na.rm = TRUE)
+    , "GWWC x donate % (inc > $10k)"  = function(df) ctab(filter(df, income_2014_c > 10000), p_donate_2014_c, member_gwwc)
+    , "GWWC x donate 10% or more (inc > $10K)"  = function(df) ctab(filter(df, income_2014_c > 10000), p_donate_2014_c > 0.0999999, member_gwwc, na.rm = TRUE) #avoid float-point comparison problem
     , "member_local x student"        = function(df) ctab(df, member_local_group, student)
     , "member_local x welcoming"      = function(df) ctab(df, member_local_group, ea_welcoming)
     , "member_gwwc x welcoming"       = function(df) ctab(df, member_gwwc, ea_welcoming)
@@ -139,18 +140,29 @@ list(
     , "MIRI donations by year"        = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_miri, which_year_EA, na.rm = TRUE)
     , "AMF donations by year"         = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_amf, which_year_EA, na.rm = TRUE)
     , "AMF donations by first heard"  = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_amf, first_heard_EA, na.rm = TRUE)
-    , "AMF donations by first heard 2"     = function(df) tab(df %>% filter(donate_2014_c > 0), donate_amf, first_heard_EA, na.rm = TRUE, freq = TRUE, percent = TRUE)
+    , "AMF donations by  url"  = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_amf, referrer_url, na.rm = TRUE)    
+    , "MIRI donations by first heard"      = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_miri, first_heard_EA, na.rm = TRUE) 
+    , "MIRI donations by first heard 2"    = function(df) tab(df %>% filter(donate_2014_c > 0), donate_miri, first_heard_EA, na.rm = TRUE, freq = TRUE, percent = TRUE)    
     , "MIRI donations by first heard"      = function(df) ctab(df %>% filter(donate_2014_c > 0), donate_miri, first_heard_EA, na.rm = TRUE)
-    , "MIRI donations by first heard 2"    = function(df) tab(df %>% filter(donate_2014_c > 0), donate_miri, first_heard_EA, na.rm = TRUE, freq = TRUE, percent = TRUE)
-    , "summarize donations"           = function(df) var_summary(df$donate_2014_c)
+    , "summarize donations"           = function(df) var_summary(filter(df, !is.na(donate_2014_c))$donate_2014_c)    
     , "number of >0 donations"        = function(df) sum(df$donate_2014_c > 0, na.rm = TRUE)
     , "donation quantile 1"           = function(df) quantile(df$donate_2014_c, probs = seq(0.1, 1, len = 10), na.rm = TRUE)
     , "donation quantile 2"           = function(df) quantile(df$donate_2014_c, probs = seq(0.91, 1, len = 10), na.rm = TRUE)
+    , "donating 10% or over x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.0999999, member_gwwc)    
+    , "summarize donations - fb sample"= function(df) var_summary(filter(df, referrer_url=="No Referrer", !is.na(donate_2014_c))$donate_2014_c)    
+    , "summarize donations - student" 	      = function(df) var_summary(filter(df, student == "Yes" & !is.na(student) & !is.na(donate_2014_c))$donate_2014_c)
+    , "summarize donations - non-student" 	      = function(df) var_summary(filter(df, student == "No" & student != "NA" & donate_2014_c != "NA")$donate_2014_c)
+    , "summarize donations - got involved pre-2013" 	      = function(df) var_summary(filter(df, !((which_year_EA == "2014") | (which_year_EA == "2015")) & donate_2014_c != "NA" & !is.na(which_year_EA))$donate_2014_c)
+    , "summarize donations - non-student & Earning to Give" 	      = function(df) var_summary(filter(df, student == "No" & career_path == "Earning to give" & !is.na(career_path) & !is.na(student) & !is.na(donate_2014_c))$donate_2014_c)
     , "summarize % donations"         = function(df) var_summary(df$p_donate_2014_c)
+    , "summarize % donations (inc > $10k)"         = function(df) var_summary(filter(df, income_2014_c > 10000 & p_donate_2014_c != "NA")$p_donate_2014_c)    
+    , "# people donating 10% or over"    = function(df) sum(df[df$income_2014_c > 10000, "p_donate_2014_c"] > 0.09999999, na.rm = TRUE) #avoid floating point comparison error
+    , "donating over 10% x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.1, member_gwwc)        
     , "% donation quantile 1"         = function(df) quantile(df[df$income_2014_c > 10000, "p_donate_2014_c"], probs = seq(0.1, 1, len = 10), na.rm = TRUE)
-    , "% donation quantile 2"         = function(df) quantile(df[df$income_2014_c > 10000, "p_donate_2014_c"], probs = seq(0.91, 1, len = 10), na.rm = TRUE)
-    , "# people donating over 10%"    = function(df) sum(df[df$income_2014_c > 10000, "p_donate_2014_c"] > 0.1, na.rm = TRUE)
-    , "donating over 10% x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.1, member_gwwc)
+    , "% donation quantile 2"         = function(df) quantile(df[df$income_2014_c > 10000, "p_donate_2014_c"], probs = seq(0.91, 1, len = 10), na.rm = TRUE)        
+    , "summarize  donations (non-gwwc member, nonstudent, sold_ea, involved-pre-2014)"         = function(df) var_summary(filter(df, income_2014_c > 0, student == "No", !((which_year_EA == "2014") | (which_year_EA == "2015")), sold_ea,  member_gwwc == "Yes",  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA))$donate_2014_c)	
+    , "summarize  donations  x member_gwwc (non-student, pre-2014, sold_ea)"         = function(df) ctab(filter(df, income_2014_c > 0, student == "No", !((which_year_EA == "2014") | (which_year_EA == "2015")), sold_ea,  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA)), as.numeric(donate_2014_c), member_gwwc, na.rm=TRUE)
+    , "summarize  donations (non-gwwc member, nonstudent, sold_ea)"         = function(df) var_summary(filter(df, income_2014_c > 0, student == "No", sold_ea,  member_gwwc == "Yes",  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA))$donate_2014_c)          
     , "diet"                          = function(df) tab(df, veg)
     , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
     , "why_veg_animals"               = function(df) tab(df, why_veg_animals)
@@ -198,7 +210,7 @@ list(
     , "referrer2 x age"               = function(df) ctab(df, age, referrer2, na.rm = TRUE)
     , "referrer2 x donation"          = function(df) ctab(filter(df, student == "No"), donate_2014_c, referrer2, na.rm = TRUE)
     , "referrer2 x income"            = function(df) ctab(filter(df, student == "No"), income_2014_c, referrer2, na.rm = TRUE)
-    , "referrer2 x % income donate"   = function(df) ctab(filter(df, student == "No"), p_donate_2014_c, referrer2, na.rm = TRUE)
+    , "referrer2 x % income donate"   = function(df) ctab(filter(df, student == "No" & income_2014_c > 9999), p_donate_2014_c, referrer2, na.rm = TRUE)    
     , "referrer2 x poverty"           = function(df) ctab(df, cause_import_poverty == "This cause is the top priority", referrer2, na.rm = TRUE)
     , "referrer2 x student"           = function(df) ctab(df, student, referrer2, na.rm = TRUE)
     , "referrer2 x veg"               = function(df) ctab(df, veg == "Vegetarian" | veg == "Vegan", referrer2, na.rm = TRUE)

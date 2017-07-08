@@ -2,12 +2,12 @@ options("stringsAsFactors" = FALSE)
 data <- readr::read_csv("data/imsurvey2017-anonymized.csv")
 
 first_pass <- data$currency_donate_1 %/>%
-                fn(x, strsplit(x, " - ")[[1]][[1]]) %/>%
+                fn(x, strsplit(x, " - ")[[c(1, 1)]]) %/>%
                 function(cc) {
                   if (cc %in% currencyr::currency_codes()) { cc } else { NA_character_ }}
 
 split_currency <- function(currency, sep) {
-  strsplit(currency, sep)[[1]][[1]] %>% trimws
+  strsplit(currency, sep)[[c(1, 1)]] %>% trimws
 }
 clean_currency <- function(currency) {
   if (grepl("-", currency)) { split_currency(currency, "-") }

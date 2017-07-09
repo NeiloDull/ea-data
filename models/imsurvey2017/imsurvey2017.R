@@ -23,7 +23,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
     )
 
     , analyze = list(
-      list(write = "analyze.txt"),
+      list(write = "2017-survey-analysis-tables.txt"),
       list(
         "num respondents"                 = function(df) num_respondents(df)
         , "first heard about EA"          = function(df) tab(df, first_heard_EA)

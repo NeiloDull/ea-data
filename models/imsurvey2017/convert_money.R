@@ -30,7 +30,7 @@ data$currency <- currency_map
 data$currency_donate_1 <- NULL
 data$currency_donate_2 <- NULL
 
-currency_vars <- surveytools2::get_vars(data, "donate_")
+currency_vars <- surveytools2::get_vars(data, c("donate_", "income"), collapse = TRUE)
 
 is_number_string <- function(x) { !is.na(suppressWarnings(as.numeric(x))) }
 

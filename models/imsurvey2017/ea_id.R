@@ -5,6 +5,9 @@ Ramd::define("variable_names", function(variable_names) {
   data2017 <- data2017_ %/>% function(df) {
      suppressWarnings(suppressMessages(plyr::rename(df, variable_names))) }
   data2017 <- data2017 %/>% function(df) { df[, intersect(names(df), unlist(variable_names))] }
+  data2017[[2]]$sincere <- "Yes (pick this option to have your answers counted)"
+  data2017[[2]]$heard_ea <- "Yes"
+  data2017[[2]]$is_ea <- "Yes"
   data2017 <- data2017 %_>% plyr::rbind.fill
   names_that_did_not_work <- setdiff(unlist(unname(variable_names)), names(data2017))
   if (length(names_that_did_not_work) > 0) {

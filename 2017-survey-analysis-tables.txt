@@ -248,12 +248,12 @@ summarize donations 2016
 donations x student
 donate_2016_c ### student
  # A tibble: 4 x 4
-   group      mean  median        sd
-   <chr>     <dbl>   <dbl>     <dbl>
- 1   N/A 16551.024  770.77 55603.602
- 2    No 13264.800 1538.02 99091.103
- 3   Yes   735.684  154.76  3078.196
- 4  <NA> 16037.359 4151.42 47701.344
+   student      mean  median        sd
+     <chr>     <dbl>   <dbl>     <dbl>
+ 1     N/A 16551.024  770.77 55603.602
+ 2      No 13264.800 1538.02 99091.103
+ 3     Yes   735.684  154.76  3078.196
+ 4    <NA> 16037.359 4151.42 47701.344
  
  
  Call:
@@ -308,37 +308,37 @@ summarize % donations 2016
           sum       num_na 
  33793.606115  1073.000000 
 > 10% donated? 2015
-> p_donate_2015 * 100 10
+p_donate_2015 * 100 > 10
  
  FALSE  TRUE 
    531   145 
 > 10% donated for income >10K 2015
-> p_donate_2015 * 100 10
+p_donate_2015 * 100 > 10
  
  FALSE  TRUE 
    452   118 
 > 50% donated? 2015
-> p_donate_2015 * 100 50
+p_donate_2015 * 100 > 50
  
  FALSE  TRUE 
    665    11 
 > 10% donated? 2016
-> p_donate_2016 * 100 10
+p_donate_2016 * 100 > 10
  
  FALSE  TRUE 
    577   189 
 > 10% donated for income >10K 2016
-> p_donate_2016 * 100 10
+p_donate_2016 * 100 > 10
  
  FALSE  TRUE 
    498   149 
 > 50% donated? 2016
-> p_donate_2016 * 100 50
+p_donate_2016 * 100 > 50
  
  FALSE  TRUE 
    749    17 
 > 10% donated x GWWC
-> p_donate_2016 * 100 10 ### member_gwwc
+p_donate_2016 * 100 > 10 ### member_gwwc
         
              No    Yes
    FALSE 0.8591 0.5767
@@ -361,12 +361,12 @@ RC Donations 2016 (Total)
      num_na 
   1693.0000 
 Did donate to RC 2015?
-> donate_RC_2015_c 0
+donate_RC_2015_c > 0
  
  FALSE  TRUE 
    140     2 
 Did donate to RC 2016?
-> donate_RC_2016_c 0
+donate_RC_2016_c > 0
  
  FALSE  TRUE 
    128    18 
@@ -379,12 +379,12 @@ Did donate to RC 2016?
      num_na 
   1688.0000 
 Did donate to 80K 2015?
-> donate_80K_2015_c 0
+donate_80K_2015_c > 0
  
  FALSE  TRUE 
    138     5 
 Did donate to 80K 2016?
-> donate_80K_2016_c 0
+donate_80K_2016_c > 0
  
  FALSE  TRUE 
    128    23 
@@ -399,12 +399,12 @@ AMF Donations 2016 (Total)
          sum      num_na 
  1349853.140    1386.000 
 Did donate to AMF 2015?
-> donate_amf_2015_c 0
+donate_amf_2015_c > 0
  
   TRUE FALSE 
    245   117 
 Did donate to AMF 2016?
-> donate_amf_2016_c 0
+donate_amf_2016_c > 0
  
   TRUE FALSE 
    378    75 
@@ -419,12 +419,12 @@ ACE Donations 2016 (Total)
      num_na 
   1658.0000 
 Did donate to ACE 2015?
-> donate_ace_2015_c 0
+donate_ace_2015_c > 0
  
  FALSE  TRUE 
    130    37 
 Did donate to ACE 2016?
-> donate_ace_2016_c 0
+donate_ace_2016_c > 0
  
  FALSE  TRUE 
    116    65 
@@ -439,12 +439,12 @@ CFAR Donations 2016 (Total)
      num_na 
    1690.000 
 Did donate to CFAR 2015?
-> donate_cfar_2015_c 0
+donate_cfar_2015_c > 0
  
  FALSE  TRUE 
    132    12 
 Did donate to CFAR 2016?
-> donate_cfar_2016_c 0
+donate_cfar_2016_c > 0
  
  FALSE  TRUE 
    123    26 
@@ -459,12 +459,12 @@ CEA Donations 2016 (Total)
      num_na 
    1665.000 
 Did donate to CEA 2015?
-> donate_cea_2015_c 0
+donate_cea_2015_c > 0
  
  FALSE  TRUE 
    125    40 
 Did donate to CEA 2016?
-> donate_cea_2016_c 0
+donate_cea_2016_c > 0
  
  FALSE  TRUE 
    119    55 
@@ -479,12 +479,12 @@ CS Donations 2016 (Total)
      num_na 
   1712.0000 
 Did donate to CS 2015?
-> donate_cs_2015_c 0
+donate_cs_2015_c > 0
  
  FALSE  TRUE 
    125     8 
 Did donate to CS 2016?
-> donate_cs_2016_c 0
+donate_cs_2016_c > 0
  
  FALSE  TRUE 
    119     8 
@@ -497,12 +497,12 @@ DTW Donations 2016 (Total)
      num_na 
   1665.0000 
 Did donate to DTW 2015?
-> donate_dtw_2015_c 0
+donate_dtw_2015_c > 0
  
  FALSE  TRUE 
    122    44 
 Did donate to DTW 2016?
-> donate_dtw_2016_c 0
+donate_dtw_2016_c > 0
  
  FALSE  TRUE 
    109    65 
@@ -515,12 +515,12 @@ EF Donations 2016 (Total)
      mean    median       min       max        sd    length       sum    num_na 
    611.239     0.000     0.000 17539.920  2712.721  1839.000 90463.370  1691.000 
 Did donate to EF 2015?
-> donate_ef_2015_c 0
+donate_ef_2015_c > 0
  
  FALSE  TRUE 
    126    13 
 Did donate to EF 2016?
-> donate_ef_2016_c 0
+donate_ef_2016_c > 0
  
  FALSE  TRUE 
    120    28 
@@ -535,12 +535,12 @@ END Fund Donations 2016 (Total)
           sum       num_na 
    25.7900000 1718.0000000 
 Did donate to END Fund 2015?
-> donate_end_2015_c 0
+donate_end_2015_c > 0
  
  FALSE  TRUE 
    126     1 
 Did donate to END Fund 2016?
-> donate_end_2016_c 0
+donate_end_2016_c > 0
  
  FALSE  TRUE 
    120     1 
@@ -555,12 +555,12 @@ Faunalytics Donations 2016 (Total)
          sum      num_na 
   856.450000 1717.000000 
 Did donate to Faunalytics 2015?
-> donate_faunalytics_2015_c 0
+donate_faunalytics_2015_c > 0
  
  FALSE  TRUE 
    125     1 
 Did donate to Faunalytics 2016?
-> donate_faunalytics_2016_c 0
+donate_faunalytics_2016_c > 0
  
  FALSE  TRUE 
    118     4 
@@ -575,12 +575,12 @@ FRI Donations 2016 (Total)
      num_na 
  1716.00000 
 Did donate to FRI 2015?
-> donate_fri_2015_c 0
+donate_fri_2015_c > 0
  
  FALSE  TRUE 
    125     2 
 Did donate to FRI 2016?
-> donate_fri_2016_c 0
+donate_fri_2016_c > 0
  
  FALSE  TRUE 
    119     4 
@@ -595,12 +595,12 @@ FHI Donations 2016 (Total)
      num_na 
    1708.000 
 Did donate to FHI 2015?
-> donate_fhi_2015_c 0
+donate_fhi_2015_c > 0
  
  FALSE  TRUE 
    124     2 
 Did donate to FHI 2016?
-> donate_fhi_2016_c 0
+donate_fhi_2016_c > 0
  
  FALSE  TRUE 
    118    13 
@@ -615,12 +615,12 @@ GD Donations 2016 (Total)
      num_na 
    1610.000 
 Did donate to GD 2015?
-> donate_gd_2015_c 0
+donate_gd_2015_c > 0
  
  FALSE  TRUE 
    109    66 
 Did donate to GD 2016?
-> donate_gd_2016_c 0
+donate_gd_2016_c > 0
  
   TRUE FALSE 
    133    96 
@@ -635,12 +635,12 @@ GW Donations 2016 (Total)
          sum      num_na 
  1144957.930    1651.000 
 Did donate to GW 2015?
-> donate_gw_2015_c 0
+donate_gw_2015_c > 0
  
  FALSE  TRUE 
    121    54 
 Did donate to GW 2016?
-> donate_gw_2016_c 0
+donate_gw_2016_c > 0
  
  FALSE  TRUE 
    103    85 
@@ -653,12 +653,12 @@ GF Donations 2016 (Total)
      num_na 
    1694.000 
 Did donate to GF 2015?
-> donate_gf_2015_c 0
+donate_gf_2015_c > 0
  
  FALSE  TRUE 
    124     1 
 Did donate to GF 2016?
-> donate_gf_2016_c 0
+donate_gf_2016_c > 0
  
  FALSE  TRUE 
    112    33 
@@ -673,12 +673,12 @@ MIRI Donations 2016 (Total)
          sum      num_na 
  137350.8400   1665.0000 
 Did donate to MIRI 2015?
-> donate_miri_2015_c 0
+donate_miri_2015_c > 0
  
  FALSE  TRUE 
    122    28 
 Did donate to MIRI 2016?
-> donate_miri_2016_c 0
+donate_miri_2016_c > 0
  
  FALSE  TRUE 
    109    65 
@@ -691,11 +691,11 @@ MC Donations 2016 (Total)
      num_na 
  1717.00000 
 Did donate to MC 2015?
-> donate_mc_2015_c 0
+donate_mc_2015_c > 0
  FALSE 
    122 
 Did donate to MC 2016?
-> donate_mc_2016_c 0
+donate_mc_2016_c > 0
  
  FALSE  TRUE 
    116     6 
@@ -710,12 +710,12 @@ MFA Donations 2016 (Total)
      num_na 
   1674.0000 
 Did donate to MFA 2015?
-> donate_mfa_2015_c 0
+donate_mfa_2015_c > 0
  
  FALSE  TRUE 
    112    37 
 Did donate to MFA 2016?
-> donate_mfa_2016_c 0
+donate_mfa_2016_c > 0
  
  FALSE  TRUE 
    103    62 
@@ -730,12 +730,12 @@ SCI Donations 2016 (Total)
          sum      num_na 
  154196.4300   1627.0000 
 Did donate to SCI 2015?
-> donate_sci_2015_c 0
+donate_sci_2015_c > 0
  
  FALSE  TRUE 
    110    64 
 Did donate to SCI 2016?
-> donate_sci_2016_c 0
+donate_sci_2016_c > 0
  
   TRUE FALSE 
    117    95 
@@ -750,12 +750,12 @@ Sightsavers Donations 2016 (Total)
          sum      num_na 
   154.760000 1723.000000 
 Did donate to Sightsavers 2015?
-> donate_sightsavers_2015_c 0
+donate_sightsavers_2015_c > 0
  
  FALSE  TRUE 
    120     1 
 Did donate to Sightsavers 2016?
-> donate_sightsavers_2016_c 0
+donate_sightsavers_2016_c > 0
  
  FALSE  TRUE 
    115     1 
@@ -770,12 +770,12 @@ SP Donations 2016 (Total)
      num_na 
   1718.0000 
 Did donate to SP 2015?
-> donate_sp_2015_c 0
+donate_sp_2015_c > 0
  
  FALSE  TRUE 
    121     1 
 Did donate to SP 2016?
-> donate_sp_2016_c 0
+donate_sp_2016_c > 0
  
  FALSE  TRUE 
    114     7 
@@ -790,12 +790,12 @@ THL Donations 2016 (Total)
      num_na 
   1681.0000 
 Did donate to THL 2015?
-> donate_thl_2015_c 0
+donate_thl_2015_c > 0
  
  FALSE  TRUE 
    115    33 
 Did donate to THL 2016?
-> donate_thl_2016_c 0
+donate_thl_2016_c > 0
  
  FALSE  TRUE 
    101    57 
@@ -806,16 +806,16 @@ TLYCS Donations 2016 (Total)
      mean    median       min       max        sd    length       sum    num_na 
    11.6406    0.0000    0.0000  456.3000   56.3831 1839.0000 1361.9500 1722.0000 
 Did donate to TLYCS 2015?
-> donate_tlycs_2015_c 0
+donate_tlycs_2015_c > 0
  FALSE 
    119 
 Did donate to TLYCS 2016?
-> donate_tlycs_2016_c 0
+donate_tlycs_2016_c > 0
  
  FALSE  TRUE 
    110     7 
 Did donate to AMF x refer
-> donate_amf_2016_c 0 ### referrer3
+donate_amf_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 0.0000 0.2500   0.0588 0.1848 0.0500      0.4118 0.0000     0.2000
@@ -832,7 +832,7 @@ Did donate to AMF x refer
  X-squared = 12.957, df = 10, p-value = 0.2261
  
 Did donate to DTW x refer
-> donate_dtw_2016_c 0 ### referrer3
+donate_dtw_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 1.0000   0.6667 0.6667 0.3750      0.7000 1.0000     0.5000
@@ -849,7 +849,7 @@ Did donate to DTW x refer
  X-squared = 6.4529, df = 10, p-value = 0.7759
  
 Did donate to SCI x refer
-> donate_sci_2016_c 0 ### referrer3
+donate_sci_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 0.0000 0.6667   0.1111 0.4750 0.2500      0.6364 1.0000     0.5000
@@ -866,7 +866,7 @@ Did donate to SCI x refer
  X-squared = 11.214, df = 10, p-value = 0.3411
  
 Did donate to GD x refer
-> donate_gd_2016_c 0 ### referrer3
+donate_gd_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 0.6667   0.3333 0.4390 0.3000      0.3636 0.5000     0.6000
@@ -883,7 +883,7 @@ Did donate to GD x refer
  X-squared = 5.7627, df = 10, p-value = 0.8348
  
 Did donate to ACE x refer
-> donate_ace_2016_c 0 ### referrer3
+donate_ace_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 0.6667   0.8571 0.5556 0.7500      0.8000 1.0000     0.5000
@@ -900,7 +900,7 @@ Did donate to ACE x refer
  X-squared = 11.819, df = 10, p-value = 0.2974
  
 Did donate to MIRI x refer
-> donate_miri_2016_c 0 ### referrer3
+donate_miri_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 1.0000   0.4444 0.4773 1.0000      0.8750 0.2000     1.0000
@@ -917,7 +917,7 @@ Did donate to MIRI x refer
  X-squared = 20.629, df = 10, p-value = 0.02383
  
 Did donate to MFA x refer
-> donate_mfa_2016_c 0 ### referrer3
+donate_mfa_2016_c > 0 ### referrer3
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 0.6000   0.5000 0.6216 0.7500      0.8750 0.0000     0.7500
@@ -2805,7 +2805,7 @@ referrer3
 referrer3 x age
 age ### referrer3
  # A tibble: 12 x 4
-                  group     mean median        sd
+              referrer3     mean median        sd
                   <chr>    <dbl>  <dbl>     <dbl>
   1                 80K 24.00000     24        NA
   2                 ACE 26.25000     24  9.067209
@@ -2852,7 +2852,7 @@ age ### referrer3
 referrer3 x donation
 donate_2016_c ### referrer3
  # A tibble: 12 x 4
-                  group       mean    median           sd
+              referrer3       mean    median           sd
                   <chr>      <dbl>     <dbl>        <dbl>
   1                 80K   806.0650   806.065    866.35430
   2                 ACE   113.3733   150.000     65.26635
@@ -2897,7 +2897,7 @@ donate_2016_c ### referrer3
 referrer3 x income
 income_2016_individual_c ### referrer3
  # A tibble: 12 x 4
-                  group      mean   median         sd
+              referrer3      mean   median         sd
                   <chr>     <dbl>    <dbl>      <dbl>
   1                 80K  31597.65 31597.65  19151.068
   2                 ACE   6423.16  7605.00   4743.965
@@ -2942,7 +2942,7 @@ income_2016_individual_c ### referrer3
 referrer3 x % income donate
 p_donate_2016 ### referrer3
  # A tibble: 12 x 4
-                  group       mean     median         sd
+              referrer3       mean     median         sd
                   <chr>      <dbl>      <dbl>      <dbl>
   1                 80K 0.02107157 0.02107157 0.01464702
   2                 ACE 0.01453488 0.01453488         NA
@@ -2985,7 +2985,7 @@ p_donate_2016 ### referrer3
  F-statistic: 1.614 on 11 and 444 DF,  p-value: 0.0918
  
 referrer3 x poverty
-== cause_import_poverty This cause should be the top priority ### referrer3 (nas removed)
+cause_import_poverty == "This cause should be the top priority" ### referrer3 (nas removed)
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 0.3333 0.7500   0.6429 0.6713 0.5152      0.5811 0.6471     0.6750
@@ -3019,7 +3019,7 @@ student ### referrer3 (nas removed)
  X-squared = 43.537, df = 11, p-value = 8.755e-06
  
 referrer3 x veg
-| veg == "Vegetarian" veg == "Vegan" ### referrer3 (nas removed)
+veg == "Vegetarian" | veg == "Vegan" ### referrer3 (nas removed)
         
             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
    FALSE 1.0000 0.0000   0.4865 0.3632 0.4615      0.5686 0.7500     0.5152
@@ -3069,12 +3069,12 @@ which_year_EA ### referrer3 (nas removed)
  X-squared = 130.06, df = 99, p-value = 0.01981
  
 first heard through local grp
-== first_heard_EA Local EA group
+first_heard_EA == "Local EA group"
  
  FALSE  TRUE 
   1358    47 
 first heard local x GWWC mem
-member_gwwc ### == first_heard_EA Local EA group
+member_gwwc ### first_heard_EA == "Local EA group"
       
         FALSE   TRUE
    N/A 0.0000 0.0000
@@ -3088,13 +3088,30 @@ member_gwwc ### == first_heard_EA Local EA group
  X-squared = 3.1365, df = 1, p-value = 0.07656
  
 first heard local x donate
-donate_2016_c ### == first_heard_EA Local EA group
- # A tibble: 3 x 4
-   group      mean  median        sd
-   <lgl>     <dbl>   <dbl>     <dbl>
- 1 FALSE  9284.344  627.66 78013.330
- 2  TRUE  1129.267  199.71  2887.008
- 3    NA 15832.136 4075.71 47425.229
+donate_2016_c ### first_heard_EA == "Local EA group"
+ # A tibble: 19 x 4
+                                                    first_heard_EA       mean
+                                                             <chr>      <dbl>
+  1                                                   80,000 Hours  6851.4400
+  2 Animal Charity Evaluators (formerly Effective Animal Activism)  2826.9100
+  3 Book/article/blog post etc. (please specify which, if you can)  5630.2158
+  4                                       Doing Good Better (Book)  9412.1128
+  5                                                      EA Global   396.3250
+  6                                                       Facebook   888.2381
+  7                                                       GiveWell 32403.5870
+  8                                             Giving What We Can 39913.1293
+  9                                               I don't remember 11095.7878
+ 10                                                      LessWrong  6065.9413
+ 11                                                 Local EA group  1129.2671
+ 12                      Other (please specify in the comment box)  5155.2134
+ 13            Personal Contact (e.g. Friend, Colleague, Relative)  5260.7462
+ 14                                    REG / EAF / The Swiss group  3612.0073
+ 15                                                  Search Engine  1635.6481
+ 16                                               Slate Star Codex  3119.4769
+ 17                                                       TED Talk  4783.6440
+ 18                           The Life You Can Save (organization)  5154.3021
+ 19                                                           <NA> 15832.1360
+ # ... with 2 more variables: median <dbl>, sd <dbl>
  
  
  Call:
@@ -3174,12 +3191,12 @@ involved_GWWC ### member_gwwc
 involved_local_EA x donate
 donate_2016_c ### involved_local_EA
  # A tibble: 4 x 4
-   group      mean   median       sd
-   <chr>     <dbl>    <dbl>    <dbl>
- 1   N/A       NaN       NA      NaN
- 2    No 10484.350  689.205 85258.96
- 3   Yes  2870.874  361.495 10329.66
- 4  <NA> 16037.359 4151.420 47701.34
+   involved_local_EA      mean   median       sd
+               <chr>     <dbl>    <dbl>    <dbl>
+ 1               N/A       NaN       NA      NaN
+ 2                No 10484.350  689.205 85258.96
+ 3               Yes  2870.874  361.495 10329.66
+ 4              <NA> 16037.359 4151.420 47701.34
  
  
  Call:
@@ -3251,12 +3268,12 @@ member_local_group ### which_year_EA
 member_local x donate
 donate_2016_c ### member_local_group
  # A tibble: 4 x 4
-   group      mean  median       sd
-   <chr>     <dbl>   <dbl>    <dbl>
- 1   N/A       NaN      NA      NaN
- 2    No 11465.685  770.77 94713.64
- 3   Yes  4502.372  422.80 15354.58
- 4  <NA> 16037.359 4151.42 47701.34
+   member_local_group      mean  median       sd
+                <chr>     <dbl>   <dbl>    <dbl>
+ 1                N/A       NaN      NA      NaN
+ 2                 No 11465.685  770.77 94713.64
+ 3                Yes  4502.372  422.80 15354.58
+ 4               <NA> 16037.359 4151.42 47701.34
  
  
  Call:
@@ -3280,20 +3297,19 @@ donate_2016_c ### member_local_group
  
 MIRI donations by year
 donate_miri_2016_c ### which_year_EA
- # A tibble: 11 x 4
-          group       mean   median          sd
-          <chr>      <dbl>    <dbl>       <dbl>
-  1        2009 4250.00000 4250.000  6010.40764
-  2        2010    0.00000    0.000     0.00000
-  3        2011  311.95200   20.000   457.28067
-  4        2012  314.47125   19.345   803.23461
-  5        2013  152.83625   25.000   223.33769
-  6        2014 2557.61529    0.000  9108.92985
-  7        2015  807.14649    5.710  2097.06081
-  8        2016  120.15581    0.000   503.22285
-  9        2017   29.28571    0.000    75.30098
- 10 Before 2009 5100.00000    0.000 11126.54484
- 11        <NA>  876.68364  101.590  1181.83442
+ # A tibble: 10 x 4
+    which_year_EA       mean   median          sd
+            <chr>      <dbl>    <dbl>       <dbl>
+  1          2009 4250.00000 4250.000  6010.40764
+  2          2010    0.00000    0.000     0.00000
+  3          2011  311.95200   20.000   457.28067
+  4          2012  314.47125   19.345   803.23461
+  5          2013  152.83625   25.000   223.33769
+  6          2014 2557.61529    0.000  9108.92985
+  7          2015  807.14649    5.710  2097.06081
+  8          2016  120.15581    0.000   503.22285
+  9          2017   29.28571    0.000    75.30098
+ 10   Before 2009 5100.00000    0.000 11126.54484
  
  
  Call:
@@ -3322,20 +3338,19 @@ donate_miri_2016_c ### which_year_EA
  
 AMF donations by year
 donate_amf_2016_c ### which_year_EA
- # A tibble: 11 x 4
-          group       mean   median         sd
-          <chr>      <dbl>    <dbl>      <dbl>
-  1        2009 6097.23571 5779.800  5948.9484
-  2        2010 2282.80625 2289.700  1659.7192
-  3        2011 2799.32562 1136.910  4956.1509
-  4        2012 3872.56250 1289.700  6868.4652
-  5        2013 5068.99441  377.930 17387.5170
-  6        2014 4482.96556  263.855 12720.9567
-  7        2015 1726.47625  203.910  3877.9979
-  8        2016  875.84718  200.000  1800.1465
-  9        2017   65.02778    0.000   113.0316
- 10 Before 2009 1874.11714  500.000  2692.5294
- 11        <NA> 7100.99717 1410.500 16668.9579
+ # A tibble: 10 x 4
+    which_year_EA       mean   median         sd
+            <chr>      <dbl>    <dbl>      <dbl>
+  1          2009 6097.23571 5779.800  5948.9484
+  2          2010 2282.80625 2289.700  1659.7192
+  3          2011 2799.32562 1136.910  4956.1509
+  4          2012 3872.56250 1289.700  6868.4652
+  5          2013 5068.99441  377.930 17387.5170
+  6          2014 4482.96556  263.855 12720.9567
+  7          2015 1726.47625  203.910  3877.9979
+  8          2016  875.84718  200.000  1800.1465
+  9          2017   65.02778    0.000   113.0316
+ 10   Before 2009 1874.11714  500.000  2692.5294
  
  
  Call:
@@ -3366,8 +3381,8 @@ donate_amf_2016_c ### which_year_EA
  
 AMF donations by first heard
 donate_amf_2016_c ### first_heard_EA
- # A tibble: 19 x 4
-                                                             group      mean
+ # A tibble: 18 x 4
+                                                    first_heard_EA      mean
                                                              <chr>     <dbl>
   1                                                   80,000 Hours 2887.2665
   2 Animal Charity Evaluators (formerly Effective Animal Activism)  114.1200
@@ -3387,7 +3402,6 @@ donate_amf_2016_c ### first_heard_EA
  16                                               Slate Star Codex 2511.6128
  17                                                       TED Talk  887.4417
  18                           The Life You Can Save (organization) 3263.8514
- 19                                                           <NA> 7941.8271
  # ... with 2 more variables: median <dbl>, sd <dbl>
  
  
@@ -3484,28 +3498,24 @@ donate_amf_2016_c ### first_heard_EA
  
 MIRI donations by first heard
 donate_miri_2016_c ### first_heard_EA
- # A tibble: 19 x 4
-                                                             group      mean
+ # A tibble: 15 x 4
+                                                    first_heard_EA      mean
                                                              <chr>     <dbl>
   1                                                   80,000 Hours    5.3400
-  2 Animal Charity Evaluators (formerly Effective Animal Activism)       NaN
-  3 Book/article/blog post etc. (please specify which, if you can)   38.5000
-  4                                       Doing Good Better (Book)    0.0000
-  5                                                      EA Global       NaN
-  6                                                       Facebook    0.0000
-  7                                                       GiveWell    0.0000
-  8                                             Giving What We Can  168.3714
-  9                                               I don't remember 3941.2312
- 10                                                      LessWrong 2036.0329
- 11                                                 Local EA group  202.8000
- 12                      Other (please specify in the comment box)  223.4615
- 13            Personal Contact (e.g. Friend, Colleague, Relative)  362.8995
- 14                                    REG / EAF / The Swiss group       NaN
- 15                                                  Search Engine    0.0000
- 16                                               Slate Star Codex  864.8222
- 17                                                       TED Talk  117.0100
- 18                           The Life You Can Save (organization)    0.0000
- 19                                                           <NA> 1125.7409
+  2 Book/article/blog post etc. (please specify which, if you can)   38.5000
+  3                                       Doing Good Better (Book)    0.0000
+  4                                                       Facebook    0.0000
+  5                                                       GiveWell    0.0000
+  6                                             Giving What We Can  168.3714
+  7                                               I don't remember 3941.2312
+  8                                                      LessWrong 2036.0329
+  9                                                 Local EA group  202.8000
+ 10                      Other (please specify in the comment box)  223.4615
+ 11            Personal Contact (e.g. Friend, Colleague, Relative)  362.8995
+ 12                                                  Search Engine    0.0000
+ 13                                               Slate Star Codex  864.8222
+ 14                                                       TED Talk  117.0100
+ 15                           The Life You Can Save (organization)    0.0000
  # ... with 2 more variables: median <dbl>, sd <dbl>
  
  

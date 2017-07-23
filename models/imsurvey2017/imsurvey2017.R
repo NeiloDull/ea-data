@@ -43,6 +43,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
 
     , analyze = list(
       list(write = "2017-survey-analysis-tables.txt"),
+      # list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "first heard about EA"                 = function(df) tab(df, first_heard_EA)
         , "cause_import_animal_welfare"        = function(df) tab(df, cause_import_animal_welfare)
@@ -245,6 +246,10 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "referrer3 x student"           = function(df) ctab(df, student, referrer3, na.rm = TRUE)
         , "referrer3 x veg"               = function(df) ctab(df, veg == "Vegetarian" | veg == "Vegan", referrer3, na.rm = TRUE)
         , "referrer3 x year got involved" = function(df) ctab(df, which_year_EA, referrer3, na.rm = TRUE)
+        , "MIRI donations by year"        = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_miri_2016_c, which_year_EA, na.rm = TRUE)
+        , "AMF donations by year"         = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_amf_2016_c, which_year_EA, na.rm = TRUE)
+        , "AMF donations by first heard"  = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_amf_2016_c, first_heard_EA, na.rm = TRUE)
+        , "MIRI donations by first heard" = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_miri_2016_c, first_heard_EA, na.rm = TRUE) 
         , "first heard through local grp" = function(df) tab(df, first_heard_EA == "Local EA group")
         , "first heard local x GWWC mem"  = function(df) ctab(df, member_gwwc, first_heard_EA == "Local EA group")
         , "first heard local x donate"    = function(df) ctab(df, donate_2016_c, first_heard_EA == "Local EA group")
@@ -257,10 +262,12 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "involved_local_EA x local mem" = function(df) ctab(df, involved_local_EA, member_local_group)
         , "member_local x year"           = function(df) ctab(df, member_local_group, which_year_EA)
         , "member_local x donate"         = function(df) ctab(df, donate_2016_c, member_local_group)
-        , "MIRI donations by year"        = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_miri_2016_c, which_year_EA, na.rm = TRUE)
-        , "AMF donations by year"         = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_amf_2016_c, which_year_EA, na.rm = TRUE)
-        , "AMF donations by first heard"  = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_amf_2016_c, first_heard_EA, na.rm = TRUE)
-        , "MIRI donations by first heard" = function(df) ctab(df %>% dplyr::filter(donate_2016_c > 0), donate_miri_2016_c, first_heard_EA, na.rm = TRUE) 
+        , "member_gwwc x involved local"  = function(df) ctab(df, member_gwwc, involved_local_EA)
+        , "city x member_gwwc"            = function(df) ctab(df, city, member_gwwc, top = 10)
+        , "GWWC students donating >=1%"   = function(df) ctab(dplyr::filter(df, student == "Yes"), p_donate_2016 >= 0.01, member_gwwc, na.rm = TRUE)
+        , "GWWC non-students donating >10%" = function(df) ctab(dplyr::filter(df, student == "No"), p_donate_2016 >= 0.1, member_gwwc, na.rm = TRUE)
+        , "GWWC non-students income <$50K donating >10%" = function(df) ctab(dplyr::filter(df, student == "No", income_2016_individual_c < 50000), p_donate_2016 >= 0.1, member_gwwc, na.rm = TRUE)
+        , "GWWC non-students income >=$50K donating >10%" = function(df) ctab(dplyr::filter(df, student == "No", income_2016_individual_c >= 50000), p_donate_2016 >= 0.1, member_gwwc, na.rm = TRUE)
       )
     )
   )

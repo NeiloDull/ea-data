@@ -10,6 +10,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
           df
       }
       , "Drop non-EA"    = function(df) {
+          message(length(na.omit(df$is_ea)), " answered EA question")
           df <- dplyr::filter(df, grepl("Yes", is_ea))
           message(NROW(df), " after before dropping non-EA")
           df
@@ -39,11 +40,32 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
          df$referrer3[!(df$referrer3 %in% unlist(unname(simple_referrer_list)))] <- "Other"
          df
       }
+      , "Make binary cause breakdown" = function(df) {
+				for (variable in get_vars(df, "cause_import")) {
+					df[[paste0(variable, "_b")]] <- swap_by_value(df, variable,
+																						list("I do not think any EA resources should be devoted to this cause" = ":(",
+																								 "I do not think this is a priority, but I am glad some EAs are looking into it" = ":(",
+																								 "Not Considered / Not Sure" = ":(",
+																								 "This cause deserves significant investment but less than the top priorities" = ":(",
+																								 "This cause should be a near-top priority" = ":)",
+																								 "This cause should be the top priority" = ":)"))[[variable]]
+        }
+        df
+      }
+      , "Make gender binary" = function(df) {
+          # I know gender is not a binary, but this is still useful for analysis. My apologies.
+          df$gender_b <- drop_values(df$gender, c("Other", "Prefer Not to Answer"))
+          df
+        }
+      , "Make diet (veg*n vs. other) binary" = function(df) {
+          df$veg_b <- df$veg %in% c("Vegan", "Vegetarian")
+          df
+        }
     )
 
     , analyze = list(
-      list(write = "2017-survey-analysis-tables.txt"),
-      # list(write = "stdout"), # <-- toggle this to print to the screen.
+      # list(write = "2017-survey-analysis-tables.txt"),
+      list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "first heard about EA"                 = function(df) tab(df, first_heard_EA)
         , "cause_import_animal_welfare"        = function(df) tab(df, cause_import_animal_welfare)
@@ -51,28 +73,32 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "cause_import_environmentalism"      = function(df) tab(df, cause_import_environmentalism)
         , "cause_import_ai"                    = function(df) tab(df, cause_import_ai)
         , "cause_import_non_ai_far_future"     = function(df) tab(df, cause_import_non_ai_far_future)
-        , "cause_import_poverty"          = function(df) tab(df, cause_import_poverty)
-        , "cause_import_rationality"      = function(df) tab(df, cause_import_rationality)
-        , "cause_import_politics"         = function(df) tab(df, cause_import_politics)
-        , "cause_import_meta"             = function(df) tab(df, cause_import_meta)
+        , "cause_import_poverty"               = function(df) tab(df, cause_import_poverty)
+        , "cause_import_rationality"           = function(df) tab(df, cause_import_rationality)
+        , "cause_import_politics"              = function(df) tab(df, cause_import_politics)
+        , "cause_import_meta"                  = function(df) tab(df, cause_import_meta)
+				, "binary cause view"                  = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, var)) } }
+				, "binary cause view x gender"         = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("gender_b", var), freq = FALSE, percent = TRUE)) } }
+				, "binary cause view x diet"           = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("veg_b", var), freq = FALSE, percent = TRUE)) } }
         , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
-        , "summarize donations 2015"           = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
-        , "summarize donations 2016"           = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
+        , "diet x cause_import_animal_welfare 2"    = function(df) tab(df, veg %in% c("Vegan", "Vegetarian"), cause_import_animal_welfare_b, na.rm = TRUE, percent = TRUE)
+        , "summarize donations 2015"                = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
+        , "summarize donations 2016"                = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
+        , "donate in 2015 and 2016?"                = function(df) tab(df, donate_2015_c > 0, donate_2016_c > 0)
+        , "median 2015 -> 2016 $ donate increase"   = function(df) { df %>% dplyr::filter(donate_2015_c > 0, donate_2016_c > 0) %>% select(donate_2015_c, donate_2016_c) %>% mutate(increase = donate_2016_c - donate_2015_c) %>% summarise(median(increase)) }
+        , "median 2015 -> 2016 income increase"     = function(df) { df %>% dplyr::filter(income_2015_individual_c > 0, income_2016_individual_c > 0) %>% select(income_2015_individual_c, income_2016_individual_c) %>% mutate(increase = income_2016_individual_c - income_2015_individual_c) %>% summarise(median(increase)) }
+        , "median 2015 -> 2016 % donate increase"   = function(df) { df %>% dplyr::filter(p_donate_2015 > 0, p_donate_2016 > 0) %>% select(p_donate_2015, p_donate_2016) %>% mutate(increase = p_donate_2016 - p_donate_2015) %>% summarise(median(increase)) }
         , "donations x student"                = function(df) ctab(df, donate_2016_c, student)
-        , "summary donations for students"     = function(df) var_summary(dplyr::filter(df, student == "Yes")$donate_2016_c)
-        , "summary donations for non-students" = function(df) var_summary(dplyr::filter(df, student == "No")$donate_2016_c)
+        , "summary donations for students"     = function(df) var_summary(dplyr::filter(df, student == "Yes")$donate_2016_c, verbose = TRUE)
+        , "summary donations for non-students" = function(df) var_summary(dplyr::filter(df, student == "No")$donate_2016_c, verbose = TRUE)
         , "donation quantile 1"                = function(df) quantile(df$donate_2016_c, probs = seq(0.1, 1, len = 10), na.rm = TRUE)
         , "donation quantile 2"                = function(df) quantile(df$donate_2016_c, probs = seq(0.91, 1, len = 10), na.rm = TRUE)
-        , "% donation quantile"                = function(df) quantile(df$p_donate_2016 * 100, probs = seq(0.1, 1, len = 10), na.rm = TRUE)
-        , "summarize % donations 2015"         = function(df) var_summary(df$p_donate_2015 * 100, verbose = TRUE)
-        , "summarize % donations 2016"         = function(df) var_summary(df$p_donate_2016 * 100, verbose = TRUE)
-        , "> 10% donated? 2015"                = function(df) tab(df, p_donate_2015 * 100 > 10)
-        , "> 10% donated for income >10K 2015" = function(df) tab(dplyr::filter(df, income_2015_individual_c > 10000), p_donate_2015 * 100 > 10)
-        , "> 50% donated? 2015"                = function(df) tab(df, p_donate_2015 * 100 > 50)
-        , "> 10% donated? 2016"                = function(df) tab(df, p_donate_2016 * 100 > 10)
-        , "> 10% donated for income >10K 2016" = function(df) tab(dplyr::filter(df, income_2016_individual_c > 10000), p_donate_2016 * 100 > 10)
-        , "> 50% donated? 2016"                = function(df) tab(df, p_donate_2016 * 100 > 50)
-        , "> 10% donated x GWWC"               = function(df) ctab(dplyr::filter(df, income_2016_individual_c > 10000) %>% dplyr::filter(student == "No"), p_donate_2016 * 100 > 10, member_gwwc)
+        , "summarize % donations 2015"         = function(df) var_summary(dplyr::filter(df, income_2015_individual_c > 10000)$p_donate_2015 * 100, verbose = TRUE)
+        , "summarize % donations 2016"         = function(df) var_summary(dplyr::filter(df, income_2016_individual_c > 10000)$p_donate_2016 * 100, verbose = TRUE)
+        , "% donation quantile"                = function(df) quantile(dplyr::filter(df, income_2016_individual_c > 10000)$p_donate_2016 * 100, probs = seq(0.1, 1, len = 10), na.rm = TRUE)
+        , "% donation breakdown"               = function(df) breakdown(dplyr::filter(df, income_2016_individual_c > 10000), "p_donate_2016", c(0.01, 0.02, 0.03, 0.05, 0.1, 0.15, seq(0.2, 0.9, by =  0.1)))
+        , "non-students >= 10% donated x GWWC"     = function(df) tab(dplyr::filter(df, income_2016_individual_c > 10000) %>% dplyr::filter(student == "No"), p_donate_2016 * 100 >= 10, member_gwwc)
+        , "students >= 10% donated x GWWC"     = function(df) tab(dplyr::filter(df, income_2016_individual_c > 10000) %>% dplyr::filter(student == "Yes"), p_donate_2016 * 100 >= 10, member_gwwc)
         , "RC Donations 2015 (Total)"          = function(df) var_summary(df$donate_RC_2015_c, verbose = TRUE)
         , "RC Donations 2016 (Total)"          = function(df) var_summary(df$donate_RC_2016_c, verbose = TRUE)
         , "Did donate to RC 2015?"             = function(df) tab(df, donate_RC_2015_c > 0)

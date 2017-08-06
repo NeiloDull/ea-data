@@ -150,4 +150,5 @@ list("Response_ID" = "id",
     "What_subject(s)_if_any_did_you_specialise_in?_ _[Arts_&_Humanities_(other)]" = "studied_humanities",
     "What_subject(s)_if_any_did_you_specialise_in?_ _[Social_Science_(other)]" = "studied_social_science",
     "What_subject(s)_if_any_did_you_specialise_in?_ _[Sciences_(other)]" = "studied_other_science",
+    "What_broad_career_path_are_you_planning_to_follow?" = "ea_career_type",
     "Your_email_address" = "email_address")

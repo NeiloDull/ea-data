@@ -232,6 +232,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "ea_donate"                     = function(df) tab(df, ea_donate)
         , "ea_volunteer"                  = function(df) tab(df, ea_volunteer)
         , "ea_career"                     = function(df) tab(df, ea_career)
+        , "ea_career_type"                = function(df) tab(df, ea_career_type)
         , "ea_volunteer_hours"            = function(df) tab(df, ea_volunteer_hours)
         , "ea_paid_hours"                 = function(df) tab(df, ea_paid_hours)
         , "EA year"                       = function(df) tab(df, which_year_EA)

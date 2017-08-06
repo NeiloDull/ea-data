@@ -67,8 +67,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
       # list(write = "2017-survey-analysis-tables.txt"),
       list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
-        "first heard about EA"                 = function(df) tab(df, first_heard_EA)
-        , "cause_import_animal_welfare"        = function(df) tab(df, cause_import_animal_welfare)
+        "cause_import_animal_welfare"          = function(df) tab(df, cause_import_animal_welfare)
         , "cause_import_cause_prioritization"  = function(df) tab(df, cause_import_cause_prioritization)
         , "cause_import_environmentalism"      = function(df) tab(df, cause_import_environmentalism)
         , "cause_import_ai"                    = function(df) tab(df, cause_import_ai)
@@ -105,6 +104,10 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "80K Donations 2016 (Total)"         = function(df) var_summary(df$donate_80K_2016_c, verbose = TRUE)
         , "Did donate to 80K 2015?"            = function(df) tab(df, donate_80K_2015_c > 0)
         , "Did donate to 80K 2016?"            = function(df) tab(df, donate_80K_2016_c > 0)
+        , "ACE Donations 2015 (Total)"         = function(df) var_summary(df$donate_ace_2015_c, verbose = TRUE)
+        , "ACE Donations 2016 (Total)"         = function(df) var_summary(df$donate_ace_2016_c, verbose = TRUE)
+        , "Did donate to ACE 2015?"            = function(df) tab(df, donate_ace_2015_c > 0)
+        , "Did donate to ACE 2016?"            = function(df) tab(df, donate_ace_2016_c > 0)
         , "AMF Donations 2015 (Total)"         = function(df) var_summary(df$donate_amf_2015_c, verbose = TRUE)
         , "AMF Donations 2016 (Total)"         = function(df) var_summary(df$donate_amf_2016_c, verbose = TRUE)
         , "Did donate to AMF 2015?"            = function(df) tab(df, donate_amf_2015_c > 0)
@@ -233,9 +236,12 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "ea_paid_hours"                 = function(df) tab(df, ea_paid_hours)
         , "EA year"                       = function(df) tab(df, which_year_EA)
         , "how heard"                     = function(df) tab(df, first_heard_EA)
-        , "which book"                    = function(df) tab(df, first_heard_EA_which_book_blog)
-        , "how heard x year"              = function(df) ctab(df, first_heard_EA, which_year_EA)
-        , "how heard x year (freq)"       = function(df) tab(df, first_heard_EA, which_year_EA)
+        , "First heard EA by year"        = function(df) { for (var in unique(df$which_year_EA)) { message(var); print(tab(dplyr::filter_(df, paste0("which_year_EA == '", var, "'")), first_heard_EA, freq = FALSE, percent = TRUE)) }}
+        , "LessWrong refer over year"     = function(df) tab(df, which_year_EA, first_heard_EA == "LessWrong", na.rm = TRUE, percent = TRUE)
+        , "GWWC refer over year"          = function(df) tab(df, which_year_EA, first_heard_EA == "Giving What We Can", na.rm = TRUE, percent = TRUE)
+        , "80K refer over year"           = function(df) tab(df, which_year_EA, first_heard_EA == "80,000 Hours", na.rm = TRUE, percent = TRUE)
+        , "SSC refer over year"           = function(df) tab(df, which_year_EA, first_heard_EA == "Slate Star Codex", na.rm = TRUE, percent = TRUE)
+        , "Heard EA attributed donations" = function(df) { df %>% group_by(first_heard_EA) %>% summarise(sum(donate_2016_c, na.rm = TRUE)) %>% setNames(., list("first_heard_EA", "sum_donations")) %>% arrange(-sum_donations) }
         , "involved_TLYCS"                = function(df) tab(df, involved_TLYCS)
         , "involved_local_EA"             = function(df) tab(df, involved_local_EA)
         , "involved_lesswrong"            = function(df) tab(df, involved_lesswrong)
@@ -247,6 +253,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "involved EA Global"            = function(df) tab(df, involved_ea_global)
         , "involved Book or Blog"         = function(df) tab(df, involved_book_blog)
         , "involved Swiss"                = function(df) tab(df, involved_swiss)
+        , "Involvment attributed donations" = function(df) { for (var in get_vars(df, "involved")) { message(var); print(sum(df[df[[var]] == "Yes",]$donate_2016_c, na.rm = TRUE)) }}
         , "member_ea_fb"                  = function(df) tab(df, member_ea_fb)
         , "member_ea_forum"               = function(df) tab(df, member_ea_forum)
         , "member_gwwc"                   = function(df) tab(df, member_gwwc)

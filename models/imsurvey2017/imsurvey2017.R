@@ -242,6 +242,9 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "80K refer over year"           = function(df) tab(df, which_year_EA, first_heard_EA == "80,000 Hours", na.rm = TRUE, percent = TRUE)
         , "SSC refer over year"           = function(df) tab(df, which_year_EA, first_heard_EA == "Slate Star Codex", na.rm = TRUE, percent = TRUE)
         , "Heard EA attributed donations" = function(df) { df %>% group_by(first_heard_EA) %>% summarise(sum(donate_2016_c, na.rm = TRUE)) %>% setNames(., list("first_heard_EA", "sum_donations")) %>% arrange(-sum_donations) }
+        , "Heard EA attributed donations" = function(df) { df %>% group_by(first_heard_EA) %>% summarise(sum(donate_2016_c, na.rm = TRUE)) %>% setNames(., list("first_heard_EA", "sum_donations")) %>% arrange(-sum_donations) }
+        , "Heard EA attributed donors"    = function(df) tab(df, first_heard_EA, donate_2016_c > 0, percent = TRUE, na.rm = TRUE)
+        , "Heard EA attributed career"    = function(df) tab(df, first_heard_EA, ea_career, percent = TRUE, na.rm = TRUE)
         , "involved_TLYCS"                = function(df) tab(df, involved_TLYCS)
         , "involved_local_EA"             = function(df) tab(df, involved_local_EA)
         , "involved_lesswrong"            = function(df) tab(df, involved_lesswrong)
@@ -253,7 +256,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "involved EA Global"            = function(df) tab(df, involved_ea_global)
         , "involved Book or Blog"         = function(df) tab(df, involved_book_blog)
         , "involved Swiss"                = function(df) tab(df, involved_swiss)
-        , "Involvment attributed donations" = function(df) { for (var in get_vars(df, "involved")) { message(var); print(sum(df[df[[var]] == "Yes",]$donate_2016_c, na.rm = TRUE)) }}
+        , "Involvment attributed"         = function(df) { for (var in get_vars(df, "involved")) { message(var); cat("N: ", sum(df[[var]] == "Yes", na.rm = TRUE), "\n", "Donations: ", sum(df[df[[var]] == "Yes",]$donate_2016_c, na.rm = TRUE), "\n", "Donors: ", sum(df[df[[var]] == "Yes",]$donate_2016_c > 0, na.rm = TRUE), "\n", "Careers: ", sum(df[df[[var]] == "Yes",]$ea_career == "Yes", na.rm = TRUE), "\n") }}
         , "member_ea_fb"                  = function(df) tab(df, member_ea_fb)
         , "member_ea_forum"               = function(df) tab(df, member_ea_forum)
         , "member_gwwc"                   = function(df) tab(df, member_gwwc)

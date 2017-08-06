@@ -64,7 +64,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
     )
 
     , analyze = list(
-      # list(write = "2017-survey-analysis-tables.txt"),
+      # list(write = "data/2017-survey-analysis-tables.txt"),
       list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "cause_import_animal_welfare"          = function(df) tab(df, cause_import_animal_welfare)

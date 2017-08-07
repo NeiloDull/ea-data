@@ -61,6 +61,25 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
           df$veg_b <- df$veg %in% c("Vegan", "Vegetarian")
           df
         }
+      , "Donations by cause area" = function(df) {
+					orgs_by_cause <- list("meta" = c("RC", "80K", "CFAR", "CEA", "CS", "EF", "TLYCS"),
+																"cause_pri" = c("ACE", "FRI", "GW"),
+																"poverty" = c("AMF", "DTW", "END", "GD", "MC", "SCI", "Sightsavers"),
+																"animal_rights" = c("faunalytics", "GF", "MFA", "SP", "THL"),
+																"far_future" = c("FHI", "MIRI"))
+
+					for (year in c("2015", "2016")) {
+						for (cause in names(orgs_by_cause)) {
+							out <- paste(orgs_by_cause[[cause]], year, "c", sep = "_") %>%
+											 get_vars(df, ., ignore.case = TRUE) %/>%
+											 first %/>%
+											 (function(x) { df[[x]] }) %_>%
+											 fn(x, y, nas_are_zeros(x) + nas_are_zeros(y))
+							df[[paste("donate", cause, year, "c", sep = "_")]] <- out
+						}
+					}
+					df
+        }
     )
 
     , analyze = list(
@@ -192,13 +211,26 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "TLYCS Donations 2016 (Total)"  = function(df) var_summary(df$donate_tlycs_2016_c, verbose = TRUE)
         , "Did donate to TLYCS 2015?"     = function(df) tab(df, donate_tlycs_2015_c > 0)
         , "Did donate to TLYCS 2016?"     = function(df) tab(df, donate_tlycs_2016_c > 0)
-        , "Did donate to AMF x refer"     = function(df) ctab(df, donate_amf_2016_c > 0, referrer3)
-        , "Did donate to DTW x refer"     = function(df) ctab(df, donate_dtw_2016_c > 0, referrer3)
-        , "Did donate to SCI x refer"     = function(df) ctab(df, donate_sci_2016_c > 0, referrer3)
-        , "Did donate to GD x refer"      = function(df) ctab(df, donate_gd_2016_c > 0, referrer3)
-        , "Did donate to ACE x refer"     = function(df) ctab(df, donate_ace_2016_c > 0, referrer3)
-        , "Did donate to MIRI x refer"    = function(df) ctab(df, donate_miri_2016_c > 0, referrer3)
-        , "Did donate to MFA x refer"     = function(df) ctab(df, donate_mfa_2016_c > 0, referrer3)
+        , "Meta Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_meta_2015_c, verbose = TRUE)
+        , "Meta Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_meta_2016_c, verbose = TRUE)
+        , "Did donate to Meta Cause 2015?"     = function(df) tab(df, donate_meta_2015_c > 0)
+        , "Did donate to Meta Cause 2016?"     = function(df) tab(df, donate_meta_2016_c > 0)
+        , "Global Poverty Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_poverty_2015_c, verbose = TRUE)
+        , "Global Poverty Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_poverty_2016_c, verbose = TRUE)
+        , "Did donate to Global Poverty Cause 2015?"     = function(df) tab(df, donate_poverty_2015_c > 0)
+        , "Did donate to Global Poverty Cause 2016?"     = function(df) tab(df, donate_poverty_2016_c > 0)
+        , "Cause Prioritization Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_cause_pri_2015_c, verbose = TRUE)
+        , "Cause Prioritization Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_pri_2016_c, verbose = TRUE)
+        , "Did donate to Cause Prioritization Cause 2015?"     = function(df) tab(df, donate_cause_pri_2015_c > 0)
+        , "Did donate to Cause Prioritization Cause 2016?"     = function(df) tab(df, donate_cause_pri_2016_c > 0)
+        , "Animal Welfare Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_far_future_2015_c, verbose = TRUE)
+        , "Animal Welfare Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_far_future_2016_c, verbose = TRUE)
+        , "Did donate to Animal Welfare Cause 2015?"     = function(df) tab(df, donate_far_future_2015_c > 0)
+        , "Did donate to Animal Welfare Cause 2016?"     = function(df) tab(df, donate_far_future_2016_c > 0)
+        , "Far Future Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_animal_rights_2015_c, verbose = TRUE)
+        , "Far Future Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_animal_rights_2016_c, verbose = TRUE)
+        , "Did donate to Far Future Cause 2015?"     = function(df) tab(df, donate_animal_rights_2015_c > 0)
+        , "Did donate to Far Future Cause 2016?"     = function(df) tab(df, donate_animal_rights_2016_c > 0)
         , "age"                           = function(df) tab(df, age)
         , "gender"                        = function(df) tab(df, gender)
         , "race_white"                    = function(df) tab(df, race_white)

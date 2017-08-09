@@ -44,6 +44,13 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
                           "Zurich" = "Zürich")
         swap_by_value(df, "city", swap_list)
       }
+      , "Clean up country" = function(df) {
+        swap_list <- list("USA" = "United States",
+                          "UK" = "United Kingdom",
+                          "Hong Kong SAR China" = "China",
+                          "Question_time:_F4" = NA)
+        swap_by_value(df, "country", swap_list)
+      }
       , "Make % inc donate [2015]" = function(df) {
           p <- df$donate_2015_c / df$income_2015_individual_c
           p[is.infinite(p)] <- NA

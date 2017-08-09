@@ -16,6 +16,34 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
           df
       }
       , "Create age"     = function(df) { df$age <- 2017 - as.numeric(df$birth_year); df }
+      , "Clean up city"  = function(df) {
+        swap_list <- list("New York" = "New York City",
+                          "Berkeley" = "SF Bay",
+                          "San Francisco" = "SF Bay",
+                          "Boston" = "Boston / Cambridge",
+                          "Boston, MA" = "Boston / Cambridge",
+                          "Cambridge, MA" = "Boston / Cambridge",
+                          "Berkeley, CA" = "SF Bay",
+                          "Berkeley, California" = "SF Bay",
+                          "Oakland, CA" = "SF Bay",
+                          "Mountain View" = "SF Bay",
+                          "Menlo Park" = "SF Bay",
+                          "NYC" = "New York City",
+                          "Brooklyn" = "New York City",
+                          "Brooklyn, NY" = "Brooklyn",
+                          "Lansing, MI" = "Lansing",
+                          "Manchester, NH" = "Manchester",
+                          "Ithaca, NY" = "Ithaca",
+                          "Baltimore, MD" = "Baltimore",
+                          "Ann Arbor, MI" = "Ann Arbor",
+                          "Seattle, WA" = "Seattle",
+                          "Princeton, NJ" = "Princeton",
+                          "Portland, OR" = "Portland",
+                          "Madison, WI" = "Madison",
+                          "Sao Paulo" = "São Paulo",
+                          "Zurich" = "Zürich")
+        swap_by_value(df, "city", swap_list)
+      }
       , "Make % inc donate [2015]" = function(df) {
           p <- df$donate_2015_c / df$income_2015_individual_c
           p[is.infinite(p)] <- NA
@@ -263,6 +291,14 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "ea_career_type"                = function(df) tab(df, ea_career_type)
         , "ea_volunteer_hours"            = function(df) tab(df, ea_volunteer_hours)
         , "ea_paid_hours"                 = function(df) tab(df, ea_paid_hours)
+        , "gender x poverty donations 2015" = function(df) ctab(df, filter(donate_2015_c > 0), donate_cause_poverty_2015_c, gender_b)
+        , "gender x poverty donations 2016" = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_poverty_2016_c, gender_b)
+        , "gender x AR donations 2016"    = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_animal_rights_2016_c, gender_b)
+        , "donations x ETG 2015"          = function(df) ctab(df, filter(student == "No"), donate_2015_c, ea_career_type == "Earning to give")
+        , "donations x ETG 2016"          = function(df) ctab(df, filter(student == "No"), donate_2016_c, ea_career_type == "Earning to give")
+        , "ETG donations x act now-later 2016" = function(df) ctab(df, filters(student == "No", ea_career_type == "Earning to give"), donate_2016_c, act_now_or_later)
+        , "ETG donations 2015"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2015_c, verbose = TRUE)
+        , "ETG donations 2016"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2016_c, verbose = TRUE)
         , "EA year"                       = function(df) tab(df, which_year_EA)
         , "how heard"                     = function(df) tab(df, first_heard_EA)
         , "First heard EA by year"        = function(df) { for (var in unique(df$which_year_EA)) { message(var); print(tab(dplyr::filter_(df, paste0("which_year_EA == '", var, "'")), first_heard_EA, freq = FALSE, percent = TRUE)) }}

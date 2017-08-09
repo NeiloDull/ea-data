@@ -333,6 +333,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "GWWC non-students donating >10% (2015 or 2016)" = function(df) tab(df, filters(student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017)), member_gwwc, p_donate_2015 >= 0.1 | p_donate_2016 >= 0.1, na.rm = TRUE, percent = TRUE)
         , "GWWC non-students donating >10% (2015 - 2016 average)" = function(df) tab(df, filters(student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017)), member_gwwc, p_donate_2015 + p_donate_2016 >= 0.2, na.rm = TRUE, percent = TRUE)
         , "GWWC pledge adherence by year" = function(df) tab(df, filters(income_2016_individual_c > 10000, student == "No", member_gwwc == "Yes", which_year_EA %not_in% c(2016, 2017)), p_donate_2015 >= 0.1, p_donate_2016 >= 0.1, na.rm = TRUE, percent = TRUE)
+				, "binary cause view x GWWC"      = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("member_gwwc", var), percent = TRUE)) } }
+        , "cause donations x GWWC"        = function(df) { for (var in get_vars(df, "donate_cause_.+2016")) { print(tab_(df, list(lazyeval::as.lazy(paste(var, "> 0")), "member_gwwc"), na.rm = TRUE)) } }
         , "Number of orgs people donate to" = function(df) { get_vars(df, "donate_.+2016_c") %>% grep("cause", ., invert = TRUE, value = TRUE) %>% df[, .] %>% apply(., 1, function(x) x > 0) %>% apply(., 2, sum) %>% table }
       )
     )

@@ -15,20 +15,29 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
           message(NROW(df), " after before dropping non-EA")
           df
       }
-      , "Create age"     = function(df) { df$age <- 2017 - as.numeric(df$birth_year); df }
+      , "Make age"     = function(df) {
+          df$age <- as.character(2017 - as.numeric(df$birth_year))
+          df <- swap_by_value(df, "age", list("0" = NA, "2" = NA))
+          df$age <- as.numeric(df$age)
+          df
+      }
       , "Clean up city"  = function(df) {
         swap_list <- list("New York" = "New York City",
                           "Berkeley" = "SF Bay",
                           "San Francisco" = "SF Bay",
                           "Boston" = "Boston / Cambridge",
+                          "Boston (Somerville)" = "Boston / Cambridge",
                           "Boston, MA" = "Boston / Cambridge",
                           "Cambridge, MA" = "Boston / Cambridge",
+                          "chicago" = "Chicago",
                           "Berkeley, CA" = "SF Bay",
                           "Berkeley, California" = "SF Bay",
                           "Oakland, CA" = "SF Bay",
                           "Mountain View" = "SF Bay",
                           "Menlo Park" = "SF Bay",
                           "NYC" = "New York City",
+                          "New york city" = "New York City",
+                          "new york city" = "New York City",
                           "Brooklyn" = "New York City",
                           "Brooklyn, NY" = "Brooklyn",
                           "Lansing, MI" = "Lansing",
@@ -37,11 +46,17 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
                           "Baltimore, MD" = "Baltimore",
                           "Ann Arbor, MI" = "Ann Arbor",
                           "Seattle, WA" = "Seattle",
+                          "seattle" = "Seattle",
                           "Princeton, NJ" = "Princeton",
                           "Portland, OR" = "Portland",
                           "Madison, WI" = "Madison",
                           "Sao Paulo" = "São Paulo",
-                          "Zurich" = "Zürich")
+                          "Washington, D.C." = "Washington, DC",
+                          "Washington DC" = "Washington, DC",
+                          "Washington D.C." = "Washington, DC",
+                          "Washington" = "Washington, DC",
+                          "Zurich" = "Zürich",
+                          "zurich" = "Zürich")
         swap_by_value(df, "city", swap_list)
       }
       , "Clean up country" = function(df) {
@@ -100,7 +115,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
 					orgs_by_cause <- list("meta" = c("RC", "80K", "CFAR", "CEA", "CS", "EF", "TLYCS"),
 																"cause_pri" = c("ACE", "FRI", "GW"),
 																"poverty" = c("AMF", "DTW", "END", "GD", "MC", "SCI", "Sightsavers"),
-																"animal_rights" = c("faunalytics", "GF", "MFA", "SP", "THL"),
+																"animal_welfare" = c("faunalytics", "GF", "MFA", "SP", "THL"),
 																"far_future" = c("FHI", "MIRI"))
 
 					for (year in c("2015", "2016")) {
@@ -258,14 +273,14 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "Cause Prioritization Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_cause_pri_2016_c, verbose = TRUE)
         , "Did donate to Cause Prioritization Cause 2015?"     = function(df) tab(df, donate_cause_cause_pri_2015_c > 0)
         , "Did donate to Cause Prioritization Cause 2016?"     = function(df) tab(df, donate_cause_cause_pri_2016_c > 0)
-        , "Animal Welfare Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_cause_far_future_2015_c, verbose = TRUE)
-        , "Animal Welfare Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_far_future_2016_c, verbose = TRUE)
-        , "Did donate to Animal Welfare Cause 2015?"     = function(df) tab(df, donate_cause_far_future_2015_c > 0)
-        , "Did donate to Animal Welfare Cause 2016?"     = function(df) tab(df, donate_cause_far_future_2016_c > 0)
-        , "Far Future Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_cause_animal_rights_2015_c, verbose = TRUE)
-        , "Far Future Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_animal_rights_2016_c, verbose = TRUE)
-        , "Did donate to Far Future Cause 2015?"     = function(df) tab(df, donate_cause_animal_rights_2015_c > 0)
-        , "Did donate to Far Future Cause 2016?"     = function(df) tab(df, donate_cause_animal_rights_2016_c > 0)
+        , "Animal Welfare Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_cause_animal_welfare_2015_c, verbose = TRUE)
+        , "Animal Welfare Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_animal_welfare_2016_c, verbose = TRUE)
+        , "Did donate to Animal Welfare Cause 2015?"     = function(df) tab(df, donate_cause_animal_welfare_2015_c > 0)
+        , "Did donate to Animal Welfare Cause 2016?"     = function(df) tab(df, donate_cause_animal_welfare_2016_c > 0)
+        , "Far Future Cause Donations 2015 (Total)"  = function(df) var_summary(df$donate_cause_far_future_2015_c, verbose = TRUE)
+        , "Far Future Cause Donations 2016 (Total)"  = function(df) var_summary(df$donate_cause_far_future_2016_c, verbose = TRUE)
+        , "Did donate to Far Future Cause 2015?"     = function(df) tab(df, donate_cause_far_future_2015_c > 0)
+        , "Did donate to Far Future Cause 2016?"     = function(df) tab(df, donate_cause_far_future_2016_c > 0)
         , "age"                           = function(df) tab(df, age)
         , "gender"                        = function(df) tab(df, gender)
         , "race_white"                    = function(df) tab(df, race_white)
@@ -300,7 +315,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "ea_paid_hours"                 = function(df) tab(df, ea_paid_hours)
         , "gender x poverty donations 2015" = function(df) ctab(df, filter(donate_2015_c > 0), donate_cause_poverty_2015_c, gender_b)
         , "gender x poverty donations 2016" = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_poverty_2016_c, gender_b)
-        , "gender x AR donations 2016"    = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_animal_rights_2016_c, gender_b)
+        , "gender x AR donations 2016"    = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_animal_welfare_2016_c, gender_b)
         , "donations x ETG 2015"          = function(df) ctab(df, filter(student == "No"), donate_2015_c, ea_career_type == "Earning to give")
         , "donations x ETG 2016"          = function(df) ctab(df, filter(student == "No"), donate_2016_c, ea_career_type == "Earning to give")
         , "ETG donations x act now-later 2016" = function(df) ctab(df, filters(student == "No", ea_career_type == "Earning to give"), donate_2016_c, act_now_or_later)

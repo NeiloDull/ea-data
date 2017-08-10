@@ -150,6 +150,16 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
 				, "binary cause view x diet"           = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("veg_b", var), freq = FALSE, percent = TRUE)) } }
         , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
         , "diet x cause_import_animal_welfare 2"    = function(df) tab(df, veg %in% c("Vegan", "Vegetarian"), cause_import_animal_welfare_b, na.rm = TRUE, percent = TRUE)
+        , "city x cause area"                       = function(df) ctab(df, cause_import_ai_b, city == "SF Bay", na.rm = TRUE)
+        , "city x cause area 2"                     = function(df) {
+                                                        top_ten_cities <- tab(df, city, top = 10) %>% names %>% .[-1]
+                                                        for (city in top_ten_cities) {
+                                                          message(city)
+                                                          for (var in get_vars(df, "cause_import.+_b")) {
+                                                            df %>% dplyr::filter_(paste0("city == '", city, "'")) %>% tab_(., var) %>% print(.)
+                                                          }
+                                                        }
+                                                      }
         , "summarize donations 2015"                = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
         , "summarize donations 2016"                = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
         , "donate in 2015 and 2016?"                = function(df) tab(df, donate_2015_c > 0, donate_2016_c > 0)

@@ -1,5 +1,5 @@
 list(
-  import = list(file = "data/imsurvey-longitudinal.csv"),
+  import = list(file = "data/2015/imsurvey-longitudinal.csv"),
   analyze = list(
     "involved_TLYCS"                  = function(df) ctab(df, involved_TLYCS.x, involved_TLYCS.y)
     , "involved_local_EA"             = function(df) ctab(df, involved_local_EA.x, involved_local_EA.y)

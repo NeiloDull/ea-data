@@ -1,6 +1,6 @@
 message("...Loading data")
-data2014 <- read.csv("data/imsurvey2014-anonymized.csv")
-data2015 <- read.csv("data/imsurvey2015-anonymized-renamed-currencied.csv")
+data2014 <- read.csv("data/2014/imsurvey2014-anonymized.csv")
+data2015 <- read.csv("data/2015/imsurvey2015-anonymized-renamed-currencied.csv")
 
 message("...Renaming 2014 variables")
 lookup <- source("models/dev/imsurvey2014/transform_lookups.R")$value
@@ -26,4 +26,4 @@ message("...Merging dataframes")
 merged <- merge(data2014, data2015, by = "ea_id")
 
 message("...Writing to CSV")
-write.csv(merged, "data/imsurvey-longitudinal.csv")
+write.csv(merged, "data/2015/imsurvey-longitudinal.csv")

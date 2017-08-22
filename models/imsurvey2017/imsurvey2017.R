@@ -1,6 +1,6 @@
 Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_referrer_list) {
   list(
-    import = list(file = "data/imsurvey2017-anonymized-currencied.csv"),
+    import = list(file = "data/2017/imsurvey2017-anonymized-currencied.csv"),
 
     data   = list(
       "Drop insincere"   = function(df) {
@@ -133,8 +133,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
     )
 
     , analyze = list(
-      # list(write = "data/2017-survey-analysis-tables.txt"),
-      list(write = "stdout"), # <-- toggle this to print to the screen.
+      list(write = "data/2017/2017-survey-analysis-tables.txt"),
+      # list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "cause_import_animal_welfare"          = function(df) tab(df, cause_import_animal_welfare)
         , "cause_import_cause_prioritization"  = function(df) tab(df, cause_import_cause_prioritization)

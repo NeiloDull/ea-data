@@ -1,5 +1,5 @@
 options("stringsAsFactors" = FALSE)
-data <- read.csv("data/imsurvey2015-anonymized.csv")
+data <- read.csv("data/2015/imsurvey2015-anonymized.csv")
 renames <- source("models/dev/imsurvey2015/variable_names.R")$value
 data <- plyr::rename(data, renames)
 
@@ -57,4 +57,4 @@ data$donate_2014_c <- get_currency(data, "donate_2014", "currency_donate_1", "cu
 data$income_2014_c <- get_currency(data, "income_2014", "currency_income_1", "currency_income_2")
 data$donated_lifetime_c <- get_currency(data, "donated_lifetime", "currency_lifetime_1", "currency_lifetime_2")
 
-write.csv(data, "data/imsurvey2015-anonymized-renamed-currencied.csv")
+write.csv(data, "data/2015/imsurvey2015-anonymized-renamed-currencied.csv")

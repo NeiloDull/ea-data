@@ -1,6 +1,6 @@
 Ramd::define("variable_names", function(variable_names) {
-  data2017_ <- c("data/ea-survey-2017-confidential-no-anon.csv",
-                 "data/ea-survey-2017-donations-only-confidential-no-anon.csv") %/>%
+  data2017_ <- c("data/2017/ea-survey-2017-confidential-no-anon.csv",
+                 "data/2017/ea-survey-2017-donations-only-confidential-no-anon.csv") %/>%
                  function(x) { suppressWarnings(readr::read_csv(x)) }
   data2017 <- data2017_ %/>% function(df) {
      suppressWarnings(suppressMessages(plyr::rename(df, variable_names))) }
@@ -17,6 +17,6 @@ Ramd::define("variable_names", function(variable_names) {
   data2017$ea_id <- data2017$email_address %/>% digest::digest %>% unlist
   data2017$email_address <- NULL
   message("Writing out...")
-  readr::write_csv(data2017, "data/imsurvey2017-anonymized.csv")
+  readr::write_csv(data2017, "data/2017/imsurvey2017-anonymized.csv")
   message("Written...")
 })

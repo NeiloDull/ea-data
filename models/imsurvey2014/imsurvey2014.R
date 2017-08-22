@@ -1,6 +1,6 @@
 define("transform_lookups", "transform_functions", function(transform_lookup, transform_functions) {
   list(
-    import = list(file = "data/imsurvey2014-anonymized.csv")
+    import = list(file = "data/2014/imsurvey2014-anonymized.csv")
     , data = list(
       "Rename variables sensibly"       = list(renamer, transform_lookup$renames)
       ,"Make age numeric"               = list(column_transformation(as.numeric), 'age')

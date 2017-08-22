@@ -1,5 +1,5 @@
 options("stringsAsFactors" = FALSE)
-data <- readr::read_csv("data/imsurvey2017-anonymized.csv")
+data <- readr::read_csv("data/2017/imsurvey2017-anonymized.csv")
 
 first_pass <- data$currency_donate_1 %/>%
                 fn(x, strsplit(x, " - ")[[c(1, 1)]]) %/>%
@@ -46,4 +46,4 @@ for (var in currency_vars) {
   data[[paste0(var, "_c")]] <- unname(unlist(Map(to_usd, data[[var]], currency_map)))
 }
 
-readr::write_csv(data, "data/imsurvey2017-anonymized-currencied.csv")
+readr::write_csv(data, "data/2017/imsurvey2017-anonymized-currencied.csv")

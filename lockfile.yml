@@ -45,3 +45,6 @@ packages:
     name: checkr
     version: 0.1.4
     repo: peterhurford/checkr
+  -
+    name: ggplot2
+    version: 2.2.1

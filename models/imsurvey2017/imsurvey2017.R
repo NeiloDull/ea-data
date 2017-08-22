@@ -123,8 +123,10 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
 							out <- paste(orgs_by_cause[[cause]], year, "c", sep = "_") %>%
 											 get_vars(df, ., ignore.case = TRUE) %/>%
 											 first %/>%
-											 (function(x) { df[[x]] }) %_>%
-											 fn(x, y, nas_are_zeros(x) + nas_are_zeros(y))
+											 (function(x) { df[[x]] }) %/>%
+                       fn(x, sum(x, na.rm = TRUE)) %_>%
+                       sum
+              # if (identical(cause, "animal_welfare")) { browser() }
 							df[[paste("donate", "cause", cause, year, "c", sep = "_")]] <- out
 						}
 					}
@@ -133,8 +135,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
     )
 
     , analyze = list(
-      list(write = "data/2017/2017-survey-analysis-tables.txt"),
-      # list(write = "stdout"), # <-- toggle this to print to the screen.
+      # list(write = "data/2017/2017-survey-analysis-tables.txt"),
+      list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "cause_import_animal_welfare"          = function(df) tab(df, cause_import_animal_welfare)
         , "cause_import_cause_prioritization"  = function(df) tab(df, cause_import_cause_prioritization)
@@ -292,6 +294,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "Did donate to Far Future Cause 2015?"     = function(df) tab(df, donate_cause_far_future_2015_c > 0)
         , "Did donate to Far Future Cause 2016?"     = function(df) tab(df, donate_cause_far_future_2016_c > 0)
         , "age"                           = function(df) tab(df, age)
+        , "age plot"                      = function(df) { ggplot(data = df, aes(df$age)) + geom_histogram(color="black", fill="lightblue") + scale_x_continuous("Age") + ggtitle("Ages of EAs") }
         , "gender"                        = function(df) tab(df, gender)
         , "race_white"                    = function(df) tab(df, race_white)
         , "race_black"                    = function(df) tab(df, race_black)

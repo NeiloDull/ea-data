@@ -123,10 +123,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
 							out <- paste(orgs_by_cause[[cause]], year, "c", sep = "_") %>%
 											 get_vars(df, ., ignore.case = TRUE) %/>%
 											 first %/>%
-											 (function(x) { df[[x]] }) %/>%
-                       fn(x, sum(x, na.rm = TRUE)) %_>%
-                       sum
-              # if (identical(cause, "animal_welfare")) { browser() }
+											 (function(x) { df[[x]] }) %_>%
+                       fn(x, y, nas_are_zeros(x) + nas_are_zeros(y))
 							df[[paste("donate", "cause", cause, year, "c", sep = "_")]] <- out
 						}
 					}

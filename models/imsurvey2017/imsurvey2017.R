@@ -163,9 +163,13 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "summarize donations 2015"                = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
         , "summarize donations 2016"                = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
         , "donate in 2015 and 2016?"                = function(df) tab(df, donate_2015_c > 0, donate_2016_c > 0)
+        , "info on donating in both years?"         = function(df) tab(df, !is.na(donate_2015_c), !is.na(donate_2016_c))
         , "median 2015 -> 2016 $ donate increase"   = function(df) { df %>% dplyr::filter(donate_2015_c > 0, donate_2016_c > 0) %>% select(donate_2015_c, donate_2016_c) %>% mutate(increase = donate_2016_c - donate_2015_c) %>% summarise(median(increase)) }
         , "median 2015 -> 2016 income increase"     = function(df) { df %>% dplyr::filter(income_2015_individual_c > 0, income_2016_individual_c > 0) %>% select(income_2015_individual_c, income_2016_individual_c) %>% mutate(increase = income_2016_individual_c - income_2015_individual_c) %>% summarise(median(increase)) }
         , "median 2015 -> 2016 % donate increase"   = function(df) { df %>% dplyr::filter(p_donate_2015 > 0, p_donate_2016 > 0) %>% select(p_donate_2015, p_donate_2016) %>% mutate(increase = p_donate_2016 - p_donate_2015) %>% summarise(median(increase)) }
+        , "mean 2015 -> 2016 $ donate increase"   = function(df) { df %>% dplyr::filter(donate_2015_c > 0, donate_2016_c > 0) %>% select(donate_2015_c, donate_2016_c) %>% mutate(increase = donate_2016_c - donate_2015_c) %>% summarise(mean(increase)) }
+        , "mean 2015 -> 2016 income increase"     = function(df) { df %>% dplyr::filter(income_2015_individual_c > 0, income_2016_individual_c > 0) %>% select(income_2015_individual_c, income_2016_individual_c) %>% mutate(increase = income_2016_individual_c - income_2015_individual_c) %>% summarise(mean(increase)) }
+        , "mean 2015 -> 2016 % donate increase"   = function(df) { df %>% dplyr::filter(p_donate_2015 > 0, p_donate_2016 > 0) %>% select(p_donate_2015, p_donate_2016) %>% mutate(increase = p_donate_2016 - p_donate_2015) %>% summarise(mean(increase)) }
         , "donations x student"                = function(df) ctab(df, donate_2016_c, student)
         , "summary donations for students"     = function(df) var_summary(dplyr::filter(df, student == "Yes")$donate_2016_c, verbose = TRUE)
         , "summary donations for non-students" = function(df) var_summary(dplyr::filter(df, student == "No")$donate_2016_c, verbose = TRUE)

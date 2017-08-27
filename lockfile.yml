@@ -35,11 +35,11 @@ packages:
     version: 0.4.3
   -
     name: surveytools2
-    version: 0.5.6
+    version: "0.6"
     repo: peterhurford/surveytools2
   -
     name: funtools
-    version: 0.0.0.9003
+    version: 0.0.0.9004
     repo: peterhurford/funtools
   -
     name: checkr

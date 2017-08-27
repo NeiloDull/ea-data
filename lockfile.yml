@@ -1,8 +1,9 @@
 packages:
   -
     name: stagerunner
-    version: 0.5.3
-    repo: syberia/stagerunner
+    version: 0.5.7
+    dir: ~/dev/stagerunner
+    # repo: syberia/stagerunner
   -
     name: Ramd
     version: 0.3.8

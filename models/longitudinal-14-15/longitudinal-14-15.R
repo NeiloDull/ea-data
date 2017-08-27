@@ -31,6 +31,6 @@ list(
     , "donate_sci"                    = function(df) ctab(df, donate_sci.x, donate_sci.y)
     , "donate_vo"                     = function(df) ctab(df, donate_vo.x, donate_vo.y)
     , "donation delta"                = function(df) var_summary(df$donate_2014_c - df$donate_2013_c)
-    , "veg"                           = function(df) ctab(df, veg.y, veg.x, na.rm = TRUE)
+    , "veg"                          = function(df) ctab(df, veg.y, veg.x, na.rm = TRUE)
   )
 )

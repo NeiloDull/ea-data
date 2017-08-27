@@ -11,8 +11,8 @@ define("transform_lookups", function(transform_lookup) {
         df <- df[, transform_lookup$renames]
         df
       }
-      ,"Make age numeric"               = function(df) { df$age <- as.numeric(df$age); df }
-      ,"Unlist ids"                     = function(df) { df$id <- unlist(df$id); df }
+      ,"Make age numeric"               = function(df) { df$age %<>% as.numeric; df }
+      ,"Unlist ids"                     = function(df) { df$id %<>% unlist; df }
       ,"Drop NA ids"                    = function(df) { df[!is.na(df$id), ] }
       ,"Clean values in meta-ethics"    = function(df) { swap_by_value(df, "metaethics", list("Consequentialist/utilitarian" = "consequentialist", "Deontology" = "deontology", "Virtue ethics" = "virtue", "Other" = "other", "No opinion, or not familiar with these terms" = "other")) }
       ,"Make reducitarian variable"     = function(df) { df$reducetarian <- ifelse(df$diet == 'Meat-eating', FALSE, TRUE); df }
@@ -31,8 +31,8 @@ define("transform_lookups", function(transform_lookup) {
       ,"Impute career responses"        = function(df) swap_by_ids(df, "career", transform_lookup$career_transform)
       ,"Impute donate responses"        = function(df) swap_by_ids(df, "donate_2013_c", transform_lookup$donate_transform)
       ,"Impute income responses"        = function(df) swap_by_ids(df, "income_2013_c", transform_lookup$income_transform)
-      ,"Make income numeric"            = function(df) { df$income_2013_c <- as.numeric(df$income_2013_c); df }
-      ,"Make donations numeric"         = function(df) { df$donate_2013_c <- as.numeric(df$donate_2013_c); df }
+      ,"Make income numeric"            = function(df) { df$income_2013_c %<>% as.numeric; df }
+      ,"Make donations numeric"         = function(df) { df$donate_2013_c %<>% as.numeric; df }
       ,"Make p_inc_donate"              = function(df) {
           p <- df$donate_2013_c / df$income_2013_c * 100
           p <- ifelse(is.infinite(p) | p == "NaN", NA, p)

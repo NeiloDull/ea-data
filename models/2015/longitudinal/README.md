@@ -5,7 +5,7 @@ Compare 2014 to 2015 data.
 Run with:
 
 ```R
-run("longitudinal-14-15")
+run("2015/longitudinal")
 ```
 
 R must be opened from within the root directory (i.e., the `ea-data` folder).
@@ -15,7 +15,7 @@ R must be opened from within the root directory (i.e., the `ea-data` folder).
 Create CSV with
 
 ```R
-source("models/longitudinal-14-15/knit.R")
+source("models/2015/longitudinal/knit.R")
 ```
 
 if not already provided.

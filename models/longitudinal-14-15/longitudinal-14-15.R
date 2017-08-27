@@ -1,5 +1,5 @@
 list(
-  import = list(file = "data/imsurvey-longitudinal.csv"),
+  import = list(file = "data/2015/imsurvey-longitudinal.csv"),
   analyze = list(
     "involved_TLYCS"                  = function(df) ctab(df, involved_TLYCS.x, involved_TLYCS.y)
     , "involved_local_EA"             = function(df) ctab(df, involved_local_EA.x, involved_local_EA.y)
@@ -31,6 +31,6 @@ list(
     , "donate_sci"                    = function(df) ctab(df, donate_sci.x, donate_sci.y)
     , "donate_vo"                     = function(df) ctab(df, donate_vo.x, donate_vo.y)
     , "donation delta"                = function(df) var_summary(df$donate_2014_c - df$donate_2013_c)
-    , "veg"                           = function(df) ctab(df, veg.y, veg.x, na.rm = TRUE)
+    , "veg"                          = function(df) ctab(df, veg.y, veg.x, na.rm = TRUE)
   )
 )

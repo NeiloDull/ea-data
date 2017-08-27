@@ -1,36 +1,55 @@
-define("transform_lookups", "transform_functions", function(transform_lookup, transform_functions) {
+define("transform_lookups", function(transform_lookup) {
   list(
-    import = list(file = "data/imsurvey2014-anonymized.csv")
+    import = list(file = "data/2014/imsurvey2014-anonymized.csv")
     , data = list(
-      "Rename variables sensibly"       = list(renamer, transform_lookup$renames)
-      ,"Make age numeric"               = list(column_transformation(as.numeric), 'age')
-      ,"Unlist ids"                     = list(replace_variable, function(id) unlist(id))
-      ,"Drop NA ids"                    = list(select_rows, function(dataframe) { !is.na(dataframe$id) }, whole = TRUE) 
-      ,"Clean values in meta-ethics"    = list(value_replacer, 'metaethics', list(list('Consequentialist/utilitarian', 'consequentialist'), list('Deontology', 'deontology'), list('Virtue ethics', 'virtue'), list('Other', 'other'), list('No opinion, or not familiar with these terms', 'other')))
-      ,"Make reducitarian variable"     = list(new_variable, function(diet) ifelse(diet == 'Meat-eating', FALSE, TRUE), 'reducitarian')
-      ,"Make veg binary variable"       = list(new_variable, function(diet) ifelse(diet == 'Vegetarian', TRUE, ifelse(diet == 'Vegan', TRUE, FALSE)), 'veg')
-      ,"Clean up atheist response"      = list(value_replacer, 'religion', list(list('Atheist, agnostic or non-religious', 'atheist')))
-      ,"Clean up group responses"       = list(value_replacer, 'group', transform_lookup$clean_group)
-      ,"Impute TLYCS factors"           = list(impute, surveytools2::swap_multiple_ids, 'involved_TLYCS', c(13, 31, 79, 110, 146, 367, 374, 383, 534, 577), 'Yes')
-      ,"Impute online factors"          = list(impute, surveytools2::swap_multiple_ids, 'factors_online', c(361, 374, 606), 'Yes')
-      ,"Consolidate sublovation"        = list(value_replacer, transform_lookup$clean_city)
-      ,'Clean up career responses'      = list(value_replacer, list(list('Direct charity/non-profit work', 'Direct'), list('Earning to Give', 'ETG'), list('None of these', 'None'), list('Research', 'Research'), list('Other', 'None')))
-      ,'Number of charities donated'    = list(charity_count, transform_lookup$charity_vars)
-      ,'Impute career responses'        = list(swap_by_ids, 'career', transform_lookup$career_transform)
-      ,'Impute donate responses'        = list(swap_by_ids, 'donate_2013_c', transform_lookup$donate_transform)
-      ,'Impute income responses'        = list(swap_by_ids, 'income_2013_c', transform_lookup$income_transform)
-      ,'Make p_inc_donate'              = list(new_variable, transform_functions$make_p_inc_donate, 'p_donate_2013_c')
-      ,"Make income numeric"            = list(column_transformation(as.numeric), 'income_2013_c')
-      ,"Make donations numeric"         = list(column_transformation(as.numeric), 'donate_2013_c')
-      ,"Make p_inc_donate numeric"      = list(column_transformation(as.numeric), 'p_donate_2013_c')
-      ,"Earning to give?"               = list(new_variable, function(income_2013_c, p_donate_2013_c) { ifelse(income_2013_c >= 60000 & p_donate_2013_c >= 0.1, TRUE, FALSE) }, 'is.ETG')
-      ,"Trim referrer_url"                  = list(replace_variable, function(referrer_url) { r <- referrer_url; r[grepl('\\?', r)] <- sapply(strsplit(r[grepl('\\?', r)], '\\?'), '[', 2); r[nchar(r) > 12] <- ""; r[substring(r, 1, 1) == 't' & !is.na(r)] <- "t"; r })
-      ,'Clean referrer_url'                 = list(value_replacer, 'referrer_url', transform_lookup$referrer)
-      ,"Trim referrer2"                 = list(replace_variable, function(referrer2) { referrer2[nchar(referrer2) < 5] <- ""; referrer2 })
-      ,'Clean referrer2'                = list(value_replacer, 'referrer', transform_lookup$referrer2)
-      ,'Impute ACE as a referrer'       = list(evaldf, quote({ dataframe[grepl('A', dataframe$id), 'referrer_url'] <- 'ACE'; dataframe[grepl('A', dataframe$id), 'referrer2'] <- 'ACE' }))
-      ,'In random FB sample?'           = list(new_variable, function(id) id %in% transform_lookup$random_sample_ids, 'in_random_fb_sample')
-    ),
-    export = list(R = list('imdata', .type = 'data'))
+      "Rename variables sensibly"       = function(df) {
+        df <- plyr::rename(df, transform_lookup$renames)
+        if (length(setdiff(transform_lookup$renames, names(df))) > 0) {
+          stop(paste0(setdiff(transform_lookup$renames, names(df)), collapse = ", "),
+               " variables were not created!")
+        }
+        df <- df[, transform_lookup$renames]
+        df
+      }
+      ,"Make age numeric"               = function(df) { df$age %<>% as.numeric; df }
+      ,"Unlist ids"                     = function(df) { df$id %<>% unlist; df }
+      ,"Drop NA ids"                    = function(df) { df[!is.na(df$id), ] }
+      ,"Clean values in meta-ethics"    = function(df) { swap_by_value(df, "metaethics", list("Consequentialist/utilitarian" = "consequentialist", "Deontology" = "deontology", "Virtue ethics" = "virtue", "Other" = "other", "No opinion, or not familiar with these terms" = "other")) }
+      ,"Make reducitarian variable"     = function(df) { df$reducetarian <- ifelse(df$diet == 'Meat-eating', FALSE, TRUE); df }
+      ,'Make veg binary variable'       = function(df) { df$veg <- ifelse(df$diet == "Vegetarian", TRUE, ifelse(df$diet == "Vegan", TRUE, FALSE)); df }
+      ,"Clean up atheist response"      = function(df) { swap_by_value(df, "religion", list('Atheist, agnostic or non-religious' = 'atheist')) }
+      ,"Clean up group responses"       = function(df) { swap_by_value(df, 'group', transform_lookup$clean_group) }
+      ,"Impute TLYCS factors"           = function(df) { swap_multiple_ids(df, 'involved_TLYCS', c(13, 31, 79, 110, 146, 367, 374, 383, 534, 577), 'Yes') }
+      ,"Impute online factors"          = function(df) { swap_multiple_ids(df, 'factors_online', c(361, 374, 606), 'Yes') }
+      ,"Consolidate sublocation"        = function(df) { swap_by_value(df, "city", transform_lookup$clean_city) }
+      ,"Clean up career responses"      = function(df) { swap_by_value(df, "career", list("Direct charity/non-profit work" = "Direct", "Earning to Give" = "ETG", "None of these" =  "None", "Other" = "None")) }
+      ,"Number of charities donated"    = function(df) {
+          charity_vars <- head(get_vars(df, "donate"), -1)
+          df$charity_count <- count_vars(df, charity_vars, response = "Yes", vectorize = TRUE)
+          df
+      }
+      ,"Impute career responses"        = function(df) swap_by_ids(df, "career", transform_lookup$career_transform)
+      ,"Impute donate responses"        = function(df) swap_by_ids(df, "donate_2013_c", transform_lookup$donate_transform)
+      ,"Impute income responses"        = function(df) swap_by_ids(df, "income_2013_c", transform_lookup$income_transform)
+      ,"Make income numeric"            = function(df) { df$income_2013_c %<>% as.numeric; df }
+      ,"Make donations numeric"         = function(df) { df$donate_2013_c %<>% as.numeric; df }
+      ,"Make p_inc_donate"              = function(df) {
+          p <- df$donate_2013_c / df$income_2013_c * 100
+          p <- ifelse(is.infinite(p) | p == "NaN", NA, p)
+          df$p_donate_2013_c <- p
+          df
+      }
+      ,"Earning to give?"               = function(df) { df$is.ETG <- ifelse(df$income_2013_c >= 60000 & df$p_donate_2013_c >= 0.1, TRUE, FALSE); df }
+      ,"Trim referrer_url"              = function(df) {
+        r <- df$referrer_url
+        r[grepl('\\?', r)] <- sapply(strsplit(r[grepl('\\?', r)], '\\?'), '[', 2); r[nchar(r) > 12] <- ""
+        r[substring(r, 1, 1) == 't' & !is.na(r)] <- "t"
+        df$referrer_url <- r
+        df
+ }
+      ,"Clean referrer_url"             = function(df) { swap_by_value(df, "referrer_url", transform_lookup$referrer) }
+      ,"Impute ACE as a referrer"       = function(df) { df[grepl("A", df$id), "referrer_url"] <- "ACE"; df }
+      ,"In random FB sample?"           = function(df) { df$in_random_fb_sample <- df$id %in% transform_lookup$random_sample_ids; df }
+    )
   )
 })

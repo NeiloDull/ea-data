@@ -9,7 +9,8 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
           # Set important common options.
           stringsAsFactors = FALSE,
           menu.graphics = FALSE, # Disable tcl/tk for installation from CRAN.
-          repos = structure(c(CRAN = "http://streaming.stat.iastate.edu/CRAN/")))
+          repos = structure(c(CRAN = "https://ftp.ussg.iu.edu/CRAN/")))
+  options(environment_type = "environment")
 
   # Install all the packages that can't be managed by lockbox or Ramd.
   # Make sure we install it in the correct library for users with multiple libPaths...

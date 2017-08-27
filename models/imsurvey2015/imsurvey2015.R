@@ -1,63 +1,64 @@
 list(
-  import = list(file = "data/imsurvey2015-anonymized-renamed-currencied.csv"),
+  import = list(file = "data/2015/imsurvey2015-anonymized-renamed-currencied.csv"),
   data   = list(
-    "Drop insincere"   = list(select_rows, function(df) grepl("Yes", df$sincere, fixed = TRUE), whole = TRUE)
-    , "Drop non-EA"    = list(select_rows, function(df) grepl("Yes", df$is_ea, fixed = TRUE), whole = TRUE)
-    , "Drop time vars" = list(function(df) { df[!grepl(".time", names(df), fixed = TRUE)] })
-    , "Drop comments"  = list(function(df) { df[!grepl("comment", names(df), fixed = TRUE)] })
-    , "Have a plan"    = list(new_variable, function(plan_donate_how_much, already_stated_plan, donate_2014) {
-          plan_donate_how_much != "" | already_stated_plan == "Yes" | !is.na(donate_2014)
-        }, "have_donation_plan")
-    , "Sold EA"        = list(new_variable, function(have_donation_plan, ea_career) {
-          (have_donation_plan & !is.na(have_donation_plan) | (ea_career == "Yes" & !is.na(ea_career)))	
-        }, "sold_ea")
-    , "% inc donate"   = list(new_variable, function(donate_2014_c, income_2014_c) {
-          p <- donate_2014_c / income_2014_c
-          p[is.infinite(p)] <- NA
-          p
-        }, "p_donate_2014_c")
-    , "Solid EA"       = list(new_variable, function(p_donate_2014_c, ea_career) {
-          (p_donate_2014_c > 0.1 | ea_career == "Yes") & !is.na(p_donate_2014_c) & !is.na(ea_career)
-        }, "solid_ea")
-    , "Radical Giver"  = list(new_variable, function(p_donate_2014_c) {
-          p_donate_2014_c >= 0.333
-        }, "radical_giver")
-    , "is_programmer"  = list(new_variable, function(occupation) {
-          ifelse(occupation == "", "", grepl("engineer|programmer|software", occupation, ignore.case = TRUE))
-        }, "is_programmer")
-    , "referrer_url"   = list(replace_variable, function(referrer_url) {
-          ifelse(grepl("utilitarianism-facebook-group", referrer_url), "Utilitarianism FB Group",
-          ifelse(grepl("TLY", referrer_url), "TLY",
-          ifelse(grepl("survey-site-homepage", referrer_url), "Survey Home",
-          ifelse(grepl("SSC", referrer_url), "SSC",
-          ifelse(grepl("SHARELW", referrer_url), "LW-SHARE",
-          ifelse(grepl("SHARE", referrer_url), "SHARE",
-          ifelse(grepl("LW", referrer_url), "LW",
-          ifelse(grepl("LocalGroup", referrer_url), "Local Group",
-          ifelse(grepl("local-groups-facebook", referrer_url), "Local Group FB",
-          ifelse(grepl("LLonE", referrer_url), "LLonE",
-          ifelse(grepl("gwwc-members", referrer_url), "GWWC FB Link",
-          ifelse(grepl("gwwc-fb", referrer_url), "GWWC FB Group Message",
-          ifelse(grepl("fbsample", referrer_url), "FB Random Sample",
-          ifelse(grepl("fb-post-2-custom-share", referrer_url), "FB-SHARE",
-          ifelse(grepl("fb-post-2", referrer_url), "EAFB",
-          ifelse(grepl("ea-fb-group", referrer_url), "EAFB",
-          ifelse(grepl("email-to-people", referrer_url), "EA Profile Emails",
-          ifelse(grepl("eahub", referrer_url), "EA Hub",
-          ifelse(grepl("EAF", referrer_url), "EA Forum",
-          ifelse(grepl("eaa-facebook", referrer_url), "EAA FB",
-          ifelse(grepl("ea-newsletter", referrer_url), "EA Newsletter",
-          ifelse(grepl("ea-hangout-facebook", referrer_url), "EA Hangout FB",
-          ifelse(grepl("ACE", referrer_url), "ACE",
-          ifelse(is.na(referrer_url), "No Referrer", "Others"))))))))))))))))))))))))
-        })	  
-	    , "simple referrer" = list(new_variable, function(referrer_url) {
-          ifelse(referrer_url == "SSC", "SlateStarCodex",
-          ifelse(referrer_url == "FB Random Sample", "FB Random Sample",
-          ifelse(grepl("GWWC FB", referrer_url), "GWWC Group Message", "Other")))
-        }, "referrer2")
+    "Drop insincere"   = function(df) { dplyr::filter(df, grepl("Yes", sincere)) }
+    , "Drop non-EA"    = function(df) { dplyr::filter(df, grepl("Yes", is_ea)) }
+    , "Drop time vars" = function(df) { df[!grepl(".time", names(df), fixed = TRUE)] }
+    , "Drop comments"  = function(df) { df[!grepl("comment", names(df), fixed = TRUE)] }
+    , "Have a plan"    = function(df) {
+        df$have_donation_plan <- df$plan_donate_how_much != "" | df$already_stated_plan == "Yes" | !is.na(df$donate_2014)
+        df
+    }, "Sold EA"       = function(df) {
+        df$sold_ea <- (df$have_donation_plan & !is.na(df$have_donation_plan) | (df$ea_career == "Yes" & !is.na(df$ea_career)))	
+        df
+    }, "% inc donate"  = function(df) {
+        p <- df$donate_2014_c / df$income_2014_c
+        p[is.infinite(p)] <- NA
+        df$p_donate_2014_c <- p
+        df
+    }, "Solid EA"      = function(df) {
+        df$solid_ea <- (df$p_donate_2014_c > 0.1 | df$ea_career == "Yes") & !is.na(df$p_donate_2014_c) & !is.na(df$ea_career)
+        df
+    }, "Radical Giver"  = function(df) {
+        df$radical_giver <- df$p_donate_2014_c >= 0.333
+        df
+    }, "is_programmer"  = function(df) {
+        df$is_programmer <- ifelse(df$occupation == "", "", grepl("engineer|programmer|software", df$occupation, ignore.case = TRUE))
+        df
+    }, "referrer_url"   = function(df) {
+        df$referrer_url <- ifelse(grepl("utilitarianism-facebook-group", df$referrer_url),
+                                  "Utilitarianism FB Group",
+                ifelse(grepl("TLY", df$referrer_url), "TLY",
+                ifelse(grepl("survey-site-homepage", df$referrer_url), "Survey Home",
+                ifelse(grepl("SSC", df$referrer_url), "SSC",
+                ifelse(grepl("SHARELW", df$referrer_url), "LW-SHARE",
+                ifelse(grepl("SHARE", df$referrer_url), "SHARE",
+                ifelse(grepl("LW", df$referrer_url), "LW",
+                ifelse(grepl("LocalGroup", df$referrer_url), "Local Group",
+                ifelse(grepl("local-groups-facebook", df$referrer_url), "Local Group FB",
+                ifelse(grepl("LLonE", df$referrer_url), "LLonE",
+                ifelse(grepl("gwwc-members", df$referrer_url), "GWWC FB Link",
+                ifelse(grepl("gwwc-fb", df$referrer_url), "GWWC FB Group Message",
+                ifelse(grepl("fbsample", df$referrer_url), "FB Random Sample",
+                ifelse(grepl("fb-post-2-custom-share", df$referrer_url), "FB-SHARE",
+                ifelse(grepl("fb-post-2", df$referrer_url), "EAFB",
+                ifelse(grepl("ea-fb-group", df$referrer_url), "EAFB",
+                ifelse(grepl("email-to-people", df$referrer_url), "EA Profile Emails",
+                ifelse(grepl("eahub", df$referrer_url), "EA Hub",
+                ifelse(grepl("EAF", df$referrer_url), "EA Forum",
+                ifelse(grepl("eaa-facebook", df$referrer_url), "EAA FB",
+                ifelse(grepl("ea-newsletter", df$referrer_url), "EA Newsletter",
+                ifelse(grepl("ea-hangout-facebook", df$referrer_url), "EA Hangout FB",
+                ifelse(grepl("ACE", df$referrer_url), "ACE",
+                ifelse(is.na(df$referrer_url), "No Referrer", "Others"))))))))))))))))))))))))
+      df
+    }, "simple referrer" = function(df) {
+      df$referrer2 <- ifelse(df$referrer_url == "SSC", "SlateStarCodex",
+        ifelse(df$referrer_url == "FB Random Sample", "FB Random Sample",
+        ifelse(grepl("GWWC FB", df$referrer_url), "GWWC Group Message", "Other")))
+      df
+    }
   )
-
   , analyze = list(
     "num respondents"                 = function(df) num_respondents(df)
     , "first heard about EA"          = function(df) tab(df, first_heard_EA)
@@ -149,7 +150,7 @@ list(
     , "donation quantile 1"           = function(df) quantile(df$donate_2014_c, probs = seq(0.1, 1, len = 10), na.rm = TRUE)
     , "donation quantile 2"           = function(df) quantile(df$donate_2014_c, probs = seq(0.91, 1, len = 10), na.rm = TRUE)
     , "donating 10% or over x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.0999999, member_gwwc)    
-    , "summarize donations - fb sample"= function(df) var_summary(filter(df, referrer_url=="No Referrer", !is.na(donate_2014_c))$donate_2014_c)    
+    , "summarize donations - fb sample" = function(df) var_summary(filter(df, referrer_url == "No Referrer" & !is.na(donate_2014_c))$donate_2014_c)    
     , "summarize donations - student" 	      = function(df) var_summary(filter(df, student == "Yes" & !is.na(student) & !is.na(donate_2014_c))$donate_2014_c)
     , "summarize donations - non-student" 	      = function(df) var_summary(filter(df, student == "No" & student != "NA" & donate_2014_c != "NA")$donate_2014_c)
     , "summarize donations - got involved pre-2013" 	      = function(df) var_summary(filter(df, !((which_year_EA == "2014") | (which_year_EA == "2015")) & donate_2014_c != "NA" & !is.na(which_year_EA))$donate_2014_c)
@@ -160,9 +161,9 @@ list(
     , "donating over 10% x GWWC"      = function(df) ctab(df, p_donate_2014_c > 0.1, member_gwwc)        
     , "% donation quantile 1"         = function(df) quantile(df[df$income_2014_c > 10000, "p_donate_2014_c"], probs = seq(0.1, 1, len = 10), na.rm = TRUE)
     , "% donation quantile 2"         = function(df) quantile(df[df$income_2014_c > 10000, "p_donate_2014_c"], probs = seq(0.91, 1, len = 10), na.rm = TRUE)        
-    , "summarize  donations (non-gwwc member, nonstudent, sold_ea, involved-pre-2014)"         = function(df) var_summary(filter(df, income_2014_c > 0, student == "No", !((which_year_EA == "2014") | (which_year_EA == "2015")), sold_ea,  member_gwwc == "Yes",  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA))$donate_2014_c)	
-    , "summarize  donations  x member_gwwc (non-student, pre-2014, sold_ea)"         = function(df) ctab(filter(df, income_2014_c > 0, student == "No", !((which_year_EA == "2014") | (which_year_EA == "2015")), sold_ea,  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA)), as.numeric(donate_2014_c), member_gwwc, na.rm=TRUE)
-    , "summarize  donations (non-gwwc member, nonstudent, sold_ea)"         = function(df) var_summary(filter(df, income_2014_c > 0, student == "No", sold_ea,  member_gwwc == "Yes",  !is.na(student), !is.na(member_gwwc), !is.na(sold_ea), !is.na(which_year_EA))$donate_2014_c)          
+    , "summarize donations (non-gwwc member, nonstudent, sold_ea, involved-pre-2014)"         = function(df) var_summary(filter(df, income_2014_c > 0 & student == "No" & !((which_year_EA == "2014") | (which_year_EA == "2015")) & sold_ea & member_gwwc != "Yes" & !is.na(student) & !is.na(member_gwwc) & !is.na(sold_ea) & !is.na(which_year_EA))$donate_2014_c)	
+    , "summarize donations x member_gwwc (non-student, pre-2014, sold_ea)"         = function(df) ctab(df, filters(income_2014_c > 0, student == "No", which_year_EA %not_in% c("2014", "2015"), sold_ea == TRUE), donate_2014_c, member_gwwc, na.rm = TRUE)
+    , "summarize donations (non-gwwc member, nonstudent, sold_ea)"         = function(df) var_summary(filter(df, income_2014_c > 0 & student == "No" & sold_ea & member_gwwc == "Yes" & !is.na(student) & !is.na(member_gwwc) & !is.na(sold_ea) & !is.na(which_year_EA))$donate_2014_c)          
     , "diet"                          = function(df) tab(df, veg)
     , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
     , "why_veg_animals"               = function(df) tab(df, why_veg_animals)

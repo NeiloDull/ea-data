@@ -1,28 +1,28 @@
 packages:
   -
     name: stagerunner
-    version: 0.5.3
+    version: 0.5.7
     repo: syberia/stagerunner
+    ref: structure_list
   -
     name: Ramd
     version: 0.3.8
     repo: robertzk/Ramd
   -
     name: director
-    version: 0.3.0.5.9000
+    version: 0.3.0.5.9005
     repo: syberia/director
   -
     name: tundra
-    version: 0.3.0.9000
+    version: 0.3.1.9001
     repo: syberia/tundra
   -
     name: syberia
     version: 0.6.1.9009
     repo: syberia/syberia
-    ref: 0.6-dev
   -
     name: magrittr
-    version: 1.5
+    version: "1.5"
   -
     name: currencyr
     version: 0.0.0.9004
@@ -35,7 +35,7 @@ packages:
     version: 0.4.3
   -
     name: surveytools2
-    version: "0.6"
+    version: 0.6.1
     repo: peterhurford/surveytools2
   -
     name: funtools

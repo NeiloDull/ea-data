@@ -302,6 +302,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "race_black"                    = function(df) tab(df, race_black)
         , "race_hispanic"                 = function(df) tab(df, race_hispanic)
         , "race_asian"                    = function(df) tab(df, race_asian)
+        , "politics"                      = function(df) tab(df, politics)
         , "student"                       = function(df) tab(df, student)
         , "country"                       = function(df) tab(df, country)
         , "city"                          = function(df) tab(df, city)

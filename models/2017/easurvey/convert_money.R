@@ -1,4 +1,6 @@
 options("stringsAsFactors" = FALSE)
+CONVERSION_AS_OF_DATE <- "2017-08-05" # A single date for currency conversions.
+
 data <- readr::read_csv("data/2017/imsurvey2017-anonymized.csv")
 
 first_pass <- data$currency_donate_1 %/>%
@@ -39,7 +41,9 @@ to_usd <- function(num, current_currency) {
   if (identical(as.numeric(num), 0)) { return(0) }
   if (identical(current_currency, "USD")) { return(as.numeric(num)) }
   if (!is_number_string(num)) { return(as.numeric(NA)) }
-  currencyr::convert(as.numeric(num), from = current_currency)$value
+  currencyr::convert(as.numeric(num),
+                     from = current_currency,
+                     as_of = CONVERSION_AS_OF_DATE)$value
 }
 for (var in currency_vars) {
   message("...Processing ", var)

@@ -51,3 +51,4 @@ for (var in currency_vars) {
 }
 
 readr::write_csv(data, "data/2017/imsurvey2017-anonymized-currencied.csv")
+message("...Written!")

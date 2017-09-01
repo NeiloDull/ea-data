@@ -16,8 +16,8 @@ run("imsurvey2017")
 Run the full data pipeline, assuming you possess the confidential un-anonymous CSVs in your `data` directory:
 
 ```R
-source("models/imsurvey2017/ea_id.R")
-source("models/imsurvey2017/convert_money.R")
-run("imsurvey2017")
-source("models/imsurvey2017/write_comments.R")
+source("models/2017/easurvey/ea_id.R")
+source("models/2017/easurvey/convert_money.R")
+run("2017/survey")
+source("models/2017/easurvey/write_comments.R")
 ```

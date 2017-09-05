@@ -102,6 +102,11 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         }
         df
       }
+      , "Make number of priorities" = function(df) {
+        cause_vars <- grep("_b", get_vars(df, "cause_import"), invert = TRUE, value = TRUE)
+        df$num_top_cause_priorities <- count_vars(df, cause_vars, "This cause should be the top priority")$value
+        df
+      }
       , "Make gender binary" = function(df) {
           # I know gender is not a binary, but this is still useful for analysis. My apologies.
           df$gender_b <- drop_values(df$gender, c("Other", "Prefer Not to Answer"))
@@ -146,6 +151,10 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "cause_import_politics"              = function(df) tab(df, cause_import_politics)
         , "cause_import_meta"                  = function(df) tab(df, cause_import_meta)
 				, "binary cause view"                  = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, var)) } }
+        , "causes for only people with one priority" = function(df) {
+                                                  for (var in grep("_b", get_vars(df, "cause_import"), invert = TRUE, value = TRUE)) {
+                                                    print(tab_(filter(df, num_top_cause_priorities == 1), var))
+                                                  }}
 				, "binary cause view x gender"         = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("gender_b", var), freq = FALSE, percent = TRUE)) } }
 				, "binary cause view x diet"           = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("veg_b", var), freq = FALSE, percent = TRUE)) } }
         , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)

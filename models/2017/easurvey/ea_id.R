@@ -14,7 +14,7 @@ Ramd::define("variable_names", function(variable_names) {
     stop("Error: some variables did not import -- ",
       paste0(names_that_did_not_work, collapse = ", "))
   }
-  data2017$ea_id <- data2017$email_address %/>% digest::digest %>% unlist
+  data2017$ea_id <- data2017$email_address %/>% fn(x, if (is.na(x)) { NA } else { digest::digest(x) }) %>% unlist
   data2017$email_address <- NULL
   message("Writing out...")
   readr::write_csv(data2017, "data/2017/imsurvey2017-anonymized.csv")

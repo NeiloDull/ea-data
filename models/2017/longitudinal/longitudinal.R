@@ -1,4 +1,3 @@
-
 list(import = function() {
        run("2017/easurvey", to = "data")
        df2017 <- df
@@ -9,10 +8,11 @@ list(import = function() {
        inner_join(df2015, df2017, by = c("s15_ea_id" = "s17_ea_id"))
      },
      analyze = list(
-       # list(write = "data/2017/2017-longitudinal-analysis-tables.txt"),
-       list(write = "stdout"), # <-- toggle this to print to the screen.
+       list(write = "data/2017/2017-longitudinal-analysis-tables.txt"),
+       # list(write = "stdout"), # <-- toggle this to print to the screen.
        list(
-         "[check] population aging"   = function(df) var_summary(df$s17_age - as.numeric(df$s15_age), verbose = TRUE)
+         "N"                          = function(df) dim(df)
+         , "[check] population aging" = function(df) var_summary(df$s17_age - as.numeric(df$s15_age), verbose = TRUE)
          , "[check] gender"           = function(df) tab(df, s17_gender, s15_gender)
          , "[check] first heard EA"   = function(df) tab(df, s15_first_heard_EA, s17_first_heard_EA)
          , "summarize 2014 donations" = function(df) var_summary(df$s15_donate_2014_c, verbose = TRUE)
@@ -32,6 +32,11 @@ list(import = function() {
          , "veg"                      = function(df) tab(df, s15_veg, s17_veg)
          , "cause import AR"          = function(df) tab(df, s15_cause_import_animal_welfare, s17_cause_import_animal_welfare)
          , "cause import prioritize"  = function(df) tab(df, s15_cause_import_cause_prioritization, s17_cause_import_cause_prioritization)
-         , "cause environment"        = function(df) tab(df, s15_cause_import_environment, s17_cause_import_environment)
-         , "cause AI"                 = function(df) tab(df, s15_cause_import_environment, s17_cause_import_environment)
+         , "cause environment"        = function(df) tab(df, s15_cause_import_environmentalism, s17_cause_import_environmentalism)
+         , "cause AI"                 = function(df) tab(df, s15_cause_import_ai, s17_cause_import_ai)
+         , "cause non-AI far future"  = function(df) tab(df, s15_cause_import_non_ai_far_future, s17_cause_import_non_ai_far_future)
+         , "cause poverty"            = function(df) tab(df, s15_cause_import_poverty, s17_cause_import_poverty)
+         , "cause rationality"        = function(df) tab(df, s15_cause_import_rationality, s17_cause_import_rationality)
+         , "cause politics"           = function(df) tab(df, s15_cause_import_politics, s17_cause_import_politics)
+         , "cause meta"               = function(df) tab(df, s15_cause_import_meta, s17_cause_import_meta)
      )))

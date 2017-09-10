@@ -1,9 +1,9 @@
 list(import = function() {
        run("2017/easurvey", to = "data")
-       df2017 <- df
+       df2017 <- df %>% filter(ea_id != "" & !is.na(ea_id))
        names(df2017) <- paste0("s17_", names(df2017))
        run("2015/easurvey", to = "data")
-       df2015 <- df
+       df2015 <- df %>% filter(ea_id != "" & !is.na(ea_id))
        names(df2015) <- paste0("s15_", names(df2015))
        inner_join(df2015, df2017, by = c("s15_ea_id" = "s17_ea_id"))
      },
@@ -23,10 +23,11 @@ list(import = function() {
          , "summarize 2016 income"    = function(df) var_summary(df$s17_income_2016_individual_c, verbose = TRUE)
          , "keep EA career"           = function(df) tab(df, s15_ea_career, s17_ea_career, na.rm = TRUE)
          , "EA career change"         = function(df) tab(df, s15_career_path, s17_ea_career_type)
-         , "heard EA"                 = function(df) tab(df, s15_career_path, s17_ea_career_type)
          , "member EA FB"             = function(df) tab(df, s15_member_ea_fb, s17_member_ea_fb)
          , "member EA Forum"          = function(df) tab(df, s15_member_ea_forum, s17_member_ea_forum)
          , "member GWWC"              = function(df) tab(df, s15_member_gwwc, s17_member_gwwc)
+         , "donate 10%? [2014-2015]"  = function(df) tab(df, s15_p_donate_2014_c >= 10, s17_p_donate_2015 >= 10)
+         , "donate 10%? [2015-2016]"  = function(df) tab(df, s17_p_donate_2015 >= 10, s17_p_donate_2016 >= 10)
          , "member LW"                = function(df) tab(df, s15_member_lw, s17_member_lw)
          , "member local group"       = function(df) tab(df, s15_member_local_group, s17_member_local_group)
          , "veg"                      = function(df) tab(df, s15_veg, s17_veg)

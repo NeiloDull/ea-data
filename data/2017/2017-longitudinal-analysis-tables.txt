@@ -323,22 +323,6 @@ s15_career_path ### s17_ea_career_type
    None of these                             13        4    6
    Research                                   4       11    5
    <NA>                                       9        6   11
-heard EA
-s15_career_path ### s17_ea_career_type
-                                 
-                                  Direct charity/non-profit work Earning to give
-   Direct charity/non-profit work                              9               3
-   Earning to give                                             2              37
-   None of these                                               2               6
-   Research                                                    1               3
-   <NA>                                                        6               5
-                                 
-                                  None of these Research <NA>
-   Direct charity/non-profit work             1        3    6
-   Earning to give                            5        8   18
-   None of these                             13        4    6
-   Research                                   4       11    5
-   <NA>                                       9        6   11
 member EA FB
 s15_member_ea_fb ### s17_member_ea_fb
       
@@ -360,6 +344,19 @@ s15_member_gwwc ### s17_member_gwwc
    N/A  1   3    2
    No  54  27   16
    Yes  6  51   24
+donate 10%? [2014-2015]
+s15_p_donate_2014_c >= 10 ### s17_p_donate_2015 >= 10
+        
+         FALSE <NA>
+   FALSE    91   16
+   TRUE      1    0
+   <NA>     34   42
+donate 10%? [2015-2016]
+s17_p_donate_2015 >= 10 ### s17_p_donate_2016 >= 10
+        
+         FALSE <NA>
+   FALSE   123    3
+   <NA>     15   43
 member LW
 s15_member_lw ### s17_member_lw
       

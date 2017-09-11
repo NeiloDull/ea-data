@@ -285,6 +285,21 @@ summarize 2016 donations
       20551.66       2975.50          0.00    1200000.00      99135.51 
         length           sum        num_na num_over_zero 
         184.00    3452678.65         16.00        152.00 
+increase don? 2014->2015
+df$s17_donate_2015_c > df$s15_donate_2014_c
+ 
+  TRUE  <NA> FALSE 
+    80    57    47 
+increase don? 2015->2016
+df$s17_donate_2016_c > df$s17_donate_2015_c
+ 
+  TRUE FALSE  <NA> 
+    98    64    22 
+increase don? 2014->2016
+df$s17_donate_2016_c > df$s15_donate_2014_c
+ 
+  TRUE  <NA> FALSE 
+    96    55    33 
 summarize 2014 income
          mean        median           min           max            sd 
      143938.55      21687.58          0.00   10000000.00     928425.87 

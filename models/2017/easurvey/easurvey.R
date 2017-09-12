@@ -342,6 +342,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "gender x AR donations 2016"    = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_animal_welfare_2016_c, gender_b)
         , "donations x ETG 2015"          = function(df) ctab(df, filter(student == "No"), donate_2015_c, ea_career_type == "Earning to give")
         , "donations x ETG 2016"          = function(df) ctab(df, filter(student == "No"), donate_2016_c, ea_career_type == "Earning to give")
+        , "total donations x ETG 2015"    = function(df) df %>% group_by(ea_career_type == "Earning to give") %>% summarise(total_donations = sum(donate_2015_c, na.rm = TRUE)) %>% mutate(percent_donations = total_donations / sum(df$donate_2015_c, na.rm = TRUE))
+        , "total donations x ETG 2016"    = function(df) df %>% group_by(ea_career_type == "Earning to give") %>% summarise(total_donations = sum(donate_2016_c, na.rm = TRUE)) %>% mutate(percent_donations = total_donations / sum(df$donate_2016_c, na.rm = TRUE))
         , "ETG donations x act now-later 2016" = function(df) ctab(df, filters(student == "No", ea_career_type == "Earning to give"), donate_2016_c, act_now_or_later)
         , "ETG donations 2015"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2015_c, verbose = TRUE)
         , "ETG donations 2016"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2016_c, verbose = TRUE)

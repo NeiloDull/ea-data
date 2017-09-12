@@ -1,4 +1,4 @@
-## 2015 .impact Survey Analysis
+## 2015 EA Survey Analysis
 
 Run the model and analysis:
 

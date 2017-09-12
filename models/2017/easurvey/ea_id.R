@@ -16,6 +16,7 @@ Ramd::define("variable_names", function(variable_names) {
   }
   data2017$ea_id <- data2017$email_address %/>% fn(x, if (is.na(x)) { NA } else { digest::digest(x) }) %>% unlist
   data2017$email_address <- NULL
+  data2017 <- data2017[seq(3, nrow(data2017)), ] # Remove first two rows (garbled)
   message("Writing out...")
   readr::write_csv(data2017, "data/2017/imsurvey2017-anonymized.csv")
   message("Written...")

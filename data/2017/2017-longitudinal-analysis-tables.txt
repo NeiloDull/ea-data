@@ -277,19 +277,19 @@ summarize 2014 donations
         184.00    1991530.95         49.00        106.00 
 summarize 2015 donations
          mean        median           min           max            sd 
-      16474.47       1436.52          0.00    1000000.00      82983.76 
+      16497.41       1439.64          0.00    1000000.00      83014.42 
         length           sum        num_na num_over_zero 
-        184.00    2685338.82         21.00        134.00 
+        184.00    2689078.35         21.00        134.00 
 summarize 2016 donations
          mean        median           min           max            sd 
-      20551.66       2975.50          0.00    1200000.00      99135.51 
+      20582.14       2975.50          0.00    1200000.00      99161.30 
         length           sum        num_na num_over_zero 
-        184.00    3452678.65         16.00        152.00 
+        184.00    3457799.52         16.00        152.00 
 increase don? 2014->2015
 df$s17_donate_2015_c > df$s15_donate_2014_c
  
   TRUE  <NA> FALSE 
-    80    57    47 
+    81    57    46 
 increase don? 2015->2016
 df$s17_donate_2016_c > df$s17_donate_2015_c
  
@@ -299,7 +299,7 @@ increase don? 2014->2016
 df$s17_donate_2016_c > df$s15_donate_2014_c
  
   TRUE  <NA> FALSE 
-    96    55    33 
+    97    55    32 
 summarize 2014 income
          mean        median           min           max            sd 
      143938.55      21687.58          0.00   10000000.00     928425.87 
@@ -307,14 +307,14 @@ summarize 2014 income
         184.00   19143826.91         51.00        117.00 
 summarize 2015 income
          mean        median           min           max            sd 
-      185924.4       30062.0      -50000.0    19000000.0     1534943.7 
+      186025.5       30062.0      -50000.0    19000000.0     1534940.0 
         length           sum        num_na num_over_zero 
-         184.0    29561975.5          25.0         127.0 
+         184.0    29578055.9          25.0         127.0 
 summarize 2016 income
          mean        median           min           max            sd 
-      188601.5       38000.0           0.0    15000000.0     1239824.3 
+      188713.3       38000.0           0.0    15000000.0     1239823.1 
         length           sum        num_na num_over_zero 
-         184.0    30553436.3          22.0         140.0 
+         184.0    30571554.7          22.0         140.0 
 keep EA career
 s15_ea_career ### s17_ea_career (nas removed)
         

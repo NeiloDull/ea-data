@@ -8,7 +8,7 @@ R
 ```
 
 ```R
-run("imsurvey2017")
+run("2017/easurvey")
 ```
 
 -

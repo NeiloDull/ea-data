@@ -14,7 +14,7 @@ Ramd::define("variable_names", function(variable_names) {
     stop("Error: some variables did not import -- ",
       paste0(names_that_did_not_work, collapse = ", "))
   }
-  data2017$ea_id <- data2017$email_address %/>% digest::digest %>% unlist
+  data2017$ea_id <- data2017$email_address %/>% fn(x, if (is.na(x)) { NA } else { digest::digest(x) }) %>% unlist
   data2017$email_address <- NULL
   data2017 <- data2017[seq(3, nrow(data2017)), ] # Remove first two rows (garbled)
   message("Writing out...")

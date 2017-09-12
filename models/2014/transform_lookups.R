@@ -234,7 +234,8 @@ list(
     'Your.gender' = 'gender',
     'Your.religious.beliefs' = 'religion',
     'In.which.country.do.you.live.' = 'country',
-    'In.which.city.do.you.live.' = 'city'
+    'In.which.city.do.you.live.' = 'city',
+    'ea_id' = 'ea_id'
   )
 
   , "clean_group" = list(

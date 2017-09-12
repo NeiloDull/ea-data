@@ -1,0 +1,993 @@
+N
+[1] 184 415
+[check] population aging
+         mean        median           min           max            sd 
+      2.087302      2.000000      1.000000      3.000000      0.335138 
+        length           sum        num_na num_over_zero 
+    184.000000    263.000000     58.000000    126.000000 
+[check] gender
+s17_gender ### s15_gender
+                       
+                        Female Male Other <NA>
+   Female                   21    1     0    2
+   Male                      1  103     1    8
+   Prefer Not to Answer      0    0     0    1
+   <NA>                      5   34     2    5
+[check] first heard EA
+s15_first_heard_EA ### s17_first_heard_EA
+                                                                 
+                                                                  80,000 Hours
+   80,000 Hours                                                              5
+   Book/article/blog post etc. (please specify which, if you can)            0
+   Facebook                                                                  0
+   GiveWell                                                                  1
+   Giving What We Can                                                        0
+   LessWrong                                                                 0
+   Local EA group                                                            0
+   Other (please specify in the comment box)                                 0
+   Personal Contact (e.g. Friend, Colleague, Relative)                       0
+   Search Engine                                                             0
+   TED Talk                                                                  0
+   The Life You Can Save                                                     0
+   <NA>                                                                      0
+                                                                 
+                                                                  Book/article/blog post etc. (please specify which, if you can)
+   80,000 Hours                                                                                                                0
+   Book/article/blog post etc. (please specify which, if you can)                                                              5
+   Facebook                                                                                                                    0
+   GiveWell                                                                                                                    1
+   Giving What We Can                                                                                                          0
+   LessWrong                                                                                                                   0
+   Local EA group                                                                                                              0
+   Other (please specify in the comment box)                                                                                   2
+   Personal Contact (e.g. Friend, Colleague, Relative)                                                                         1
+   Search Engine                                                                                                               0
+   TED Talk                                                                                                                    0
+   The Life You Can Save                                                                                                       1
+   <NA>                                                                                                                        0
+                                                                 
+                                                                  Doing Good Better (Book)
+   80,000 Hours                                                                          0
+   Book/article/blog post etc. (please specify which, if you can)                        2
+   Facebook                                                                              0
+   GiveWell                                                                              0
+   Giving What We Can                                                                    0
+   LessWrong                                                                             0
+   Local EA group                                                                        0
+   Other (please specify in the comment box)                                             0
+   Personal Contact (e.g. Friend, Colleague, Relative)                                   0
+   Search Engine                                                                         0
+   TED Talk                                                                              0
+   The Life You Can Save                                                                 0
+   <NA>                                                                                  0
+                                                                 
+                                                                  EA Global
+   80,000 Hours                                                           1
+   Book/article/blog post etc. (please specify which, if you can)         0
+   Facebook                                                               0
+   GiveWell                                                               0
+   Giving What We Can                                                     0
+   LessWrong                                                              0
+   Local EA group                                                         0
+   Other (please specify in the comment box)                              0
+   Personal Contact (e.g. Friend, Colleague, Relative)                    0
+   Search Engine                                                          0
+   TED Talk                                                               0
+   The Life You Can Save                                                  0
+   <NA>                                                                   0
+                                                                 
+                                                                  Facebook
+   80,000 Hours                                                          0
+   Book/article/blog post etc. (please specify which, if you can)        1
+   Facebook                                                              0
+   GiveWell                                                              0
+   Giving What We Can                                                    0
+   LessWrong                                                             0
+   Local EA group                                                        0
+   Other (please specify in the comment box)                             0
+   Personal Contact (e.g. Friend, Colleague, Relative)                   0
+   Search Engine                                                         0
+   TED Talk                                                              0
+   The Life You Can Save                                                 0
+   <NA>                                                                  0
+                                                                 
+                                                                  GiveWell
+   80,000 Hours                                                          1
+   Book/article/blog post etc. (please specify which, if you can)        0
+   Facebook                                                              0
+   GiveWell                                                              8
+   Giving What We Can                                                    1
+   LessWrong                                                             0
+   Local EA group                                                        0
+   Other (please specify in the comment box)                             0
+   Personal Contact (e.g. Friend, Colleague, Relative)                   1
+   Search Engine                                                         0
+   TED Talk                                                              0
+   The Life You Can Save                                                 2
+   <NA>                                                                  0
+                                                                 
+                                                                  Giving What We Can
+   80,000 Hours                                                                    0
+   Book/article/blog post etc. (please specify which, if you can)                  0
+   Facebook                                                                        0
+   GiveWell                                                                        0
+   Giving What We Can                                                              8
+   LessWrong                                                                       0
+   Local EA group                                                                  0
+   Other (please specify in the comment box)                                       0
+   Personal Contact (e.g. Friend, Colleague, Relative)                             2
+   Search Engine                                                                   0
+   TED Talk                                                                        0
+   The Life You Can Save                                                           0
+   <NA>                                                                            0
+                                                                 
+                                                                  I don't remember
+   80,000 Hours                                                                  0
+   Book/article/blog post etc. (please specify which, if you can)                1
+   Facebook                                                                      0
+   GiveWell                                                                      1
+   Giving What We Can                                                            0
+   LessWrong                                                                     0
+   Local EA group                                                                0
+   Other (please specify in the comment box)                                     1
+   Personal Contact (e.g. Friend, Colleague, Relative)                           2
+   Search Engine                                                                 0
+   TED Talk                                                                      0
+   The Life You Can Save                                                         0
+   <NA>                                                                          1
+                                                                 
+                                                                  LessWrong
+   80,000 Hours                                                           0
+   Book/article/blog post etc. (please specify which, if you can)         0
+   Facebook                                                               0
+   GiveWell                                                               1
+   Giving What We Can                                                     0
+   LessWrong                                                             21
+   Local EA group                                                         0
+   Other (please specify in the comment box)                              1
+   Personal Contact (e.g. Friend, Colleague, Relative)                    0
+   Search Engine                                                          0
+   TED Talk                                                               0
+   The Life You Can Save                                                  0
+   <NA>                                                                   1
+                                                                 
+                                                                  Other (please specify in the comment box)
+   80,000 Hours                                                                                           0
+   Book/article/blog post etc. (please specify which, if you can)                                         1
+   Facebook                                                                                               0
+   GiveWell                                                                                               0
+   Giving What We Can                                                                                     1
+   LessWrong                                                                                              4
+   Local EA group                                                                                         0
+   Other (please specify in the comment box)                                                              7
+   Personal Contact (e.g. Friend, Colleague, Relative)                                                    2
+   Search Engine                                                                                          0
+   TED Talk                                                                                               0
+   The Life You Can Save                                                                                  1
+   <NA>                                                                                                   1
+                                                                 
+                                                                  Personal Contact (e.g. Friend, Colleague, Relative)
+   80,000 Hours                                                                                                     0
+   Book/article/blog post etc. (please specify which, if you can)                                                   2
+   Facebook                                                                                                         0
+   GiveWell                                                                                                         0
+   Giving What We Can                                                                                               1
+   LessWrong                                                                                                        0
+   Local EA group                                                                                                   1
+   Other (please specify in the comment box)                                                                        4
+   Personal Contact (e.g. Friend, Colleague, Relative)                                                             13
+   Search Engine                                                                                                    0
+   TED Talk                                                                                                         0
+   The Life You Can Save                                                                                            0
+   <NA>                                                                                                             0
+                                                                 
+                                                                  REG / EAF / The Swiss group
+   80,000 Hours                                                                             0
+   Book/article/blog post etc. (please specify which, if you can)                           0
+   Facebook                                                                                 2
+   GiveWell                                                                                 0
+   Giving What We Can                                                                       0
+   LessWrong                                                                                0
+   Local EA group                                                                           0
+   Other (please specify in the comment box)                                                2
+   Personal Contact (e.g. Friend, Colleague, Relative)                                      0
+   Search Engine                                                                            0
+   TED Talk                                                                                 0
+   The Life You Can Save                                                                    0
+   <NA>                                                                                     0
+                                                                 
+                                                                  Search Engine
+   80,000 Hours                                                               0
+   Book/article/blog post etc. (please specify which, if you can)             0
+   Facebook                                                                   0
+   GiveWell                                                                   0
+   Giving What We Can                                                         0
+   LessWrong                                                                  0
+   Local EA group                                                             0
+   Other (please specify in the comment box)                                  0
+   Personal Contact (e.g. Friend, Colleague, Relative)                        0
+   Search Engine                                                              0
+   TED Talk                                                                   0
+   The Life You Can Save                                                      0
+   <NA>                                                                       1
+                                                                 
+                                                                  Slate Star Codex
+   80,000 Hours                                                                  0
+   Book/article/blog post etc. (please specify which, if you can)                3
+   Facebook                                                                      0
+   GiveWell                                                                      2
+   Giving What We Can                                                            0
+   LessWrong                                                                     2
+   Local EA group                                                                0
+   Other (please specify in the comment box)                                     2
+   Personal Contact (e.g. Friend, Colleague, Relative)                           1
+   Search Engine                                                                 0
+   TED Talk                                                                      0
+   The Life You Can Save                                                         0
+   <NA>                                                                          1
+                                                                 
+                                                                  TED Talk
+   80,000 Hours                                                          0
+   Book/article/blog post etc. (please specify which, if you can)        0
+   Facebook                                                              0
+   GiveWell                                                              0
+   Giving What We Can                                                    0
+   LessWrong                                                             0
+   Local EA group                                                        0
+   Other (please specify in the comment box)                             0
+   Personal Contact (e.g. Friend, Colleague, Relative)                   0
+   Search Engine                                                         0
+   TED Talk                                                              9
+   The Life You Can Save                                                 0
+   <NA>                                                                  0
+                                                                 
+                                                                  The Life You Can Save (organization)
+   80,000 Hours                                                                                      0
+   Book/article/blog post etc. (please specify which, if you can)                                    0
+   Facebook                                                                                          0
+   GiveWell                                                                                          0
+   Giving What We Can                                                                                0
+   LessWrong                                                                                         0
+   Local EA group                                                                                    0
+   Other (please specify in the comment box)                                                         1
+   Personal Contact (e.g. Friend, Colleague, Relative)                                               0
+   Search Engine                                                                                     1
+   TED Talk                                                                                          1
+   The Life You Can Save                                                                             3
+   <NA>                                                                                              0
+                                                                 
+                                                                  <NA>
+   80,000 Hours                                                      2
+   Book/article/blog post etc. (please specify which, if you can)    3
+   Facebook                                                          4
+   GiveWell                                                          3
+   Giving What We Can                                                5
+   LessWrong                                                         8
+   Local EA group                                                    3
+   Other (please specify in the comment box)                         5
+   Personal Contact (e.g. Friend, Colleague, Relative)               4
+   Search Engine                                                     0
+   TED Talk                                                          2
+   The Life You Can Save                                             1
+   <NA>                                                              2
+summarize 2014 donations
+         mean        median           min           max            sd 
+      14752.08        650.00          0.00    1000000.00      87760.18 
+        length           sum        num_na num_over_zero 
+        184.00    1991530.95         49.00        106.00 
+summarize 2015 donations
+         mean        median           min           max            sd 
+      16497.41       1439.64          0.00    1000000.00      83014.42 
+        length           sum        num_na num_over_zero 
+        184.00    2689078.35         21.00        134.00 
+summarize 2016 donations
+         mean        median           min           max            sd 
+      20582.14       2975.50          0.00    1200000.00      99161.30 
+        length           sum        num_na num_over_zero 
+        184.00    3457799.52         16.00        152.00 
+increase don? 2014->2015
+df$s17_donate_2015_c > df$s15_donate_2014_c
+ 
+  TRUE  <NA> FALSE 
+    81    57    46 
+increase don? 2015->2016
+df$s17_donate_2016_c > df$s17_donate_2015_c
+ 
+  TRUE FALSE  <NA> 
+    98    64    22 
+increase don? 2014->2016
+df$s17_donate_2016_c > df$s15_donate_2014_c
+ 
+  TRUE  <NA> FALSE 
+    97    55    32 
+summarize 2014 income
+         mean        median           min           max            sd 
+     143938.55      21687.58          0.00   10000000.00     928425.87 
+        length           sum        num_na num_over_zero 
+        184.00   19143826.91         51.00        117.00 
+summarize 2015 income
+         mean        median           min           max            sd 
+      186025.5       30062.0      -50000.0    19000000.0     1534940.0 
+        length           sum        num_na num_over_zero 
+         184.0    29578055.9          25.0         127.0 
+summarize 2016 income
+         mean        median           min           max            sd 
+      188713.3       38000.0           0.0    15000000.0     1239823.1 
+        length           sum        num_na num_over_zero 
+         184.0    30571554.7          22.0         140.0 
+keep EA career
+s15_ea_career ### s17_ea_career (nas removed)
+        
+         No Yes
+   No    48  10
+   Other 10   3
+   Yes   21  30
+EA career change
+s15_career_path ### s17_ea_career_type
+                                 
+                                  Direct charity/non-profit work Earning to give
+   Direct charity/non-profit work                              9               3
+   Earning to give                                             2              37
+   None of these                                               2               6
+   Research                                                    1               3
+   <NA>                                                        6               5
+                                 
+                                  None of these Research <NA>
+   Direct charity/non-profit work             1        3    6
+   Earning to give                            5        8   18
+   None of these                             13        4    6
+   Research                                   4       11    5
+   <NA>                                       9        6   11
+member EA FB
+s15_member_ea_fb ### s17_member_ea_fb
+      
+       No Yes <NA>
+   N/A  1   3    2
+   No  29  13    5
+   Yes  5  91   35
+member EA Forum
+s15_member_ea_forum ### s17_member_ea_forum
+      
+       No Yes <NA>
+   N/A  2   2    2
+   No  63  22   18
+   Yes 10  43   22
+member GWWC
+s15_member_gwwc ### s17_member_gwwc
+      
+       No Yes <NA>
+   N/A  1   3    2
+   No  54  27   16
+   Yes  6  51   24
+donate 10%? [2014-2015]
+s15_p_donate_2014_c >= 10 ### s17_p_donate_2015 >= 10
+        
+         FALSE <NA>
+   FALSE    91   16
+   TRUE      1    0
+   <NA>     34   42
+donate 10%? [2015-2016]
+s17_p_donate_2015 >= 10 ### s17_p_donate_2016 >= 10
+        
+         FALSE <NA>
+   FALSE   123    3
+   <NA>     15   43
+member LW
+s15_member_lw ### s17_member_lw
+      
+       No Yes <NA>
+   N/A  1   3    2
+   No  80   9   24
+   Yes  3  46   16
+member local group
+s15_member_local_group ### s17_member_local_group
+      
+       No Yes <NA>
+   N/A  1   3    2
+   No  54  27   22
+   Yes 14  43   18
+veg
+s15_veg ### s17_veg
+                                               
+                                                Eat meat, but try to reduce the amount I eat
+   Eat meat, but try to reduce the amount I eat                                           27
+   Meat eater                                                                              5
+   Pescetarian                                                                             0
+   Vegan                                                                                   0
+   Vegetarian                                                                              2
+   <NA>                                                                                    1
+                                               
+                                                Meat eater Other Pescetarian
+   Eat meat, but try to reduce the amount I eat          5     0           1
+   Meat eater                                            9     2           0
+   Pescetarian                                           0     0           2
+   Vegan                                                 0     0           0
+   Vegetarian                                            0     0           1
+   <NA>                                                  2     0           2
+                                               
+                                                Prefer Not to Answer Vegan
+   Eat meat, but try to reduce the amount I eat                    0     2
+   Meat eater                                                      2     0
+   Pescetarian                                                     0     0
+   Vegan                                                           0    29
+   Vegetarian                                                      0    11
+   <NA>                                                            0     2
+                                               
+                                                Vegetarian <NA>
+   Eat meat, but try to reduce the amount I eat          6    9
+   Meat eater                                            1    7
+   Pescetarian                                           0    1
+   Vegan                                                 2   11
+   Vegetarian                                           22   16
+   <NA>                                                  1    3
+cause import AR
+s15_cause_import_animal_welfare ### s17_cause_import_animal_welfare
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             3
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               1
+   Not considered/Not at all sure                                                                                                              1
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           7
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            18
+   Not considered/Not at all sure                                                                                                                            4
+   This cause deserves significant investment but less than the top priorities                                                                               5
+   This cause is near the top priority                                                                                                                       1
+   This cause is the top priority                                                                                                                            0
+   <NA>                                                                                                                                                      3
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        1
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  0
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                           8
+   Not considered/Not at all sure                                                                                                                          0
+   This cause deserves significant investment but less than the top priorities                                                                            13
+   This cause is near the top priority                                                                                                                     8
+   This cause is the top priority                                                                                                                          0
+   <NA>                                                                                                                                                    1
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        3
+   Not considered/Not at all sure                                                                                       0
+   This cause deserves significant investment but less than the top priorities                                         17
+   This cause is near the top priority                                                                                 24
+   This cause is the top priority                                                                                       5
+   <NA>                                                                                                                 1
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       0
+   This cause is near the top priority                                                                               6
+   This cause is the top priority                                                                                   12
+   <NA>                                                                                                              0
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  1
+   I do not think this is a priority, but I am glad some EAs are looking into it   10
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     16
+   This cause is near the top priority                                             11
+   This cause is the top priority                                                   3
+   <NA>                                                                             1
+cause import prioritize
+s15_cause_import_cause_prioritization ### s17_cause_import_cause_prioritization
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               1
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                             0
+   Not considered/Not at all sure                                                                                                                            0
+   This cause deserves significant investment but less than the top priorities                                                                               3
+   This cause is near the top priority                                                                                                                       2
+   This cause is the top priority                                                                                                                            0
+   <NA>                                                                                                                                                      3
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        0
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  1
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                           6
+   Not considered/Not at all sure                                                                                                                          2
+   This cause deserves significant investment but less than the top priorities                                                                            21
+   This cause is near the top priority                                                                                                                     7
+   This cause is the top priority                                                                                                                          0
+   <NA>                                                                                                                                                    4
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        1
+   Not considered/Not at all sure                                                                                       2
+   This cause deserves significant investment but less than the top priorities                                         12
+   This cause is near the top priority                                                                                 24
+   This cause is the top priority                                                                                       9
+   <NA>                                                                                                                 3
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     1
+   Not considered/Not at all sure                                                                                    1
+   This cause deserves significant investment but less than the top priorities                                       8
+   This cause is near the top priority                                                                              16
+   This cause is the top priority                                                                                   12
+   <NA>                                                                                                              1
+                                                                                
+                                                                                 <NA>
+   I do not think this is a priority, but I am glad some EAs are looking into it    3
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     15
+   This cause is near the top priority                                             20
+   This cause is the top priority                                                   5
+   <NA>                                                                             1
+cause environment
+s15_cause_import_environmentalism ### s17_cause_import_environmentalism
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             6
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               4
+   Not considered/Not at all sure                                                                                                              1
+   This cause deserves significant investment but less than the top priorities                                                                 2
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        1
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           6
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            23
+   Not considered/Not at all sure                                                                                                                            1
+   This cause deserves significant investment but less than the top priorities                                                                              21
+   This cause is near the top priority                                                                                                                       5
+   This cause is the top priority                                                                                                                            0
+   <NA>                                                                                                                                                      3
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         1
+   Not considered/Not at all sure                                                                        1
+   This cause deserves significant investment but less than the top priorities                           1
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  0
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                           9
+   Not considered/Not at all sure                                                                                                                          1
+   This cause deserves significant investment but less than the top priorities                                                                            18
+   This cause is near the top priority                                                                                                                     6
+   This cause is the top priority                                                                                                                          1
+   <NA>                                                                                                                                                    2
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        3
+   Not considered/Not at all sure                                                                                       1
+   This cause deserves significant investment but less than the top priorities                                          8
+   This cause is near the top priority                                                                                  8
+   This cause is the top priority                                                                                       1
+   <NA>                                                                                                                 2
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       0
+   This cause is near the top priority                                                                               0
+   This cause is the top priority                                                                                    2
+   <NA>                                                                                                              0
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  3
+   I do not think this is a priority, but I am glad some EAs are looking into it   14
+   Not considered/Not at all sure                                                   3
+   This cause deserves significant investment but less than the top priorities     14
+   This cause is near the top priority                                              7
+   This cause is the top priority                                                   1
+   <NA>                                                                             2
+cause AI
+s15_cause_import_ai ### s17_cause_import_ai
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               0
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 3
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            13
+   Not considered/Not at all sure                                                                                                                            1
+   This cause deserves significant investment but less than the top priorities                                                                               2
+   This cause is near the top priority                                                                                                                       1
+   This cause is the top priority                                                                                                                            0
+   <NA>                                                                                                                                                      2
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        0
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  1
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         2
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                          12
+   Not considered/Not at all sure                                                                                                                          0
+   This cause deserves significant investment but less than the top priorities                                                                            11
+   This cause is near the top priority                                                                                                                     4
+   This cause is the top priority                                                                                                                          2
+   <NA>                                                                                                                                                    0
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                       11
+   Not considered/Not at all sure                                                                                       1
+   This cause deserves significant investment but less than the top priorities                                         10
+   This cause is near the top priority                                                                                 22
+   This cause is the top priority                                                                                       6
+   <NA>                                                                                                                 2
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     1
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       7
+   This cause is near the top priority                                                                              12
+   This cause is the top priority                                                                                   10
+   <NA>                                                                                                              4
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  2
+   I do not think this is a priority, but I am glad some EAs are looking into it   15
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     12
+   This cause is near the top priority                                              7
+   This cause is the top priority                                                   5
+   <NA>                                                                             1
+cause non-AI far future
+s15_cause_import_non_ai_far_future ### s17_cause_import_non_ai_far_future
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               1
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            14
+   Not considered/Not at all sure                                                                                                                            1
+   This cause deserves significant investment but less than the top priorities                                                                               9
+   This cause is near the top priority                                                                                                                       3
+   This cause is the top priority                                                                                                                            0
+   <NA>                                                                                                                                                      2
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        1
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  1
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                          11
+   Not considered/Not at all sure                                                                                                                          0
+   This cause deserves significant investment but less than the top priorities                                                                            10
+   This cause is near the top priority                                                                                                                     8
+   This cause is the top priority                                                                                                                          3
+   <NA>                                                                                                                                                    1
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        6
+   Not considered/Not at all sure                                                                                       0
+   This cause deserves significant investment but less than the top priorities                                         12
+   This cause is near the top priority                                                                                 27
+   This cause is the top priority                                                                                       7
+   <NA>                                                                                                                 3
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     1
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       3
+   This cause is near the top priority                                                                              11
+   This cause is the top priority                                                                                    2
+   <NA>                                                                                                              2
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  1
+   I do not think this is a priority, but I am glad some EAs are looking into it   12
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     14
+   This cause is near the top priority                                             12
+   This cause is the top priority                                                   2
+   <NA>                                                                             1
+cause poverty
+s15_cause_import_poverty ### s17_cause_import_poverty
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               2
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                             7
+   This cause deserves significant investment but less than the top priorities                                                                              11
+   This cause is near the top priority                                                                                                                       1
+   This cause is the top priority                                                                                                                            1
+   <NA>                                                                                                                                                      1
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   1
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  0
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                           2
+   This cause deserves significant investment but less than the top priorities                                                                            10
+   This cause is near the top priority                                                                                                                    11
+   This cause is the top priority                                                                                                                          3
+   <NA>                                                                                                                                                    3
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        0
+   This cause deserves significant investment but less than the top priorities                                          3
+   This cause is near the top priority                                                                                 25
+   This cause is the top priority                                                                                      13
+   <NA>                                                                                                                 2
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   This cause deserves significant investment but less than the top priorities                                       1
+   This cause is near the top priority                                                                               7
+   This cause is the top priority                                                                                   33
+   <NA>                                                                                                              3
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  0
+   I do not think this is a priority, but I am glad some EAs are looking into it    3
+   This cause deserves significant investment but less than the top priorities      3
+   This cause is near the top priority                                             17
+   This cause is the top priority                                                  18
+   <NA>                                                                             1
+cause rationality
+s15_cause_import_rationality ### s17_cause_import_rationality
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             2
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               2
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        1
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            33
+   Not considered/Not at all sure                                                                                                                            0
+   This cause deserves significant investment but less than the top priorities                                                                               7
+   This cause is near the top priority                                                                                                                       6
+   This cause is the top priority                                                                                                                            1
+   <NA>                                                                                                                                                      2
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        1
+   This cause deserves significant investment but less than the top priorities                           1
+   This cause is near the top priority                                                                   0
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  2
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                          15
+   Not considered/Not at all sure                                                                                                                          0
+   This cause deserves significant investment but less than the top priorities                                                                            15
+   This cause is near the top priority                                                                                                                    12
+   This cause is the top priority                                                                                                                          2
+   <NA>                                                                                                                                                    4
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        1
+   Not considered/Not at all sure                                                                                       0
+   This cause deserves significant investment but less than the top priorities                                         13
+   This cause is near the top priority                                                                                  8
+   This cause is the top priority                                                                                       3
+   <NA>                                                                                                                 1
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       3
+   This cause is near the top priority                                                                               2
+   This cause is the top priority                                                                                    4
+   <NA>                                                                                                              0
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  1
+   I do not think this is a priority, but I am glad some EAs are looking into it   16
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     15
+   This cause is near the top priority                                              5
+   This cause is the top priority                                                   4
+   <NA>                                                                             1
+cause politics
+s15_cause_import_politics ### s17_cause_import_politics
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             7
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               3
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           3
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                            18
+   Not considered/Not at all sure                                                                                                                            0
+   This cause deserves significant investment but less than the top priorities                                                                              13
+   This cause is near the top priority                                                                                                                       2
+   This cause is the top priority                                                                                                                            2
+   <NA>                                                                                                                                                      4
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        4
+   This cause deserves significant investment but less than the top priorities                           0
+   This cause is near the top priority                                                                   1
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  0
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         2
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                          14
+   Not considered/Not at all sure                                                                                                                          1
+   This cause deserves significant investment but less than the top priorities                                                                            23
+   This cause is near the top priority                                                                                                                    12
+   This cause is the top priority                                                                                                                          4
+   <NA>                                                                                                                                                    4
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        1
+   Not considered/Not at all sure                                                                                       0
+   This cause deserves significant investment but less than the top priorities                                          5
+   This cause is near the top priority                                                                                 13
+   This cause is the top priority                                                                                       2
+   <NA>                                                                                                                 2
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       0
+   This cause is near the top priority                                                                               2
+   This cause is the top priority                                                                                    0
+   <NA>                                                                                                              0
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  4
+   I do not think this is a priority, but I am glad some EAs are looking into it    5
+   Not considered/Not at all sure                                                   1
+   This cause deserves significant investment but less than the top priorities     16
+   This cause is near the top priority                                             12
+   This cause is the top priority                                                   2
+   <NA>                                                                             2
+cause meta
+s15_cause_import_meta ### s17_cause_import_meta
+                                                                                
+                                                                                 I do not think any EA resources should be devoted to this cause
+   I do not think any EA resources should be devoted to this cause                                                                             1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                               0
+   Not considered/Not at all sure                                                                                                              0
+   This cause deserves significant investment but less than the top priorities                                                                 0
+   This cause is near the top priority                                                                                                         0
+   This cause is the top priority                                                                                                              0
+   <NA>                                                                                                                                        0
+                                                                                
+                                                                                 I do not think this is a priority, but I am glad some EAs are looking into it
+   I do not think any EA resources should be devoted to this cause                                                                                           1
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                             5
+   Not considered/Not at all sure                                                                                                                            0
+   This cause deserves significant investment but less than the top priorities                                                                               6
+   This cause is near the top priority                                                                                                                       2
+   This cause is the top priority                                                                                                                            1
+   <NA>                                                                                                                                                      0
+                                                                                
+                                                                                 Not Considered / Not Sure
+   I do not think any EA resources should be devoted to this cause                                       0
+   I do not think this is a priority, but I am glad some EAs are looking into it                         0
+   Not considered/Not at all sure                                                                        1
+   This cause deserves significant investment but less than the top priorities                           3
+   This cause is near the top priority                                                                   2
+   This cause is the top priority                                                                        0
+   <NA>                                                                                                  1
+                                                                                
+                                                                                 This cause deserves significant investment but less than the top priorities
+   I do not think any EA resources should be devoted to this cause                                                                                         0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                                                           8
+   Not considered/Not at all sure                                                                                                                          0
+   This cause deserves significant investment but less than the top priorities                                                                            21
+   This cause is near the top priority                                                                                                                    14
+   This cause is the top priority                                                                                                                          3
+   <NA>                                                                                                                                                    2
+                                                                                
+                                                                                 This cause should be a near-top priority
+   I do not think any EA resources should be devoted to this cause                                                      0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                        7
+   Not considered/Not at all sure                                                                                       2
+   This cause deserves significant investment but less than the top priorities                                         12
+   This cause is near the top priority                                                                                 20
+   This cause is the top priority                                                                                       7
+   <NA>                                                                                                                 5
+                                                                                
+                                                                                 This cause should be the top priority
+   I do not think any EA resources should be devoted to this cause                                                   0
+   I do not think this is a priority, but I am glad some EAs are looking into it                                     0
+   Not considered/Not at all sure                                                                                    0
+   This cause deserves significant investment but less than the top priorities                                       4
+   This cause is near the top priority                                                                              10
+   This cause is the top priority                                                                                    4
+   <NA>                                                                                                              0
+                                                                                
+                                                                                 <NA>
+   I do not think any EA resources should be devoted to this cause                  0
+   I do not think this is a priority, but I am glad some EAs are looking into it    6
+   Not considered/Not at all sure                                                   0
+   This cause deserves significant investment but less than the top priorities     18
+   This cause is near the top priority                                              9
+   This cause is the top priority                                                   7
+   <NA>                                                                             2

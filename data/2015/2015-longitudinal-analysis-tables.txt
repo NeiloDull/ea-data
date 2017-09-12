@@ -1,0 +1,344 @@
+N
+[1]  52 232
+[check] population aging
+         mean        median           min           max            sd 
+     1.3863636     1.0000000     0.0000000     2.0000000     0.5376914 
+        length           sum        num_na num_over_zero 
+    52.0000000    61.0000000     8.0000000    43.0000000 
+[check] gender
+s15_gender ### s14_gender
+         
+             Female Male
+   Female  2     10    0
+   Male    5      1   29
+   <NA>    0      1    4
+[check] first heard EA
+s14_first_heard_EA ### s15_first_heard_EA
+                          
+                           80,000 Hours
+                                      0
+   80,000 Hours                       2
+   Facebook                           0
+   Friend                             0
+   GiveWell                           0
+   Giving What We Can                 0
+   LessWrong                          0
+   Other                              0
+   TED Talk (Peter Singer)            0
+   The Life You Can Save              0
+                          
+                           Book/article/blog post etc. (please specify which, if you can)
+                                                                                        1
+   80,000 Hours                                                                         0
+   Facebook                                                                             0
+   Friend                                                                               0
+   GiveWell                                                                             0
+   Giving What We Can                                                                   0
+   LessWrong                                                                            0
+   Other                                                                                0
+   TED Talk (Peter Singer)                                                              1
+   The Life You Can Save                                                                1
+                          
+                           Facebook GiveWell Giving What We Can LessWrong
+                                  0        0                  0         2
+   80,000 Hours                   0        0                  0         0
+   Facebook                       2        0                  0         0
+   Friend                         1        0                  0         0
+   GiveWell                       0        1                  0         1
+   Giving What We Can             0        0                  6         1
+   LessWrong                      0        1                  0         8
+   Other                          0        0                  0         2
+   TED Talk (Peter Singer)        0        1                  0         0
+   The Life You Can Save          0        0                  0         0
+                          
+                           Local EA group
+                                        0
+   80,000 Hours                         0
+   Facebook                             0
+   Friend                               2
+   GiveWell                             0
+   Giving What We Can                   0
+   LessWrong                            0
+   Other                                1
+   TED Talk (Peter Singer)              0
+   The Life You Can Save                0
+                          
+                           Other (please specify in the comment box)
+                                                                   1
+   80,000 Hours                                                    1
+   Facebook                                                        0
+   Friend                                                          0
+   GiveWell                                                        0
+   Giving What We Can                                              0
+   LessWrong                                                       0
+   Other                                                           1
+   TED Talk (Peter Singer)                                         0
+   The Life You Can Save                                           0
+                          
+                           Personal Contact (e.g. Friend, Colleague, Relative)
+                                                                             0
+   80,000 Hours                                                              0
+   Facebook                                                                  0
+   Friend                                                                    5
+   GiveWell                                                                  0
+   Giving What We Can                                                        0
+   LessWrong                                                                 0
+   Other                                                                     1
+   TED Talk (Peter Singer)                                                   0
+   The Life You Can Save                                                     0
+                          
+                           TED Talk The Life You Can Save <NA>
+                                  0                     0    0
+   80,000 Hours                   0                     0    1
+   Facebook                       0                     0    0
+   Friend                         0                     0    0
+   GiveWell                       0                     0    0
+   Giving What We Can             0                     0    0
+   LessWrong                      0                     1    0
+   Other                          0                     0    1
+   TED Talk (Peter Singer)        5                     0    0
+   The Life You Can Save          0                     1    0
+summarize 2013 donations
+         mean        median           min           max            sd 
+      3218.954      1200.000         0.000     58751.900      9908.405 
+        length           sum        num_na num_over_zero 
+        52.000    112663.380        17.000        31.000 
+summarize 2014 donations
+         mean        median           min           max            sd 
+      8981.175      3068.390         0.000    100000.000     20293.163 
+        length           sum        num_na num_over_zero 
+        52.000    314341.120        17.000        31.000 
+summarize 2013 income
+         mean        median           min           max            sd 
+      27123.86      20567.75          0.00      88032.69      25672.71 
+        length           sum        num_na num_over_zero 
+         52.00     922211.38         18.00         32.00 
+summarize 2014 income
+         mean        median           min           max            sd 
+      345376.1       37000.0           0.0    10000000.0     1733861.0 
+        length           sum        num_na num_over_zero 
+          52.0    11397410.1          19.0          32.0 
+EA career change
+s14_career_path ### s15_career_path
+                                 
+                                  Direct charity/non-profit work Earning to give
+                                                               1               4
+   Direct charity/non-profit work                              2               0
+   Earning to Give                                             0               7
+   None of these                                               0               1
+   Other                                                       0               0
+   Research                                                    1               1
+                                 
+                                  None of these Research <NA>
+                                              2        1    2
+   Direct charity/non-profit work             0        0    1
+   Earning to Give                            1        0    4
+   None of these                              2        0    1
+   Other                                      3        0    7
+   Research                                   1        9    1
+donate 10%? [2013-2014]
+s14_p_donate_2013_c >= 10 ### s15_p_donate_2014_c >= 10
+        
+         FALSE <NA>
+   FALSE    15    5
+   TRUE      5    7
+   <NA>      7   13
+veg
+s14_diet ### s15_veg
+                                    
+                                     Eat meat, but try to reduce the amount I eat
+                                                                                0
+   Meat-eating                                                                  6
+   Near vegetarian                                                              3
+   Other                                                                        0
+   Reducing the amount of meat I eat                                            6
+   Vegan                                                                        1
+   Vegetarian                                                                   0
+                                    
+                                     Meat eater Pescetarian Vegan Vegetarian
+                                              0           0     0          0
+   Meat-eating                                3           0     0          0
+   Near vegetarian                            0           1     0          4
+   Other                                      0           1     3          0
+   Reducing the amount of meat I eat          1           1     2          1
+   Vegan                                      0           0     9          0
+   Vegetarian                                 0           1     1          5
+                                    
+                                     <NA>
+                                        1
+   Meat-eating                          1
+   Near vegetarian                      0
+   Other                                0
+   Reducing the amount of meat I eat    1
+   Vegan                                0
+   Vegetarian                           0
+cause import AR
+s14_cause_import_animals ### s15_cause_import_animal_welfare
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                1
+   Yes                                                               0
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                             12
+   Yes                                                                             2
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                           10
+   Yes                                                                           6
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    4                              0    3
+   Yes                                  11                              2    1
+cause import prioritize
+s14_cause_import_cause_prioritization ### s15_cause_import_cause_prioritization
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                              5
+   Yes                                                                             1
+      
+       Not considered/Not at all sure
+   No                               2
+   Yes                              0
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                            8
+   Yes                                                                           5
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    9                              1    1
+   Yes                                  14                              3    3
+cause environment
+s14_cause_import_environmentalism ### s15_cause_import_environmentalism
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                2
+   Yes                                                               1
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                              9
+   Yes                                                                             5
+      
+       Not considered/Not at all sure
+   No                               1
+   Yes                              0
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                           11
+   Yes                                                                          11
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    2                              0    3
+   Yes                                   5                              1    1
+cause AI
+s14_cause_import_ai ### s15_cause_import_ai
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                4
+   Yes                                                               1
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                             15
+   Yes                                                                             1
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                            8
+   Yes                                                                           1
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    5                              1    3
+   Yes                                  12                              1    0
+cause non-AI far future
+s14_cause_import_non_ai_far_future ### s15_cause_import_non_ai_far_future
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                4
+   Yes                                                               0
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                             11
+   Yes                                                                             1
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                            8
+   Yes                                                                           2
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                   11                              0    1
+   Yes                                  11                              1    2
+cause poverty
+s14_cause_import_poverty ### s15_cause_import_poverty
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                              1
+   Yes                                                                             0
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                            2
+   Yes                                                                           6
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    2                              0    3
+   Yes                                  17                             18    3
+cause rationality
+s14_cause_import_rationality ### s15_cause_import_rationality
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                1
+   Yes                                                               0
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                             11
+   Yes                                                                             4
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                            7
+   Yes                                                                          13
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    5                              1    1
+   Yes                                   5                              2    2
+cause politics
+s14_cause_import_politics ### s15_cause_import_politics
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                2
+   Yes                                                               0
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                              8
+   Yes                                                                             2
+      
+       Not considered/Not at all sure
+   No                               2
+   Yes                              0
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                           11
+   Yes                                                                           5
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    6                              1    4
+   Yes                                   9                              1    1
+cause meta
+s14_cause_import_meta ### s15_cause_import_meta
+      
+       I do not think any EA resources should be devoted to this cause
+   No                                                                1
+   Yes                                                               0
+      
+       I do not think this is a priority, but I am glad some EAs are looking into it
+   No                                                                              4
+   Yes                                                                             1
+      
+       Not considered/Not at all sure
+   No                               2
+   Yes                              0
+      
+       This cause deserves significant investment but less than the top priorities
+   No                                                                           10
+   Yes                                                                          10
+      
+       This cause is near the top priority This cause is the top priority <NA>
+   No                                    2                              0    2
+   Yes                                  12                              5    3

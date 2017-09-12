@@ -1,0 +1,1 @@
+A comparison between [the 2017 SlateStarCodex survey](http://slatestarcodex.com/2017/03/17/ssc-survey-2017-results/) to [the 2017 EA Survey analysis](https://github.com/peterhurford/ea-data/tree/master/models/2017/easurvey).

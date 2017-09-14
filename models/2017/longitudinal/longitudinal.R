@@ -43,4 +43,5 @@ list(import = function() {
          , "cause rationality"        = function(df) tab(df, s15_cause_import_rationality, s17_cause_import_rationality)
          , "cause politics"           = function(df) tab(df, s15_cause_import_politics, s17_cause_import_politics)
          , "cause meta"               = function(df) tab(df, s15_cause_import_meta, s17_cause_import_meta)
+         , "politics"                 = function(df) tab(df, s15_politics, s17_politics)
      )))

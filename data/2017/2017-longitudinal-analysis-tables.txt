@@ -1,5 +1,5 @@
 N
-[1] 184 415
+[1] 184 416
 [check] population aging
          mean        median           min           max            sd 
       2.087302      2.000000      1.000000      3.000000      0.335138 
@@ -991,3 +991,21 @@ s15_cause_import_meta ### s17_cause_import_meta
    This cause is near the top priority                                              9
    This cause is the top priority                                                   7
    <NA>                                                                             2
+politics
+s15_politics ### s17_politics
+               
+                Centre Centre Left Centre Right Left Libertarian Other
+   Centre            4           6            0    0           0     1
+   Centre Left       3          26            0    1           1     1
+   Centre Right      0           0            2    0           0     0
+   Left              1          15            0   25           0     1
+   Libertarian       1           0            0    0           9     0
+   <NA>              5          10            1    3           3     8
+               
+                Prefer Not to Answer <NA>
+   Centre                          0    2
+   Centre Left                     1   18
+   Centre Right                    0    1
+   Left                            1   12
+   Libertarian                     0    2
+   <NA>                            8   12

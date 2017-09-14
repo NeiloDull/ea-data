@@ -360,18 +360,57 @@ s15_member_gwwc ### s17_member_gwwc
    No  54  27   16
    Yes  6  51   24
 donate 10%? [2014-2015]
-s15_p_donate_2014_c >= 10 ### s17_p_donate_2015 >= 10
+s15_p_donate_2014_c >= 0.1 ### s17_p_donate_2015 >= 0.1
         
-         FALSE <NA>
-   FALSE    91   16
-   TRUE      1    0
-   <NA>     34   42
+         FALSE TRUE <NA>
+   FALSE    31   25   10
+   TRUE      4   32    6
+   <NA>     23   11   42
 donate 10%? [2015-2016]
-s17_p_donate_2015 >= 10 ### s17_p_donate_2016 >= 10
+s17_p_donate_2015 >= 0.1 ### s17_p_donate_2016 >= 0.1
         
-         FALSE <NA>
-   FALSE   123    3
-   <NA>     15   43
+         FALSE TRUE <NA>
+   FALSE    43   13    2
+   TRUE     12   55    1
+   <NA>     11    4   43
+donate 10% [2014-2016]
+, ,  = FALSE
+ 
+        
+         FALSE TRUE
+   FALSE    21    5
+   TRUE      2    6
+ 
+ , ,  = TRUE
+ 
+        
+         FALSE TRUE
+   FALSE     8   20
+   TRUE      2   26
+ 
+donate 10% [2014-2016] II
+
+  0  1  2  3 
+ 21 15 28 26 
+donate? [2014-2016]
+, ,  = FALSE
+ 
+        
+         FALSE TRUE
+   FALSE     5    0
+   TRUE      3    4
+ 
+ , ,  = TRUE
+ 
+        
+         FALSE TRUE
+   FALSE    12   11
+   TRUE      0   92
+ 
+donate? [2014-2016] II
+
+   1   2   3 
+   8  16 103 
 member LW
 s15_member_lw ### s17_member_lw
       

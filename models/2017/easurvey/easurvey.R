@@ -326,7 +326,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "politics"                      = function(df) tab(df, politics)
         , "left"                          = function(df) tab(df, left)
 				, "binary cause view x left"      = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(comparison_table_(df, var, "left", na.rm = TRUE)) } }
-        , "left x race"                   = function(df) ctab(df, left, race_white, na.rm = TRUE)
+        , "left x race"                   = function(df) ctab(df, race_white, left, na.rm = TRUE)
         , "left x city"                   = function(df) ctab(df, left, city, top = 5, na.rm = TRUE)
         , "left x Bay"                    = function(df) ctab(df, left, city == "SF Bay", na.rm = TRUE)
         , "race x city"                   = function(df) ctab(df, race_white, city, top = 5, na.rm = TRUE)

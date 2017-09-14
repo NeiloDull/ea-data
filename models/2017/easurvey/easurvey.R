@@ -102,6 +102,11 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         }
         df
       }
+      , "Make number of priorities" = function(df) {
+        cause_vars <- grep("_b", get_vars(df, "cause_import"), invert = TRUE, value = TRUE)
+        df$num_top_cause_priorities <- count_vars(df, cause_vars, "This cause should be the top priority")$value
+        df
+      }
       , "Make gender binary" = function(df) {
           # I know gender is not a binary, but this is still useful for analysis. My apologies.
           df$gender_b <- drop_values(df$gender, c("Other", "Prefer Not to Answer"))
@@ -133,8 +138,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
     )
 
     , analyze = list(
-      # list(write = "data/2017/2017-survey-analysis-tables.txt"),
-      list(write = "stdout"), # <-- toggle this to print to the screen.
+      list(write = "data/2017/2017-survey-analysis-tables.txt"),
+      # list(write = "stdout"), # <-- toggle this to print to the screen.
       list(
         "cause_import_animal_welfare"          = function(df) tab(df, cause_import_animal_welfare)
         , "cause_import_cause_prioritization"  = function(df) tab(df, cause_import_cause_prioritization)
@@ -146,6 +151,10 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "cause_import_politics"              = function(df) tab(df, cause_import_politics)
         , "cause_import_meta"                  = function(df) tab(df, cause_import_meta)
 				, "binary cause view"                  = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, var)) } }
+        , "causes for only people with one priority" = function(df) {
+                                                  for (var in grep("_b", get_vars(df, "cause_import"), invert = TRUE, value = TRUE)) {
+                                                    print(tab_(filter(df, num_top_cause_priorities == 1), var))
+                                                  }}
 				, "binary cause view x gender"         = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("gender_b", var), freq = FALSE, percent = TRUE)) } }
 				, "binary cause view x diet"           = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("veg_b", var), freq = FALSE, percent = TRUE)) } }
         , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
@@ -296,7 +305,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "Did donate to Far Future Cause 2015?"     = function(df) tab(df, donate_cause_far_future_2015_c > 0)
         , "Did donate to Far Future Cause 2016?"     = function(df) tab(df, donate_cause_far_future_2016_c > 0)
         , "age"                           = function(df) tab(df, age)
-        , "age plot"                      = function(df) { ggplot(data = df, aes(df$age)) + geom_histogram(color="black", fill="lightblue") + scale_x_continuous("Age") + ggtitle("Ages of EAs") }
+        , "age plot"                      = function(df) { ggplot(df, aes(age)) + geom_histogram(color="black", fill="lightblue") + scale_x_continuous("Age") + ggtitle("Ages of EAs") }
         , "gender"                        = function(df) tab(df, gender)
         , "race_white"                    = function(df) tab(df, race_white)
         , "race_black"                    = function(df) tab(df, race_black)
@@ -334,6 +343,8 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
         , "gender x AR donations 2016"    = function(df) ctab(df, filter(donate_2016_c > 0), donate_cause_animal_welfare_2016_c, gender_b)
         , "donations x ETG 2015"          = function(df) ctab(df, filter(student == "No"), donate_2015_c, ea_career_type == "Earning to give")
         , "donations x ETG 2016"          = function(df) ctab(df, filter(student == "No"), donate_2016_c, ea_career_type == "Earning to give")
+        , "total donations x ETG 2015"    = function(df) df %>% group_by(ea_career_type == "Earning to give") %>% summarise(total_donations = sum(donate_2015_c, na.rm = TRUE)) %>% mutate(percent_donations = total_donations / sum(df$donate_2015_c, na.rm = TRUE))
+        , "total donations x ETG 2016"    = function(df) df %>% group_by(ea_career_type == "Earning to give") %>% summarise(total_donations = sum(donate_2016_c, na.rm = TRUE)) %>% mutate(percent_donations = total_donations / sum(df$donate_2016_c, na.rm = TRUE))
         , "ETG donations x act now-later 2016" = function(df) ctab(df, filters(student == "No", ea_career_type == "Earning to give"), donate_2016_c, act_now_or_later)
         , "ETG donations 2015"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2015_c, verbose = TRUE)
         , "ETG donations 2016"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2016_c, verbose = TRUE)

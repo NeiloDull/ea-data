@@ -1,0 +1,3649 @@
+cause_import_animal_welfare
+cause_import_animal_welfare
+ 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           414 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           391 
+                                      This cause should be a near-top priority 
+                                                                           382 
+                                                                          <NA> 
+                                                                           362 
+                                         This cause should be the top priority 
+                                                                           149 
+               I do not think any EA resources should be devoted to this cause 
+                                                                           116 
+                                                     Not Considered / Not Sure 
+                                                                            23 
+cause_import_cause_prioritization
+cause_import_cause_prioritization
+ 
+                                      This cause should be a near-top priority 
+                                                                           497 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           414 
+                                                                          <NA> 
+                                                                           386 
+                                         This cause should be the top priority 
+                                                                           282 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           150 
+                                                     Not Considered / Not Sure 
+                                                                           100 
+               I do not think any EA resources should be devoted to this cause 
+                                                                             8 
+cause_import_environmentalism
+cause_import_environmentalism
+ 
+                                      This cause should be a near-top priority 
+                                                                           423 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           407 
+                                                                          <NA> 
+                                                                           383 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           301 
+                                         This cause should be the top priority 
+                                                                           201 
+               I do not think any EA resources should be devoted to this cause 
+                                                                            98 
+                                                     Not Considered / Not Sure 
+                                                                            24 
+cause_import_ai
+cause_import_ai
+ 
+                                      This cause should be a near-top priority 
+                                                                           409 
+                                                                          <NA> 
+                                                                           364 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           353 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           343 
+                                         This cause should be the top priority 
+                                                                           237 
+               I do not think any EA resources should be devoted to this cause 
+                                                                            93 
+                                                     Not Considered / Not Sure 
+                                                                            38 
+cause_import_non_ai_far_future
+cause_import_non_ai_far_future
+ 
+                                      This cause should be a near-top priority 
+                                                                           461 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           422 
+                                                                          <NA> 
+                                                                           368 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           320 
+                                         This cause should be the top priority 
+                                                                           150 
+               I do not think any EA resources should be devoted to this cause 
+                                                                            70 
+                                                     Not Considered / Not Sure 
+                                                                            46 
+cause_import_poverty
+cause_import_poverty
+ 
+                                         This cause should be the top priority 
+                                                                           601 
+                                      This cause should be a near-top priority 
+                                                                           535 
+                                                                          <NA> 
+                                                                           366 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           229 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                            84 
+               I do not think any EA resources should be devoted to this cause 
+                                                                            18 
+                                                     Not Considered / Not Sure 
+                                                                             4 
+cause_import_rationality
+cause_import_rationality
+ 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           447 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           393 
+                                                                          <NA> 
+                                                                           373 
+                                      This cause should be a near-top priority 
+                                                                           333 
+                                         This cause should be the top priority 
+                                                                           167 
+               I do not think any EA resources should be devoted to this cause 
+                                                                           101 
+                                                     Not Considered / Not Sure 
+                                                                            23 
+cause_import_politics
+cause_import_politics
+ 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           491 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           377 
+                                                                          <NA> 
+                                                                           361 
+                                      This cause should be a near-top priority 
+                                                                           321 
+               I do not think any EA resources should be devoted to this cause 
+                                                                           134 
+                                         This cause should be the top priority 
+                                                                           112 
+                                                     Not Considered / Not Sure 
+                                                                            41 
+cause_import_meta
+cause_import_meta
+ 
+   This cause deserves significant investment but less than the top priorities 
+                                                                           534 
+                                      This cause should be a near-top priority 
+                                                                           422 
+                                                                          <NA> 
+                                                                           370 
+ I do not think this is a priority, but I am glad some EAs are looking into it 
+                                                                           252 
+                                         This cause should be the top priority 
+                                                                           138 
+                                                     Not Considered / Not Sure 
+                                                                            92 
+               I do not think any EA resources should be devoted to this cause 
+                                                                            29 
+binary cause view
+NULL
+causes for only people with one priority
+NULL
+binary cause view x gender
+NULL
+binary cause view x diet
+NULL
+diet x cause_import_animal_welfare
+veg ### cause_import_animal_welfare (nas removed)
+                                               
+                                                I do not think any EA resources should be devoted to this cause
+   Eat meat, but try to reduce the amount I eat                                                          0.3600
+   Meat eater                                                                                            0.4667
+   Other                                                                                                 0.0133
+   Pescetarian                                                                                           0.0533
+   Prefer Not to Answer                                                                                  0.0133
+   Vegan                                                                                                 0.0267
+   Vegetarian                                                                                            0.0667
+                                               
+                                                I do not think this is a priority, but I am glad some EAs are looking into it
+   Eat meat, but try to reduce the amount I eat                                                                        0.4203
+   Meat eater                                                                                                          0.3225
+   Other                                                                                                               0.0217
+   Pescetarian                                                                                                         0.0507
+   Prefer Not to Answer                                                                                                0.0109
+   Vegan                                                                                                               0.0580
+   Vegetarian                                                                                                          0.1159
+                                               
+                                                Not Considered / Not Sure
+   Eat meat, but try to reduce the amount I eat                    0.2941
+   Meat eater                                                      0.5294
+   Other                                                           0.0000
+   Pescetarian                                                     0.0588
+   Prefer Not to Answer                                            0.0000
+   Vegan                                                           0.0588
+   Vegetarian                                                      0.0588
+                                               
+                                                This cause deserves significant investment but less than the top priorities
+   Eat meat, but try to reduce the amount I eat                                                                      0.3797
+   Meat eater                                                                                                        0.1051
+   Other                                                                                                             0.0068
+   Pescetarian                                                                                                       0.0983
+   Prefer Not to Answer                                                                                              0.0000
+   Vegan                                                                                                             0.1424
+   Vegetarian                                                                                                        0.2678
+                                               
+                                                This cause should be a near-top priority
+   Eat meat, but try to reduce the amount I eat                                   0.2165
+   Meat eater                                                                     0.0275
+   Other                                                                          0.0137
+   Pescetarian                                                                    0.0550
+   Prefer Not to Answer                                                           0.0000
+   Vegan                                                                          0.3883
+   Vegetarian                                                                     0.2990
+                                               
+                                                This cause should be the top priority
+   Eat meat, but try to reduce the amount I eat                                0.0684
+   Meat eater                                                                  0.0171
+   Other                                                                       0.0000
+   Pescetarian                                                                 0.0171
+   Prefer Not to Answer                                                        0.0000
+   Vegan                                                                       0.6667
+   Vegetarian                                                                  0.2308
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2142, df = 12, p-value < 2.2e-16
+ 
+diet x cause_import_animal_welfare 2
+veg %in% c("Vegan", "Vegetarian") ### cause_import_animal_welfare_b (nas removed)
+        
+         :(           :)          
+   FALSE 766 (77.22%) 226 (22.78%)
+   TRUE  178 (36.85%) 305 (63.15%)
+city x cause area
+cause_import_ai_b ### city == "SF Bay" (nas removed)
+     
+       FALSE   TRUE
+   :( 0.5539 0.4058
+   :) 0.4461 0.5942
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 1900, df = 3, p-value < 2.2e-16
+ 
+city x cause area 2
+NULL
+summarize donations 2015
+         mean        median           min           max            sd 
+      6569.296       250.000         0.000   1321600.000     54512.389 
+        length           sum        num_na num_over_zero 
+      1837.000   6694112.740       818.000       723.000 
+summarize donations 2016
+         mean        median           min           max            sd 
+      9625.328       671.370         0.000   1982400.000     76057.628 
+        length           sum        num_na num_over_zero 
+      1837.000   9923713.260       806.000       862.000 
+donate in 2015 and 2016?
+donate_2015_c > 0 ### donate_2016_c > 0
+        
+         FALSE TRUE <NA>
+   FALSE   138  150    8
+   TRUE     29  682   12
+   <NA>      2   30  786
+info on donating in both years?
+!is.na(donate_2015_c) ### !is.na(donate_2016_c)
+        
+         FALSE TRUE
+   FALSE   786   32
+   TRUE     20  999
+median 2015 -> 2016 $ donate increase
+  median(increase)
+ 1          120.315
+median 2015 -> 2016 income increase
+  median(increase)
+ 1             3000
+median 2015 -> 2016 % donate increase
+  median(increase)
+ 1     0.0007955587
+mean 2015 -> 2016 $ donate increase
+  mean(increase)
+ 1       3674.475
+mean 2015 -> 2016 income increase
+  mean(increase)
+ 1       12237.71
+mean 2015 -> 2016 % donate increase
+  mean(increase)
+ 1      0.5318248
+donations x student
+donate_2016_c ### student
+ # A tibble: 4 x 5
+   student     N       mean  median         sd
+     <chr> <int>      <dbl>   <dbl>      <dbl>
+ 1     N/A   570 16623.4746  800.00  55700.525
+ 2      No   673 13450.7468 1592.96 100839.033
+ 3     Yes   409   756.3784  158.59   3235.362
+ 4    <NA>   185 16099.2448 4143.90  47703.022
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -16623  -12838   -5351    -516 1968949 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)    16624       9640   1.724   0.0849 .
+ yNo            -3173      10197  -0.311   0.7558  
+ yYes          -15867      10513  -1.509   0.1316  
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 77720 on 951 degrees of freedom
+   (883 observations deleted due to missingness)
+ Multiple R-squared:  0.006554,	Adjusted R-squared:  0.004464 
+ F-statistic: 3.137 on 2 and 951 DF,  p-value: 0.04387
+ 
+summary donations for students
+         mean        median           min           max            sd 
+      756.3784      158.5900        0.0000    56305.2000     3235.3617 
+        length           sum        num_na num_over_zero 
+      409.0000   259437.7800       66.0000      258.0000 
+summary donations for non-students
+         mean        median           min           max            sd 
+      13450.75       1592.96          0.00    1982400.00     100839.03 
+        length           sum        num_na num_over_zero 
+        673.00    7344107.78        127.00        482.00 
+donation quantile 1
+       10%        20%        30%        40%        50%        60%        70% 
+       0.00      50.00     150.00     343.62     671.37    1321.60    3000.00 
+        80%        90%       100% 
+    5930.00   12900.00 1982400.00 
+donation quantile 2
+       91%        92%        93%        94%        95%        96%        97% 
+   14484.72   15668.00   18056.54   20000.00   25000.00   30000.00   42100.00 
+        98%        99%       100% 
+   64600.00  132070.18 1982400.00 
+summarize % donations 2015
+         mean        median           min           max            sd 
+      6.958758      2.272727      0.000000    127.500000     12.672060 
+        length           sum        num_na num_over_zero 
+    586.000000   3973.450969     15.000000    475.000000 
+summarize % donations 2016
+         mean        median           min           max            sd 
+      7.986160      4.285714      0.000000    167.222222     12.543992 
+        length           sum        num_na num_over_zero 
+    653.000000   5167.045296      6.000000    591.000000 
+% donation quantile
+         10%          20%          30%          40%          50%          60% 
+   0.09389831   0.72727318   1.44849091   2.67197786   4.28571429   7.05000000 
+          70%          80%          90%         100% 
+   9.99967354  11.00000000  16.66666667 167.22222222 
+% donation breakdown
+ [1] "492 respondents >=  0.01" "432 respondents >=  0.02"
+  [3] "375 respondents >=  0.03" "304 respondents >=  0.05"
+  [5] "186 respondents >=  0.1"  "80 respondents >=  0.15" 
+  [7] "54 respondents >=  0.2"   "30 respondents >=  0.3"  
+  [9] "17 respondents >=  0.4"   "14 respondents >=  0.5"  
+ [11] "5 respondents >=  0.6"    "2 respondents >=  0.7"   
+ [13] "2 respondents >=  0.8"    "2 respondents >=  0.9"   
+RC Donations 2015 (Total)
+         mean        median           min           max            sd 
+      53.88732       0.00000       0.00000    6000.00000     521.29652 
+        length           sum        num_na num_over_zero 
+    1837.00000    7652.00000    1695.00000       2.00000 
+RC Donations 2016 (Total)
+         mean        median           min           max            sd 
+      465.2568        0.0000        0.0000    20677.0000     2519.7907 
+        length           sum        num_na num_over_zero 
+     1837.0000    67927.5000     1691.0000       18.0000 
+Did donate to RC 2015?
+donate_RC_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1695   140     2 
+Did donate to RC 2016?
+donate_RC_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1691   128    18 
+80K Donations 2015 (Total)
+         mean        median           min           max            sd 
+      480.0705        0.0000        0.0000    40000.0000     3640.3868 
+        length           sum        num_na num_over_zero 
+     1837.0000    68650.0800     1694.0000        5.0000 
+80K Donations 2016 (Total)
+         mean        median           min           max            sd 
+      631.4738        0.0000        0.0000    26432.0000     3259.5767 
+        length           sum        num_na num_over_zero 
+     1837.0000    95352.5500     1686.0000       23.0000 
+Did donate to 80K 2015?
+donate_80K_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1694   138     5 
+Did donate to 80K 2016?
+donate_80K_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1686   128    23 
+ACE Donations 2015 (Total)
+         mean        median           min           max            sd 
+      482.7375        0.0000        0.0000    22500.0000     2207.3394 
+        length           sum        num_na num_over_zero 
+     1837.0000    80617.1700     1670.0000       37.0000 
+ACE Donations 2016 (Total)
+         mean        median           min           max            sd 
+      505.7461        0.0000        0.0000    36000.0000     2866.2072 
+        length           sum        num_na num_over_zero 
+     1837.0000    91540.0400     1656.0000       65.0000 
+Did donate to ACE 2015?
+donate_ace_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1670   130    37 
+Did donate to ACE 2016?
+donate_ace_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1656   116    65 
+AMF Donations 2015 (Total)
+         mean        median           min           max            sd 
+      2679.704       159.730         0.000    116135.410     10289.270 
+        length           sum        num_na num_over_zero 
+      1837.000    970052.910      1475.000       245.000 
+AMF Donations 2016 (Total)
+         mean        median           min           max            sd 
+      3014.551       300.000         0.000    104406.400      9657.137 
+        length           sum        num_na num_over_zero 
+      1837.000   1365591.590      1384.000       378.000 
+Did donate to AMF 2015?
+donate_amf_2015_c > 0
+ 
+  <NA>  TRUE FALSE 
+  1475   245   117 
+Did donate to AMF 2016?
+donate_amf_2016_c > 0
+ 
+  <NA>  TRUE FALSE 
+  1384   378    75 
+CFAR Donations 2015 (Total)
+         mean        median           min           max            sd 
+       30.7184        0.0000        0.0000     1982.4000      188.6393 
+        length           sum        num_na num_over_zero 
+     1837.0000     4423.4500     1693.0000       12.0000 
+CFAR Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1271.979         0.000         0.000     75000.000      8866.830 
+        length           sum        num_na num_over_zero 
+      1837.000    189524.850      1688.000        26.000 
+Did donate to CFAR 2015?
+donate_cfar_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1693   132    12 
+Did donate to CFAR 2016?
+donate_cfar_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1688   123    26 
+CEA Donations 2015 (Total)
+         mean        median           min           max            sd 
+      2805.294         0.000         0.000     80000.000     12146.453 
+        length           sum        num_na num_over_zero 
+      1837.000    462873.460      1672.000        40.000 
+CEA Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1614.586         0.000         0.000     80000.000      7705.343 
+        length           sum        num_na num_over_zero 
+      1837.000    280937.920      1663.000        55.000 
+Did donate to CEA 2015?
+donate_cea_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1672   125    40 
+Did donate to CEA 2016?
+donate_cea_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1663   119    55 
+CS Donations 2015 (Total)
+         mean        median           min           max            sd 
+      966.7311        0.0000        0.0000    99120.0000     8851.6847 
+        length           sum        num_na num_over_zero 
+     1837.0000   128575.2400     1704.0000        8.0000 
+CS Donations 2016 (Total)
+         mean        median           min           max            sd 
+      336.8678        0.0000        0.0000    33040.0000     2977.8143 
+        length           sum        num_na num_over_zero 
+     1837.0000    42782.2100     1710.0000        8.0000 
+Did donate to CS 2015?
+donate_cs_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1704   125     8 
+Did donate to CS 2016?
+donate_cs_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1710   119     8 
+DTW Donations 2015 (Total)
+         mean        median           min           max            sd 
+      206.3230        0.0000        0.0000     4500.0000      610.0891 
+        length           sum        num_na num_over_zero 
+     1837.0000    34249.6100     1671.0000       44.0000 
+DTW Donations 2016 (Total)
+         mean        median           min           max            sd 
+      520.1563        0.0000        0.0000    25000.0000     2584.1137 
+        length           sum        num_na num_over_zero 
+     1837.0000    90507.2000     1663.0000       65.0000 
+Did donate to DTW 2015?
+donate_dtw_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1671   122    44 
+Did donate to DTW 2016?
+donate_dtw_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1663   109    65 
+EF Donations 2015 (Total)
+         mean        median           min           max            sd 
+      384.7909        0.0000        0.0000    22500.0000     2628.3743 
+        length           sum        num_na num_over_zero 
+     1837.0000    53485.9300     1698.0000       13.0000 
+EF Donations 2016 (Total)
+         mean        median           min           max            sd 
+      628.5445        0.0000        0.0000    17973.7600     2773.3900 
+        length           sum        num_na num_over_zero 
+     1837.0000    93024.5900     1689.0000       28.0000 
+Did donate to EF 2015?
+donate_ef_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1698   126    13 
+Did donate to EF 2016?
+donate_ef_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1689   120    28 
+END Fund Donations 2015 (Total)
+         mean        median           min           max            sd 
+     0.1040945     0.0000000     0.0000000    13.2200000     1.1730853 
+        length           sum        num_na num_over_zero 
+  1837.0000000    13.2200000  1710.0000000     1.0000000 
+END Fund Donations 2016 (Total)
+         mean        median           min           max            sd 
+     0.2184298     0.0000000     0.0000000    26.4300000     2.4027273 
+        length           sum        num_na num_over_zero 
+  1837.0000000    26.4300000  1716.0000000     1.0000000 
+Did donate to END Fund 2015?
+donate_end_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1710   126     1 
+Did donate to END Fund 2016?
+donate_end_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1716   120     1 
+Faunalytics Donations 2015 (Total)
+         mean        median           min           max            sd 
+     0.7936508     0.0000000     0.0000000   100.0000000     8.9087081 
+        length           sum        num_na num_over_zero 
+  1837.0000000   100.0000000  1711.0000000     1.0000000 
+Faunalytics Donations 2016 (Total)
+         mean        median           min           max            sd 
+      7.021393      0.000000      0.000000    600.000000     56.519513 
+        length           sum        num_na num_over_zero 
+   1837.000000    856.610000   1715.000000      4.000000 
+Did donate to Faunalytics 2015?
+donate_faunalytics_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1711   125     1 
+Did donate to Faunalytics 2016?
+donate_faunalytics_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1715   118     4 
+FRI Donations 2015 (Total)
+         mean        median           min           max            sd 
+      8.660236      0.000000      0.000000    599.850000     69.023522 
+        length           sum        num_na num_over_zero 
+   1837.000000   1099.850000   1710.000000      2.000000 
+FRI Donations 2016 (Total)
+         mean        median           min           max            sd 
+      19.02886       0.00000       0.00000    1090.50000     133.99573 
+        length           sum        num_na num_over_zero 
+    1837.00000    2340.55000    1714.00000       4.00000 
+Did donate to FRI 2015?
+donate_fri_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1710   125     2 
+Did donate to FRI 2016?
+donate_fri_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1714   119     4 
+FHI Donations 2015 (Total)
+         mean        median           min           max            sd 
+      157.4286        0.0000        0.0000    19824.0000     1766.0541 
+        length           sum        num_na num_over_zero 
+     1837.0000    19836.0000     1711.0000        2.0000 
+FHI Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1024.799         0.000         0.000    120000.000     10527.707 
+        length           sum        num_na num_over_zero 
+      1837.000    134248.680      1706.000        13.000 
+Did donate to FHI 2015?
+donate_fhi_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1711   124     2 
+Did donate to FHI 2016?
+donate_fhi_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1706   118    13 
+GD Donations 2015 (Total)
+         mean        median           min           max            sd 
+      573.3272        0.0000        0.0000    22000.0000     2245.9904 
+        length           sum        num_na num_over_zero 
+     1837.0000   100332.2600     1662.0000       66.0000 
+GD Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1230.175        64.010         0.000     50000.000      4415.994 
+        length           sum        num_na num_over_zero 
+      1837.000    281709.990      1608.000       133.000 
+Did donate to GD 2015?
+donate_gd_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1662   109    66 
+Did donate to GD 2016?
+donate_gd_2016_c > 0
+ 
+  <NA>  TRUE FALSE 
+  1608   133    96 
+GW Donations 2015 (Total)
+         mean        median           min           max            sd 
+      5180.393         0.000         0.000    800000.000     60467.306 
+        length           sum        num_na num_over_zero 
+      1837.000    906568.840      1662.000        54.000 
+GW Donations 2016 (Total)
+         mean        median           min           max            sd 
+      6095.278         0.000         0.000   1000000.000     72911.222 
+        length           sum        num_na num_over_zero 
+      1837.000   1145912.260      1649.000        85.000 
+Did donate to GW 2015?
+donate_gw_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1662   121    54 
+Did donate to GW 2016?
+donate_gw_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1649   103    85 
+GF Donations 2015 (Total)
+         mean        median           min           max            sd 
+       21.1456        0.0000        0.0000     2643.2000      236.4150 
+        length           sum        num_na num_over_zero 
+     1837.0000     2643.2000     1712.0000        1.0000 
+GF Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1568.628         0.000         0.000    128404.060     11464.272 
+        length           sum        num_na num_over_zero 
+      1837.000    227451.030      1692.000        33.000 
+Did donate to GF 2015?
+donate_gf_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1712   124     1 
+Did donate to GF 2016?
+donate_gf_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1692   112    33 
+MIRI Donations 2015 (Total)
+         mean        median           min           max            sd 
+      855.6045        0.0000        0.0000    38000.0000     4860.5114 
+        length           sum        num_na num_over_zero 
+     1837.0000   128340.6800     1687.0000       28.0000 
+MIRI Donations 2016 (Total)
+         mean        median           min           max            sd 
+      791.6952        0.0000        0.0000    37500.0000     3626.4619 
+        length           sum        num_na num_over_zero 
+     1837.0000   137754.9700     1663.0000       65.0000 
+Did donate to MIRI 2015?
+donate_miri_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1687   122    28 
+Did donate to MIRI 2016?
+donate_miri_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1663   109    65 
+MC Donations 2015 (Total)
+         mean        median           min           max            sd 
+             0             0             0             0             0 
+        length           sum        num_na num_over_zero 
+          1837             0          1715             0 
+MC Donations 2016 (Total)
+         mean        median           min           max            sd 
+      59.01992       0.00000       0.00000    5000.00000     463.99635 
+        length           sum        num_na num_over_zero 
+    1837.00000    7200.43000    1715.00000       6.00000 
+Did donate to MC 2015?
+donate_mc_2015_c > 0
+ 
+  <NA> FALSE 
+  1715   122 
+Did donate to MC 2016?
+donate_mc_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1715   116     6 
+MFA Donations 2015 (Total)
+         mean        median           min           max            sd 
+      458.1227        0.0000        0.0000    24751.5000     2248.7926 
+        length           sum        num_na num_over_zero 
+     1837.0000    68260.2800     1688.0000       37.0000 
+MFA Donations 2016 (Total)
+         mean        median           min           max            sd 
+      521.9712        0.0000        0.0000    16501.0000     1883.7934 
+        length           sum        num_na num_over_zero 
+     1837.0000    86125.2400     1672.0000       62.0000 
+Did donate to MFA 2015?
+donate_mfa_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1688   112    37 
+Did donate to MFA 2016?
+donate_mfa_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1672   103    62 
+SCI Donations 2015 (Total)
+         mean        median           min           max            sd 
+      408.0143        0.0000        0.0000    20000.0000     1683.9931 
+        length           sum        num_na num_over_zero 
+     1837.0000    70994.4900     1663.0000       64.0000 
+SCI Donations 2016 (Total)
+         mean        median           min           max            sd 
+      735.4025       25.3000        0.0000    25000.0000     2265.8277 
+        length           sum        num_na num_over_zero 
+     1837.0000   155905.3300     1625.0000      117.0000 
+Did donate to SCI 2015?
+donate_sci_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1663   110    64 
+Did donate to SCI 2016?
+donate_sci_2016_c > 0
+ 
+  <NA>  TRUE FALSE 
+  1625   117    95 
+Sightsavers Donations 2015 (Total)
+         mean        median           min           max            sd 
+     0.6553719     0.0000000     0.0000000    79.3000000     7.2090909 
+        length           sum        num_na num_over_zero 
+  1837.0000000    79.3000000  1716.0000000     1.0000000 
+Sightsavers Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1.367155      0.000000      0.000000    158.590000     14.724712 
+        length           sum        num_na num_over_zero 
+   1837.000000    158.590000   1721.000000      1.000000 
+Did donate to Sightsavers 2015?
+donate_sightsavers_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1716   120     1 
+Did donate to Sightsavers 2016?
+donate_sightsavers_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1721   115     1 
+SP Donations 2015 (Total)
+         mean        median           min           max            sd 
+      25.86885       0.00000       0.00000    3156.00000     285.73081 
+        length           sum        num_na num_over_zero 
+    1837.00000    3156.00000    1715.00000       1.00000 
+SP Donations 2016 (Total)
+         mean        median           min           max            sd 
+      412.2637        0.0000        0.0000    40000.0000     3672.9991 
+        length           sum        num_na num_over_zero 
+     1837.0000    49883.9100     1716.0000        7.0000 
+Did donate to SP 2015?
+donate_sp_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1715   121     1 
+Did donate to SP 2016?
+donate_sp_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1716   114     7 
+THL Donations 2015 (Total)
+         mean        median           min           max            sd 
+      201.3061        0.0000        0.0000    15000.0000     1290.3025 
+        length           sum        num_na num_over_zero 
+     1837.0000    29793.3100     1689.0000       33.0000 
+THL Donations 2016 (Total)
+         mean        median           min           max            sd 
+      451.5597        0.0000        0.0000    15000.0000     1795.3343 
+        length           sum        num_na num_over_zero 
+     1837.0000    71346.4300     1679.0000       57.0000 
+Did donate to THL 2015?
+donate_thl_2015_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1689   115    33 
+Did donate to THL 2016?
+donate_thl_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1679   101    57 
+TLYCS Donations 2015 (Total)
+         mean        median           min           max            sd 
+             0             0             0             0             0 
+        length           sum        num_na num_over_zero 
+          1837             0          1718             0 
+TLYCS Donations 2016 (Total)
+         mean        median           min           max            sd 
+      11.95838       0.00000       0.00000     482.62000      58.43293 
+        length           sum        num_na num_over_zero 
+    1837.00000    1399.13000    1720.00000       7.00000 
+Did donate to TLYCS 2015?
+donate_tlycs_2015_c > 0
+ 
+  <NA> FALSE 
+  1718   119 
+Did donate to TLYCS 2016?
+donate_tlycs_2016_c > 0
+ 
+  <NA> FALSE  TRUE 
+  1720   110     7 
+Meta Cause Donations 2015 (Total)
+         mean        median           min           max            sd 
+      395.0246        0.0000        0.0000   163217.6000     5451.3074 
+        length           sum        num_na num_over_zero 
+     1837.0000   725660.1600        0.0000       73.0000 
+Meta Cause Donations 2016 (Total)
+         mean        median           min           max            sd 
+      419.6781        0.0000        0.0000    87225.6000     4459.8907 
+        length           sum        num_na num_over_zero 
+     1837.0000   770948.7500        0.0000      132.0000 
+Did donate to Meta Cause 2015?
+donate_cause_meta_2015_c > 0
+ 
+ FALSE  TRUE 
+  1764    73 
+Did donate to Meta Cause 2016?
+donate_cause_meta_2016_c > 0
+ 
+ FALSE  TRUE 
+  1705   132 
+Global Poverty Cause Donations 2015 (Total)
+         mean        median           min           max            sd 
+      640.0227        0.0000        0.0000   116135.4100     4831.0978 
+        length           sum        num_na num_over_zero 
+     1837.0000  1175721.7900        0.0000      287.0000 
+Global Poverty Cause Donations 2016 (Total)
+         mean        median           min           max            sd 
+      1034.894         0.000         0.000    150000.000      6514.125 
+        length           sum        num_na num_over_zero 
+      1837.000   1901099.560         0.000       442.000 
+Did donate to Global Poverty Cause 2015?
+donate_cause_poverty_2015_c > 0
+ 
+ FALSE  TRUE 
+  1550   287 
+Did donate to Global Poverty Cause 2016?
+donate_cause_poverty_2016_c > 0
+ 
+ FALSE  TRUE 
+  1395   442 
+Cause Prioritization Cause Donations 2015 (Total)
+         mean        median           min           max            sd 
+       537.989         0.000         0.000    800000.000     18694.694 
+        length           sum        num_na num_over_zero 
+      1837.000    988285.860         0.000        88.000 
+Cause Prioritization Cause Donations 2016 (Total)
+         mean        median           min           max            sd 
+      674.9008        0.0000        0.0000  1000000.0000    23358.9196 
+        length           sum        num_na num_over_zero 
+     1837.0000  1239792.8500        0.0000      142.0000 
+Did donate to Cause Prioritization Cause 2015?
+donate_cause_cause_pri_2015_c > 0
+ 
+ FALSE  TRUE 
+  1749    88 
+Did donate to Cause Prioritization Cause 2016?
+donate_cause_cause_pri_2016_c > 0
+ 
+ FALSE  TRUE 
+  1695   142 
+Animal Welfare Cause Donations 2015 (Total)
+         mean        median           min           max            sd 
+      56.58835       0.00000       0.00000   24751.50000     774.74321 
+        length           sum        num_na num_over_zero 
+    1837.00000  103952.79000       0.00000      55.00000 
+Animal Welfare Cause Donations 2016 (Total)
+         mean        median           min           max            sd 
+      237.1602        0.0000        0.0000   128404.0600     3565.6916 
+        length           sum        num_na num_over_zero 
+     1837.0000   435663.2200        0.0000      108.0000 
+Did donate to Animal Welfare Cause 2015?
+donate_cause_animal_welfare_2015_c > 0
+ 
+ FALSE  TRUE 
+  1782    55 
+Did donate to Animal Welfare Cause 2016?
+donate_cause_animal_welfare_2016_c > 0
+ 
+ FALSE  TRUE 
+  1729   108 
+Far Future Cause Donations 2015 (Total)
+         mean        median           min           max            sd 
+      80.66232       0.00000       0.00000   38000.00000    1478.03615 
+        length           sum        num_na num_over_zero 
+    1837.00000  148176.68000       0.00000      30.00000 
+Far Future Cause Donations 2016 (Total)
+         mean        median           min           max            sd 
+      148.0695        0.0000        0.0000   145000.0000     3533.1116 
+        length           sum        num_na num_over_zero 
+     1837.0000   272003.6500        0.0000       74.0000 
+Did donate to Far Future Cause 2015?
+donate_cause_far_future_2015_c > 0
+ 
+ FALSE  TRUE 
+  1807    30 
+Did donate to Far Future Cause 2016?
+donate_cause_far_future_2016_c > 0
+ 
+ FALSE  TRUE 
+  1763    74 
+age
+age
+ 
+ <NA>   25   24   23   26   22   28   30   27   29   20   31   21   32   33   19 
+  800   91   84   75   72   61   57   56   55   55   54   45   44   41   25   22 
+   36   34   37   35   39   18   38   41   43   46   56   57   40   44   45   51 
+   17   16   14   13   10    9    9    9    9    6    5    5    4    4    4    4 
+   52   64   17   48   49   50   59   65   68   70   77   42   47   53   54   55 
+    4    4    3    3    3    3    3    3    3    3    3    2    2    2    2    2 
+   60   61   66   75   15   16   58   62   63   69   73   74   76 
+    2    2    2    2    1    1    1    1    1    1    1    1    1 
+age plot
+
+gender
+gender
+ 
+                 Male                 <NA>               Female 
+                  757                  757                  281 
+                Other Prefer Not to Answer 
+                   21                   21 
+race_white
+race_white
+ 
+  Yes  N/A <NA>   No 
+  951  554  185  147 
+race_black
+race_black
+ 
+   No  N/A <NA>  Yes 
+ 1090  554  185    8 
+race_hispanic
+race_hispanic
+ 
+   No  N/A <NA>  Yes 
+ 1063  554  185   35 
+race_asian
+race_asian
+ 
+   No  N/A <NA>  Yes 
+ 1023  554  185   75 
+student
+student
+ 
+   No  N/A  Yes <NA> 
+  673  570  409  185 
+country
+country
+ 
+                   <NA>          United States         United Kingdom 
+                    688                    507                    221 
+                Germany                 Canada              Australia 
+                     96                     62                     54 
+            Netherlands                 Norway            Switzerland 
+                     23                     19                     18 
+                 Sweden         Czech Republic                Denmark 
+                     16                     11                      9 
+                Austria                Ireland            New Zealand 
+                      8                      8                      8 
+                Belgium                 Brazil                 France 
+                      7                      7                      7 
+                  China                  India                  Italy 
+                      5                      5                      5 
+                 Poland              Singapore                Finland 
+                      5                      4                      3 
+                 Israel               Portugal                  Spain 
+                      3                      3                      3 
+              Argentina                Estonia                 Greece 
+                      2                      2                      2 
+                  Japan                 Latvia              Lithuania 
+                      2                      2                      2 
+                 Russia   United Arab Emirates                 Angola 
+                      2                      2                      1 
+                Belarus          Faroe Islands                Georgia 
+                      1                      1                      1 
+              Guatemala             Luxembourg               Malaysia 
+                      1                      1                      1 
+                 Mexico                  Qatar                 Serbia 
+                      1                      1                      1 
+               Slovakia           South Africa Svalbard and Jan Mayen 
+                      1                      1                      1 
+                 Taiwan                Uruguay                 Zambia 
+                      1                      1                      1 
+city
+city
+ 
+                                                              <NA> 
+                                                               808 
+                                                            SF Bay 
+                                                                79 
+                                                            London 
+                                                                69 
+                                                Boston / Cambridge 
+                                                                43 
+                                                     New York City 
+                                                                43 
+                                                            Oxford 
+                                                                34 
+                                                         Cambridge 
+                                                                21 
+                                                            Berlin 
+                                                                20 
+                                                           Seattle 
+                                                                19 
+                                                         Vancouver 
+                                                                17 
+                                                           Chicago 
+                                                                14 
+                                                    Washington, DC 
+                                                                14 
+                                                            Sydney 
+                                                                12 
+                                                         Melbourne 
+                                                                11 
+                                                           Madison 
+                                                                10 
+                                                          Canberra 
+                                                                 9 
+                                                              Oslo 
+                                                                 9 
+                                                      Philadelphia 
+                                                                 9 
+                                                            Zürich 
+                                                                 9 
+                                                       Los Angeles 
+                                                                 8 
+                                                            Munich 
+                                                                 8 
+                                                           Toronto 
+                                                                 8 
+                                                           Bristol 
+                                                                 7 
+                                                         Trondheim 
+                                                                 7 
+                                                            Vienna 
+                                                                 7 
+                                                          Montreal 
+                                                                 6 
+                                                         Osnabrück 
+                                                                 6 
+                                                            Prague 
+                                                                 6 
+                                                         Stockholm 
+                                                                 6 
+                                                         Baltimore 
+                                                                 5 
+                                                          Brisbane 
+                                                                 5 
+                                                            Dublin 
+                                                                 5 
+                                                           Glasgow 
+                                                                 5 
+                                                             Leeds 
+                                                                 5 
+                                                         San Diego 
+                                                                 5 
+                                                           Atlanta 
+                                                                 4 
+                                                            Austin 
+                                                                 4 
+                                                              Bonn 
+                                                                 4 
+                                                      Christchurch 
+                                                                 4 
+                                                         Edinburgh 
+                                                                 4 
+                                                         Hong Kong 
+                                                                 4 
+                                                            Ithaca 
+                                                                 4 
+                                                        Manchester 
+                                                                 4 
+                                                          Nijmegen 
+                                                                 4 
+                                                            Ottawa 
+                                                                 4 
+                                                          Pasadena 
+                                                                 4 
+                                                        Pittsburgh 
+                                                                 4 
+                                                         Princeton 
+                                                                 4 
+                                                         São Paulo 
+                                                                 4 
+                                                          Waterloo 
+                                                                 4 
+                                                            Aachen 
+                                                                 3 
+                                                         Amsterdam 
+                                                                 3 
+                                                          Brussels 
+                                                                 3 
+                                                           Cologne 
+                                                                 3 
+                                                        Copenhagen 
+                                                                 3 
+                                                            Exeter 
+                                                                 3 
+                                                        Gothenburg 
+                                                                 3 
+                                                        Heidelberg 
+                                                                 3 
+                                                           Houston 
+                                                                 3 
+                                                            Kraków 
+                                                                 3 
+                                                           Lansing 
+                                                                 3 
+                                                         Los Altos 
+                                                                 3 
+                                                            Madrid 
+                                                                 3 
+                                                          Portland 
+                                                                 3 
+                                                    Salt Lake City 
+                                                                 3 
+                                                     Santa Barbara 
+                                                                 3 
+                                                         Sheffield 
+                                                                 3 
+                                                         Singapore 
+                                                                 3 
+                                                          Tübingen 
+                                                                 3 
+                                                              York 
+                                                                 3 
+                                                            Albany 
+                                                                 2 
+                                                         Ann Arbor 
+                                                                 2 
+                                                            Athens 
+                                                                 2 
+                                                          Auckland 
+                                                                 2 
+                                                             Basel 
+                                                                 2 
+                                                              Bath 
+                                                                 2 
+                                                          Bayreuth 
+                                                                 2 
+                                                            Bergen 
+                                                                 2 
+                                                        Birmingham 
+                                                                 2 
+                                                           Boulder 
+                                                                 2 
+                                                          Brighton 
+                                                                 2 
+                                                          Brooklyn 
+                                                                 2 
+                                                        Canterbury 
+                                                                 2 
+                                                          Coventry 
+                                                                 2 
+                                                             Davis 
+                                                                 2 
+                                                            Durham 
+                                                                 2 
+                                                          Edmonton 
+                                                                 2 
+                                                         Eindhoven 
+                                                                 2 
+                                                          Erlangen 
+                                                                 2 
+                                                            Geneva 
+                                                                 2 
+                                                           Halifax 
+                                                                 2 
+                                                          Hamilton 
+                                                                 2 
+                                                          Hannover 
+                                                                 2 
+                                                         Haverford 
+                                                                 2 
+                                                     Highland Park 
+                                                                 2 
+                                                       Jersey City 
+                                                                 2 
+                                                         Leicester 
+                                                                 2 
+                                                           Leipzig 
+                                                                 2 
+                                                            Lisbon 
+                                                                 2 
+                                                        Maastricht 
+                                                                 2 
+                                                         Magdeburg 
+                                                                 2 
+                                                             Milan 
+                                                                 2 
+                                                         New Haven 
+                                                                 2 
+                                                       New Orleans 
+                                                                 2 
+                                                         Newcastle 
+                                                                 2 
+                                                             Paris 
+                                                                 2 
+                                                             Perth 
+                                                                 2 
+                                                      Porto Alegre 
+                                                                 2 
+                                                         Rotterdam 
+                                                                 2 
+                                                          San Jose 
+                                                                 2 
+                                                         Stevenage 
+                                                                 2 
+                                                         Stuttgart 
+                                                                 2 
+                                                         Sunnyvale 
+                                                                 2 
+                                                             Tampa 
+                                                                 2 
+                                                             Tartu 
+                                                                 2 
+                                                       Thunder Bay 
+                                                                 2 
+                                                            Tucson 
+                                                                 2 
+                                                           Utrecht 
+                                                                 2 
+                                                          Victoria 
+                                                                 2 
+                                                          Würzburg 
+                                                                 2 
+ (I do not live in a city, I live in a town called Milton Keynes.) 
+                                                                 1 
+                                                            Aarhus 
+                                                                 1 
+                                                          Aberdeen 
+                                                                 1 
+                                                          Abingdon 
+                                                                 1 
+                                                          Adelaide 
+                                                                 1 
+                                                         Anchorage 
+                                                                 1 
+                                                           Antwerp 
+                                                                 1 
+                                                             Argir 
+                                                                 1 
+                                                                Ås 
+                                                                 1 
+                                                     Asheville, NC 
+                                                                 1 
+                                                             Assen 
+                                                                 1 
+                                                        Aurora, CO 
+                                                                 1 
+                                                         Bangalore 
+                                                                 1 
+                                                           Beijing 
+                                                                 1 
+                                                          Belgrade 
+                                                                 1 
+                                                    Bellingham, WA 
+                                                                 1 
+                                                   Bensenville, IL 
+                                                                 1 
+                                                              Bern 
+                                                                 1 
+                                                       Biurnemouth 
+                                                                 1 
+                                                   Bloomington, IN 
+                                                                 1 
+                                                           Bolzano 
+                                                                 1 
+                                                          Bradford 
+                                                                 1 
+                                                        Bratislava 
+                                                                 1 
+                                                            Bremen 
+                                                                 1 
+                                                              Brno 
+                                                                 1 
+                                                     Brookline, MA 
+                                                                 1 
+                                                            Bruges 
+                                                                 1 
+                                                      Buenos Aires 
+                                                                 1 
+                                                    Burlington, VT 
+                                                                 1 
+                                                           burnaby 
+                                                                 1 
+                                                            Cairns 
+                                                                 1 
+                                                           Calgary 
+                                                                 1 
+                                                       Campbell CA 
+                                                                 1 
+                                                         Cape Town 
+                                                                 1 
+                                                           Cardiff 
+                                                                 1 
+                                                         Castricum 
+                                                                 1 
+                                                      Cedar Rapids 
+                                                                 1 
+                                               Cedaredge, Colorado 
+                                                                 1 
+              Čerčany is definitely not what you could call a city 
+                                                                 1 
+                                                       Chapel Hill 
+                                                                 1 
+                                                         Charlotte 
+                                                                 1 
+                                                   Charlottesville 
+                                                                 1 
+                                                   Charolttesville 
+                                                                 1 
+                                                        Chichester 
+                                                                 1 
+                                                        Chippenham 
+                                                                 1 
+                                                        Cincinnati 
+                                                                 1 
+                                                         Claremont 
+                                                                 1 
+                                                       Clemson, SC 
+                                                                 1 
+                                                  College Park, MD 
+                                                                 1 
+                                                  Colorado Springs 
+                                                                 1 
+                                                          columbus 
+                                                                 1 
+                                                       Concord, MA 
+                                                                 1 
+                                                         Corvallis 
+                                                                 1 
+                                                         Cupertino 
+                                                                 1 
+                                                            Dallas 
+                                                                 1 
+                                                            Denver 
+                                                                 1 
+                                                           Detroit 
+                                                                 1 
+                                                              Doha 
+                                                                 1 
+                                                             Dubai 
+                                                                 1 
+                                                             Dubbo 
+                                                                 1 
+                                                         Dübendorf 
+                                                                 1 
+                                                            Dundee 
+                                                                 1 
+                                                           Durango 
+                                                                 1 
+                                                        Düsseldorf 
+                                                                 1 
+                                                        East COast 
+                                                                 1 
+                                                     Eatontown, NJ 
+                                                                 1 
+                                                              Edam 
+                                                                 1 
+                                                      Edinburg, TX 
+                                                                 1 
+                                                          Enschede 
+                                                                 1 
+                                                             Espoo 
+                                                                 1 
+                                                            Eugene 
+                                                                 1 
+                                                     Fair Lawn, NJ 
+                                                                 1 
+                                                        Falkenberg 
+                                                                 1 
+                                                  Farmington, Utah 
+                                                                 1 
+                                                   Fort Saint John 
+                                                                 1 
+                                                        Fort Worth 
+                                                                 1 
+                                                 Frankfurt am Main 
+                                                                 1 
+                                              Freiburg im Breisgau 
+                                                                 1 
+                                                           Fremont 
+                                                                 1 
+                                                     Fresh Meadows 
+                                                                 1 
+                                                       Ft. Belvoir 
+                                                                 1 
+                                                   Gainesville, fl 
+                                                                 1 
+                                                      Gaithersburg 
+                                                                 1 
+                                                            Galway 
+                                                                 1 
+                                                    Georgetown, TX 
+                                                                 1 
+                                                    Germantown, MD 
+                                                                 1 
+                                                         Givatayim 
+                                                                 1 
+                                              Glendora, California 
+                                                                 1 
+                                                        gloucester 
+                                                                 1 
+                                                          Göteborg 
+                                                                 1 
+                                                         Göttingen 
+                                                                 1 
+                                             Grand Rapids Michigan 
+                                                                 1 
+                                                              Graz 
+                                                                 1 
+                                                         Greenbelt 
+                                                                 1 
+                                                    Greenville, NC 
+                                                                 1 
+                                                        Greystones 
+                                                                 1 
+                                                           Grimsby 
+                                                                 1 
+                                                      Grinnell, IA 
+                                                                 1 
+                                                         groningen 
+                                                                 1 
+                                                         Groningen 
+                                                                 1 
+                                                    Guatemala City 
+                                                                 1 
+                                                           Hamburg 
+                                                                 1 
+                                                         Harrogate 
+                                                                 1 
+                                                          Hastings 
+                                                                 1 
+                                                          Helsinki 
+                                                                 1 
+                                                         Henderson 
+                                                                 1 
+                                                         Hilversum 
+                                                                 1 
+                                           hjortshøj (near aarhus) 
+                                                                 1 
+                                                       Holyoke, MA 
+                                                                 1 
+                                 Huntly (not a city) Aberdeenshire 
+                                                                 1 
+                                                         Huonville 
+                                                                 1 
+                                                  Indianapolis, IN 
+                                                                 1 
+                                                         Iowa City 
+                                                                 1 
+                                                            Irvine 
+                                                                 1 
+                                                  it is not a city 
+                                                                 1 
+                                                     Kalamazoo, MI 
+                                                                 1 
+                                                    Kansas City KS 
+                                                                 1 
+                                                         Karlsruhe 
+                                                                 1 
+                                                            Kaunas 
+                                                                 1 
+                                                     Kenai, Alaska 
+                                                                 1 
+                                                     Knoxville, tn 
+                                                                 1 
+                                                           Kolkata 
+                                                                 1 
+                                                    Kongens Lyngby 
+                                                                 1 
+                                                      Kristianstad 
+                                                                 1 
+                                                       Kruishoutem 
+                                                                 1 
+                                                      Kuala Lumpur 
+                                                                 1 
+                                                     Lakeville, MN 
+                                                                 1 
+                                                      Lakewood, NJ 
+                                                                 1 
+                                                   Lane Cove North 
+                                                                 1 
+                                                     Larchmont, NY 
+                                                                 1 
+                                                         Las Vegas 
+                                                                 1 
+                                                    Leamington Spa 
+                                                                 1 
+                                                            Leiden 
+                                                                 1 
+                                                             Lille 
+                                                                 1 
+                                                          Limerick 
+                                                                 1 
+                                                           Lincoln 
+                                                                 1 
+                                                   little rock, ar 
+                                                                 1 
+                                                      Longyearbyen 
+                                                                 1 
+                                                         Los Gatos 
+                                                                 1 
+                                                            Luanda 
+                                                                 1 
+                                                            Lyngby 
+                                                                 1 
+                                                              Lyon 
+                                                                 1 
+                                                         Maidstone 
+                                                                 1 
+                                                             Malmö 
+                                                                 1 
+                                                            Malung 
+                                                                 1 
+                                                      Marble Falls 
+                                                                 1 
+                                                           marburg 
+                                                                 1 
+                                                      Marshall, MI 
+                                                                 1 
+                                                           Merrick 
+                                                                 1 
+                                                             Miami 
+                                                                 1 
+                                               Middlebury, Vermont 
+                                                                 1 
+                                                      Millbrae, ca 
+                                                                 1 
+                                                   Minneapolis, MN 
+                                                                 1 
+                                                             Minsk 
+                                                                 1 
+                                                    Mol and Leuven 
+                                                                 1 
+                                                          Monmouth 
+                                                                 1 
+                                                         Monterrey 
+                                                                 1 
+                                                        Montevideo 
+                                                                 1 
+                                                          Morehead 
+                                                                 1 
+                                                      Mullica Hill 
+                                                                 1 
+                                                       Nanaimo, BC 
+                                                                 1 
+                                                         Nashville 
+                                                                 1 
+                                                        Neenah, WI 
+                                                                 1 
+                                                 New Brunswick, NJ 
+                                                                 1 
+                                                         New Delhi 
+                                                                 1 
+                                                        Newark, NJ 
+                                                                 1 
+                                               Newcastle upon Tyne 
+                                                                 1 
+                                                             Noank 
+                                                                 1 
+                                                North of Inverness 
+                                                                 1 
+                                                       Northampton 
+                                                                 1 
+                                                       Norwalk, CT 
+                                                                 1 
+                                                          Nürnberg 
+                                                                 1 
+                                                              Ogre 
+                                                                 1 
+                                                             Olten 
+                                                                 1 
+                                                       Orlando, FL 
+                                                                 1 
+                                                           Ostrava 
+                                                                 1 
+                                                      Oxford, Ohio 
+                                                                 1 
+                                                       Paramus, NJ 
+                                                                 1 
+                                                            Penryn 
+                                                                 1 
+                                                       Petah Tikva 
+                                                                 1 
+                                                              Pisa 
+                                                                 1 
+                                                            Plaine 
+                                                                 1 
+                                                   Portland, Maine 
+                                                                 1 
+                                                             Porto 
+                                                                 1 
+                                                           Potomac 
+                                                                 1 
+                                                           Potsdam 
+                                                                 1 
+                                              Prairie Village , KS 
+                                                                 1 
+                                                        Providence 
+                                                                 1 
+                                                              PUne 
+                                                                 1 
+                                                Question_time:_F1a 
+                                                                 1 
+                                                       Raleigh, NC 
+                                                                 1 
+                                                          Red Deer 
+                                                                 1 
+                                                            Regina 
+                                                                 1 
+                                                Regional Australia 
+                                                                 1 
+                                                    Rexburg, Idaho 
+                                                                 1 
+                                                Richmond, Kentucky 
+                                                                 1 
+                                                              Riga 
+                                                                 1 
+                                                    Rio de Janeiro 
+                                                                 1 
+                                                         Rochester 
+                                                                 1 
+                                                              Rome 
+                                                                 1 
+                                                        Sacramento 
+                                                                 1 
+                                                       Saint Louis 
+                                                                 1 
+                                             Saint Paul, Minnesota 
+                                                                 1 
+                                        Saint-Bruno-de-Montarville 
+                                                                 1 
+                                                  Sainte-Genevieve 
+                                                                 1 
+                                                   San Antonio, TX 
+                                                                 1 
+                                                       San Leandro 
+                                                                 1 
+                                                        Santa Cruz 
+                                                                 1 
+                                                    Santa Rosa, CA 
+                                                                 1 
+                                                        Schorndorf 
+                                                                 1 
+                                              Schwalbach am Taunus 
+                                                                 1 
+                                                            Sedona 
+                                                                 1 
+                                                           Sharjah 
+                                                                 1 
+                                                      Sicklerville 
+                                                                 1 
+                                                       Southampton 
+                                                                 1 
+                                                   Southend-on-Sea 
+                                                                 1 
+                                                         Southwick 
+                                                                 1 
+                                                   Springfield, MO 
+                                                                 1 
+                                                        St Andrews 
+                                                                 1 
+                                                        St. Gallen 
+                                                                 1 
+                                                         St. Louis 
+                                                                 1 
+                                                          St. Paul 
+                                                                 1 
+                                                    St. Petersburg 
+                                                                 1 
+                                                          Stanford 
+                                                                 1 
+                                                          Strassen 
+                                                                 1 
+                                                        Sunderland 
+                                                                 1 
+                                                           Swansea 
+                                                                 1 
+                                                           Swindon 
+                                                                 1 
+                                                             Tabor 
+                                                                 1 
+                                                            Taipei 
+                                                                 1 
+                                                           Tbilisi 
+                                                                 1 
+                                                          tel aviv 
+                                                                 1 
+                                                             Tempe 
+                                                                 1 
+                                                     Tennant Creek 
+                                                                 1 
+                                                       Terre Haute 
+                                                                 1 
+                                                              Thun 
+                                                                 1 
+                                                             Tokyo 
+                                                                 1 
+                                                            Toledo 
+                                                                 1 
+                                                          Toulouse 
+                                                                 1 
+                                                         Tuebingen 
+                                                                 1 
+                                                       Turlock, CA 
+                                                                 1 
+                                                            Tustin 
+                                                                 1 
+                                                           Uppsala 
+                                                                 1 
+                                                             Utica 
+                                                                 1 
+                                                  Vernon Hills, IL 
+                                                                 1 
+                                                           village 
+                                                                 1 
+                                                           Vilnius 
+                                                                 1 
+                                                w. henrietta 14586 
+                                                                 1 
+                                                              Wako 
+                                                                 1 
+                                                            Warsaw 
+                                                                 1 
+                                              Washington, Illinois 
+                                                                 1 
+                                                        Wellington 
+                                                                 1 
+                                           West Lafayette, Indiana 
+                                                                 1 
+                                                    West Point, NY 
+                                                                 1 
+                                                       Wheaton, MD 
+                                                                 1 
+                                                        wilton, ct 
+                                                                 1 
+                                                  Windsor, Ontario 
+                                                                 1 
+                                                          Winnipeg 
+                                                                 1 
+                                                            Wirral 
+                                                                 1 
+                                                            Witten 
+                                                                 1 
+                                                         Wolfsburg 
+                                                                 1 
+                                                       Wolllongong 
+                                                                 1 
+                                                      Woodland, CA 
+                                                                 1 
+                                                     Woodstock, VT 
+                                                                 1 
+                                                           Wrexham 
+                                                                 1 
+                                                           Wrocław 
+                                                                 1 
+                                                        Yakima, WA 
+                                                                 1 
+                                                           Yucaipa 
+                                                                 1 
+religion
+religion
+ 
+ Atheist, agnostic or non-religious                               <NA> 
+                                856                                775 
+                          Christian                              Other 
+                                 97                                 42 
+               Prefer Not to Answer                           Buddhist 
+                                 24                                 21 
+                             Jewish                              Hindu 
+                                 20                                  2 
+diet
+veg
+ 
+                                         <NA> 
+                                          759 
+ Eat meat, but try to reduce the amount I eat 
+                                          334 
+                                        Vegan 
+                                          252 
+                                   Vegetarian 
+                                          231 
+                                   Meat eater 
+                                          177 
+                                  Pescetarian 
+                                           67 
+                                        Other 
+                                           13 
+                         Prefer Not to Answer 
+                                            4 
+moral philosophy
+moral_philosophy
+ 
+                                         <NA> 
+                                          898 
+               Consequentialism (utilitarian) 
+                                          496 
+ No opinion, or not familiar with these terms 
+                                          239 
+           Consequentialism (NOT utilitarian) 
+                                          118 
+                                Virtue ethics 
+                                           49 
+                                   Deontology 
+                                           37 
+opportunity or obligation
+ea_opportunity_or_obligation
+ 
+        <NA>  Moral Duty Opportunity  Obligation       Other 
+         871         461         364          85          56 
+employment_status
+employment_status
+ 
+                                                                                            <NA> 
+                                                                                            1160 
+                                                           Employed by a for-profit organization 
+                                                                                             296 
+                                                           Employed by a non-profit organization 
+                                                                                             115 
+                                                  Academics (Professor, Lecturer, Teacher, etc.) 
+                                                                                              65 
+                                                                                   Self-Employed 
+                                                                                              64 
+                                                                                      Unemployed 
+                                                                                              52 
+                                                                 Employed by a government entity 
+                                                                                              46 
+ I do not need to be employed (excessive savings, passive income, partner provides income, etc.) 
+                                                                                              31 
+                                                                                       Homemaker 
+                                                                                               8 
+employment field
+field
+ 
+                                            <NA> 
+                                            1258 
+    Computers (Practical: IT, programming, etc.) 
+                                             154 
+                                           Other 
+                                              74 
+                               Business (non-EA) 
+                                              50 
+                                         Finance 
+                                              32 
+                                     Engineering 
+                                              31 
+ Business (including operations for non-profits) 
+                                              28 
+                             Health Care (Other) 
+                                              18 
+             Statistics (including data science) 
+                                              18 
+                                     Mathematics 
+                                              16 
+                          Other "social science" 
+                                              16 
+                     Animal Research or Activism 
+                                              14 
+                                       Economics 
+                                              14 
+                                             Law 
+                                              14 
+                                         Biology 
+                                              13 
+                                  Computers (AI) 
+                                              12 
+                            Other "hard science" 
+                                              11 
+                                      Psychology 
+                                              10 
+                   Health Care (MD, PharmD, etc) 
+                                               9 
+                                             Art 
+                                               8 
+                             Farming/Agriculture 
+                                               8 
+          Computers (Academic, computer science) 
+                                               6 
+                                         Physics 
+                                               6 
+     Construction, Manufacturing or Manual Labor 
+                                               5 
+                                           Media 
+                                               5 
+                                      Philosophy 
+                                               5 
+                                    Neuroscience 
+                                               2 
+studied_cs
+studied_cs
+ 
+   No  N/A  Yes <NA> 
+  845  543  264  185 
+studied_econ
+studied_econ
+ 
+   No  N/A <NA>  Yes 
+  992  543  185  117 
+studied_engineering
+studied_engineering
+ 
+   No  N/A <NA>  Yes 
+ 1012  543  185   97 
+studied_maths
+studied_maths
+ 
+   No  N/A  Yes <NA> 
+  884  543  225  185 
+studied_medicine
+studied_medicine
+ 
+   No  N/A <NA>  Yes 
+ 1070  543  185   39 
+studied_psych
+studied_psych
+ 
+   No  N/A <NA>  Yes 
+ 1034  543  185   75 
+studied_phil
+studied_phil
+ 
+   No  N/A <NA>  Yes 
+  971  543  185  138 
+studied_physics
+studied_physics
+ 
+   No  N/A <NA>  Yes 
+ 1016  543  185   93 
+studied_humanities
+studied_humanities
+ 
+   No  N/A <NA>  Yes 
+ 1009  543  185  100 
+studied_social_science
+studied_social_science
+ 
+   No  N/A <NA>  Yes 
+  989  543  185  120 
+studied_other_science
+studied_other_science
+ 
+   No  N/A <NA>  Yes 
+  981  543  185  128 
+ea_donate
+ea_donate
+ 
+  Yes   No  N/A <NA> 
+ 1009  406  237  185 
+ea_volunteer
+ea_volunteer
+ 
+   No  Yes  N/A <NA> 
+ 1025  390  237  185 
+ea_career
+ea_career
+ 
+   No  Yes  N/A <NA> 
+ 1030  385  237  185 
+ea_career_type
+ea_career_type
+ 
+                           <NA>                Earning to give 
+                            797                            405 
+                       Research                  None of these 
+                            257                            214 
+ Direct charity/non-profit work 
+                            164 
+ea_volunteer_hours
+ea_volunteer_hours
+ 
+       0 hours per month                    <NA>   1.1-3 hours per month 
+                     939                     483                      84 
+  5.1-10 hours per month   0.1-1 hours per month   3.1-5 hours per month 
+                      81                      78                      66 
+ over 20 hours per month 10.1-20 hours per month 
+                      55                      51 
+ea_paid_hours
+ea_paid_hours
+ 
+                         0                      <NA> 160 or higher (full-time) 
+                      1201                       503                        53 
+                   0.1-9.9                   10-19.9                   40-59.9 
+                        24                        19                        14 
+                   20-39.9                   60-89.9                  90-119.9 
+                        13                         6                         3 
+                 120-159.9 
+                         1 
+gender x poverty donations 2015
+donate_cause_poverty_2015_c ### gender_b
+ Filters:  donate_2015_c > 0 
+ # A tibble: 3 x 5
+   gender_b     N      mean median        sd
+      <chr> <int>     <dbl>  <dbl>     <dbl>
+ 1   Female   156  406.8587      0  1367.916
+ 2     Male   446 1581.9542      0  7346.477
+ 3     <NA>   121 3098.0138      0 11647.362
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -1582  -1582  -1456   -407 114553 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)    406.9      509.6   0.798   0.4250  
+ yMale         1175.1      592.1   1.985   0.0476 *
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 6365 on 600 degrees of freedom
+   (121 observations deleted due to missingness)
+ Multiple R-squared:  0.006523,	Adjusted R-squared:  0.004867 
+ F-statistic: 3.939 on 1 and 600 DF,  p-value: 0.04762
+ 
+gender x poverty donations 2016
+donate_cause_poverty_2016_c ### gender_b
+ Filters:  donate_2016_c > 0 
+ # A tibble: 3 x 5
+   gender_b     N      mean median        sd
+      <chr> <int>     <dbl>  <dbl>     <dbl>
+ 1   Female   187  816.1021   0.00  2189.610
+ 2     Male   530 1991.8344  18.25  8151.811
+ 3     <NA>   145 4450.1790  30.00 16150.551
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -1992  -1992  -1642   -740 102415 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)    816.1      519.2   1.572   0.1164  
+ yMale         1175.7      603.9   1.947   0.0519 .
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 7100 on 715 degrees of freedom
+   (145 observations deleted due to missingness)
+ Multiple R-squared:  0.005273,	Adjusted R-squared:  0.003882 
+ F-statistic:  3.79 on 1 and 715 DF,  p-value: 0.05194
+ 
+gender x AR donations 2016
+donate_cause_animal_welfare_2016_c ### gender_b
+ Filters:  donate_2016_c > 0 
+ # A tibble: 3 x 5
+   gender_b     N     mean median       sd
+      <chr> <int>    <dbl>  <dbl>    <dbl>
+ 1   Female   187 182.1006      0 1310.998
+ 2     Male   530 659.3061      0 6447.698
+ 3     <NA>   145 359.8494      0 2471.306
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+   -659   -659   -659   -182 127745 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+ (Intercept)    182.1      408.5   0.446    0.656
+ yMale          477.2      475.1   1.004    0.316
+ 
+ Residual standard error: 5586 on 715 degrees of freedom
+   (145 observations deleted due to missingness)
+ Multiple R-squared:  0.001409,	Adjusted R-squared:  1.222e-05 
+ F-statistic: 1.009 on 1 and 715 DF,  p-value: 0.3155
+ 
+donations x ETG 2015
+donate_2015_c ### ea_career_type == "Earning to give"
+ Filters:  student == "No" 
+ # A tibble: 3 x 5
+   `ea_career_type == "Earning to give"`     N      mean  median         sd
+                                   <lgl> <int>     <dbl>   <dbl>      <dbl>
+ 1                                 FALSE   382  3757.205  599.85  14165.533
+ 2                                  TRUE   255 18198.071  719.82 111537.420
+ 3                                    NA    36  5198.031 3000.00   5704.297
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -18198  -16928   -3707   -2257 1303402 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)     3757       4314   0.871   0.3843  
+ yTRUE          14441       6549   2.205   0.0279 *
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 74230 on 521 degrees of freedom
+   (150 observations deleted due to missingness)
+ Multiple R-squared:  0.009246,	Adjusted R-squared:  0.007345 
+ F-statistic: 4.862 on 1 and 521 DF,  p-value: 0.02789
+ 
+donations x ETG 2016
+donate_2016_c ### ea_career_type == "Earning to give"
+ Filters:  student == "No" 
+ # A tibble: 3 x 5
+   `ea_career_type == "Earning to give"`     N      mean median         sd
+                                   <lgl> <int>     <dbl>  <dbl>      <dbl>
+ 1                                 FALSE   382  5593.020 1000.0  20920.062
+ 2                                  TRUE   255 23948.597 2560.4 152095.053
+ 3                                    NA    36  6434.871 4500.0   6617.751
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -23949  -19949   -5439   -2594 1958451 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)     5593       5920   0.945   0.3452  
+ yTRUE          18356       8929   2.056   0.0403 *
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 102000 on 528 degrees of freedom
+   (143 observations deleted due to missingness)
+ Multiple R-squared:  0.00794,	Adjusted R-squared:  0.006061 
+ F-statistic: 4.226 on 1 and 528 DF,  p-value: 0.0403
+ 
+total donations x ETG 2015
+# A tibble: 3 x 3
+   `ea_career_type == "Earning to give"` total_donations percent_donations
+                                   <lgl>           <dbl>             <dbl>
+ 1                                 FALSE         1214623         0.1814464
+ 2                                  TRUE         4222635         0.6307984
+ 3                                    NA         1256855         0.1877552
+total donations x ETG 2016
+# A tibble: 3 x 3
+   `ea_career_type == "Earning to give"` total_donations percent_donations
+                                   <lgl>           <dbl>             <dbl>
+ 1                                 FALSE         1874978         0.1889391
+ 2                                  TRUE         5691984         0.5735740
+ 3                                    NA         2356751         0.2374868
+ETG donations x act now-later 2016
+donate_2016_c ### act_now_or_later
+ Filters:  student == "No", ea_career_type == "Earning to give" 
+ # A tibble: 4 x 5
+   act_now_or_later     N      mean  median         sd
+              <chr> <int>     <dbl>   <dbl>      <dbl>
+ 1        Act later    51  5179.757  719.82  12605.101
+ 2          Act now   148 21857.332 4510.00 104441.708
+ 3            Other    27  4566.161 1300.00   7196.102
+ 4             <NA>    29 86042.242 3250.00 387238.726
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -21857  -19408   -5356   -2593 1178143 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+ (Intercept)   5179.8    12474.2   0.415    0.678
+ yAct now     16677.6    14456.4   1.154    0.250
+ yOther        -613.6    21761.9  -0.028    0.978
+ 
+ Residual standard error: 85520 on 204 degrees of freedom
+   (48 observations deleted due to missingness)
+ Multiple R-squared:  0.008773,	Adjusted R-squared:  -0.0009446 
+ F-statistic: 0.9028 on 2 and 204 DF,  p-value: 0.407
+ 
+ETG donations 2015
+         mean        median           min           max            sd 
+      11996.12        239.94          0.00    1321600.00      89914.97 
+        length           sum        num_na num_over_zero 
+        405.00    4222635.43         53.00        245.00 
+ETG donations 2016
+         mean        median           min           max            sd 
+      15723.71        802.18          0.00    1982400.00     122452.20 
+        length           sum        num_na num_over_zero 
+        405.00    5691984.29         43.00        305.00 
+EA year
+which_year_EA
+ 
+        <NA>        2016        2015        2014        2017        2013 
+         530         411         345         148         105          93 
+        2012        2011 Before 2009        2010        2009 
+          87          45          29          28          16 
+how heard
+first_heard_EA
+ 
+                                                           <NA> 
+                                                            432 
+            Personal Contact (e.g. Friend, Colleague, Relative) 
+                                                            202 
+                                                      LessWrong 
+                                                            199 
+                      Other (please specify in the comment box) 
+                                                            166 
+ Book/article/blog post etc. (please specify which, if you can) 
+                                                            122 
+                                               I don't remember 
+                                                            104 
+                                               Slate Star Codex 
+                                                             96 
+                                                   80,000 Hours 
+                                                             94 
+                                             Giving What We Can 
+                                                             79 
+                                                       TED Talk 
+                                                             74 
+                                                       GiveWell 
+                                                             60 
+                                                 Local EA group 
+                                                             47 
+                                       Doing Good Better (Book) 
+                                                             44 
+                                                       Facebook 
+                                                             37 
+                           The Life You Can Save (organization) 
+                                                             28 
+                                                  Search Engine 
+                                                             19 
+                                    REG / EAF / The Swiss group 
+                                                             17 
+ Animal Charity Evaluators (formerly Effective Animal Activism) 
+                                                             11 
+                                                      EA Global 
+                                                              6 
+First heard EA by year
+NULL
+LessWrong refer over year
+which_year_EA ### first_heard_EA == "LessWrong" (nas removed)
+              
+               FALSE        TRUE       
+   2009        13 (86.67%)  2 (13.33%) 
+   2010        26 (92.86%)  2 (7.14%)  
+   2011        35 (77.78%)  10 (22.22%)
+   2012        63 (72.41%)  24 (27.59%)
+   2013        76 (81.72%)  17 (18.28%)
+   2014        110 (74.32%) 38 (25.68%)
+   2015        301 (87.5%)  43 (12.5%) 
+   2016        384 (93.89%) 25 (6.11%) 
+   2017        93 (88.57%)  12 (11.43%)
+   Before 2009 26 (89.66%)  3 (10.34%) 
+GWWC refer over year
+which_year_EA ### first_heard_EA == "Giving What We Can" (nas removed)
+              
+               FALSE        TRUE      
+   2009        12 (80%)     3 (20%)   
+   2010        21 (75%)     7 (25%)   
+   2011        40 (88.89%)  5 (11.11%)
+   2012        80 (91.95%)  7 (8.05%) 
+   2013        85 (91.4%)   8 (8.6%)  
+   2014        141 (95.27%) 7 (4.73%) 
+   2015        329 (95.64%) 15 (4.36%)
+   2016        394 (96.33%) 15 (3.67%)
+   2017        99 (94.29%)  6 (5.71%) 
+   Before 2009 27 (93.1%)   2 (6.9%)  
+80K refer over year
+which_year_EA ### first_heard_EA == "80,000 Hours" (nas removed)
+              
+               FALSE        TRUE      
+   2009        14 (93.33%)  1 (6.67%) 
+   2010        28 (100%)    0 (0%)    
+   2011        43 (95.56%)  2 (4.44%) 
+   2012        81 (93.1%)   6 (6.9%)  
+   2013        89 (95.7%)   4 (4.3%)  
+   2014        138 (93.24%) 10 (6.76%)
+   2015        324 (94.19%) 20 (5.81%)
+   2016        371 (90.71%) 38 (9.29%)
+   2017        96 (91.43%)  9 (8.57%) 
+   Before 2009 29 (100%)    0 (0%)    
+SSC refer over year
+which_year_EA ### first_heard_EA == "Slate Star Codex" (nas removed)
+              
+               FALSE        TRUE       
+   2009        15 (100%)    0 (0%)     
+   2010        28 (100%)    0 (0%)     
+   2011        45 (100%)    0 (0%)     
+   2012        86 (98.85%)  1 (1.15%)  
+   2013        93 (100%)    0 (0%)     
+   2014        139 (93.92%) 9 (6.08%)  
+   2015        316 (91.86%) 28 (8.14%) 
+   2016        368 (89.98%) 41 (10.02%)
+   2017        95 (90.48%)  10 (9.52%) 
+   Before 2009 27 (93.1%)   2 (6.9%)   
+Heard EA attributed donations
+# A tibble: 19 x 2
+                                                    first_heard_EA sum_donations
+                                                             <chr>         <dbl>
+  1                                             Giving What We Can    2493016.30
+  2                                                       GiveWell    1494004.07
+  3                                                           <NA>    1239671.85
+  4                                                      LessWrong     870736.92
+  5            Personal Contact (e.g. Friend, Colleague, Relative)     698954.02
+  6                                               I don't remember     656835.32
+  7                      Other (please specify in the comment box)     601993.19
+  8 Book/article/blog post etc. (please specify which, if you can)     475700.92
+  9                                                   80,000 Hours     412797.36
+ 10                                                       TED Talk     292547.80
+ 11                                       Doing Good Better (Book)     242130.66
+ 12                                               Slate Star Codex     204215.83
+ 13                           The Life You Can Save (organization)      98156.99
+ 14                                    REG / EAF / The Swiss group      40575.67
+ 15                                                 Local EA group      39449.52
+ 16                                                  Search Engine      27544.70
+ 17 Animal Charity Evaluators (formerly Effective Animal Activism)      19873.97
+ 18                                                       Facebook      14708.21
+ 19                                                      EA Global        799.96
+Heard EA attributed donations
+# A tibble: 19 x 2
+                                                    first_heard_EA sum_donations
+                                                             <chr>         <dbl>
+  1                                             Giving What We Can    2493016.30
+  2                                                       GiveWell    1494004.07
+  3                                                           <NA>    1239671.85
+  4                                                      LessWrong     870736.92
+  5            Personal Contact (e.g. Friend, Colleague, Relative)     698954.02
+  6                                               I don't remember     656835.32
+  7                      Other (please specify in the comment box)     601993.19
+  8 Book/article/blog post etc. (please specify which, if you can)     475700.92
+  9                                                   80,000 Hours     412797.36
+ 10                                                       TED Talk     292547.80
+ 11                                       Doing Good Better (Book)     242130.66
+ 12                                               Slate Star Codex     204215.83
+ 13                           The Life You Can Save (organization)      98156.99
+ 14                                    REG / EAF / The Swiss group      40575.67
+ 15                                                 Local EA group      39449.52
+ 16                                                  Search Engine      27544.70
+ 17 Animal Charity Evaluators (formerly Effective Animal Activism)      19873.97
+ 18                                                       Facebook      14708.21
+ 19                                                      EA Global        799.96
+Heard EA attributed donors
+first_heard_EA ### donate_2016_c > 0 (nas removed)
+                                                                 
+                                                                  FALSE      
+   80,000 Hours                                                   11 (18.33%)
+   Animal Charity Evaluators (formerly Effective Animal Activism) 0 (0%)     
+   Book/article/blog post etc. (please specify which, if you can) 12 (14.46%)
+   Doing Good Better (Book)                                       1 (4%)     
+   EA Global                                                      0 (0%)     
+   Facebook                                                       4 (25%)    
+   GiveWell                                                       1 (2.17%)  
+   Giving What We Can                                             10 (16.39%)
+   I don't remember                                               9 (15.25%) 
+   LessWrong                                                      28 (19.58%)
+   Local EA group                                                 8 (23.53%) 
+   Other (please specify in the comment box)                      23 (19.83%)
+   Personal Contact (e.g. Friend, Colleague, Relative)            34 (25.76%)
+   REG / EAF / The Swiss group                                    0 (0%)     
+   Search Engine                                                  3 (18.75%) 
+   Slate Star Codex                                               14 (21.54%)
+   TED Talk                                                       6 (10.34%) 
+   The Life You Can Save (organization)                           2 (10.53%) 
+                                                                 
+                                                                  TRUE        
+   80,000 Hours                                                   49 (81.67%) 
+   Animal Charity Evaluators (formerly Effective Animal Activism) 7 (100%)    
+   Book/article/blog post etc. (please specify which, if you can) 71 (85.54%) 
+   Doing Good Better (Book)                                       24 (96%)    
+   EA Global                                                      2 (100%)    
+   Facebook                                                       12 (75%)    
+   GiveWell                                                       45 (97.83%) 
+   Giving What We Can                                             51 (83.61%) 
+   I don't remember                                               50 (84.75%) 
+   LessWrong                                                      115 (80.42%)
+   Local EA group                                                 26 (76.47%) 
+   Other (please specify in the comment box)                      93 (80.17%) 
+   Personal Contact (e.g. Friend, Colleague, Relative)            98 (74.24%) 
+   REG / EAF / The Swiss group                                    11 (100%)   
+   Search Engine                                                  13 (81.25%) 
+   Slate Star Codex                                               51 (78.46%) 
+   TED Talk                                                       52 (89.66%) 
+   The Life You Can Save (organization)                           17 (89.47%) 
+Heard EA attributed career
+first_heard_EA ### ea_career (nas removed)
+                                                                 
+                                                                  No          
+   80,000 Hours                                                   64 (68.09%) 
+   Animal Charity Evaluators (formerly Effective Animal Activism) 5 (45.45%)  
+   Book/article/blog post etc. (please specify which, if you can) 88 (72.13%) 
+   Doing Good Better (Book)                                       38 (86.36%) 
+   EA Global                                                      6 (100%)    
+   Facebook                                                       27 (72.97%) 
+   GiveWell                                                       43 (71.67%) 
+   Giving What We Can                                             59 (74.68%) 
+   I don't remember                                               80 (76.92%) 
+   LessWrong                                                      160 (80.4%) 
+   Local EA group                                                 22 (46.81%) 
+   Other (please specify in the comment box)                      120 (72.29%)
+   Personal Contact (e.g. Friend, Colleague, Relative)            132 (65.35%)
+   REG / EAF / The Swiss group                                    7 (41.18%)  
+   Search Engine                                                  10 (52.63%) 
+   Slate Star Codex                                               88 (91.67%) 
+   TED Talk                                                       50 (67.57%) 
+   The Life You Can Save (organization)                           21 (75%)    
+                                                                 
+                                                                  Yes        
+   80,000 Hours                                                   30 (31.91%)
+   Animal Charity Evaluators (formerly Effective Animal Activism) 6 (54.55%) 
+   Book/article/blog post etc. (please specify which, if you can) 34 (27.87%)
+   Doing Good Better (Book)                                       6 (13.64%) 
+   EA Global                                                      0 (0%)     
+   Facebook                                                       10 (27.03%)
+   GiveWell                                                       17 (28.33%)
+   Giving What We Can                                             20 (25.32%)
+   I don't remember                                               24 (23.08%)
+   LessWrong                                                      39 (19.6%) 
+   Local EA group                                                 25 (53.19%)
+   Other (please specify in the comment box)                      46 (27.71%)
+   Personal Contact (e.g. Friend, Colleague, Relative)            70 (34.65%)
+   REG / EAF / The Swiss group                                    10 (58.82%)
+   Search Engine                                                  9 (47.37%) 
+   Slate Star Codex                                               8 (8.33%)  
+   TED Talk                                                       24 (32.43%)
+   The Life You Can Save (organization)                           7 (25%)    
+involved_TLYCS
+involved_TLYCS
+ 
+   No  N/A <NA>  Yes 
+ 1271  237  185  144 
+involved_local_EA
+involved_local_EA
+ 
+   No  Yes  N/A <NA> 
+ 1154  261  237  185 
+involved_lesswrong
+involved_lesswrong
+ 
+   No  Yes  N/A <NA> 
+ 1100  315  237  185 
+involved_givewell
+involved_givewell
+ 
+   No  Yes  N/A <NA> 
+  883  532  237  185 
+involved_online_ea
+involved_online_ea
+ 
+   No  Yes  N/A <NA> 
+ 1086  329  237  185 
+involved_personal_contact
+involved_personal_contact
+ 
+   No  Yes  N/A <NA> 
+  973  442  237  185 
+involved_80K
+involved_80K
+ 
+   No  Yes  N/A <NA> 
+  992  423  237  185 
+involved_GWWC
+involved_GWWC
+ 
+   No  Yes  N/A <NA> 
+ 1020  395  237  185 
+involved EA Global
+involved_ea_global
+ 
+   No  N/A <NA>  Yes 
+ 1313  237  185  102 
+involved Book or Blog
+involved_book_blog
+ 
+   No  Yes  N/A <NA> 
+  896  519  237  185 
+involved Swiss
+involved_swiss
+ 
+   No  N/A <NA>  Yes 
+ 1364  237  185   51 
+Involvment attributed
+NULL
+member_ea_fb
+member_ea_fb
+ 
+  Yes   No  N/A <NA> 
+  773  642  237  185 
+member_ea_forum
+member_ea_forum
+ 
+   No  Yes  N/A <NA> 
+ 1124  291  237  185 
+member_gwwc
+member_gwwc
+ 
+   No  Yes  N/A <NA> 
+  939  476  237  185 
+member_lw
+member_lw
+ 
+   No  Yes  N/A <NA> 
+ 1114  301  237  185 
+member_local_group
+member_local_group
+ 
+   No  Yes  N/A <NA> 
+  947  468  237  185 
+would_like_more_involvement
+would_like_more_involvement
+ 
+                          Yes                         <NA> 
+                          798                          472 
+                           No I'd like to learn more first 
+                          286                          281 
+Insecurity about EA
+insecurity
+ 
+ <NA>   No  Yes 
+  944  557  336 
+EA Welcoming
+ea_welcoming
+ 
+                              <NA>                         Welcoming 
+                               971                               407 
+ Neither welcoming nor unwelcoming                    Very welcoming 
+                               255                               133 
+                       Unwelcoming                  Very unwelcoming 
+                                48                                23 
+ea_nps
+ea_nps
+ 
+                   <NA> 10 (Completely likely)                      8 
+                    464                    388                    242 
+                      9                      7                      6 
+                    201                    180                    125 
+                      5                      3                      4 
+                    114                     36                     33 
+  0 (Not at all likely)                      2                      1 
+                     20                     20                     14 
+confidence in personal EA
+confident_future_ea_personal
+ 
+          <NA> 90% confident 80% confident 70% confident 50% confident 
+           449           394           311           263           122 
+ 60% confident 40% confident      Not Sure 20% confident 30% confident 
+           114            54            36            34            34 
+ 10% confident 
+            26 
+confidence in EA movement
+confident_future_ea_movement
+ 
+          <NA> 90% confident 50% confident 70% confident 60% confident 
+           458           258           212           179           154 
+ 80% confident 30% confident 40% confident      Not Sure 20% confident 
+           138           120            93            84            76 
+ 10% confident 
+            65 
+confidence x confidence
+confident_future_ea_personal ### confident_future_ea_movement (nas removed)
+                
+                 10% confident 20% confident 30% confident 40% confident
+   10% confident        0.1692        0.0395        0.0083        0.0108
+   20% confident        0.1692        0.1053        0.0333        0.0108
+   30% confident        0.0769        0.0658        0.0500        0.0430
+   40% confident        0.1077        0.1316        0.1000        0.0430
+   50% confident        0.1231        0.1184        0.1250        0.0968
+   60% confident        0.1077        0.1447        0.1833        0.1290
+   70% confident        0.0462        0.0789        0.2083        0.2796
+   80% confident        0.0308        0.1579        0.1333        0.2258
+   90% confident        0.1538        0.1184        0.1583        0.1613
+   Not Sure             0.0154        0.0395        0.0000        0.0000
+                
+                 50% confident 60% confident 70% confident 80% confident
+   10% confident        0.0048        0.0065        0.0056        0.0074
+   20% confident        0.0143        0.0065        0.0168        0.0000
+   30% confident        0.0190        0.0130        0.0056        0.0222
+   40% confident        0.0333        0.0195        0.0168        0.0222
+   50% confident        0.1238        0.0649        0.0726        0.0741
+   60% confident        0.0619        0.1169        0.0726        0.0889
+   70% confident        0.2524        0.2727        0.1844        0.2296
+   80% confident        0.2333        0.3117        0.3352        0.2889
+   90% confident        0.2476        0.1818        0.2849        0.2593
+   Not Sure             0.0095        0.0065        0.0056        0.0074
+                
+                 90% confident Not Sure
+   10% confident        0.0116   0.0241
+   20% confident        0.0078   0.0120
+   30% confident        0.0078   0.0120
+   40% confident        0.0078   0.0361
+   50% confident        0.0581   0.0843
+   60% confident        0.0039   0.0361
+   70% confident        0.1279   0.0723
+   80% confident        0.2171   0.0964
+   90% confident        0.5465   0.3373
+   Not Sure             0.0116   0.2892
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 252.05, df = 9, p-value < 2.2e-16
+ 
+MIRI donations by year
+donate_miri_2016_c ### which_year_EA
+ Filters:  donate_2016_c > 0 
+ # A tibble: 10 x 5
+    which_year_EA     N       mean   median          sd
+            <chr> <int>      <dbl>    <dbl>       <dbl>
+  1          2009     2 4250.00000 4250.000  6010.40764
+  2          2010     3    0.00000    0.000     0.00000
+  3          2011     5  317.05600   20.000   467.35491
+  4          2012     8  315.26875   19.825   802.96089
+  5          2013     8  154.53250   25.000   223.73480
+  6          2014    17 2557.84176    0.000  9108.86370
+  7          2015    37  810.65514    6.000  2096.95879
+  8          2016    43  120.96186    0.000   503.84815
+  9          2017     7   29.28571    0.000    75.30098
+ 10   Before 2009     5 5100.00000    0.000 11126.54484
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -5100   -811   -121   -113  34942 
+ 
+ Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+ (Intercept)      4250       2852   1.490    0.139
+ y2010           -4250       3682  -1.154    0.251
+ y2011           -3933       3375  -1.165    0.246
+ y2012           -3935       3189  -1.234    0.220
+ y2013           -4096       3189  -1.284    0.201
+ y2014           -1692       3015  -0.561    0.576
+ y2015           -3439       2928  -1.175    0.242
+ y2016           -4129       2918  -1.415    0.160
+ y2017           -4221       3234  -1.305    0.194
+ yBefore 2009      850       3375   0.252    0.802
+ 
+ Residual standard error: 4033 on 125 degrees of freedom
+ Multiple R-squared:  0.08966,	Adjusted R-squared:  0.02412 
+ F-statistic: 1.368 on 9 and 125 DF,  p-value: 0.2096
+ 
+AMF donations by year
+donate_amf_2016_c ### which_year_EA
+ Filters:  donate_2016_c > 0 
+ # A tibble: 10 x 5
+    which_year_EA     N      mean   median         sd
+            <chr> <int>     <dbl>    <dbl>      <dbl>
+  1          2009     7 6284.9800 6113.140  6235.2697
+  2          2010     8 2316.7000 2321.600  1699.6704
+  3          2011    16 2829.9513 1146.480  4965.0224
+  4          2012    20 3927.1235 1321.600  6895.6182
+  5          2013    34 5187.4371  401.500 17816.2665
+  6          2014    54 4487.2519  276.545 12719.8199
+  7          2015    96 1758.1834  205.745  3942.1878
+  8          2016   117  890.5431  200.000  1814.3661
+  9          2017     9   65.6300    0.000   113.9665
+ 10   Before 2009     7 1880.8386  500.000  2690.8688
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -5785  -1907   -891    -62  99219 
+ 
+ Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+ (Intercept)      6285       2995   2.099   0.0366 *
+ y2010           -3968       4101  -0.968   0.3339  
+ y2011           -3455       3591  -0.962   0.3366  
+ y2012           -2358       3480  -0.678   0.4985  
+ y2013           -1098       3289  -0.334   0.7388  
+ y2014           -1798       3183  -0.565   0.5726  
+ y2015           -4527       3102  -1.459   0.1454  
+ y2016           -5394       3083  -1.750   0.0810 .
+ y2017           -6219       3993  -1.557   0.1202  
+ yBefore 2009    -4404       4236  -1.040   0.2991  
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 7924 on 358 degrees of freedom
+ Multiple R-squared:  0.04306,	Adjusted R-squared:  0.01901 
+ F-statistic:  1.79 on 9 and 358 DF,  p-value: 0.06874
+ 
+AMF donations by first heard
+donate_amf_2016_c ### first_heard_EA
+ Filters:  donate_2016_c > 0 
+ # A tibble: 18 x 5
+                                                    first_heard_EA     N
+                                                             <chr> <int>
+  1                                                   80,000 Hours    26
+  2 Animal Charity Evaluators (formerly Effective Animal Activism)     1
+  3 Book/article/blog post etc. (please specify which, if you can)    37
+  4                                       Doing Good Better (Book)     8
+  5                                                      EA Global     1
+  6                                                       Facebook     5
+  7                                                       GiveWell    19
+  8                                             Giving What We Can    25
+  9                                               I don't remember    21
+ 10                                                      LessWrong    57
+ 11                                                 Local EA group    17
+ 12                      Other (please specify in the comment box)    50
+ 13            Personal Contact (e.g. Friend, Colleague, Relative)    54
+ 14                                    REG / EAF / The Swiss group     2
+ 15                                                  Search Engine     5
+ 16                                               Slate Star Codex    32
+ 17                                                       TED Talk    23
+ 18                           The Life You Can Save (organization)     7
+ # ... with 3 more variables: mean <dbl>, median <dbl>, sd <dbl>
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -6289  -2665  -1253   -273  98117 
+ 
+ Coefficients:
+                                                                 Estimate
+ (Intercept)                                                       2905.4
+ yAnimal Charity Evaluators (formerly Effective Animal Activism)  -2785.4
+ yBook/article/blog post etc. (please specify which, if you can)  -1495.1
+ yDoing Good Better (Book)                                        -2458.4
+ yEA Global                                                       -2355.4
+ yFacebook                                                        -1581.7
+ yGiveWell                                                          950.1
+ yGiving What We Can                                               3384.0
+ yI don't remember                                                 2834.2
+ yLessWrong                                                         287.7
+ yLocal EA group                                                  -2370.5
+ yOther (please specify in the comment box)                       -1652.8
+ yPersonal Contact (e.g. Friend, Colleague, Relative)              -240.0
+ yREG / EAF / The Swiss group                                     -1952.8
+ ySearch Engine                                                   -2553.3
+ ySlate Star Codex                                                 -366.2
+ yTED Talk                                                        -1974.8
+ yThe Life You Can Save (organization)                              360.9
+                                                                 Std. Error
+ (Intercept)                                                         1663.0
+ yAnimal Charity Evaluators (formerly Effective Animal Activism)     8641.3
+ yBook/article/blog post etc. (please specify which, if you can)     2170.0
+ yDoing Good Better (Book)                                           3428.4
+ yEA Global                                                          8641.3
+ yFacebook                                                           4140.9
+ yGiveWell                                                           2559.3
+ yGiving What We Can                                                 2375.3
+ yI don't remember                                                   2487.9
+ yLessWrong                                                          2006.8
+ yLocal EA group                                                     2644.9
+ yOther (please specify in the comment box)                          2050.3
+ yPersonal Contact (e.g. Friend, Colleague, Relative)                2024.2
+ yREG / EAF / The Swiss group                                        6222.5
+ ySearch Engine                                                      4140.9
+ ySlate Star Codex                                                   2238.9
+ yTED Talk                                                           2427.3
+ yThe Life You Can Save (organization)                               3610.8
+                                                                 t value
+ (Intercept)                                                       1.747
+ yAnimal Charity Evaluators (formerly Effective Animal Activism)  -0.322
+ yBook/article/blog post etc. (please specify which, if you can)  -0.689
+ yDoing Good Better (Book)                                        -0.717
+ yEA Global                                                       -0.273
+ yFacebook                                                        -0.382
+ yGiveWell                                                         0.371
+ yGiving What We Can                                               1.425
+ yI don't remember                                                 1.139
+ yLessWrong                                                        0.143
+ yLocal EA group                                                  -0.896
+ yOther (please specify in the comment box)                       -0.806
+ yPersonal Contact (e.g. Friend, Colleague, Relative)             -0.119
+ yREG / EAF / The Swiss group                                     -0.314
+ ySearch Engine                                                   -0.617
+ ySlate Star Codex                                                -0.164
+ yTED Talk                                                        -0.814
+ yThe Life You Can Save (organization)                             0.100
+                                                                 Pr(>|t|)  
+ (Intercept)                                                       0.0815 .
+ yAnimal Charity Evaluators (formerly Effective Animal Activism)   0.7474  
+ yBook/article/blog post etc. (please specify which, if you can)   0.4913  
+ yDoing Good Better (Book)                                         0.4738  
+ yEA Global                                                        0.7853  
+ yFacebook                                                         0.7027  
+ yGiveWell                                                         0.7107  
+ yGiving What We Can                                               0.1551  
+ yI don't remember                                                 0.2554  
+ yLessWrong                                                        0.8861  
+ yLocal EA group                                                   0.3707  
+ yOther (please specify in the comment box)                        0.4207  
+ yPersonal Contact (e.g. Friend, Colleague, Relative)              0.9057  
+ yREG / EAF / The Swiss group                                      0.7538  
+ ySearch Engine                                                    0.5379  
+ ySlate Star Codex                                                 0.8702  
+ yTED Talk                                                         0.4164  
+ yThe Life You Can Save (organization)                             0.9204  
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 8480 on 372 degrees of freedom
+ Multiple R-squared:  0.03497,	Adjusted R-squared:  -0.009136 
+ F-statistic: 0.7928 on 17 and 372 DF,  p-value: 0.7018
+ 
+MIRI donations by first heard
+donate_miri_2016_c ### first_heard_EA
+ Filters:  donate_2016_c > 0 
+ # A tibble: 15 x 5
+                                                    first_heard_EA     N
+                                                             <chr> <int>
+  1                                                   80,000 Hours     7
+  2 Book/article/blog post etc. (please specify which, if you can)    14
+  3                                       Doing Good Better (Book)     2
+  4                                                       Facebook     2
+  5                                                       GiveWell     4
+  6                                             Giving What We Can     7
+  7                                               I don't remember     8
+  8                                                      LessWrong    34
+  9                                                 Local EA group     3
+ 10                      Other (please specify in the comment box)    26
+ 11            Personal Contact (e.g. Friend, Colleague, Relative)    21
+ 12                                                  Search Engine     1
+ 13                                               Slate Star Codex     9
+ 14                                                       TED Talk     5
+ 15                           The Life You Can Save (organization)     3
+ # ... with 3 more variables: mean <dbl>, median <dbl>, sd <dbl>
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+    Min     1Q Median     3Q    Max 
+  -3943   -841   -223     -6  35459 
+ 
+ Coefficients:
+                                                                 Estimate
+ (Intercept)                                                        5.523
+ yBook/article/blog post etc. (please specify which, if you can)   32.977
+ yDoing Good Better (Book)                                         -5.523
+ yFacebook                                                         -5.523
+ yGiveWell                                                         -5.523
+ yGiving What We Can                                              171.339
+ yI don't remember                                               3937.702
+ yLessWrong                                                      2035.631
+ yLocal EA group                                                  208.974
+ yOther (please specify in the comment box)                       217.939
+ yPersonal Contact (e.g. Friend, Colleague, Relative)             359.059
+ ySearch Engine                                                    -5.523
+ ySlate Star Codex                                                860.294
+ yTED Talk                                                        117.711
+ yThe Life You Can Save (organization)                             -5.523
+                                                                 Std. Error
+ (Intercept)                                                       1503.069
+ yBook/article/blog post etc. (please specify which, if you can)   1840.877
+ yDoing Good Better (Book)                                         3188.492
+ yFacebook                                                         3188.492
+ yGiveWell                                                         2492.559
+ yGiving What We Can                                               2125.661
+ yI don't remember                                                 2058.163
+ yLessWrong                                                        1650.561
+ yLocal EA group                                                   2744.217
+ yOther (please specify in the comment box)                        1693.360
+ yPersonal Contact (e.g. Friend, Colleague, Relative)              1735.595
+ ySearch Engine                                                    4251.322
+ ySlate Star Codex                                                 2004.093
+ yTED Talk                                                         2328.545
+ yThe Life You Can Save (organization)                             2744.217
+                                                                 t value
+ (Intercept)                                                       0.004
+ yBook/article/blog post etc. (please specify which, if you can)   0.018
+ yDoing Good Better (Book)                                        -0.002
+ yFacebook                                                        -0.002
+ yGiveWell                                                        -0.002
+ yGiving What We Can                                               0.081
+ yI don't remember                                                 1.913
+ yLessWrong                                                        1.233
+ yLocal EA group                                                   0.076
+ yOther (please specify in the comment box)                        0.129
+ yPersonal Contact (e.g. Friend, Colleague, Relative)              0.207
+ ySearch Engine                                                   -0.001
+ ySlate Star Codex                                                 0.429
+ yTED Talk                                                         0.051
+ yThe Life You Can Save (organization)                            -0.002
+                                                                 Pr(>|t|)  
+ (Intercept)                                                       0.9971  
+ yBook/article/blog post etc. (please specify which, if you can)   0.9857  
+ yDoing Good Better (Book)                                         0.9986  
+ yFacebook                                                         0.9986  
+ yGiveWell                                                         0.9982  
+ yGiving What We Can                                               0.9359  
+ yI don't remember                                                 0.0579 .
+ yLessWrong                                                        0.2197  
+ yLocal EA group                                                   0.9394  
+ yOther (please specify in the comment box)                        0.8978  
+ yPersonal Contact (e.g. Friend, Colleague, Relative)              0.8364  
+ ySearch Engine                                                    0.9990  
+ ySlate Star Codex                                                 0.6684  
+ yTED Talk                                                         0.9598  
+ yThe Life You Can Save (organization)                             0.9984  
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 3977 on 131 degrees of freedom
+ Multiple R-squared:  0.07577,	Adjusted R-squared:  -0.023 
+ F-statistic: 0.7671 on 14 and 131 DF,  p-value: 0.7027
+ 
+first heard through local grp
+first_heard_EA == "Local EA group"
+ 
+ FALSE  <NA>  TRUE 
+  1358   432    47 
+first heard local x GWWC mem
+member_gwwc ### first_heard_EA == "Local EA group"
+       
+         FALSE   TRUE   <NA>
+   N/A  0.0000 0.0000 0.5486
+   No   0.6672 0.5319 0.0185
+   Yes  0.3328 0.4681 0.0046
+   <NA> 0.0000 0.0000 0.4282
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3057, df = 4, p-value < 2.2e-16
+ 
+first heard local x donate
+donate_2016_c ### first_heard_EA == "Local EA group"
+ # A tibble: 3 x 5
+   `first_heard_EA == "Local EA group"`     N     mean   median        sd
+                                  <lgl> <int>    <dbl>    <dbl>     <dbl>
+ 1                                FALSE  1358  9406.52  650.000 79344.241
+ 2                                 TRUE    47  1160.28  209.945  2939.583
+ 3                                   NA   432 15893.23 4071.950 47427.163
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+   -9407   -9307   -8695   -5088 1972993 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+ (Intercept)     9406       2572   3.658 0.000268 ***
+ yTRUE          -8246      13615  -0.606 0.544866    
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 77960 on 951 degrees of freedom
+   (884 observations deleted due to missingness)
+ Multiple R-squared:  0.0003856,	Adjusted R-squared:  -0.0006655 
+ F-statistic: 0.3669 on 1 and 951 DF,  p-value: 0.5449
+ 
+would attend
+would_attend_local_group
+ 
+                                             <NA> 
+                                              443 
+     I know that there is already and I do attend 
+                                              398 
+                                              Yes 
+                                              358 
+                                           Unsure 
+                                              325 
+ I know that there is already and I do not attend 
+                                              176 
+                                               No 
+                                              137 
+involved_local_EA x GWWC invo
+involved_local_EA ### involved_GWWC
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.8206 0.8025 0.0000
+   Yes  0.0000 0.1794 0.1975 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 35.631, df = 2, p-value = 1.831e-08
+ 
+involved_local_EA x GWWC mem
+involved_local_EA ### member_gwwc
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.8509 0.7458 0.0000
+   Yes  0.0000 0.1491 0.2542 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 84.806, df = 2, p-value < 2.2e-16
+ 
+involved_GWWC x GWWC mem
+involved_GWWC ### member_gwwc
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.8307 0.5042 0.0000
+   Yes  0.0000 0.1693 0.4958 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 10.882, df = 2, p-value = 0.004335
+ 
+involved_local_EA x donate
+donate_2016_c ### involved_local_EA
+ # A tibble: 4 x 5
+   involved_local_EA     N      mean  median       sd
+               <chr> <int>     <dbl>   <dbl>    <dbl>
+ 1               N/A   237       NaN      NA      NaN
+ 2                No  1154 10620.742  709.91 86712.56
+ 3               Yes   261  2917.996  376.13 10554.21
+ 4              <NA>   185 16099.245 4143.90 47703.02
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -10621  -10449   -9028   -2738 1971779 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+ (Intercept)    10621       2814   3.775  0.00017 ***
+ yYes           -7703       6338  -1.215  0.22455    
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 77870 on 952 degrees of freedom
+   (883 observations deleted due to missingness)
+ Multiple R-squared:  0.001549,	Adjusted R-squared:  0.0005002 
+ F-statistic: 1.477 on 1 and 952 DF,  p-value: 0.2246
+ 
+member_local x GWWC
+member_local_group ### member_gwwc
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.7497 0.5105 0.0000
+   Yes  0.0000 0.2503 0.4895 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 0.10173, df = 2, p-value = 0.9504
+ 
+involved_local_EA x local mem
+involved_local_EA ### member_local_group
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.9388 0.5662 0.0000
+   Yes  0.0000 0.0612 0.4338 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 79.172, df = 2, p-value < 2.2e-16
+ 
+member_local x year
+member_local_group ### which_year_EA
+       
+          2009   2010   2011   2012   2013   2014   2015   2016   2017
+   N/A  0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+   No   0.6875 0.7500 0.6444 0.7126 0.5699 0.6014 0.6145 0.6813 0.8000
+   Yes  0.3125 0.2500 0.3556 0.2874 0.4301 0.3986 0.3855 0.3187 0.2000
+   <NA> 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+       
+        Before 2009   <NA>
+   N/A       0.0000 0.4472
+   No        0.7586 0.1585
+   Yes       0.2414 0.0453
+   <NA>      0.0000 0.3491
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2959, df = 12, p-value < 2.2e-16
+ 
+member_local x donate
+donate_2016_c ### member_local_group
+ # A tibble: 4 x 5
+   member_local_group     N      mean   median       sd
+                <chr> <int>     <dbl>    <dbl>    <dbl>
+ 1                N/A   237       NaN       NA      NaN
+ 2                 No   947 11604.693  792.960 96326.25
+ 3                Yes   468  4584.676  439.445 15667.84
+ 4               <NA>   185 16099.245 4143.900 47703.02
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -11605  -11305   -6692   -3848 1970795 
+ 
+ Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+ (Intercept)    11605       3142   3.693 0.000234 ***
+ yYes           -7020       5263  -1.334 0.182602    
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 77860 on 952 degrees of freedom
+   (883 observations deleted due to missingness)
+ Multiple R-squared:  0.001865,	Adjusted R-squared:  0.0008167 
+ F-statistic: 1.779 on 1 and 952 DF,  p-value: 0.1826
+ 
+member_gwwc x involved local
+member_gwwc ### involved_local_EA
+       
+           N/A     No    Yes   <NA>
+   N/A  1.0000 0.0000 0.0000 0.0000
+   No   0.0000 0.6924 0.5364 0.0000
+   Yes  0.0000 0.3076 0.4636 0.0000
+   <NA> 0.0000 0.0000 0.0000 1.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 84.806, df = 2, p-value < 2.2e-16
+ 
+city x member_gwwc
+city ### member_gwwc
+                     
+                         N/A     No    Yes   <NA>
+   Berlin             0.0000 0.0106 0.0210 0.0000
+   Boston / Cambridge 0.0000 0.0224 0.0336 0.0324
+   Cambridge          0.0000 0.0064 0.0273 0.0108
+   Chicago            0.0000 0.0096 0.0105 0.0000
+   London             0.0000 0.0394 0.0588 0.0216
+   New York City      0.0000 0.0266 0.0294 0.0216
+   Other              1.0000 0.8009 0.7080 0.8216
+   Oxford             0.0000 0.0170 0.0336 0.0108
+   Seattle            0.0000 0.0160 0.0021 0.0162
+   SF Bay             0.0000 0.0426 0.0630 0.0486
+   Vancouver          0.0000 0.0085 0.0126 0.0162
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2681, df = 389, p-value < 2.2e-16
+ 
+GWWC non-students donating >10% (2015)
+member_gwwc ### p_donate_2015 >= 0.1 (nas removed)
+ Filters:  student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017) 
+      
+       FALSE        TRUE       
+   No  149 (84.18%) 28 (15.82%)
+   Yes 41 (35.34%)  75 (64.66%)
+GWWC non-students donating >10% (2016)
+member_gwwc ### p_donate_2016 >= 0.1 (nas removed)
+ Filters:  student == "No", income_2016_individual_c > 10000, which_year_EA != 2017 
+      
+       FALSE        TRUE       
+   No  208 (82.21%) 45 (17.79%)
+   Yes 68 (45.95%)  80 (54.05%)
+GWWC non-students donating >10% (2015 and 2016)
+member_gwwc ### p_donate_2015 >= 0.1 & p_donate_2016 >= 0.1 (nas removed)
+ Filters:  student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017) 
+      
+       FALSE        TRUE       
+   No  162 (88.52%) 21 (11.48%)
+   Yes 65 (52.42%)  59 (47.58%)
+GWWC non-students donating >10% (2015 or 2016)
+member_gwwc ### p_donate_2015 >= 0.1 | p_donate_2016 >= 0.1 (nas removed)
+ Filters:  student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017) 
+      
+       FALSE        TRUE       
+   No  137 (76.97%) 41 (23.03%)
+   Yes 24 (19.67%)  98 (80.33%)
+GWWC non-students donating >10% (2015 - 2016 average)
+member_gwwc ### p_donate_2015 + p_donate_2016 >= 0.2 (nas removed)
+ Filters:  student == "No", income_2016_individual_c > 10000, which_year_EA %not_in% c(2016, 2017) 
+      
+       FALSE        TRUE       
+   No  145 (82.39%) 31 (17.61%)
+   Yes 35 (30.17%)  81 (69.83%)
+GWWC pledge adherence by year
+p_donate_2015 >= 0.1 ### p_donate_2016 >= 0.1 (nas removed)
+ Filters:  income_2016_individual_c > 10000, student == "No", member_gwwc == "Yes", which_year_EA %not_in% c(2016, 2017) 
+        
+         FALSE       TRUE       
+   FALSE 24 (58.54%) 17 (41.46%)
+   TRUE  16 (21.33%) 59 (78.67%)
+binary cause view x GWWC
+NULL
+cause donations x GWWC
+NULL
+Number of orgs people donate to
+.
+  0  1  2  3  4  5  6  8 
+ 42 23 17 11  5  8  2  1 
+referrer self report
+referrer_self_report
+ 
+                                                        <NA> 
+                                                         772 
+                                           The EA Newsletter 
+                                                         314 
+                       Other [please specify in comment box] 
+                                                         227 
+                       The Effective Altruism Facebook Group 
+                                                         170 
+                         Any other EA Facebook Group or Page 
+                                                         162 
+                                      Local group or chapter 
+                                                          39 
+                       Elsewhere on Facebook or social media 
+                                                          36 
+                                                      Friend 
+                                                          31 
+ Other EA organisation [please specify which in comment box] 
+                                                          26 
+               Animal Charity Evaluators (email, blog, etc.) 
+                                                          24 
+                                                   LessWrong 
+                                                          21 
+                                          Giving What We Can 
+                                                          15 
+referrer URL
+referrer2
+ 
+               Other                EAFB                 SSC            EA Forum 
+                 972                 291                 253                  46 
+       EA Newsletter         other share                  LW             GWWC FB 
+                  42                  26                  19                  18 
+         GWWC Non-FB              EAA FB              London            New York 
+                  17                  15                  12                  11 
+                 ACE         survey site                 80K              Taipei 
+                  10                   8                   7                   7 
+              WAS FB           Cambridge            EA Memes          .impact FB 
+                   7                   6                   4                   3 
+                  DC          Ellen Meme            Hamilton Prior Survey Takers 
+                   3                   3                   3                   3 
+             Seattle              Sydney                  UA            Bayreuth 
+                   3                   3                   3                   2 
+              Boston             Chicago               Czech              Isreal 
+                   2                   2                   2                   2 
+               Italy            Nijmegen              Norway              Oxford 
+                   2                   2                   2                   2 
+              Poland              Prague           Singapore            Berkeley 
+                   2                   2                   2                   1 
+                Bern            Brighton             Calgary             Denmark 
+                   1                   1                   1                   1 
+              EA Hub              Exeter              France                  LA 
+                   1                   1                   1                   1 
+               LW FB                 MIT                  MU             Munchen 
+                   1                   1                   1                   1 
+         Netherlands     Nick Bostrom FB      Utilitarian FB         UWashington 
+                   1                   1                   1                   1 
+           Vancouver 
+                   1 
+referrer URL (narrower)
+referrer3
+ 
+               Other                  FB                 SSC         Local Group 
+                 981                 328                 253                  87 
+            EA Forum          Newsletter                GWWC               share 
+                  46                  42                  35                  26 
+                  LW                 ACE                 80K Prior Survey Takers 
+                  19                  10                   7                   3 
+referrer3 x age
+age ### referrer3
+ # A tibble: 12 x 5
+              referrer3     N     mean median        sd
+                  <chr> <int>    <dbl>  <dbl>     <dbl>
+  1                 80K     7 24.00000     24        NA
+  2                 ACE    10 26.25000     24  9.067209
+  3            EA Forum    46 28.29730     27  9.692107
+  4                  FB   328 25.98605     25  5.655598
+  5                GWWC    35 27.80000     26  7.433034
+  6         Local Group    87 28.37500     26  9.009746
+  7                  LW    19 27.37500     28  5.426785
+  8          Newsletter    42 30.47059     27 10.204679
+  9               Other   981 31.25490     28 11.804137
+ 10 Prior Survey Takers     3 65.00000     65        NA
+ 11               share    26 27.60000     26  6.378535
+ 12                 SSC   253 28.08661     26  7.002294
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+ -16.255  -5.986  -2.255   2.400  45.745 
+ 
+ Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)   
+ (Intercept)            24.000      9.753   2.461  0.01402 * 
+ yACE                    2.250     10.344   0.218  0.82785   
+ yEA Forum               4.297      9.884   0.435  0.66380   
+ yFB                     1.986      9.775   0.203  0.83904   
+ yGWWC                   3.800      9.946   0.382  0.70249   
+ yLocal Group            4.375      9.854   0.444  0.65714   
+ yLW                     3.375     10.053   0.336  0.73715   
+ yNewsletter             6.471      9.895   0.654  0.51331   
+ yOther                  7.255      9.762   0.743  0.45755   
+ yPrior Survey Takers   41.000     13.792   2.973  0.00302 **
+ yshare                  3.600     10.073   0.357  0.72086   
+ ySSC                    4.087      9.791   0.417  0.67648   
+ ---
+ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ 
+ Residual standard error: 9.753 on 1025 degrees of freedom
+   (800 observations deleted due to missingness)
+ Multiple R-squared:  0.05941,	Adjusted R-squared:  0.04932 
+ F-statistic: 5.886 on 11 and 1025 DF,  p-value: 2.498e-09
+ 
+referrer3 x gender
+gender_b ### referrer3
+         
+             80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   Female 0.0000 0.5000   0.1957 0.1677 0.3143      0.1954 0.1053     0.3095
+   Male   0.1429 0.2000   0.5870 0.4939 0.4286      0.3563 0.7368     0.5000
+   <NA>   0.8571 0.3000   0.2174 0.3384 0.2571      0.4483 0.1579     0.1905
+         
+           Other Prior Survey Takers  share    SSC
+   Female 0.1498              0.0000 0.1923 0.0672
+   Male   0.3751              0.3333 0.4231 0.4111
+   <NA>   0.4750              0.6667 0.3846 0.5217
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2875, df = 13, p-value < 2.2e-16
+ 
+referrer3 x white
+race_white ### referrer3 (nas removed)
+      
+          80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter  Other
+   No  0.0000 0.1250   0.1579 0.1101 0.0385      0.3077 0.0000     0.1765 0.1363
+   Yes 1.0000 0.8750   0.8421 0.8899 0.9615      0.6923 1.0000     0.8235 0.8637
+      
+       Prior Survey Takers  share    SSC
+   No               0.0000 0.1250 0.1185
+   Yes              1.0000 0.8750 0.8815
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2196, df = 13, p-value < 2.2e-16
+ 
+referrer3 x USA
+country == "United States" ### referrer3 (nas removed)
+        
+            80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   FALSE 1.0000 0.6250   0.4359 0.6094 0.6923      0.7059 0.3125     0.7576
+   TRUE  0.0000 0.3750   0.5641 0.3906 0.3077      0.2941 0.6875     0.2424
+        
+          Other Prior Survey Takers  share    SSC
+   FALSE 0.5478              1.0000 0.7500 0.4203
+   TRUE  0.4522              0.0000 0.2500 0.5797
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2298, df = 13, p-value < 2.2e-16
+ 
+referrer3 x student
+student ### referrer3
+       
+           80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   N/A  0.7143 0.2000   0.1522 0.2713 0.2571      0.3678 0.1053     0.2143
+   No   0.2857 0.4000   0.4783 0.3171 0.4857      0.3103 0.5263     0.5714
+   Yes  0.0000 0.4000   0.3261 0.3659 0.2571      0.2874 0.2632     0.2143
+   <NA> 0.0000 0.0000   0.0435 0.0457 0.0000      0.0345 0.1053     0.0000
+       
+         Other Prior Survey Takers  share    SSC
+   N/A  0.3170              0.3333 0.4231 0.3636
+   No   0.3721              0.3333 0.2308 0.3597
+   Yes  0.1733              0.0000 0.3462 0.1700
+   <NA> 0.1376              0.3333 0.0000 0.1067
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3489, df = 14, p-value < 2.2e-16
+ 
+referrer3 x veg
+veg_b ### referrer3
+        
+            80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   FALSE 1.0000 0.2000   0.5870 0.5671 0.6000      0.7471 0.7895     0.6190
+   TRUE  0.0000 0.8000   0.4130 0.4329 0.4000      0.2529 0.2105     0.3810
+        
+          Other Prior Survey Takers  share    SSC
+   FALSE 0.7768              1.0000 0.7692 0.8696
+   TRUE  0.2232              0.0000 0.2308 0.1304
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3674, df = 13, p-value < 2.2e-16
+ 
+referrer3 x donation
+donate_2016_c ### referrer3
+ Filters:  student == "No" 
+ # A tibble: 12 x 5
+              referrer3     N      mean   median           sd
+                  <chr> <int>     <dbl>    <dbl>        <dbl>
+  1                 80K     2   826.000   826.00    887.78671
+  2                 ACE     4   117.030   150.00     66.74108
+  3            EA Forum    22 11969.206  2892.48  35764.65021
+  4                  FB   104 32806.154  1850.24 217242.41414
+  5                GWWC    17 16460.595  3700.48  45554.98964
+  6         Local Group    27  6548.310   680.93  12348.08285
+  7                  LW    10  2537.500  1500.00   3355.99144
+  8          Newsletter    24  2968.266  1321.60   5090.45310
+  9               Other   365  7350.991  1321.60  22132.57711
+ 10 Prior Survey Takers     1  2475.150  2475.15           NA
+ 11               share     6 11321.713 10440.64  10482.86697
+ 12                 SSC    91 22015.751  2500.00 136574.52505
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+  -32806  -12576   -6763   -2157 1949594 
+ 
+ Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+ (Intercept)               826      71691   0.012    0.991
+ yACE                     -709      92553  -0.008    0.994
+ yEA Forum               11143      75791   0.147    0.883
+ yFB                     31980      72550   0.441    0.660
+ yGWWC                   15635      75791   0.206    0.837
+ yLocal Group             5722      75191   0.076    0.939
+ yLW                      1712      80153   0.021    0.983
+ yNewsletter              2142      75791   0.028    0.977
+ yOther                   6525      71934   0.091    0.928
+ yPrior Survey Takers     1649     124173   0.013    0.989
+ yshare                  10496      82782   0.127    0.899
+ ySSC                    21190      72616   0.292    0.771
+ 
+ Residual standard error: 101400 on 534 degrees of freedom
+   (127 observations deleted due to missingness)
+ Multiple R-squared:  0.009507,	Adjusted R-squared:  -0.0109 
+ F-statistic: 0.4659 on 11 and 534 DF,  p-value: 0.924
+ 
+referrer3 x income
+income_2016_individual_c ### referrer3
+ Filters:  student == "No" 
+ # A tibble: 12 x 5
+              referrer3     N      mean   median         sd
+                  <chr> <int>     <dbl>    <dbl>      <dbl>
+  1                 80K     2  32379.20 32379.20  19624.759
+  2                 ACE     4   6770.53  8043.60   5055.674
+  3            EA Forum    22  55574.13 41439.00  58834.199
+  4                  FB   104 136708.86 40969.60 713094.468
+  5                GWWC    17  78983.29 59985.00 114755.661
+  6         Local Group    27 114091.69 53925.00 222759.798
+  7                  LW    10  53375.00 35500.00  50844.125
+  8          Newsletter    24  71025.61 53987.15  66968.780
+  9               Other   365  88068.98 53901.60 133490.341
+ 10 Prior Survey Takers     1  70954.30 70954.30         NA
+ 11               share     6  90828.37 52271.20 102602.894
+ 12                 SSC    91 156842.88 55271.50 575733.764
+ 
+ 
+ Call:
+ lm(formula = x ~ y)
+ 
+ Residuals:
+     Min      1Q  Median      3Q     Max 
+ -156843  -81202  -45069   -1691 6471291 
+ 
+ Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)
+ (Intercept)             32379     266597   0.121    0.903
+ yACE                   -25609     344176  -0.074    0.941
+ yEA Forum               23195     281843   0.082    0.934
+ yFB                    104330     269715   0.387    0.699
+ yGWWC                   46604     281843   0.165    0.869
+ yLocal Group            81712     279610   0.292    0.770
+ yLW                     20996     298065   0.070    0.944
+ yNewsletter             38646     282769   0.137    0.891
+ yOther                  55690     267534   0.208    0.835
+ yPrior Survey Takers    38575     461760   0.084    0.933
+ yshare                  58449     307840   0.190    0.849
+ ySSC                   124464     269994   0.461    0.645
+ 
+ Residual standard error: 377000 on 525 degrees of freedom
+   (136 observations deleted due to missingness)
+ Multiple R-squared:  0.006814,	Adjusted R-squared:  -0.014 
+ F-statistic: 0.3274 on 11 and 525 DF,  p-value: 0.9797
+ 
+referrer3 x poverty
+cause_import_poverty_b ### referrer3
+       
+           80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   :(   0.0000 0.1000   0.2826 0.3079 0.0857      0.1724 0.3684     0.1905
+   :)   0.4286 0.7000   0.6304 0.5640 0.8571      0.6782 0.5263     0.7619
+   <NA> 0.5714 0.2000   0.0870 0.1280 0.0571      0.1494 0.1053     0.0476
+       
+         Other Prior Survey Takers  share    SSC
+   :(   0.1488              0.0000 0.1923 0.1423
+   :)   0.6177              0.6667 0.5769 0.6245
+   <NA> 0.2334              0.3333 0.2308 0.2332
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3308, df = 13, p-value < 2.2e-16
+ 
+referrer3 x AI
+cause_import_ai_b ### referrer3
+       
+           80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   :(   0.1429 0.7000   0.4348 0.3811 0.5714      0.3908 0.3158     0.5952
+   :)   0.2857 0.1000   0.4565 0.4939 0.3714      0.4598 0.5789     0.3571
+   <NA> 0.5714 0.2000   0.1087 0.1250 0.0571      0.1494 0.1053     0.0476
+       
+         Other Prior Survey Takers  share    SSC
+   :(   0.4597              0.6667 0.3462 0.5020
+   :)   0.3078              0.0000 0.4231 0.2688
+   <NA> 0.2324              0.3333 0.2308 0.2292
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3310, df = 13, p-value < 2.2e-16
+ 
+referrer3 x consequentialism
+ifelse(is.na(moral_philosophy), NA, grepl("Consequentialism",      moral_philosophy)) ### referrer3 (nas removed)
+        
+            80K    ACE EA Forum     FB   GWWC Local Group     LW Newsletter
+   FALSE 0.5000 0.1250   0.2500 0.2167 0.3333      0.3902 0.0714     0.4615
+   TRUE  0.5000 0.8750   0.7500 0.7833 0.6667      0.6098 0.9286     0.5385
+        
+          Other Prior Survey Takers  share    SSC
+   FALSE 0.4279              1.0000 0.4286 0.2672
+   TRUE  0.5721              0.0000 0.5714 0.7328
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 1878, df = 13, p-value < 2.2e-16
+ 
+referrer3 x year got involved
+which_year_EA ### referrer3
+              
+                  80K    ACE EA Forum     FB   GWWC Local Group     LW
+   2009        0.0000 0.0000   0.0217 0.0091 0.0000      0.0000 0.1053
+   2010        0.0000 0.0000   0.0000 0.0061 0.0000      0.0230 0.0526
+   2011        0.0000 0.0000   0.1087 0.0335 0.0286      0.0230 0.0000
+   2012        0.0000 0.0000   0.1087 0.0610 0.0571      0.0000 0.0000
+   2013        0.0000 0.0000   0.0435 0.0671 0.1429      0.0230 0.1053
+   2014        0.0000 0.2000   0.0435 0.1067 0.1143      0.0920 0.2105
+   2015        0.0000 0.0000   0.1957 0.2378 0.2000      0.1954 0.1053
+   2016        0.2857 0.5000   0.2609 0.2256 0.2571      0.2759 0.1579
+   2017        0.0000 0.0000   0.0652 0.0274 0.0286      0.0920 0.0526
+   Before 2009 0.0000 0.1000   0.0217 0.0091 0.0000      0.0115 0.0000
+   <NA>        0.7143 0.2000   0.1304 0.2165 0.1714      0.2644 0.2105
+              
+               Newsletter  Other Prior Survey Takers  share    SSC
+   2009            0.0238 0.0071              0.0000 0.0000 0.0079
+   2010            0.0238 0.0173              0.0000 0.0769 0.0119
+   2011            0.0000 0.0194              0.0000 0.0000 0.0277
+   2012            0.0476 0.0398              0.0000 0.1154 0.0632
+   2013            0.0952 0.0489              0.0000 0.0000 0.0316
+   2014            0.0238 0.0734              0.3333 0.0385 0.0711
+   2015            0.1905 0.1784              0.0000 0.1923 0.1739
+   2016            0.3810 0.2130              0.3333 0.1154 0.2095
+   2017            0.1190 0.0652              0.0000 0.0000 0.0553
+   Before 2009     0.0000 0.0194              0.0000 0.0385 0.0119
+   <NA>            0.0952 0.3180              0.3333 0.4231 0.3360
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 3144, df = 21, p-value < 2.2e-16
+ 

@@ -1,4 +1,5 @@
-Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_referrer_list) {
+Ramd::define("referrers", "simple_referrers", "cities",
+             function(referrer_list, simple_referrer_list, city_swap_list) {
   list(
     import = list(file = "data/2017/imsurvey2017-anonymized-currencied.csv"),
 
@@ -22,42 +23,7 @@ Ramd::define("referrers", "simple_referrers", function(referrer_list, simple_ref
           df
       }
       , "Clean up city"  = function(df) {
-        swap_list <- list("New York" = "New York City",
-                          "Berkeley" = "SF Bay",
-                          "San Francisco" = "SF Bay",
-                          "Boston" = "Boston / Cambridge",
-                          "Boston (Somerville)" = "Boston / Cambridge",
-                          "Boston, MA" = "Boston / Cambridge",
-                          "Cambridge, MA" = "Boston / Cambridge",
-                          "chicago" = "Chicago",
-                          "Berkeley, CA" = "SF Bay",
-                          "Berkeley, California" = "SF Bay",
-                          "Oakland, CA" = "SF Bay",
-                          "Mountain View" = "SF Bay",
-                          "Menlo Park" = "SF Bay",
-                          "NYC" = "New York City",
-                          "New york city" = "New York City",
-                          "new york city" = "New York City",
-                          "Brooklyn" = "New York City",
-                          "Brooklyn, NY" = "Brooklyn",
-                          "Lansing, MI" = "Lansing",
-                          "Manchester, NH" = "Manchester",
-                          "Ithaca, NY" = "Ithaca",
-                          "Baltimore, MD" = "Baltimore",
-                          "Ann Arbor, MI" = "Ann Arbor",
-                          "Seattle, WA" = "Seattle",
-                          "seattle" = "Seattle",
-                          "Princeton, NJ" = "Princeton",
-                          "Portland, OR" = "Portland",
-                          "Madison, WI" = "Madison",
-                          "Sao Paulo" = "São Paulo",
-                          "Washington, D.C." = "Washington, DC",
-                          "Washington DC" = "Washington, DC",
-                          "Washington D.C." = "Washington, DC",
-                          "Washington" = "Washington, DC",
-                          "Zurich" = "Zürich",
-                          "zurich" = "Zürich")
-        swap_by_value(df, "city", swap_list)
+        swap_by_value(df, "city", city_swap_list)
       }
       , "Clean up country" = function(df) {
         swap_list <- list("USA" = "United States",

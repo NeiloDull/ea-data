@@ -288,6 +288,8 @@ Ramd::define("groups", function(groups) {
 					, "Top 25 non-LEAN groups by num people"   = function(df) tab(df, filter(is_lean == FALSE), group1, top = 25)
 					, "Welcoming x LEAN group"                 = function(df) ctab(df, ea_welcoming, is_lean, na.rm = TRUE)
 					, "EA NPS x LEAN group"										 = function(df) ctab(df, ea_nps, is_lean, na.rm = TRUE)
+          , "first local x LEAN group"               = function(df) tab(df, first_local, is_lean, percent = TRUE, na.rm = TRUE)
+          , "invovled local x LEAN group"            = function(df) tab(df, involved_local_EA, is_lean, percent = TRUE, na.rm = TRUE)
 					, "ea_donate x LEAN group"                 = function(df) ctab(df, ea_donate, is_lean, na.rm = TRUE)
 					, "2016 % Donate x LEAN group"             = function(df) ctab(df, filters(student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017")), p_donate_2016, is_lean, na.rm = TRUE)
 					, "2016 Donate x LEAN group"               = function(df) ctab(df, filters(student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017")), donate_2016_c, is_lean, na.rm = TRUE)

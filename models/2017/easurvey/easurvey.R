@@ -82,6 +82,17 @@ Ramd::define("referrers", "simple_referrers", "cities",
           df$veg_b <- df$veg %in% c("Vegan", "Vegetarian")
           df
         }
+      , "Politics (left vs. non-left)" = function(df) {
+          df$left <- swap_by_value(df, "politics", list("Centre Left" = "Left",
+                                                        "Left" = "Left",
+                                                        "Other" = NA,
+                                                        "Libertarian" = "Non-Left",
+                                                        "Centre" = "Non-Left",
+                                                        "Prefer Not to Answer" = NA,
+                                                        "Centre Right" = "Non-Left",
+                                                        "Right" = "Non-Left"))$politics
+          df
+        }
       , "Donations by cause area" = function(df) {
 					orgs_by_cause <- list("meta" = c("RC", "80K", "CFAR", "CEA", "CS", "EF", "TLYCS"),
 																"cause_pri" = c("ACE", "FRI", "GW"),
@@ -125,8 +136,7 @@ Ramd::define("referrers", "simple_referrers", "cities",
 				, "binary cause view x diet"           = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(tab_(df, list("veg_b", var), freq = FALSE, percent = TRUE)) } }
         , "diet x cause_import_animal_welfare" = function(df) ctab(df, veg, cause_import_animal_welfare, na.rm = TRUE)
         , "diet x cause_import_animal_welfare 2"    = function(df) tab(df, veg %in% c("Vegan", "Vegetarian"), cause_import_animal_welfare_b, na.rm = TRUE, percent = TRUE)
-        , "city x cause area"                       = function(df) ctab(df, cause_import_ai_b, city == "SF Bay", na.rm = TRUE)
-        , "city x cause area 2"                     = function(df) {
+        , "city x cause area"                       = function(df) {
                                                         top_ten_cities <- tab(df, city, top = 10) %>% names %>% .[-1]
                                                         for (city in top_ten_cities) {
                                                           message(city)
@@ -135,6 +145,7 @@ Ramd::define("referrers", "simple_referrers", "cities",
                                                           }
                                                         }
                                                       }
+        , "Bay Area x AI"                           = function(df) ctab(df, cause_import_ai_b, city == "SF Bay", na.rm = TRUE)
         , "summarize donations 2015"                = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
         , "summarize donations 2016"                = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
         , "donate in 2015 and 2016?"                = function(df) tab(df, donate_2015_c > 0, donate_2016_c > 0)
@@ -277,11 +288,22 @@ Ramd::define("referrers", "simple_referrers", "cities",
         , "race_black"                    = function(df) tab(df, race_black)
         , "race_hispanic"                 = function(df) tab(df, race_hispanic)
         , "race_asian"                    = function(df) tab(df, race_asian)
-        , "student"                       = function(df) tab(df, student)
+        , "multi-racial"                  = function(df) table(get_vars(df, "race") %/>% fn(x, df[[x]]) %/>% fn(x, ifelse(x == "Yes", 1, 0)) %_>% fn(x, y, x + y))
+        , "politics"                      = function(df) tab(df, politics)
+        , "left"                          = function(df) tab(df, left)
+				, "binary cause view x left"      = function(df) { for (var in get_vars(df, "cause_import.+_b")) { print(comparison_table_(df, var, "left", na.rm = TRUE)) } }
+        , "left x race"                   = function(df) ctab(df, race_white, left, na.rm = TRUE)
+        , "left x city"                   = function(df) ctab(df, left, city, top = 5, na.rm = TRUE)
+        , "left x Bay"                    = function(df) ctab(df, left, city == "SF Bay", na.rm = TRUE)
+        , "left x NYC"                    = function(df) ctab(df, left, city == "New York City", na.rm = TRUE)
+        , "race x city"                   = function(df) ctab(df, race_white, city, top = 5, na.rm = TRUE)
+        , "race x NYC"                    = function(df) ctab(df, race_white, city == "New York City", na.rm = TRUE)
+        , "student"                       = function(df) tab(df, student, percent = TRUE)
         , "country"                       = function(df) tab(df, country)
         , "city"                          = function(df) tab(df, city)
         , "religion"                      = function(df) tab(df, religion)
-        , "diet"                          = function(df) tab(df, veg)
+        , "veg"                           = function(df) tab(df, veg)
+        , "veg x left"                    = function(df) ctab(df, veg_b, left, na.rm = TRUE)
         , "moral philosophy"              = function(df) tab(df, moral_philosophy)
         , "opportunity or obligation"     = function(df) tab(df, ea_opportunity_or_obligation)
         , "employment_status"             = function(df) tab(df, employment_status)
@@ -314,6 +336,10 @@ Ramd::define("referrers", "simple_referrers", "cities",
         , "ETG donations 2015"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2015_c, verbose = TRUE)
         , "ETG donations 2016"            = function(df) var_summary(dplyr::filter(df, ea_career_type == "Earning to give")$donate_2016_c, verbose = TRUE)
         , "EA year"                       = function(df) tab(df, which_year_EA)
+        , "EA year x AI"                  = function(df) ctab(df, cause_import_ai_b, which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012"), na.rm = TRUE)
+        , "EA year x poverty"             = function(df) ctab(df, cause_import_poverty_b, which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012"), na.rm = TRUE)
+        , "age x AI"                      = function(df) ctab(df, cause_import_ai_b, age >= 27, na.rm = TRUE)
+        , "age x poverty"                 = function(df) ctab(df, cause_import_poverty_b, age >= 27, na.rm = TRUE)
         , "how heard"                     = function(df) tab(df, first_heard_EA)
         , "First heard EA by year"        = function(df) { for (var in unique(df$which_year_EA)) { message(var); print(tab(dplyr::filter_(df, paste0("which_year_EA == '", var, "'")), first_heard_EA, freq = FALSE, percent = TRUE)) }}
         , "LessWrong refer over year"     = function(df) tab(df, which_year_EA, first_heard_EA == "LessWrong", na.rm = TRUE, percent = TRUE)

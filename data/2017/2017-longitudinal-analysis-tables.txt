@@ -1,5 +1,5 @@
 N
-[1] 184 415
+[1] 184 416
 [check] population aging
          mean        median           min           max            sd 
       2.087302      2.000000      1.000000      3.000000      0.335138 
@@ -277,19 +277,19 @@ summarize 2014 donations
         184.00    1991530.95         49.00        106.00 
 summarize 2015 donations
          mean        median           min           max            sd 
-      16497.41       1439.64          0.00    1000000.00      83014.42 
+      16472.47       1424.16          0.00    1000000.00      82994.89 
         length           sum        num_na num_over_zero 
-        184.00    2689078.35         21.00        134.00 
+        184.00    2685013.36         21.00        134.00 
 summarize 2016 donations
          mean        median           min           max            sd 
-      20582.14       2975.50          0.00    1200000.00      99161.30 
+      20554.75       2975.50          0.00    1200000.00      99145.42 
         length           sum        num_na num_over_zero 
-        184.00    3457799.52         16.00        152.00 
+        184.00    3453198.12         16.00        152.00 
 increase don? 2014->2015
 df$s17_donate_2015_c > df$s15_donate_2014_c
  
   TRUE  <NA> FALSE 
-    81    57    46 
+    80    57    47 
 increase don? 2015->2016
 df$s17_donate_2016_c > df$s17_donate_2015_c
  
@@ -299,7 +299,7 @@ increase don? 2014->2016
 df$s17_donate_2016_c > df$s15_donate_2014_c
  
   TRUE  <NA> FALSE 
-    97    55    32 
+    96    55    33 
 summarize 2014 income
          mean        median           min           max            sd 
      143938.55      21687.58          0.00   10000000.00     928425.87 
@@ -307,14 +307,14 @@ summarize 2014 income
         184.00   19143826.91         51.00        117.00 
 summarize 2015 income
          mean        median           min           max            sd 
-      186025.5       30062.0      -50000.0    19000000.0     1534940.0 
+      185882.2       30062.0      -50000.0    19000000.0     1534948.3 
         length           sum        num_na num_over_zero 
-         184.0    29578055.9          25.0         127.0 
+         184.0    29555270.4          25.0         127.0 
 summarize 2016 income
          mean        median           min           max            sd 
-      188713.3       38000.0           0.0    15000000.0     1239823.1 
+        188571         38000             0      15000000       1239832 
         length           sum        num_na num_over_zero 
-         184.0    30571554.7          22.0         140.0 
+           184      30548509            22           140 
 keep EA career
 s15_ea_career ### s17_ea_career (nas removed)
         
@@ -524,6 +524,12 @@ s15_cause_import_animal_welfare ### s17_cause_import_animal_welfare
    This cause is near the top priority                                             11
    This cause is the top priority                                                   3
    <NA>                                                                             1
+cause AR II
+s15_cause_import_animal_welfare %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_animal_welfare_b
+        
+         :(          :)          <NA>       
+   FALSE 65 (57.02%) 21 (18.42%) 28 (24.56%)
+   TRUE  9 (12.86%)  47 (67.14%) 14 (20%)   
 cause import prioritize
 s15_cause_import_cause_prioritization ### s17_cause_import_cause_prioritization
                                                                                 
@@ -712,6 +718,12 @@ s15_cause_import_ai ### s17_cause_import_ai
    This cause is near the top priority                                              7
    This cause is the top priority                                                   5
    <NA>                                                                             1
+cause AI II
+s15_cause_import_ai %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_ai_b
+        
+         :(          :)          <NA>       
+   FALSE 49 (42.61%) 36 (31.3%)  30 (26.09%)
+   TRUE  7 (10.14%)  50 (72.46%) 12 (17.39%)
 cause non-AI far future
 s15_cause_import_non_ai_far_future ### s17_cause_import_non_ai_far_future
                                                                                 
@@ -835,6 +847,12 @@ s15_cause_import_poverty ### s17_cause_import_poverty
    This cause is near the top priority                                             17
    This cause is the top priority                                                  18
    <NA>                                                                             1
+cause poverty II
+s15_cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_poverty_b
+        
+         :(          :)         <NA>       
+   FALSE 38 (70.37%) 9 (16.67%) 7 (12.96%) 
+   TRUE  17 (13.08%) 78 (60%)   35 (26.92%)
 cause rationality
 s15_cause_import_rationality ### s17_cause_import_rationality
                                                                                 
@@ -1030,3 +1048,21 @@ s15_cause_import_meta ### s17_cause_import_meta
    This cause is near the top priority                                              9
    This cause is the top priority                                                   7
    <NA>                                                                             2
+politics
+s15_politics ### s17_politics
+               
+                Centre Centre Left Centre Right Left Libertarian Other
+   Centre            4           6            0    0           0     1
+   Centre Left       3          26            0    1           1     1
+   Centre Right      0           0            2    0           0     0
+   Left              1          15            0   25           0     1
+   Libertarian       1           0            0    0           9     0
+   <NA>              5          10            1    3           3     8
+               
+                Prefer Not to Answer <NA>
+   Centre                          0    2
+   Centre Left                     1   18
+   Centre Right                    0    1
+   Left                            1   12
+   Libertarian                     0    2
+   <NA>                            8   12

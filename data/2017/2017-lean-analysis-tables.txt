@@ -3908,290 +3908,298 @@ city
  Filters:  member_local_group == "Yes" 
  
               Other             London             SF Bay Boston / Cambridge 
-                326                 28                 23                 15 
+                324                 29                 23                 16 
       New York City             Oxford            Seattle          Vancouver 
                  14                 13                 12                 11 
              Berlin          Cambridge               Oslo 
                  10                  8                  8 
-Cities of local groups II
-.
-                                               London 
-                                                   28 
-                                               SF Bay 
-                                                   23 
-                                   Boston / Cambridge 
-                                                   15 
-                                        New York City 
-                                                   14 
-                                               Oxford 
-                                                   13 
-                                              Seattle 
-                                                   12 
-                                            Vancouver 
-                                                   11 
-                                               Berlin 
-                                                   10 
-                                                 Oslo 
-                                                    8 
-                                            Cambridge 
-                                                    8 
-                                              Chicago 
-                                                    7 
-                                            Osnabrück 
-                                                    6 
-                                       Washington, DC 
-                                                    5 
-                                            Trondheim 
-                                                    5 
-                                         Philadelphia 
-                                                    5 
-                                              Toronto 
-                                                    4 
-                                               Sydney 
-                                                    4 
-                                              Madison 
-                                                    4 
-                                                 Bonn 
-                                                    4 
-                                               Zürich 
-                                                    3 
-                                               Vienna 
-                                                    3 
-                                             Tübingen 
-                                                    3 
-                                            Stockholm 
-                                                    3 
-                                               Prague 
-                                                    3 
-                                             Nijmegen 
-                                                    3 
-                                              Cologne 
-                                                    3 
-                                         Christchurch 
-                                                    3 
-                                             Canberra 
-                                                    3 
-                                              Bristol 
-                                                    3 
-                                            Amsterdam 
-                                                    3 
-                                            Singapore 
-                                                    2 
-                                            Sheffield 
-                                                    2 
-                                             Pasadena 
-                                                    2 
-                                               Ottawa 
-                                                    2 
-                                               Munich 
-                                                    2 
-                                             Montreal 
-                                                    2 
-                                                Milan 
-                                                    2 
-                                            Magdeburg 
-                                                    2 
-                                               Ithaca 
-                                                    2 
-                                            Hong Kong 
-                                                    2 
-                                        Highland Park 
-                                                    2 
-                                            Haverford 
-                                                    2 
-                                             Hannover 
-                                                    2 
-                                              Glasgow 
-                                                    2 
-                                               Geneva 
-                                                    2 
-                                             Brisbane 
-                                                    2 
-                                               Bergen 
-                                                    2 
-                                             Bayreuth 
-                                                    2 
-                                               Albany 
-                                                    2 
-                                                 York 
-                                                    1 
-                                           Yakima, WA 
-                                                    1 
-                                              Wrexham 
-                                                    1 
-                                          Wheaton, MD 
-                                                    1 
-                                 Washington, Illinois 
-                                                    1 
-                                              Vilnius 
-                                                    1 
-                                              Utrecht 
-                                                    1 
-                                            Tuebingen 
-                                                    1 
-                                               Taipei 
-                                                    1 
-                                             St. Paul 
-                                                    1 
-                                           St. Gallen 
-                                                    1 
-                                      Springfield, MO 
-                                                    1 
-                                      Southend-on-Sea 
-                                                    1 
-                                          Southampton 
-                                                    1 
-                                 Schwalbach am Taunus 
-                                                    1 
-                                            São Paulo 
-                                                    1 
-                                            San Diego 
-                                                    1 
-                           Saint-Bruno-de-Montarville 
-                                                    1 
-                                                 Riga 
-                                                    1 
-                                              Potsdam 
-                                                    1 
-                                              Potomac 
-                                                    1 
-                                                Porto 
-                                                    1 
-                                          Petah Tikva 
-                                                    1 
-                                                Perth 
-                                                    1 
-                                                Paris 
-                                                    1 
-                                                Olten 
-                                                    1 
-                                                 Ogre 
-                                                    1 
-                                                Noank 
-                                                    1 
-                                  Newcastle upon Tyne 
-                                                    1 
-                                            Newcastle 
-                                                    1 
-                                           Newark, NJ 
-                                                    1 
-                                          New Orleans 
-                                                    1 
-                                            New Haven 
-                                                    1 
-                                    New Brunswick, NJ 
-                                                    1 
-                                         Mullica Hill 
-                                                    1 
-                                       Mol and Leuven 
-                                                    1 
-                                              Merrick 
-                                                    1 
-                                            Melbourne 
-                                                    1 
-                                              marburg 
-                                                    1 
-                                               Madrid 
-                                                    1 
-                                           Maastricht 
-                                                    1 
-                                               Lyngby 
-                                                    1 
-                                          Los Angeles 
-                                                    1 
-                                                Leeds 
-                                                    1 
-                                       Leamington Spa 
-                                                    1 
-                                      Lane Cove North 
-                                                    1 
-                                          Kruishoutem 
-                                                    1 
-                                               Kraków 
-                                                    1 
-                                       Kongens Lyngby 
-                                                    1 
-                                          Jersey City 
-                                                    1 
-                    Huntly (not a city) Aberdeenshire 
-                                                    1 
-                                            Hilversum 
-                                                    1 
-                                           Heidelberg 
-                                                    1 
-                                             Hamilton 
-                                                    1 
-                                            Greenbelt 
-                                                    1 
-                                                 Graz 
-                                                    1 
-                                           Gothenburg 
-                                                    1 
-                                        Fresh Meadows 
-                                                    1 
-                                      Fort Saint John 
-                                                    1 
-                                               Exeter 
-                                                    1 
-                                             Enschede 
-                                                    1 
-                                            Eindhoven 
-                                                    1 
-                                                 Edam 
-                                                    1 
-                                           East COast 
-                                                    1 
-                                           Düsseldorf 
-                                                    1 
-                                               Durham 
-                                                    1 
-                                               Dundee 
-                                                    1 
-                                               Dublin 
-                                                    1 
-                                             Coventry 
-                                                    1 
-                                          Concord, MA 
-                                                    1 
-                                     Colorado Springs 
-                                                    1 
-                                     College Park, MD 
-                                                    1 
- Čerčany is definitely not what you could call a city 
-                                                    1 
-                                            Cape Town 
-                                                    1 
-                                           Canterbury 
-                                                    1 
-                                             Brussels 
-                                                    1 
-                                                 Brno 
-                                                    1 
-                                             Brighton 
-                                                    1 
-                                              Bolzano 
-                                                    1 
-                                                 Bern 
-                                                    1 
-                                              Beijing 
-                                                    1 
-                                                 Bath 
-                                                    1 
-                                                Basel 
-                                                    1 
-                                             Auckland 
-                                                    1 
-                                                Assen 
-                                                    1 
-                                                   Ås 
-                                                    1 
-                                              Antwerp 
-                                                    1 
-                                             Adelaide 
-                                                    1 
-                                             Abingdon 
-                                                    1 
-                                               Aarhus 
-                                                    1 
-                                               Aachen 
-                                                    1 
+Top 25 local groups by num people
+group1
+ 
+                            Other                         No group 
+                             1579                               56 
+                        EA London                      EA Bay Area 
+                               29                               23 
+       Harvard Effective Altruism           Effective Altruism NYU 
+                               16                               14 
+                        EA Oxford                       EA Seattle 
+                               13                               12 
+                     EA Vancouver                        EA Berlin 
+                               11                               10 
+                     EA Cambridge            EA University of Oslo 
+                                8                                8 
+                       EA Chicago                     EA Osnabrück 
+                                7                                6 
+                          EA NTNU Effective Altruism Society of DC 
+                                5                                5 
+         Giving What We Can: Penn                          EA Bonn 
+                                5                                4 
+                       EA Madison                        EA Sydney 
+                                4                                4 
+                       EA Toronto                      EA Tübingen 
+                                4                                4 
+                     EA Amsterdam                       EA Bristol 
+                                3                                3 
+                  EA Christchurch                       EA Cologne 
+                                3                                3 
+People in LEAN groups
+is_lean (nas removed)
+        FALSE         TRUE 
+ 274 (93.84%)   18 (6.16%) 
+Top 25 LEAN groups by num people
+group1
+ Filters:  is_lean == TRUE 
+ 
+                    EA Zürich                  EA Flanders 
+                            3                            2 
+                  EA Montreal                 EA Newcastle 
+                            2                            2 
+                    EA Aarhus                  EA Adelaide 
+                            1                            1 
+                   EA Beijing                  EA Hamilton 
+                            1                            1 
+                 EA Lithuania                 EA San Diego 
+                            1                            1 
+                    EA Taiwan Effective Altruism Cape Town 
+                            1                            1 
+     Effective Altruism Leeds 
+                            1 
+Top 25 non-LEAN groups by num people
+group1
+ Filters:  is_lean == FALSE 
+ 
+                            Other                        EA London 
+                               67                               29 
+                      EA Bay Area       Harvard Effective Altruism 
+                               23                               16 
+           Effective Altruism NYU                        EA Oxford 
+                               14                               13 
+                       EA Seattle                     EA Vancouver 
+                               12                               11 
+                        EA Berlin                     EA Cambridge 
+                               10                                8 
+            EA University of Oslo                       EA Chicago 
+                                8                                7 
+                     EA Osnabrück                          EA NTNU 
+                                6                                5 
+ Effective Altruism Society of DC         Giving What We Can: Penn 
+                                5                                5 
+                          EA Bonn                       EA Madison 
+                                4                                4 
+                        EA Sydney                       EA Toronto 
+                                4                                4 
+                      EA Tübingen                     EA Amsterdam 
+                                4                                3 
+                       EA Bristol                  EA Christchurch 
+                                3                                3 
+                       EA Cologne                           EA DTU 
+                                3                                3 
+Welcoming x LEAN group
+ea_welcoming ### is_lean (nas removed)
+                                    
+                                      FALSE   TRUE
+   Neither welcoming nor unwelcoming 0.2000 0.1429
+   Unwelcoming                       0.0360 0.0000
+   Very unwelcoming                  0.0160 0.0714
+   Very welcoming                    0.2600 0.1429
+   Welcoming                         0.4880 0.6429
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 528, df = 6, p-value < 2.2e-16
+ 
+EA NPS x LEAN group
+ea_nps ### is_lean
+ # A tibble: 2 x 5
+   is_lean     N     mean median       sd
+     <lgl> <int>    <dbl>  <dbl>    <dbl>
+ 1   FALSE   274 46.35036    100 67.43197
+ 2    TRUE    18 50.00000    100 70.71068
+ 
+ 
+ 	Welch Two Sample t-test
+ 
+ data:  x by y
+ t = 0.21272, df = 19.088, p-value = 0.8338
+ alternative hypothesis: true difference in means is not equal to 0
+ 95 percent confidence interval:
+  -32.24984  39.54911
+ sample estimates:
+ mean in group FALSE  mean in group TRUE 
+            50.00000            46.35036 
+ 
+ea_donate x LEAN group
+ea_donate ### is_lean (nas removed)
+      
+        FALSE   TRUE
+   No  0.2044 0.2778
+   Yes 0.7956 0.7222
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 584, df = 3, p-value < 2.2e-16
+ 
+2016 % Donate x LEAN group
+p_donate_2016 ### is_lean
+ Filters:  student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017") 
+ # A tibble: 2 x 5
+   is_lean     N      mean     median        sd
+     <lgl> <int>     <dbl>      <dbl>     <dbl>
+ 1   FALSE    68 0.1279990 0.09999998 0.1569156
+ 2    TRUE     3 0.2573851 0.36579161 0.2180628
+ 
+ 
+ 	Welch Two Sample t-test
+ 
+ data:  x by y
+ t = 1.0162, df = 2.0924, p-value = 0.4124
+ alternative hypothesis: true difference in means is not equal to 0
+ 95 percent confidence interval:
+  -0.3959236  0.6546958
+ sample estimates:
+ mean in group FALSE  mean in group TRUE 
+           0.2573851           0.1279990 
+ 
+2016 Donate x LEAN group
+donate_2016_c ### is_lean
+ Filters:  student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017") 
+ # A tibble: 2 x 5
+   is_lean     N     mean   median      sd
+     <lgl> <int>    <dbl>    <dbl>   <dbl>
+ 1   FALSE    68 11440.57  4624.00 25240.1
+ 2    TRUE     3 11742.60 11868.03 11402.0
+ 
+ 
+ 	Welch Two Sample t-test
+ 
+ data:  x by y
+ t = 0.041604, df = 2.9541, p-value = 0.9695
+ alternative hypothesis: true difference in means is not equal to 0
+ 95 percent confidence interval:
+  -23006.08  23610.14
+ sample estimates:
+ mean in group FALSE  mean in group TRUE 
+            11742.60            11440.57 
+ 
+GWWC Membership x LEAN group
+member_gwwc ### is_lean
+       
+        FALSE        TRUE       <NA>        
+   N/A  0 (0%)       0 (0%)     237 (100%)  
+   No   131 (13.95%) 6 (0.64%)  802 (85.41%)
+   Yes  143 (30.04%) 12 (2.52%) 321 (67.44%)
+   <NA> 0 (0%)       0 (0%)     187 (100%)  
+GWWC Membership x LEAN group II
+member_gwwc ### is_lean (nas removed)
+      
+       FALSE        TRUE      
+   No  131 (95.62%) 6 (4.38%) 
+   Yes 143 (92.26%) 12 (7.74%)
+GWWC Membership x LEAN group III
+member_gwwc ### is_lean
+ Filters:  student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017") 
+      
+       FALSE       TRUE      <NA>       
+   No  31 (16.76%) 1 (0.54%) 153 (82.7%)
+   Yes 39 (29.55%) 2 (1.52%) 91 (68.94%)
+GWWC Membership x LEAN group IV
+member_gwwc ### is_lean (nas removed)
+ Filters:  student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017") 
+      
+       FALSE       TRUE     
+   No  31 (96.88%) 1 (3.12%)
+   Yes 39 (95.12%) 2 (4.88%)
+GWWC Membership x LEAN group V
+member_gwwc ### is_lean (nas removed)
+ Filters:  student == "No", income_2016_individual_c >= 10000, which_year_EA %not_in% c("2016", "2017") 
+      
+        FALSE   TRUE
+   No  0.4429 0.3333
+   Yes 0.5571 0.6667
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 146, df = 3, p-value < 2.2e-16
+ 
+GWWC adherence x LEAN group
+p_donate_2016 >= 0.1 ### is_lean (nas removed)
+ Filters:  member_gwwc == "Yes" 
+        
+         FALSE TRUE
+   FALSE   0.5  0.0
+   TRUE    0.5  1.0
+ 
+ 
+ 	Pearson's Chi-squared test with Yates' continuity correction
+ 
+ data:  x and y
+ X-squared = 52.174, df = 1, p-value = 5.08e-13
+ 
+ea_career x LEAN group
+ea_career ### is_lean (nas removed)
+      
+        FALSE   TRUE
+   No  0.6168 0.7222
+   Yes 0.3832 0.2778
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 584, df = 3, p-value < 2.2e-16
+ 
+ea_volunteer x LEAN group
+ea_volunteer ### is_lean (nas removed)
+      
+        FALSE   TRUE
+   No  0.4124 0.4444
+   Yes 0.5876 0.5556
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 584, df = 3, p-value < 2.2e-16
+ 
+vol hrs x LEAN group
+ea_volunteer_hours ### is_lean (nas removed)
+                          
+                            FALSE   TRUE
+   0 hours per month       0.4030 0.4706
+   0.1-1 hours per month   0.0858 0.0588
+   1.1-3 hours per month   0.1007 0.2353
+   10.1-20 hours per month 0.0933 0.1765
+   3.1-5 hours per month   0.1157 0.0000
+   5.1-10 hours per month  0.1119 0.0000
+   over 20 hours per month 0.0896 0.0588
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 570, df = 8, p-value < 2.2e-16
+ 
+paid hrs x LEAN group
+ea_paid_hours ### is_lean (nas removed)
+                            
+                              FALSE   TRUE
+   0                         0.9060 0.8889
+   0.1-9.9                   0.0226 0.0556
+   10-19.9                   0.0150 0.0000
+   160 or higher (full-time) 0.0376 0.0556
+   20-39.9                   0.0038 0.0000
+   40-59.9                   0.0075 0.0000
+   90-119.9                  0.0075 0.0000
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 568, df = 8, p-value < 2.2e-16
+ 

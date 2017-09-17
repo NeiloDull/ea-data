@@ -1,5 +1,5 @@
 N
-[1] 184 416
+[1] 184 394
 [check] population aging
          mean        median           min           max            sd 
       2.087302      2.000000      1.000000      3.000000      0.335138 
@@ -272,9 +272,9 @@ s15_first_heard_EA ### s17_first_heard_EA
    <NA>                                                              2
 summarize 2014 donations
          mean        median           min           max            sd 
-      14752.08        650.00          0.00    1000000.00      87760.18 
+      14746.23        650.00          0.00    1000000.00      87760.25 
         length           sum        num_na num_over_zero 
-        184.00    1991530.95         49.00        106.00 
+        184.00    1990740.86         49.00        106.00 
 summarize 2015 donations
          mean        median           min           max            sd 
       16472.47       1424.16          0.00    1000000.00      82994.89 
@@ -302,9 +302,9 @@ df$s17_donate_2016_c > df$s15_donate_2014_c
     96    55    33 
 summarize 2014 income
          mean        median           min           max            sd 
-     143938.55      21687.58          0.00   10000000.00     928425.87 
+     143891.91      21687.58          0.00   10000000.00     928429.42 
         length           sum        num_na num_over_zero 
-        184.00   19143826.91         51.00        117.00 
+        184.00   19137623.60         51.00        117.00 
 summarize 2015 income
          mean        median           min           max            sd 
       185882.2       30062.0      -50000.0    19000000.0     1534948.3 
@@ -364,15 +364,15 @@ s15_p_donate_2014_c >= 0.1 ### s17_p_donate_2015 >= 0.1
         
          FALSE TRUE <NA>
    FALSE    31   25   10
-   TRUE      4   32    6
+   TRUE      5   31    6
    <NA>     23   11   42
 donate 10%? [2015-2016]
 s17_p_donate_2015 >= 0.1 ### s17_p_donate_2016 >= 0.1
         
          FALSE TRUE <NA>
-   FALSE    43   13    2
-   TRUE     12   55    1
-   <NA>     11    4   43
+   FALSE    42   15    2
+   TRUE     12   54    1
+   <NA>     10    5   43
 donate 10% [2014-2016]
 , ,  = FALSE
  
@@ -386,12 +386,12 @@ donate 10% [2014-2016]
         
          FALSE TRUE
    FALSE     8   20
-   TRUE      2   26
+   TRUE      3   25
  
 donate 10% [2014-2016] II
 
   0  1  2  3 
- 21 15 28 26 
+ 21 15 29 25 
 donate? [2014-2016]
 , ,  = FALSE
  

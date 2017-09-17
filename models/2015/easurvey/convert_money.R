@@ -1,7 +1,7 @@
 options("stringsAsFactors" = FALSE)
-data <- read.csv("data/2015/imsurvey2015-anonymized.csv")
-renames <- source("models/dev/imsurvey2015/variable_names.R")$value
-data <- plyr::rename(data, renames)
+CONVERSION_AS_OF_DATE <- "2016-07-29" # A single date for currency conversions.
+
+data <- readr::read_csv("data/2015/imsurvey2015-anonymized.csv")
 
 currencies <- sort(unique(c(data$currency_lifetime_1,
   data$currency_lifetime_2,
@@ -45,7 +45,7 @@ get_currency <- function(df, dep_var, currency1, currency2) {
       if (isTRUE(amount == 0)) { return(amount) }
       if (isTRUE(!is.na(amount) && !is.na(currency))) { 
         message(paste0("Converting ", amount, " from ", currency, "..."))
-        result <- currencyr::convert(amount, from = currency)$value
+        result <- currencyr::convert(amount, from = currency, as_of = CONVERSION_AS_OF_DATE)$value
         message(paste0("...", result))
         result
       } else { NA }
@@ -57,4 +57,4 @@ data$donate_2014_c <- get_currency(data, "donate_2014", "currency_donate_1", "cu
 data$income_2014_c <- get_currency(data, "income_2014", "currency_income_1", "currency_income_2")
 data$donated_lifetime_c <- get_currency(data, "donated_lifetime", "currency_lifetime_1", "currency_lifetime_2")
 
-write.csv(data, "data/2015/imsurvey2015-anonymized-renamed-currencied.csv")
+readr::write_csv(data, "data/2015/imsurvey2015-anonymized-renamed-currencied.csv")

@@ -1,4 +1,5 @@
 Ramd::define("variable_names", function(variable_names) {
+  message("Processing...")
   data2017_ <- c("data/2017/ea-survey-2017-confidential-no-anon.csv",
                  "data/2017/ea-survey-2017-donations-only-confidential-no-anon.csv") %/>%
                  function(x) { suppressWarnings(readr::read_csv(x)) }
@@ -14,7 +15,14 @@ Ramd::define("variable_names", function(variable_names) {
     stop("Error: some variables did not import -- ",
       paste0(names_that_did_not_work, collapse = ", "))
   }
-  data2017$ea_id <- data2017$email_address %/>% fn(x, if (is.na(x)) { NA } else { digest::digest(x) }) %>% unlist
+  hash_email <- function(email, salt) {
+    if (is.na(email) || identical(email, "")) { NA }
+    else { digest::digest(paste0(email, salt)) }
+  }
+  email_salt_file <- file("data/email_salt.txt")
+  email_salt <- readLines(email_salt_file)
+  close(email_salt_file)
+  data2017$ea_id <- data2017$email_address %/>% (function(x) hash_email(x, email_salt)) %>% unlist
   data2017$email_address <- NULL
   data2017 <- data2017[seq(3, nrow(data2017)), ] # Remove first two rows (garbled)
   message("Writing out...")

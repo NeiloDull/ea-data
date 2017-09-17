@@ -3916,7 +3916,7 @@ city
 Top 25 local groups by num people
 group1
  
-                            Other                         No group 
+                            Other                    Unknown Group 
                              1579                               56 
                         EA London                      EA Bay Area 
                                29                               23 

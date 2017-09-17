@@ -20,7 +20,7 @@ Ramd::define("groups", function(groups) {
            df$group3 <- ifelse(df$member_local_group == "Yes", df$group3, NA)
            df$group4 <- ifelse(df$member_local_group == "Yes", df$group4, NA)
            df$group5 <- ifelse(df$member_local_group == "Yes", df$group5, NA)
-           df$group1 <- ifelse(df$group1 == "", "No group", df$group1)
+           df$group1 <- ifelse(df$group1 == "", "Unknown Group", df$group1)
            df$group2 <- ifelse(df$group2 == "", NA, df$group2)
            df$group3 <- ifelse(df$group3 == "", NA, df$group3)
            df$group4 <- ifelse(df$group4 == "", NA, df$group4)
@@ -28,7 +28,7 @@ Ramd::define("groups", function(groups) {
            is_lean <- lapply(groupmap, function(group) any(group %in% groups$lean_groups))
            df$is_lean <- swap_by_value(df, "city", is_lean)$city
            df$is_lean <- ifelse(df$member_local_group == "Yes", df$is_lean, NA)
-           df$is_lean <- ifelse(df$group1 == "No group", NA, df$is_lean)
+           df$is_lean <- ifelse(df$group1 == "Unknown Group", NA, df$is_lean)
            df$is_lean <- as.logical(df$is_lean)
            df
          }

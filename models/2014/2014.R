@@ -2,16 +2,7 @@ define("transform_lookups", function(transform_lookup) {
   list(
     import = list(file = "data/2014/imsurvey2014-anonymized.csv")
     , data = list(
-      "Rename variables sensibly"       = function(df) {
-        df <- plyr::rename(df, transform_lookup$renames)
-        if (length(setdiff(transform_lookup$renames, names(df))) > 0) {
-          stop(paste0(setdiff(transform_lookup$renames, names(df)), collapse = ", "),
-               " variables were not created!")
-        }
-        df <- df[, transform_lookup$renames]
-        df
-      }
-      ,"Make age numeric"               = function(df) { df$age %<>% as.numeric; df }
+      "Make age numeric"                = function(df) { df$age %<>% as.numeric; df }
       ,"Unlist ids"                     = function(df) { df$id %<>% unlist; df }
       ,"Drop NA ids"                    = function(df) { df[!is.na(df$id), ] }
       ,"Clean values in meta-ethics"    = function(df) { swap_by_value(df, "metaethics", list("Consequentialist/utilitarian" = "consequentialist", "Deontology" = "deontology", "Virtue ethics" = "virtue", "Other" = "other", "No opinion, or not familiar with these terms" = "other")) }

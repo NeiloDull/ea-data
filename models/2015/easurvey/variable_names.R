@@ -141,5 +141,5 @@ list(
   "Do.you.have.any.suggestions.as.to.how.EA.could.be.improved.or.developed." = "comment_ea_improved",
   "If.you.d.like.to.share.views.on.any.of.the.following..this.is.your.chance..write.them.in.the.comment.box.below..An.anonymized.data.set.of.all.comments.will.be.made.available.to.all.the.organizations.mentioned..separated.from.all.your.other.answers." = "comment_share_views",
   "Referrer.URL" = "referrer_url",
-  "How.did.you.hear.about.this.survey." = "referrer_self_report"
-)
+  "How.did.you.hear.about.this.survey." = "referrer_self_report",
+  "Your.email.address" = "email_address")

@@ -1,19 +1,28 @@
-data2014 <- readr::read_csv("data/2014/EA Survey 2014 CONFIDENTIAL (not anonymous).csv")
-data2015 <- readr::read_csv("data/2015/EA Survey 2015 CONFIDENTIAL (not anonymous).csv")
-
-data2014$ea_id <- ""
-data2014[data2014[["Your email address"]] != "" & !is.na(data2014[["Your email address"]]), "ea_id"] <- unname(unlist(lapply(unlist(as.list(data2014[data2014[["Your email address"]] != "" & !is.na(data2014[["Your email address"]] != ""), "Your email address"])), digest::digest)))
-
-data2015$ea_id <- ""
-data2015[data2015[["Your email address"]] != "" & !is.na(data2015[["Your email address"]]), "ea_id"] <- unname(unlist(lapply(unlist(as.list(data2015[data2015[["Your email address"]] != "" & !is.na(data2015[["Your email address"]] != ""), "Your email address"])), digest::digest)))
-
-data2014[["Your name"]] <- NULL
-data2014[["Your email address"]] <- NULL
-data2014[["Giving your email address would let you revoke permissions you've given to make things public and edit your answers. It would also be much appreciated."]] <- NULL
-data2015[["Your name"]] <- NULL
-data2015[["Your email address"]] <- NULL
-data2015[["What is the web address of your EA Profile?"]] <- NULL
-data2015[["Are you sure you don't want to give your e-mail address? Please enter it here if you'd like."]] <- NULL
-
-readr::write_csv(data2014, "data/2014/imsurvey2014-anonymized.csv")
-readr::write_csv(data2015, "data/2015/imsurvey2015-anonymized.csv")
+Ramd::define("variable_names", function(variable_names) {
+  message("Processing...")
+  data2015_ <- read.csv("data/2015/confidential-not-anonymous.csv")
+  data2015 <- plyr::rename(data2015_, variable_names)
+  data2015 <- data2015[, intersect(names(data2015), unlist(variable_names))]
+  names_that_did_not_work <- setdiff(unlist(unname(variable_names)), names(data2015))
+  if (length(names_that_did_not_work) > 0) {
+    stop("Error: some variables did not import -- ",
+      paste0(names_that_did_not_work, collapse = ", "))
+  }
+  for (var in names(data2015)) {
+    if (any(data2015[[var]] %in% c("", " "))) {
+      data2015[data2015[[var]] %in% c("", " "), ][[var]] <- NA
+    }
+  }
+  hash_email <- function(email, salt) {
+    if (is.na(email) || identical(email, "")) { NA }
+    else { digest::digest(paste0(email, salt)) }
+  }
+  email_salt_file <- file("data/email_salt.txt")
+  email_salt <- readLines(email_salt_file)
+  close(email_salt_file)
+  data2015$ea_id <- data2015$email_address %/>% (function(x) hash_email(x, email_salt)) %>% unlist
+  data2015$email_address <- NULL
+  message("Writing out...")
+  readr::write_csv(data2015, "data/2015/imsurvey2015-anonymized.csv")
+  message("Written...")
+})

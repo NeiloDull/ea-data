@@ -26,8 +26,7 @@ packages:
   -
     name: currencyr
     version: 0.0.0.9005
-    dir: ~/dev/currencyr
-    # repo: peterhurford/currencyr
+    repo: peterhurford/currencyr
   -
     name: plyr
     version: 1.8.3

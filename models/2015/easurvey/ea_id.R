@@ -1,6 +1,14 @@
 Ramd::define("variable_names", function(variable_names) {
   message("Processing...")
-  data2015_ <- read.csv("data/2015/confidential-not-anonymous.csv")
+  csv_path <- "data/2015/confidential-not-anonymous.csv"
+  tryCatch({
+    data2015_ <- read.csv(csv_path)
+  }, error = function(e) {
+    stop("Loading 2015 data did not work. Note that this requires a confidential data ",
+         "file to be installed at ", csv_path, " which only members of the EA Survey team ",
+         "would have access to. However, the 2015 CSV produced by this script is already ",
+         "available, so you do not need to be able to run this script to do analysis.")
+  })
   data2015 <- plyr::rename(data2015_, variable_names)
   data2015 <- data2015[, intersect(names(data2015), unlist(variable_names))]
   names_that_did_not_work <- setdiff(unlist(unname(variable_names)), names(data2015))

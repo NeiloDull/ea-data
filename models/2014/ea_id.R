@@ -1,6 +1,14 @@
 Ramd::define("transform_lookups", function(transform_lookups) {
   message("Processing...")
-  data2014_ <- read.csv("data/2014/confidential-not-anonymous.csv")
+  csv_path <- "data/2014/confidential-not-anonymous.csv"
+  tryCatch({
+    data2014_ <- read.csv(csv_path)
+  }, error = function(e) {
+    stop("Loading 2014 data did not work. Note that this requires a confidential data ",
+         "file to be installed at ", csv_path, " which only members of the EA Survey team ",
+         "would have access to. However, the 2014 CSV produced by this script is already ",
+         "available, so you do not need to be able to run this script to do analysis.")
+  })
   variable_names <- transform_lookups$renames
   data2014 <- plyr::rename(data2014_, variable_names)
   data2014 <- data2014[, intersect(names(data2014), unlist(variable_names))]

@@ -24,6 +24,9 @@ Ramd::define("variable_names", function(variable_names) {
   close(email_salt_file)
   data2017$ea_id <- data2017$email_address %/>% (function(x) hash_email(x, email_salt)) %>% unlist
   data2017 <- plyr::rename(data2017, list("Can_we_share_your_name_with_the_Centre_For_Effective_Altruism_and_80,000_Hours_to_help_them_with_their_impact_evaluation_and_research?" = "can_share",
+                                          "Are_you_happy_to_include_details_of_your_donations_on_the_EA_Donation_Registry?_[Donations_(2015)]" = "can_share_2015_donations",
+                                          "Are_you_happy_to_include_details_of_your_donations_on_the_EA_Donation_Registry?_[Donations_(2016)]" = "can_share_2016_donations",
+                                          "Would_you_like_to_publish_your_donation_and_demographic_answers_on_a_personal EA_Profile?_You_will_have_the_opportunity_to_edit_the_page_to_hide_any_information_you_would_not_like_others_to_see." = "can_share_ea_profile",
                                           "First_Name" = "first_name",
                                           "Last_Name" = "last_name",
                                           "Are_you_sure_you_don't_want_to_give_your_name?_Please_enter_it_here_if_you'd_like._[First]" = "first_name2",
@@ -32,9 +35,18 @@ Ramd::define("variable_names", function(variable_names) {
                                ifelse(is.na(data2017$first_name2), NA, paste(data2017$first_name2, data2017$last_name2)),
                                paste(data2017$first_name, data2017$last_name))
   data2017$full_name <- ifelse(data2017$full_name == " " | data2017$full_name == "", NA, data2017$full_name)
-  data2017_sharable <- data2017 %>% filter(can_share == "Yes")
+  data2017_sharable <- data2017 %>% filter(can_share_2015_donations == "Yes") %>%
+                                    filter(can_share_2016_donations == "Yes") %>%
+                                    filter(can_share_ea_profile %in% c("Yes - please create an EA Profile for me.", "I already have one.") | can_share == "Yes") %>%
+                                    filter(can_share != "No") %>%
+                                    filter(can_share_ea_profile != "No - please don't create an EA profile for me.")
   data2017_sharable <- data2017_sharable[, intersect(names(data2017_sharable),
-                                                     c(unname(unlist(variable_names)), "can_share", "full_name"))]
+                                                     c(unname(unlist(variable_names)),
+                                                       "can_share",
+                                                       "can_share_2015_donations",
+                                                       "can_share_2016_donations",
+                                                       "can_share_ea_profile",
+                                                       "full_name"))]
   convert_money <- resource("lib/convert_money")
   data2017_sharable <- convert_money(data2017_sharable, CONVERSION_AS_OF_DATE)
   message("Writing out...")

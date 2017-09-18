@@ -38,6 +38,8 @@ Ramd::define("variable_names", function(variable_names) {
   convert_money <- resource("lib/convert_money")
   data2017_sharable <- convert_money(data2017_sharable, CONVERSION_AS_OF_DATE)
   message("Writing out...")
+  data2017_sharable$id <- NULL
+  data2017_sharable$ea_org_comment <- NULL
   readr::write_csv(data2017_sharable, "data/2017/2017-ea-survey-sharable-data.csv")
   message("Written...")
 })

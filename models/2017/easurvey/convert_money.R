@@ -1,7 +1,15 @@
 options("stringsAsFactors" = FALSE)
 CONVERSION_AS_OF_DATE <- "2017-08-05" # A single date for currency conversions.
 
-data <- readr::read_csv("data/2017/imsurvey2017-anonymized.csv")
+csv_path <- "data/2017/imsurvey2017-anonymized.csv"
+tryCatch({
+  data <- readr::read_csv(csv_path)
+}, error = function(e) {
+  stop(csv_path, " could not be loaded. You may need to run the `ea_id.R` ",
+       "script first. Note that only EA Survey team members have this data, ",
+       "and that the public data is already the data produced by this script.",
+       " Running this script is not necessary to do the analysis.")
+})
 
 first_pass <- data$currency_donate_1 %/>%
                 fn(x, strsplit(x, " - ")[[c(1, 1)]]) %/>%

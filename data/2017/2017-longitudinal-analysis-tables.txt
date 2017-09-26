@@ -1,5 +1,5 @@
 N
-[1] 184 394
+[1] 184 393
 [check] population aging
          mean        median           min           max            sd 
       2.087302      2.000000      1.000000      3.000000      0.335138 
@@ -524,12 +524,6 @@ s15_cause_import_animal_welfare ### s17_cause_import_animal_welfare
    This cause is near the top priority                                             11
    This cause is the top priority                                                   3
    <NA>                                                                             1
-cause AR II
-s15_cause_import_animal_welfare %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_animal_welfare_b
-        
-         :(          :)          <NA>       
-   FALSE 65 (57.02%) 21 (18.42%) 28 (24.56%)
-   TRUE  9 (12.86%)  47 (67.14%) 14 (20%)   
 cause import prioritize
 s15_cause_import_cause_prioritization ### s17_cause_import_cause_prioritization
                                                                                 
@@ -718,12 +712,6 @@ s15_cause_import_ai ### s17_cause_import_ai
    This cause is near the top priority                                              7
    This cause is the top priority                                                   5
    <NA>                                                                             1
-cause AI II
-s15_cause_import_ai %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_ai_b
-        
-         :(          :)          <NA>       
-   FALSE 49 (42.61%) 36 (31.3%)  30 (26.09%)
-   TRUE  7 (10.14%)  50 (72.46%) 12 (17.39%)
 cause non-AI far future
 s15_cause_import_non_ai_far_future ### s17_cause_import_non_ai_far_future
                                                                                 
@@ -847,12 +835,6 @@ s15_cause_import_poverty ### s17_cause_import_poverty
    This cause is near the top priority                                             17
    This cause is the top priority                                                  18
    <NA>                                                                             1
-cause poverty II
-s15_cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_poverty_b
-        
-         :(          :)         <NA>       
-   FALSE 38 (70.37%) 9 (16.67%) 7 (12.96%) 
-   TRUE  17 (13.08%) 78 (60%)   35 (26.92%)
 cause rationality
 s15_cause_import_rationality ### s17_cause_import_rationality
                                                                                 
@@ -1048,6 +1030,60 @@ s15_cause_import_meta ### s17_cause_import_meta
    This cause is near the top priority                                              9
    This cause is the top priority                                                   7
    <NA>                                                                             2
+cause AR II
+s15_cause_import_animal_welfare %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_animal_welfare_b
+        
+         :(          :)          <NA>       
+   FALSE 65 (57.02%) 21 (18.42%) 28 (24.56%)
+   TRUE  9 (12.86%)  47 (67.14%) 14 (20%)   
+cause import prioriti II
+s15_cause_import_cause_prioritization %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_cause_prioritization_b
+        
+         :(          :)          <NA>       
+   FALSE 41 (46.07%) 29 (32.58%) 19 (21.35%)
+   TRUE  9 (9.47%)   61 (64.21%) 25 (26.32%)
+cause import environm II
+s15_cause_import_environmentalism %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_environmentalism_b
+        
+         :(           :)          <NA>       
+   FALSE 102 (66.67%) 15 (9.8%)   36 (23.53%)
+   TRUE  12 (38.71%)  11 (35.48%) 8 (25.81%) 
+cause AI II
+s15_cause_import_ai %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_ai_b
+        
+         :(          :)          <NA>       
+   FALSE 49 (42.61%) 36 (31.3%)  30 (26.09%)
+   TRUE  7 (10.14%)  50 (72.46%) 12 (17.39%)
+cause non-AI II
+s15_cause_import_non_ai_far_future %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_non_ai_far_future_b
+        
+         :(          :)          <NA>       
+   FALSE 53 (48.62%) 28 (25.69%) 28 (25.69%)
+   TRUE  14 (18.67%) 47 (62.67%) 14 (18.67%)
+cause poverty II
+s15_cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_poverty_b
+        
+         :(          :)         <NA>       
+   FALSE 38 (70.37%) 9 (16.67%) 7 (12.96%) 
+   TRUE  17 (13.08%) 78 (60%)   35 (26.92%)
+cause rationality II
+s15_cause_import_rationality %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_rationality_b
+        
+         :(          :)          <NA>       
+   FALSE 86 (62.77%) 18 (13.14%) 33 (24.09%)
+   TRUE  21 (44.68%) 17 (36.17%) 9 (19.15%) 
+cause politics II
+s15_cause_import_politics %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_politics_b
+        
+         :(          :)          <NA>       
+   FALSE 96 (72.73%) 8 (6.06%)   28 (21.21%)
+   TRUE  21 (40.38%) 17 (32.69%) 14 (26.92%)
+cause meta II
+s15_cause_import_meta %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_meta_b
+        
+         :(          :)          <NA>       
+   FALSE 49 (46.67%) 30 (28.57%) 26 (24.76%)
+   TRUE  22 (27.85%) 41 (51.9%)  16 (20.25%)
 politics
 s15_politics ### s17_politics
                

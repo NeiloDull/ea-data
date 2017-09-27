@@ -373,6 +373,18 @@ cause_import_poverty_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "
  data:  x and y
  X-squared = 2942, df = 3, p-value < 2.2e-16
  
+AR by joining 2013 or earlier
+cause_import_animal_welfare_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
+     
+      FALSE        TRUE        
+   :( 755 (63.98%) 189 (64.07%)
+   :) 425 (36.02%) 106 (35.93%)
+Politics by joining 2013 or earlier
+cause_import_politics_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
+     
+      FALSE        TRUE        
+   :( 813 (68.78%) 230 (78.23%)
+   :) 369 (31.22%) 64 (21.77%) 
 summarize donations 2015
          mean        median           min           max            sd 
       6552.709       250.000         0.000   1314578.680     54339.859 

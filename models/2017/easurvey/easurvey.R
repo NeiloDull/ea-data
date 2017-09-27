@@ -158,6 +158,8 @@ Ramd::define("referrers", "simple_referrers", "cities",
         , "Poverty by joining 2012 or earlier"      = function(df) ctab(df, cause_import_poverty_b, which_year_EA %in%  c("Before 2009", "2009", "2010", "2011", "2012"), na.rm = TRUE)
         , "Poverty by joining 2011 or earlier"      = function(df) ctab(df, cause_import_poverty_b, which_year_EA %in%  c("Before 2009", "2009", "2010", "2011"), na.rm = TRUE)
         , "Poverty by joining 2014 or earlier"      = function(df) ctab(df, cause_import_poverty_b, which_year_EA %in%  c("Before 2009", "2009", "2010", "2011", "2012", "2013", "2014"), na.rm = TRUE)
+        , "AR by joining 2013 or earlier"           = function(df) tab(df, cause_import_animal_welfare_b, which_year_EA %in%  c("Before 2009", "2009", "2010", "2011", "2012", "2013"), percent = TRUE, na.rm = TRUE, byrow = FALSE)
+        , "Politics by joining 2013 or earlier"     = function(df) tab(df, cause_import_politics_b, which_year_EA %in%  c("Before 2009", "2009", "2010", "2011", "2012", "2013"), percent = TRUE, na.rm = TRUE, byrow = FALSE)
         , "summarize donations 2015"                = function(df) var_summary(df$donate_2015_c, verbose = TRUE)
         , "summarize donations 2016"                = function(df) var_summary(df$donate_2016_c, verbose = TRUE)
         , "donate in 2015 and 2016?"                = function(df) tab(df, donate_2015_c > 0, donate_2016_c > 0)

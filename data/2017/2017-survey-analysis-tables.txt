@@ -373,18 +373,64 @@ cause_import_poverty_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "
  data:  x and y
  X-squared = 2942, df = 3, p-value < 2.2e-16
  
+Poverty by joining 2015 or earlier
+cause_import_poverty_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013", "2014", "2015") (nas removed)
+     
+      FALSE        TRUE        
+   :( 125 (18.09%) 210 (26.92%)
+   :) 566 (81.91%) 570 (73.08%)
 AR by joining 2013 or earlier
 cause_import_animal_welfare_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
      
       FALSE        TRUE        
    :( 755 (63.98%) 189 (64.07%)
    :) 425 (36.02%) 106 (35.93%)
+AR by joining 2013 or earlier II
+cause_import_animal_welfare_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013")
+       
+        FALSE        TRUE        
+   :(   755 (48.99%) 189 (63.42%)
+   :)   425 (27.58%) 106 (35.57%)
+   <NA> 361 (23.43%) 3 (1.01%)   
+AR by joining 2013 or earlier III
+cause_import_animal_welfare_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
+     
+       FALSE   TRUE
+   :( 0.6398 0.6407
+   :) 0.3602 0.3593
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2950, df = 3, p-value < 2.2e-16
+ 
 Politics by joining 2013 or earlier
 cause_import_politics_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
      
       FALSE        TRUE        
    :( 813 (68.78%) 230 (78.23%)
    :) 369 (31.22%) 64 (21.77%) 
+Politics by joining 2013 or earlier II
+cause_import_politics_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013")
+       
+        FALSE        TRUE        
+   :(   813 (52.76%) 230 (77.18%)
+   :)   369 (23.95%) 64 (21.48%) 
+   <NA> 359 (23.3%)  4 (1.34%)   
+Politics by joining 2013 or earlier III
+cause_import_politics_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
+     
+       FALSE   TRUE
+   :( 0.6878 0.7823
+   :) 0.3122 0.2177
+ 
+ 
+ 	Pearson's Chi-squared test
+ 
+ data:  x and y
+ X-squared = 2952, df = 3, p-value < 2.2e-16
+ 
 summarize donations 2015
          mean        median           min           max            sd 
       6552.709       250.000         0.000   1314578.680     54339.859 
@@ -2485,32 +2531,6 @@ which_year_EA
          532         411         345         148         105          93 
         2012        2011 Before 2009        2010        2009 
           87          45          29          28          16 
-EA year x AI
-cause_import_ai_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012") (nas removed)
-     
-       FALSE   TRUE
-   :( 0.5688 0.5149
-   :) 0.4312 0.4851
- 
- 
- 	Pearson's Chi-squared test
- 
- data:  x and y
- X-squared = 2946, df = 3, p-value < 2.2e-16
- 
-EA year x poverty
-cause_import_poverty_b ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012") (nas removed)
-     
-       FALSE   TRUE
-   :( 0.2061 0.3650
-   :) 0.7939 0.6350
- 
- 
- 	Pearson's Chi-squared test
- 
- data:  x and y
- X-squared = 2942, df = 3, p-value < 2.2e-16
- 
 age x AI
 cause_import_ai_b ### age >= 27 (nas removed)
      

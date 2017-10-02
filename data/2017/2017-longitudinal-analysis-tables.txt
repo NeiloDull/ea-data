@@ -1031,65 +1031,65 @@ s15_cause_import_meta ### s17_cause_import_meta
    This cause is the top priority                                                   7
    <NA>                                                                             2
 cause AR II
-s15_cause_import_animal_welfare %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_animal_welfare_b
+s15_cause_import_animal_welfare %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_animal_welfare_b (nas removed)
         
-         :(          :)          <NA>       
-   FALSE 65 (35.33%) 21 (11.41%) 28 (15.22%)
-   TRUE  9 (4.89%)   47 (25.54%) 14 (7.61%) 
+         :(          :)         
+   FALSE 65 (45.77%) 21 (14.79%)
+   TRUE  9 (6.34%)   47 (33.1%) 
 cause import prioriti II
-s15_cause_import_cause_prioritization %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_cause_prioritization_b
+s15_cause_import_cause_prioritization %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_cause_prioritization_b (nas removed)
         
-         :(          :)          <NA>       
-   FALSE 41 (22.28%) 29 (15.76%) 19 (10.33%)
-   TRUE  9 (4.89%)   61 (33.15%) 25 (13.59%)
+         :(          :)         
+   FALSE 41 (29.29%) 29 (20.71%)
+   TRUE  9 (6.43%)   61 (43.57%)
 cause import environm II
-s15_cause_import_environmentalism %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_environmentalism_b
+s15_cause_import_environmentalism %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_environmentalism_b (nas removed)
         
-         :(           :)         <NA>       
-   FALSE 102 (55.43%) 15 (8.15%) 36 (19.57%)
-   TRUE  12 (6.52%)   11 (5.98%) 8 (4.35%)  
+         :(           :)         
+   FALSE 102 (72.86%) 15 (10.71%)
+   TRUE  12 (8.57%)   11 (7.86%) 
 cause AI II
-s15_cause_import_ai %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_ai_b
+s15_cause_import_ai %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_ai_b (nas removed)
         
-         :(          :)          <NA>      
-   FALSE 49 (26.63%) 36 (19.57%) 30 (16.3%)
-   TRUE  7 (3.8%)    50 (27.17%) 12 (6.52%)
+         :(          :)         
+   FALSE 49 (34.51%) 36 (25.35%)
+   TRUE  7 (4.93%)   50 (35.21%)
 cause AI III
-s15_cause_import_ai %in% "This cause is the top priority" ### s17_cause_import_ai %in% "This cause should be the top priority"
+s15_cause_import_ai %in% "This cause is the top priority" ### s17_cause_import_ai %in% "This cause should be the top priority" (nas removed)
         
          FALSE        TRUE       
    FALSE 137 (74.46%) 24 (13.04%)
    TRUE  13 (7.07%)   10 (5.43%) 
 cause non-AI II
-s15_cause_import_non_ai_far_future %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_non_ai_far_future_b
+s15_cause_import_non_ai_far_future %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_non_ai_far_future_b (nas removed)
         
-         :(         :)          <NA>       
-   FALSE 53 (28.8%) 28 (15.22%) 28 (15.22%)
-   TRUE  14 (7.61%) 47 (25.54%) 14 (7.61%) 
+         :(          :)         
+   FALSE 53 (37.32%) 28 (19.72%)
+   TRUE  14 (9.86%)  47 (33.1%) 
 cause poverty II
-s15_cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_poverty_b
+s15_cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_poverty_b (nas removed)
         
-         :(          :)          <NA>       
-   FALSE 38 (20.65%) 9 (4.89%)   7 (3.8%)   
-   TRUE  17 (9.24%)  78 (42.39%) 35 (19.02%)
+         :(          :)         
+   FALSE 38 (26.76%) 9 (6.34%)  
+   TRUE  17 (11.97%) 78 (54.93%)
 cause poverty III
-s15_cause_import_poverty %in% "This cause is the top priority" ### s17_cause_import_poverty %in% "This cause should be the top priority"
+s15_cause_import_poverty %in% "This cause is the top priority" ### s17_cause_import_poverty %in% "This cause should be the top priority" (nas removed)
         
          FALSE        TRUE       
    FALSE 105 (57.07%) 11 (5.98%) 
    TRUE  35 (19.02%)  33 (17.93%)
 cause rationality II
-s15_cause_import_rationality %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_rationality_b
+s15_cause_import_rationality %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_rationality_b (nas removed)
         
-         :(          :)         <NA>       
-   FALSE 86 (46.74%) 18 (9.78%) 33 (17.93%)
-   TRUE  21 (11.41%) 17 (9.24%) 9 (4.89%)  
+         :(          :)         
+   FALSE 86 (60.56%) 18 (12.68%)
+   TRUE  21 (14.79%) 17 (11.97%)
 cause politics II
-s15_cause_import_politics %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_politics_b
+s15_cause_import_politics %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_politics_b (nas removed)
         
-         :(          :)         <NA>       
-   FALSE 96 (52.17%) 8 (4.35%)  28 (15.22%)
-   TRUE  21 (11.41%) 17 (9.24%) 14 (7.61%) 
+         :(          :)         
+   FALSE 96 (67.61%) 8 (5.63%)  
+   TRUE  21 (14.79%) 17 (11.97%)
 cause meta II
 s15_cause_import_meta %in% c("This cause is the top priority",      "This cause is near the top priority") ### s17_cause_import_meta_b
         

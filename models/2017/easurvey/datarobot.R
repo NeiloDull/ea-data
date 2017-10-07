@@ -77,7 +77,7 @@ for (target in targets) {
   }
 
   # Subset to features
-  data2 <- data[, setdiff(c(features, target), drops)]
+  data2 <- data[, c(setdiff(features, drops), target)]
 
   # Make DataRobot model
   dr_project <- SetupProject(data2, projectName = paste0("EASurvey-", target))

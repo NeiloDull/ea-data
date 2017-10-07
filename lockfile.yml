@@ -48,3 +48,6 @@ packages:
   -
     name: ggplot2
     version: 2.2.1
+  -
+    name: datarobot
+    version: 2.7.1

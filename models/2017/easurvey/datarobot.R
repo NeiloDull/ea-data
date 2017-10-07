@@ -27,7 +27,7 @@ data <- swap_by_value(data, "topic_ea", list("None of the Above/Other" = NA))
 
 # Define variables
 targets <- c("ea_donate", "ea_welcoming_b", "ea_career", "member_gwwc",
-             "ea_nps_promoter", "ea_nps_detractor")
+            "ea_nps_promoter", "ea_nps_detractor")
 features <- c(get_vars(data, "_comment"),
               get_vars(data, "cause_import.+_b"),
               "left",
@@ -71,6 +71,9 @@ for (target in targets) {
   }
   else if (identical(target, "ea_career")) {
     drops <- c("ea_social_b", "ea_career_comment")
+  }
+  else if (identical(target, "member_gwwc")) {
+    drops <- "involved_gwwc"
   }
 
   # Subset to features

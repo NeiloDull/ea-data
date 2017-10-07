@@ -66,11 +66,17 @@ for (target in targets) {
   message("Running ", target, "...")
   # Remove variables that are too entangled with targets
   if ((target %in% c("ea_welcoming_b", "ea_nps_promoter", "ea_nps_detractor"))) {
-    features <- setdiff(features, c("ea_welcoming", "ea_welcoming_comment",
-                                    "ea_nps_promoter", "ea_nps_detractor",
-                                    "member_local_group"))
+    drops <- c("ea_welcoming", "ea_welcoming_comment", "ea_nps_promoter", "ea_nps_detractor",
+              "member_local_group")
   }
-  data2 <- data[, c(features, target)]
+  else if (identical(target, "ea_career")) {
+    drops <- c("ea_social_b", "ea_career_comment")
+  }
+
+  # Subset to features
+  data2 <- data[, setdiff(c(features, target), drops)]
+
+  # Make DataRobot model
   dr_project <- SetupProject(data2, projectName = paste0("EASurvey-", target))
   SetTarget(dr_project, target, mode = AutopilotMode$Quick)
   UpdateProject(dr_project, workerCount = 10)

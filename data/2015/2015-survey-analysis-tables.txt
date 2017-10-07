@@ -2748,3 +2748,9 @@ donate_2014_c ### radical_giver
  
 Radical Givers give II
 [1] 1639363
+EA year x poverty
+cause_import_poverty %in% c("This cause is the top priority",      "This cause is near the top priority") ### which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012",      "2013") (nas removed)
+        
+         FALSE         TRUE       
+   FALSE 675 (39.31%)  167 (26.3%)
+   TRUE  1042 (60.69%) 468 (73.7%)

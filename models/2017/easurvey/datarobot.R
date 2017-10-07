@@ -64,9 +64,11 @@ if (length(mismatches) > 0) {
 
 for (target in targets) {
   message("Running ", target, "...")
+  # Remove variables that are too entangled with targets
   if ((target %in% c("ea_welcoming_b", "ea_nps_promoter", "ea_nps_detractor"))) {
     features <- setdiff(features, c("ea_welcoming", "ea_welcoming_comment",
-                                    "ea_nps_promoter", "ea_nps_detractor"))
+                                    "ea_nps_promoter", "ea_nps_detractor",
+                                    "member_local_group"))
   }
   data2 <- data[, c(features, target)]
   dr_project <- SetupProject(data2, projectName = paste0("EASurvey-", target))

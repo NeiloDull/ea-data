@@ -73,7 +73,7 @@ for (target in targets) {
     drops <- c("ea_social_b", "ea_career_comment")
   }
   else if (identical(target, "member_gwwc")) {
-    drops <- "involved_gwwc"
+    drops <- "involved_GWWC"
   }
 
   # Subset to features

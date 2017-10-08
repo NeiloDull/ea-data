@@ -54,7 +54,9 @@ features <- c(get_vars(data, "_comment"),
               "first_heard_EA",
               get_vars(data, "movement"),
               "ea_nps_promoter",
-              "ea_nps_detractor")
+              "ea_nps_detractor",
+              "employment_status",
+              "field")
 
 # Check definitions
 mismatches <- setdiff(c(targets, features), names(data))
@@ -70,7 +72,7 @@ for (target in targets) {
               "member_local_group")
   }
   else if (identical(target, "ea_career")) {
-    drops <- c("ea_social_b", "ea_career_comment")
+    drops <- c("ea_social_b", "ea_career_comment", "employment_status", "field")
   }
   else if (identical(target, "member_gwwc")) {
     drops <- "involved_GWWC"

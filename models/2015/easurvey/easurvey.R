@@ -223,4 +223,5 @@ list(
       , "Radical Givers"                = function(df) tab(df, radical_giver)
       , "Radical Givers give how much?" = function(df) ctab(df, donate_2014_c, radical_giver)
       , "Radical Givers give II"        = function(df) sum(filter(df, radical_giver)$donate_2014_c)
+      , "EA year x poverty"             = function(df) tab(df, cause_import_poverty %in% c("This cause is the top priority", "This cause is near the top priority"), which_year_EA %in% c("Before 2009", "2009", "2010", "2011", "2012", "2013"), na.rm = TRUE, percent = TRUE, byrow = FALSE)
     )))

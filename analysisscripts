@@ -12,19 +12,17 @@ devtools:::install_github("ngreifer/cobalt")
 install.packages("readstata13")
 install.packages("nnet")
 install.packages("Ecdat")
-install.packages("ggthemes") # Install 
+install.packages("ggthemes") 
 install.packages("qwraps2")
-install.packages("magrittr") # package installations are only needed the first time you use it
+install.packages("magrittr") 
 install.packages("dplyr")    # alternative installation of the %>%
 install.packages("pastecs")
 install.packages("gmodels")
-install.packages("ggthemes") # Install 
+install.packages("ggthemes")
 install.packages("tidyverse")
 install.packages("leaps")
 install.packages("caret")
 install.packages('RStata')
-options("RStata.StataPath")
-options("RStata.StataVersion")
 library(reshape2)
 library(plyr)
 library(RColorBrewer)
@@ -32,10 +30,10 @@ library("PerformanceAnalytics")
 library(tidyverse)
 library(caret)
 library(leaps)
-library(ggthemes) # Load
+library(ggthemes)
 library(gmodels)
 library(pastecs)
-library(magrittr) # needs to be run every time you start R and want to use %>%
+library(magrittr) 
 library(dplyr)    # alternatively, this also loads %>%
 library(ordinal)
 require(ggplot2)
@@ -63,6 +61,7 @@ library(pastecs)
 library(dplyr)
 library(knitr)
 library(descr)
+require(scales)
 require(gridExtra)
 library(DT)
 library(xtable)
@@ -94,26 +93,30 @@ library(magrittr)
 library(qwraps2)
 library(readxl)
 library(car)
-require(scales)
+if (!require("devtools")) install.packages("devtools")
+devtools::install_github("peterhurford/surveytools")
+options("RStata.StataPath")
+options("RStata.StataVersion")
 devtools:::install_github("ngreifer/cobalt")
 install.packages("readstata13")
 library(readstata13)
 
-####LOAD DATA ############
-rm(list=ls())
-EAS<-read.csv("2019-ea-survey-anon-currencied-processed - Copy.csv",  stringsAsFactors=FALSE)
-summary(EAScsv)
-##OR if preprocessed
+#### LOAD DATA ####
+
+EAS<-read.csv("https://raw.githubusercontent.com/peterhurford/ea-data/master/data/2018/2018-ea-survey-anon-currencied-processed.csv",  stringsAsFactors=FALSE)
+EAS<-read.csv("~/Downloads/2018-ea-survey-edited-currencied.csv")
+##OR preprocessed data
 library(readstata13)
 EAS <- read.dta13("~/Downloads/EAsurvey2019_cleaned.dta")
-summary(EAS)
 
 attach(EAS)
+summary(EAS)
+
 ##### Demographics and Community#####################
 
 #Total sample size
-#can count manually
 ##Age: distribution (histogram), median, mean
+
 EAS$age <- as.numeric(EAS$age)
 attach(EAS)
 gghistogram(EAS, x = "age", bins = 50, 
@@ -207,7 +210,7 @@ table(normative)
 #Morality: metaethics: descriptives
 table(metaethics)
 ##### Where First Heard and Get Involved######################
-##can mostly copy commands from Demographics section.
+
 #Where first heard: descriptives: (bar chart)
 #Where first heard: comparison to last year
 
@@ -215,7 +218,8 @@ table(metaethics)
 #Where first heard: Other open comment: (bar chart)
 
 #Where first heard: year by year breakdown (Area Chart?)
-##Easier to do in Excel
+
+
 EAS2<- na.omit(subset(EAS, select = c(eayear, firstheard)))
 table(firstheard, eayear1)
 heardyear <- table(firstheard, eayear1)
@@ -225,7 +229,7 @@ prop.table(heardyear,2)
 #(Area chart), (line chart) etc (absolute and proportions)
 #frequency
 h<- barplot(table(eayear1), main="EAs first hearing of EA/ Total Eas",
-        xlab="Year",ylab = "Frequnecy")
+            xlab="Year",ylab = "Frequnecy")
 
 #% JOINED with % labels
 EAS2<- na.omit(subset(EAS, select = c(eayear1)))
@@ -240,7 +244,7 @@ counts <- table(eayear1)
 plot(ecdf(eayear1))
 #Cumulative Freq
 ec<-ggplot(data = EAS2 %>% group_by(eayear1) %>% summarise(n = n()), 
-       aes(x = eayear1, y = n)) + 
+           aes(x = eayear1, y = n)) + 
   ylab("Total EAs") +
   xlab("year Joined") +
   geom_line(aes(y = cumsum(n)))
@@ -338,7 +342,7 @@ quantile(EAS2$donate_2017_c_n, c(.1,.2,.30,.4, .5, .6, .7, .8, .9,.95,.98, .99))
 EAS$percent1 <- as.numeric(EAS$percent1)
 attach(EAS)
 x<-gghistogram(EAS, x = "percent1", bins = 50,fill = "lightgray", 
-            add = "median",main = "Distribution of % of Income donated", xlab= "Percent") + (breaks=seq(0, 100, by = 20))
+               add = "median",main = "Distribution of % of Income donated", xlab= "Percent") + (breaks=seq(0, 100, by = 20))
 
 barfill <- "#4271AE"
 barlines <- "#1F3552"
@@ -374,8 +378,8 @@ Other influences on giving: year first heard EA descriptives (table) (line chart
 #Regression: see 2018 predictors (link off to table; include graph split by types; consider non-linear relationship)
 
 #Which charities donated to: #donors, total donated, mean donation size (table)
-  #Causes donated to: #donors, total donated, mean donation size (table)
-  
+#Causes donated to: #donors, total donated, mean donation size (table)
+
 #### Cause Selection ####
 
 #Top cause: totals (bar)
@@ -401,7 +405,7 @@ plot(Result,
      type="bar") +ggtitle(title)
 
 #Mean score: table, bar?
-  #Recode variable to numeric
+#Recode variable to numeric
 EAS$povnum <- as.numeric(povscale)
 EAS$ainum <- as.numeric(aiscale)
 attach(EAS)
@@ -410,21 +414,21 @@ mean(EAS$povnum, na.rm=T)
 library(magrittr)
 library(qwraps2)
 EAS2<- na.omit(subset(EAS, select = c(povnum, ainum))
-our_summary1 <-
+               our_summary1 <-
                  list("Global Poverty" =
                         list(
                           "mean (sd)" = ~ qwraps2::mean(EAS2$povnum)),
                       "AI Risk" =
                         list(
-                          "mean (sd)" = ~ qwraps2::mean(EAS2$ainum)))
- ### Overall
+                          "mean (sd)" = ~ qwraps2::mean(EAS2$ainum))))
+### Overall
 whole <- summary_table(EAS2, our_summary1)
 whole
 
 
 
 table(mean)
-  Mean score: longditudinal (line)
+Mean score: longditudinal (line)
 
 Descriptives: top cause (mean?): Forum, LW, other membership groups? (bar)
 Descriptives: top cause (mean?): gender, gender gap (bar)
@@ -437,35 +441,69 @@ MCA: MCA plots
 #### Geography ####
 
 #Country: frequencies (table) (bar chart) (map)
-EAS$country <-as.factor(EAS$country)
+EAS$country1 <-as.factor(EAS$country)
 attach(EAS)
-table(country)
+table(country1)
+barplot(table(country1), main="Geographic Distribution",
+        xlab="Country",ylab = "Frequency")
+aggregate(EAS$age, list(nationality = EAS$country1), mean)
 
-Country: Proportion/Density: (table) (bar chart) (map)
 
-City: frequencies: (bar chart) (map)
-City: Proportion/Density: (bar chart) (map)
-Close to major city analysis (possible)
-North America (map), Europe (map)
+table2 <- table(geog)
+barplot(prop.table(geog), main="Geographic Distribution",
+        xlab="Country",ylab = "Proportion")
+dev.off()
+EAS2<- na.omit(subset(EAS, select = c(geog)))
+ggplot(EAS2, aes(x = as.factor(geog), fill=geog)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_tufte() +
+  labs(title = "Distribution of Education", y = "Percent", x = "Type of Education")+ theme(legend.position = "none")
 
-Country: Growth over time: total (line), proportion (area), absolute growth per year (line), relative growth per year (line) 
-City growth/change: line, top changes (possible)
+#Country: Proportion/Density: (table) (bar chart) (map)
 
-Cause preference: country breakdown (100% bar)
+#City: frequencies: (bar chart) (map)
+#City: Proportion/Density: (bar chart) (map)
+#Close to major city analysis (possible)
+#North America (map), Europe (map)
 
-Gender: country: proportion (bar)
-Diet: country: proportion (bar)
+#Country: Growth over time: total (line), proportion (area), absolute growth per year (line), relative growth per year (line) 
+#City growth/change: line, top changes (possible)
 
-Local EA group membership: country: proportion (bar) (map)
-Local EA group membership: city: proportions, top cities, (bar)
+#Cause preference: country breakdown (100% bar)
+EAS$animal <-as.numeric(EAS$cause_import_animal_welfare )
+EAS$prior <-as.numeric(EAS$cause_import_cause_prioritizatio )
+EAS$climate <-as.numeric(EAS$cause_import_climate_change )
+EAS$bio <-as.numeric(EAS$cause_import_biosecurity )
+EAS$nuke <-as.numeric(EAS$cause_import_nuclear_security )
+EAS$ai <-as.numeric(EAS$cause_import_ai )
+EAS$mental <-as.numeric(EAS$cause_import_mental_health )
+EAS$pov <-as.numeric(EAS$cause_import_poverty )
+EAS$ration <-as.numeric(EAS$cause_import_rationality )
+EAS$meta <-as.numeric(EAS$cause_import_meta )
+EAS$xrisk <-as.numeric(EAS$cause_import_xrisk_other )
+attach(EAS)
+aggregate(EAS$animal, list(nationality = EAS$geog1), mean)
+iris %>% comparison_table(cause_import_ai, geog1)
 
-GWWC membership: country: proportion: (bar) (map)
-GWWC membership: city: proportion: (bar) 
+#Gender: country: proportion (bar)
+#Diet: country: proportion (bar)
 
-Online group membership: country: proportion: (bar) (map)
+#Local EA group membership: country: proportion (bar) (map)
+#Local EA group membership: city: proportions, top cities, (bar)
+
+#GWWC membership: country: proportion: (bar) (map)
+#GWWC membership: city: proportion: (bar) 
+
+#Online group membership: country: proportion: (bar) (map)
 Online group membership: city: proportion: (bar)
 
 Career type: country: proportion: (bar) (map)
 Career type: city: proportion: (bar)
 
-
+               
+               
+##
+               
+              
+               

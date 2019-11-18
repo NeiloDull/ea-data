@@ -108,10 +108,6 @@ library(readstata13)
 #Read in github or CSv data
 #EAS<-read.csv("https://raw.githubusercontent.com/peterhurford/ea-data/master/data/2018/2018-ea-survey-anon-currencied-processed.csv",  stringsAsFactors=FALSE)
 EAS<-read.csv("~/Downloads/2019-ea-survey-PUBLIC-draft7.csv")
-##OR pre-processed data from STATA or elsewgere e.g.
-#library(readstata13)
-#EAS <- read.dta13("~/Downloads/EAsurvey2019_cleaned.dta")
-
 attach(EAS)
 summary(EAS)
 
@@ -119,12 +115,7 @@ summary(EAS)
 
 #Total sample size: Given 2153
 ##Age: distribution (histogram), median, mean
-#? continous age need  non-anonymised dataset)
-EASinternal<-read.csv("~/Downloads/2019-ea-survey-INTERNAL-draft7.csv")
-EASinternal$age1 <- as.numeric(EAS$age1)
-gghistogram(EASinternal, x = "age1", bins = 50, 
-            add = "mean",add.params = list(linetype = "dashed", color="red",label = "mean"),main = "Distribution of Age")+ scale_x_continuous(breaks=seq(13,100,5))+ xlab("Age of respondent") + ylab("Number of respondents")  
-#Get agegroup stats instead
+#Get agegroup stats 
 print(levels(age))
 table(age)
 table2 <- table(age)
@@ -193,10 +184,10 @@ ggplot(EAS2, aes(x = education_ordered, fill=education_ordered)) +
 ##Group education levels
 EAS2$educ <- EAS2$education
 levels(EAS2$educ) <- list(Non_college=c("Some high school","High school graduate"),
-Bachelors= c("Bachelor's degree"),
-Masters=c("Master's degree"),
-PhD=c("Doctoral degree"),
-Other_college=c("Associate's degree","Professional degree","Some college, no degree"))
+                          Bachelors= c("Bachelor's degree"),
+                          Masters=c("Master's degree"),
+                          PhD=c("Doctoral degree"),
+                          Other_college=c("Associate's degree","Professional degree","Some college, no degree"))
 print(levels(EAS2$educ))
 #get stats
 table(EAS2$educ)
@@ -559,6 +550,5 @@ iris %>% comparison_table(cause_import_ai, geog1)
 #Career type: country: proportion: (bar) (map)
 #Career type: city: proportion: (bar)
 
-             
-              
-               
+
+

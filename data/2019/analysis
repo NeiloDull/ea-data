@@ -1,4 +1,5 @@
-# EA SURVEY 2019 ANALYSIS TEMPLATE
+# EA SURVEY 2019 ANALYSIS 
+#Set working dirctory to whereever you have stored EAS data
 setwd("~/Downloads")
 rm(list=ls())
 #### PACKAGES & Load Data#######
@@ -104,65 +105,139 @@ library(readstata13)
 
 #### LOAD DATA ####
 
-EAS<-read.csv("https://raw.githubusercontent.com/peterhurford/ea-data/master/data/2018/2018-ea-survey-anon-currencied-processed.csv",  stringsAsFactors=FALSE)
-EAS<-read.csv("~/Downloads/2018-ea-survey-edited-currencied.csv")
-##OR preprocessed data
-library(readstata13)
-EAS <- read.dta13("~/Downloads/EAsurvey2019_cleaned.dta")
+#Read in github or CSv data
+#EAS<-read.csv("https://raw.githubusercontent.com/peterhurford/ea-data/master/data/2018/2018-ea-survey-anon-currencied-processed.csv",  stringsAsFactors=FALSE)
+EAS<-read.csv("~/Downloads/2019-ea-survey-PUBLIC-draft7.csv")
+##OR pre-processed data from STATA or elsewgere e.g.
+#library(readstata13)
+#EAS <- read.dta13("~/Downloads/EAsurvey2019_cleaned.dta")
 
 attach(EAS)
 summary(EAS)
 
 ##### Demographics and Community#####################
 
-#Total sample size
+#Total sample size: Given 2153
 ##Age: distribution (histogram), median, mean
-
-EAS$age <- as.numeric(EAS$age)
-attach(EAS)
-gghistogram(EAS, x = "age", bins = 50, 
-            add = "mean",main = "Distribution of Age")
-mean(age, na.rm= T)
-median(age, na.rm= T)
-##Gender: descriptives
-table(sex)
-table2 <- table(sex)
+#? continous age need  non-anonymised dataset)
+EASinternal<-read.csv("~/Downloads/2019-ea-survey-INTERNAL-draft7.csv")
+EASinternal$age1 <- as.numeric(EAS$age1)
+gghistogram(EASinternal, x = "age1", bins = 50, 
+            add = "mean",add.params = list(linetype = "dashed", color="red",label = "mean"),main = "Distribution of Age")+ scale_x_continuous(breaks=seq(13,100,5))+ xlab("Age of respondent") + ylab("Number of respondents")  
+#Get agegroup stats instead
+print(levels(age))
+table(age)
+table2 <- table(age)
 prop.table(table2)
-EAS2<- na.omit(subset(EAS, select = c(sex)))
-ggplot(EAS2, aes(x = as.factor(sex), fill=sex)) +
+#convert to numeric to get mean/median
+EAS$agenum <- as.numeric(EAS$age)
+mean(agenum, na.rm= T)
+median(agenum, na.rm= T)
+print(levels(age))
+#plot agegroup distribution
+EAS2<- na.omit(subset(EAS, select = c(age)))
+ggplot(EAS2, aes(x = age, fill=age)) +
   geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
   geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
-  scale_y_continuous(labels = percent) + theme_tufte() +
+  labs(title = "Distribution of Age", y = "Percent", x = "")+ theme(legend.position = "none")
+
+
+##Gender: descriptives (Male, Female, Other)
+#get gender stats
+table(gender_b)
+table2 <- table(gender_b)
+prop.table(table2)
+#plot gender distribution
+EAS2<- na.omit(subset(EAS, select = c(gender_b)))
+EAS2$gender_ordered = factor(EAS2$gender_b,levels(EAS2$gender_b)[c(2,1,3)])
+ggplot(EAS2, aes(x = gender_ordered, fill=gender_ordered)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_classic() +
   labs(title = "Distribution of Gender", y = "Percent", x = "")+ theme(legend.position = "none")
+#Drop "other" from gender
+EAS2$gender_mf[EAS2$gender_ordered== "Male"] <- "Male"
+EAS2$gender_mf[EAS2$gender_ordered== "Female"] <- "Female"
+EAS2$gender_mf <-as.factor(EAS2$gender_mf)
+levels(EAS2$gender_mf)
+#get gender stats
+EAS3<- na.omit(subset(EAS2, select = c(gender_mf)))
+EAS3$gender_mf = factor(EAS3$gender_mf,levels(EAS3$gender_mf)[c(2,1)])
+table(EAS3$gender_mf)
+table2 <- table(EAS3$gender_mf)
+prop.table(table2)
 #Gender: comparison to 2018
 #2018-  Male (1,592, 69.82% ) Female (688, 30.18%)
-##Education: level (bar)
-table(college)
-table2 <- table(college)
-prop.table(table2)
-counts <- table(college)
-barplot(prop.table(table2), main="College Distribution",
-        xlab="Level of Education",ylab = "Proportion")
-#proportions
-dev.off()
-EAS2<- na.omit(subset(EAS, select = c(college)))
-ggplot(EAS2, aes(x = as.factor(college), fill=college)) +
+#Plot gender distribution
+ggplot(EAS3, aes(x = gender_mf, fill=gender_mf)) +
   geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
   geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
-  scale_y_continuous(labels = percent) + theme_tufte() +
+  scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Distribution of Gender", y = "Percent", x = "")+ theme(legend.position = "none")
+
+
+##Education: level (bar)
+table(education)
+table2 <- table(education)
+prop.table(table2)
+dev.off()
+EAS2<- na.omit(subset(EAS, select = c(education)))
+print(levels(education))
+#Re-order education levels
+EAS2$education_ordered = factor(EAS2$education,levels(EAS2$education)[c(8,4,7,1,2,6,5,3)])
+ggplot(EAS2, aes(x = education_ordered, fill=education_ordered)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Distribution of Education", y = "Percent", x = "Type of Education")+ theme(legend.position = "none")
+##Group education levels
+EAS2$educ <- EAS2$education
+levels(EAS2$educ) <- list(Non_college=c("Some high school","High school graduate"),
+Bachelors= c("Bachelor's degree"),
+Masters=c("Master's degree"),
+PhD=c("Doctoral degree"),
+Other_college=c("Associate's degree","Professional degree","Some college, no degree"))
+print(levels(EAS2$educ))
+#get stats
+table(EAS2$educ)
+table2 <- table(EAS2$educ)
+prop.table(table2)
+#plot
+dev.off()
+print(levels(EAS2$educ))
+EAS3<- na.omit(subset(EAS2, select = c(educ)))
+ggplot(EAS3, aes(x = educ, fill=educ)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_classic() +
   labs(title = "Distribution of Education", y = "Percent", x = "Type of Education")+ theme(legend.position = "none")
 #Education: comparisons to 2018 42.6% BA, 30.4% MA, 14.4% PhD, 12% other college, 0.7% Non-College
+
 #Education: disciplines (bar)
-table(discipline)
-barplot(table(discipline), main="Discipline Distribution",
-        xlab="Discipline",ylab = "Frequency")
-table2 <- table(discipline)
-barplot(prop.table(discipline), main="College Distribution",
-        xlab="Discipline",ylab = "Proportion")
-#Education: comparisons to 2018
+#All disciplines are in logic class, convert to factor?
+logical_vars <- lapply(EAS, class) == "logical"
+EAS[, logical_vars] <- lapply(EAS[, logical_vars], as.factor)
+#Stats
+table(EAS$studied_econ)
+table(EAS$studied_engineering)
+table(EAS$studied_math)
+table(EAS$studied_medicine)
+table(EAS$studied_psych)
+table(EAS$studied_phil)
+table(EAS$studied_physics)
+table(EAS$studied_humanities)
+table(EAS$studied_social_science)
+table(EAS$studied_other_science)
+table(EAS$studied_vocational)
+
+#? how to plot the "TRUE' of each altogether?
+
+
 #Education: university of undergraduate, descriptives [if included]
 table(university)
 #Careers: employment status- descriptives (bar)
+employed_full_time employed_part_time employed_self employed_looking employed_not_looking employed_homemaker employed_retired employed_student_part employed_student_full
+
 table(job)
 barplot(table(job), main="Employment Status Distribution",
         xlab="Employment Status",ylab = "Frequency")
@@ -170,6 +245,7 @@ table2 <- table(job)
 barplot(prop.table(job), main="Employment Status Distribution",
         xlab="Employment Status",ylab = "Proportion")
 #Careers: field of employment- descriptives (bar)
+
 table(field)
 barplot(table(field), main="Field of employment Distribution",
         xlab="Field of employment ",ylab = "Frequency")
@@ -211,85 +287,53 @@ table(normative)
 #Morality: metaethics: descriptives
 table(metaethics)
 ##### Where First Heard and Get Involved######################
-
+table(first_heard_EA)
+table2 <- table(first_heard_EA)
+prop.table(table2)
 #Where first heard: descriptives: (bar chart)
-#Where first heard: comparison to last year
-
-#Where first heard: Other open comment breakdown
-#Where first heard: Other open comment: (bar chart)
-
-#Where first heard: year by year breakdown (Area Chart?)
-
-
-EAS2<- na.omit(subset(EAS, select = c(eayear, firstheard)))
-table(firstheard, eayear1)
-heardyear <- table(firstheard, eayear1)
-prop.table(heardyear,2) 
-
-#Comparison of year by year (2019) to year by year (2018) 
-#(Area chart), (line chart) etc (absolute and proportions)
-#frequency
-h<- barplot(table(eayear1), main="EAs first hearing of EA/ Total Eas",
-            xlab="Year",ylab = "Frequnecy")
-
-#% JOINED with % labels
-EAS2<- na.omit(subset(EAS, select = c(eayear1)))
-ggplot(EAS2, aes(x = as.factor(eayear1),)) +
+##HOW TO FIX X-axis??? & Order by percent
+EAS2<- na.omit(subset(EAS, select = c(first_heard_EA)))
+ggplot(EAS2, aes(x = first_heard_EA, fill=first_heard_EA)) +
   geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
   geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
-  scale_y_continuous(labels = percent) + theme_tufte() +
-  labs(title = "Distribution of Gender", y = "Percent", x = "")+ theme(legend.position = "none")
+  scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Where first heard of EA", y = "Percent", x = "")+ theme(legend.position = "none")
 
-#cumulative (denisty)
-counts <- table(eayear1)
-plot(ecdf(eayear1))
-#Cumulative Freq
-ec<-ggplot(data = EAS2 %>% group_by(eayear1) %>% summarise(n = n()), 
-           aes(x = eayear1, y = n)) + 
-  ylab("Total EAs") +
-  xlab("year Joined") +
-  geom_line(aes(y = cumsum(n)))
-
-#Overlap cumulative (density) plor and year-by-year histogram
-EAS2<- na.omit(subset(EAS, select = c(eayear1)))
-attach(EAS2)
-par(mar = c(5,5,2,5))
-h <- hist(
-  eayear1,xlim = c(2009,2019))
-
-par(new = T)
-
-ec <- ecdf(eayear1)
-plot(x = h$mids, y=ec(h$mids)*max(h$counts), col = rgb(0,0,0,alpha=0), axes=F, xlab=NA, ylab=NA)
-lines(x = h$mids, y=ec(h$mids)*max(h$counts), col ='red')
-axis(4, at=seq(from = 0, to = max(h$counts), length.out = 11), labels=seq(0, 1, 0.1), col = 'red', col.axis = 'red')
-mtext(side = 4, line = 3, 'Cumulative Density', col = 'red')
-
-##CUMULATIVE FREQ
-##### Make some sample data
-x <- EAS2$eayear1
-
-## Calculate and plot the two histograms
-hcum <- h <- hist(x, plot=FALSE)
-
-hcum$counts <- cumsum(hcum$counts)
-plot(hcum, main="EAs first hearing of EA/Total EAs", xlab="Year First heard of EA",plot=FALSE)
-plot(h, add=T, col="blue")
-
-## Plot the density and cumulative density
-d <- density(x)
-lines(x = d$x, y = d$y * length(x) * diff(h$breaks)[1], lwd = 2)
-lines(x = d$x, y = cumsum(d$y)/max(cumsum(d$y)) * length(x), lwd = 2)
-
+#Where first heard: comparison to last year
+https://forum.effectivealtruism.org/posts/S4WmbHJr32WcmwFD7/ea-survey-series-2018-where-people-first-hear-about-ea-and
+#Excel/G-Sheet:Where first heard: Other open comment breakdown 
+#Excel/G-Sheet:Where first heard: Other open comment: (bar chart)
+#Excel/G-Sheet:Where first heard: year by year breakdown (Area Chart?)
+#Comparison of year by year (2019) to year by year (2018) 
+#(Area chart), (line chart) etc (absolute and proportions)
+#Excel/G-Sheet:Frequency per first year
 
 #Getting involved: descriptives: (bar chart)
+table(EAS$involved_tlycs)	
+table(EAS$involved_local_EA)	
+table(EAS$involved_lesswrong)
+table(EAS$involved_givewell)
+table(EAS$involved_ace	)
+table(EAS$involved_ssc)	
+table(EAS$involved_online_ea)	
+table(EAS$involved_personal_contact)	
+table(EAS$involved_80K)	
+table(EAS$involved_GWWC	)
+table(EAS$involved_ea_global)	
+table(EAS$involved_ea_global_x)	
+table(EAS$involved_book_blog)	
+table(EAS$involved_podcast)	
+table(EAS$involved_swiss)	
+table(EAS$involved_none_of_the_above)	
+table(EAS$involved_other)
 #Getting involved: comparison to last year
+https://forum.effectivealtruism.org/posts/uPFx462NAamBo5Eqq/ea-survey-series-2018-how-do-people-get-involved-in-ea
 #Getting involved:  year by year breakdown
 #Comparison of 2019’s 2018 yby breakdown to 2018
 
 
 
-#### Donations ####
+#### Donations: Use Kim's Script! ####
 EAS2<- na.omit(subset(EAS, select = c(donate_2017_c_n, eayear)))
 #look for outliers
 outinc=max(EAnew$income_2018_individual_c,na.rm=TRUE)
@@ -310,8 +354,8 @@ barplot(tapply(EAS2$donate_2017_c_n, format(EAS2$eayear), FUN=sum))
 #Individual donation size: distribution chart, 
 title <- "2018 Individual donation size: distribution chart"
 sp<-ggplot(EAS, aes(donate_2017_log)) + geom_density(alpha = 0.2)+ xlab("2018 Donations (log) ") +labs(fill="") + ggtitle(title)
-sp + theme_tufte()
-sp + theme_tufte() + theme( legend.position=c(0.2, 0.9)) 
+sp + theme_classic()
+sp + theme_classic() + theme( legend.position=c(0.2, 0.9)) 
 
 #log histogram
 p <- ggplot(EAS, aes(x=donate_2017_c_n)) +
@@ -319,7 +363,7 @@ p <- ggplot(EAS, aes(x=donate_2017_c_n)) +
   geom_vline(aes(xintercept=mean(donate_2017_c_n)), color="blue",
              linetype="dashed")+
   labs(title="Histogram of 2018 Donations",x="2018 Donations", y = "Count")+
-  theme_tufte()
+  theme_classic()
 require(scales)
 p + scale_x_continuous( trans = log10_trans(),
                         breaks = trans_breaks("log10", function(x) 10^x),
@@ -383,63 +427,75 @@ Other influences on giving: year first heard EA descriptives (table) (line chart
 
 #### Cause Selection ####
 
-#Top cause: totals (bar)
-counts <- table(topcause)
-barplot(counts, main="Top Cause Area",
-        xlab="Cause Area",ylab = "Frequency")
-
-table2 <- table(topcause)
+#Top cause: totals (bar): ??FIX LABELS??
+table(top_case)
+table2 <- table(top_case)
 prop.table(table2)
-barplot(prop.table(table2), main="Top Cause Area",
-        xlab="Cause Area",ylab = "Proportion")
+EAS2<- na.omit(subset(EAS, select = c(top_case)))
+print(levels(EAS2$top_case))
+EAS2$top_case = factor(EAS2$top_case,levels(EAS2$top_case)[c(3,2,4,1,5)])
+ggplot(EAS2, aes(x = top_case, fill=top_case)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Top Cause if forced to choose only one", y = "Percent", x = "")+ theme(legend.position = "none")
 
-#Top cause: totals (comparison to 2018: bar) 
+#Top cause: totals (comparison to 2018: bar)
+#NEED 2018 DATA
 #Top cause: totals (broader longditudinal optional)
+#NEED 2018 DATA
+#Cause selection: full scale: (likert graph) (table) (“near top” table): : ??FIX LABELS??
 
-#Cause selection: full scale: (likert graph) (table) (“near top” table)
+EAS2<- na.omit(subset(EAS, select = c(cause_import_animal_welfare,	cause_import_cause_prioritization,	cause_import_biosecurity,	cause_import_climate_change,	cause_import_nuclear_security,	cause_import_ai,	cause_import_mental_health,	cause_import_poverty,	cause_import_rationality,	cause_import_meta,	cause_import_xrisk_other,	cause_import_other)))
 library(likert)
-likert(dat)
-summary(dat)
-Result = likert(dat)
+likert(EAS2)
+summary(EAS2)
+Result = likert(EAS2)
 title <- "Cause Selections"
 plot(Result,
      type="bar") +ggtitle(title)
 
 #Mean score: table, bar?
+#NEED TO CREATE NUMERIC e.g. povnum<-as.numer
 #Recode variable to numeric
-EAS$povnum <- as.numeric(povscale)
-EAS$ainum <- as.numeric(aiscale)
-attach(EAS)
-mean(EAS$povnum, na.rm=T) 
-
-library(magrittr)
-library(qwraps2)
-EAS2<- na.omit(subset(EAS, select = c(povnum, ainum))
-               our_summary1 <-
-                 list("Global Poverty" =
-                        list(
-                          "mean (sd)" = ~ qwraps2::mean(EAS2$povnum)),
-                      "AI Risk" =
-                        list(
-                          "mean (sd)" = ~ qwraps2::mean(EAS2$ainum))))
-### Overall
-whole <- summary_table(EAS2, our_summary1)
-whole
+EAS2<- na.omit(subset(EAS, select = c(cause_import_animal_welfare,	cause_import_cause_prioritization,	cause_import_biosecurity,	cause_import_climate_change,	cause_import_nuclear_security,	cause_import_ai,	cause_import_mental_health,	cause_import_poverty,	cause_import_rationality,	cause_import_meta,	cause_import_xrisk_other,	cause_import_other)))
+EAS2 <- data.frame(lapply(EAS2, function(x) as.numeric(as.factor(x))))
+meancause<-colMeans(EAS2[sapply(EAS2, is.numeric)])
+meancause
+#Mean score: longditudinal (line)
 
 
+#Descriptives: top cause (mean?): Forum, LW, other membership groups? (bar)
+table(top_case,member_ea_fb)
+table(top_case,member_ea_forum)	
+table(top_case,member_lw	)
+table(top_case,member_local_group)	
+table(top_case,member_none_of_the_above)	
+table(top_case,member_other)	
+table(top_case,member_gwwc)
 
-table(mean)
-Mean score: longditudinal (line)
+#Descriptives: top cause (mean?): gender, gender gap (bar)
+#EAS<- na.omit(subset(EAS2, select = c(gender_mf)))
+EAS$gender_mf[EAS$gender_b== "Male"] <- "Male"
+EAS$gender_mf[EAS$gender_b== "Female"] <- "Female"
+EAS$gender_mf <-as.factor(EAS$gender_mf)
+levels(EAS$gender_mf)
+EAS$gender_mf = factor(EAS$gender_mf,levels(EAS$gender_mf)[c(2,1)])
+table(top_case,gender_mf)
+#Cause scale
+EAS2<- na.omit(subset(EAS, select = c(gender_mf, cause_import_animal_welfare,	cause_import_cause_prioritization,	cause_import_biosecurity,	cause_import_climate_change,	cause_import_nuclear_security,	cause_import_ai,	cause_import_mental_health,	cause_import_poverty,	cause_import_rationality,	cause_import_meta,	cause_import_xrisk_other,	cause_import_other)))
+EAS2 <- data.frame(lapply(EAS2, function(x) as.numeric(as.factor(x))))
+meancause<-colMeans(EAS2[sapply(EAS2, is.numeric)])
 
-Descriptives: top cause (mean?): Forum, LW, other membership groups? (bar)
-Descriptives: top cause (mean?): gender, gender gap (bar)
-Descriptives: top cause (mean?): diet proportion of supporters with diet (bar) proportion of diet supporting cause (bar)
 
-Logistic regression (top cause): link off to table (AMEs)
-Ordinal regression: link off to table, (ordinal regression graphs)
-MCA: MCA plots
 
-#### Geography ####
+#Descriptives: top cause (mean?): diet proportion of supporters with diet (bar) proportion of diet supporting cause (bar)
+
+#Logistic regression (top cause): link off to table (AMEs)
+#Ordinal regression: link off to table, (ordinal regression graphs)
+#MCA: MCA plots
+
+#### Geography: INCOMPLETE####
 
 #Country: frequencies (table) (bar chart) (map)
 EAS$country1 <-as.factor(EAS$country)
@@ -460,7 +516,7 @@ EAS2<- na.omit(subset(EAS, select = c(geog)))
 ggplot(EAS2, aes(x = as.factor(geog), fill=geog)) +
   geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
   geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
-  scale_y_continuous(labels = percent) + theme_tufte() +
+  scale_y_continuous(labels = percent) + theme_classic() +
   labs(title = "Distribution of Education", y = "Percent", x = "Type of Education")+ theme(legend.position = "none")
 
 #Country: Proportion/Density: (table) (bar chart) (map)
@@ -503,6 +559,11 @@ iris %>% comparison_table(cause_import_ai, geog1)
 
 #Career type: country: proportion: (bar) (map)
 #Career type: city: proportion: (bar)
+
+             
+              
+               
+
 
              
               

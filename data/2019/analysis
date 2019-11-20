@@ -108,13 +108,16 @@ library(readstata13)
 #Read in github or CSv data
 #EAS<-read.csv("https://raw.githubusercontent.com/peterhurford/ea-data/master/data/2018/2018-ea-survey-anon-currencied-processed.csv",  stringsAsFactors=FALSE)
 EAS<-read.csv("~/Downloads/2019-ea-survey-PUBLIC-draft7.csv")
+##OR pre-processed data from STATA or elsewgere e.g.
+#library(readstata13)
+#EAS <- read.dta13("~/Downloads/EAsurvey2019_cleaned.dta")
+
 attach(EAS)
 summary(EAS)
 
 ##### Demographics and Community#####################
 
 #Total sample size: Given 2153
-##Age: distribution (histogram), median, mean
 #Get agegroup stats 
 print(levels(age))
 table(age)
@@ -184,10 +187,10 @@ ggplot(EAS2, aes(x = education_ordered, fill=education_ordered)) +
 ##Group education levels
 EAS2$educ <- EAS2$education
 levels(EAS2$educ) <- list(Non_college=c("Some high school","High school graduate"),
-                          Bachelors= c("Bachelor's degree"),
-                          Masters=c("Master's degree"),
-                          PhD=c("Doctoral degree"),
-                          Other_college=c("Associate's degree","Professional degree","Some college, no degree"))
+Bachelors= c("Bachelor's degree"),
+Masters=c("Master's degree"),
+PhD=c("Doctoral degree"),
+Other_college=c("Associate's degree","Professional degree","Some college, no degree"))
 print(levels(EAS2$educ))
 #get stats
 table(EAS2$educ)
@@ -418,6 +421,7 @@ Other influences on giving: year first heard EA descriptives (table) (line chart
 #### Cause Selection ####
 
 #Top cause: totals (bar): ??FIX LABELS??
+
 levels(EAS$top_case)[levels(EAS$top_case)=="Long Term Future / Catastrophic and Existential Risk Reduction"]<-"Long Term Future"
 attach(EAS)
 table(EAS$top_case)
@@ -575,5 +579,6 @@ iris %>% comparison_table(cause_import_ai, geog1)
 #Career type: country: proportion: (bar) (map)
 #Career type: city: proportion: (bar)
 
-
-
+             
+              
+               

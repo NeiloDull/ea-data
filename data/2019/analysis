@@ -136,6 +136,7 @@ ggplot(EAS2, aes(x = age, fill=age)) +
   labs(title = "Distribution of Age", y = "Percent", x = "")+ theme(legend.position = "none")
 
 
+attach(EAS)
 ##Gender: descriptives (Male, Female, Other)
 #get gender stats
 table(gender_b)
@@ -284,13 +285,23 @@ table(first_heard_EA)
 table2 <- table(first_heard_EA)
 prop.table(table2)
 #Where first heard: descriptives: (bar chart)
-##HOW TO FIX X-axis??? & Order by percent
+##Unsure how to re-order "(..count..)/sum(..count..)"
 EAS2<- na.omit(subset(EAS, select = c(first_heard_EA)))
-ggplot(EAS2, aes(x = first_heard_EA, fill=first_heard_EA)) +
+p<-ggplot(EAS2, aes(x = first_heard_EA, fill=first_heard_EA)) +
   geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
   geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
   scale_y_continuous(labels = percent) + theme_classic() +
   labs(title = "Where first heard of EA", y = "Percent", x = "")+ theme(legend.position = "none")
+p + coord_flip()
+
+##Or load descriptives from table into a separate dataset e.g. Excel or STATA
+dat <- read.dta13("~/Downloads/EAS2019_firstheard.dta")
+dat$firstheardofeafrom <- as.factor(dat$firstheardofeafrom)
+p=ggplot(data=dat)  
+p+geom_bar(stat="identity")+  #
+  aes(x=reorder(dat$firstheardofeafrom,percent,sum),y=percent,label=percent,fill=dat$firstheardofeafrom)+geom_text(aes(label=scales::percent(percent), vjust=5))+scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Where first heard of EA", y = "Percent", x = "")+ theme(legend.position = "none")+ coord_flip()
+
 
 #Where first heard: comparison to last year
 https://forum.effectivealtruism.org/posts/S4WmbHJr32WcmwFD7/ea-survey-series-2018-where-people-first-hear-about-ea-and
@@ -319,6 +330,25 @@ table(EAS$involved_podcast)
 table(EAS$involved_swiss)	
 table(EAS$involved_none_of_the_above)	
 table(EAS$involved_other)
+##Unsure how to group the involved_ variables & re-order "(..count..)/sum(..count..)"
+EAS2<- na.omit(subset(EAS, select = c(?)))
+p<-ggplot(EAS2, aes(x = ?, fill=?)) +
+  geom_bar(na.rm = TRUE,aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Which factors were important in 'getting you into' effective altruism, or altering your actions in its direction? ", y = "Percent", x = "")+ theme(legend.position = "none")
+p + coord_flip()
+
+##Or load descriptives from table into a separate dataset e.g. Excel or STATA
+dat <- read.dta13("~/Downloads/EAS2019_involved.dta")
+dat$involved <- as.factor(dat$involved)
+p=ggplot(data=dat)  
+p+geom_bar(stat="identity")+  #
+  aes(x=reorder(dat$involved,percent,sum),y=percent,label=percent,fill=dat$involved)+geom_text(aes(label=scales::percent(percent), vjust=5))+scale_y_continuous(labels = percent) + theme_classic() +
+  labs(title = "Which factors were important in 'getting you into' effective altruism? ", y = "Percent", x = "")+ theme(legend.position = "none")+ coord_flip()
+
+
+
 #Getting involved: comparison to last year
 https://forum.effectivealtruism.org/posts/uPFx462NAamBo5Eqq/ea-survey-series-2018-how-do-people-get-involved-in-ea
 #Getting involved:  year by year breakdown
